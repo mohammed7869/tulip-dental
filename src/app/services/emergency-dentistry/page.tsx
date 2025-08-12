@@ -35,11 +35,11 @@ export default function EmergencyDentistryPage() {
   },
   {
     icon: "/Images/icons/Serving Harrisburg Nearby Communities.png",
-    title: "Serving Harrisburg & Nearby Communities",
+    title: "Serving Maplewood & Nearby Communities",
     description:
-      "We are proud to be your trusted local emergency dental provider. Whether you're in Harrisburg (17110, 17109, 17111, 17112) or nearby in Colonial Park, Paxtang, Penbrook, Lawnton, Progress, or Linglestown—we're right around the corner when you need us most.",
+      "We are proud to be your trusted local emergency dental provider. Whether you're in Maplewood (07040) or nearby in South Orange, Millburn, West Orange, Livingston, Short Hills, or Montclair—we're right around the corner when you need us most.",
     points: [
-      "Convenient Harrisburg location",
+      "Convenient Maplewood location",
       "Walk-ins and urgent same-day care",
       "Insurance accepted + flexible payment options",
       "Top-rated emergency dentist near you",
@@ -53,11 +53,11 @@ export default function EmergencyDentistryPage() {
         <div className='details-page'>
           <div className='details-page-header-section'>
             <Fade direction='up' duration={1000}>
-              <h1>Emergency Dentistry in Harrisburg, PA</h1>
+              <h1>Emergency Dentistry in Maplewood, NJ</h1>
             </Fade>
             <Fade direction='down' duration={1000}>
               <p className='text-center'>
-                Urgent Dental Care in Harrisburg | Maple Dental | Family & Cosmetic Dentist Near You
+                Urgent Dental Care in Maplewood | Tulip Dental | Family & Cosmetic Dentist Near You
               </p>
             </Fade>
             {/* <div className='flex items-center justify-center gap-2'> <Link href={'/'} className='font-medium'>Home </Link><span><ChevronRight/></span> <span className='text-white/80'>Emergency Dentistry</span></div> */}

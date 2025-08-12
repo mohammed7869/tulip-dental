@@ -15,7 +15,7 @@ export default function ContactUsPage() {
             
             <Fade delay={200}>
                           <h1>
-                            Contact Maple Dental in Harrisburg, PA
+                            Contact Tulip Dental in Maplewood, NJ
                           </h1>
                         </Fade>
             <Fade delay={500}>

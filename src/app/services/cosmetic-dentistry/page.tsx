@@ -14,7 +14,7 @@ export default function CosmeticDentistryPage() {
     const features = [
   {
     icon: "/Images/icons/tooth-whitening.png",
-    title: "Teeth Whitening in Harrisburg",
+    title: "Teeth Whitening in Maplewood",
     description: "Tired of stains or yellow teeth? Our professional teeth whitening treatments are faster and more effective than over-the-counter options. We offer both in-office and take-home whitening kits to fit your lifestyle.",
     points: [
       "Brighten your smile by several shades",
@@ -36,7 +36,7 @@ export default function CosmeticDentistryPage() {
     ],
   },
   {
-    icon: "/Images/icons/Serving Harrisburg Nearby Communities.png",
+    icon: "/Images/icons/Serving Maplewood Nearby Communities.png",
     title: "Smile Makeovers Near You",
     description:
       "Looking for a complete transformation? Our smile makeovers combine multiple cosmetic treatments to give you the smile you've always dreamed of. From reshaping gums to realigning teeth, we tailor every plan to your goals",
@@ -54,11 +54,11 @@ export default function CosmeticDentistryPage() {
         <div className='details-page'>
                     <div className='details-page-header-section'>
                         <Fade direction='up' duration={1000}>
-                        <h1>Cosmetic Dentistry in Harrisburg, PA</h1>
+                        <h1>Cosmetic Dentistry in Maplewood, NJ</h1>
                         </Fade>
                         <Fade direction='down' duration={1000}>
                         <p className="text-center">
-                            Enhance Your Smile in Harrisburg | Maple Dental | Family & Cosmetic Dentist
+                            Enhance Your Smile in Maplewood | Tulip Dental | Family & Cosmetic Dentist
                         </p>
                         </Fade>
                         {/* <div className='flex items-center justify-center gap-2'> <Link href={'/'} className='font-medium'>Home </Link><span><ChevronRight/></span> <span className='text-white/80'>Emergency Dentistry</span></div> */}
@@ -90,10 +90,10 @@ export default function CosmeticDentistryPage() {
           <div className='desc-text-subtitle'>Cosmetic Dentistry</div>
           <h3 className='desc-text-title'>About Cosmetic Dentistry</h3>
           <p>
-           Your smile is one of the first things people notice—and with cosmetic dentistry at Maple Dental Harrisburg, you can feel confident every time you show it. Whether you're looking to brighten, reshape, or completely transform your smile, we offer customized solutions using the latest techniques and materials.
+           Your smile is one of the first things people notice—and with cosmetic dentistry at Tulip Dental Maplewood, you can feel confident every time you show it. Whether you're looking to brighten, reshape, or completely transform your smile, we offer customized solutions using the latest techniques and materials.
           </p>
           <p>
-           We proudly serve patients from Harrisburg (17110, 17109, 17111, 17112), Colonial Park (17109), Penbrook (17103), Paxtang (17111), Progress (17109, 17111), Lawnton (17111), and Linglestown (17112). So if you’re searching for a “cosmetic dentist near me” or want a smile makeover near you, Maple Dental Harrisburg is your trusted local provider.
+           We proudly serve patients from Maplewood (07040), South Orange (07079), Millburn (07041), West Orange (07052), Livingston (07039), Short Hills (07078), and Montclair (07042). So if you’re searching for a “cosmetic dentist near me” or want a smile makeover near you, Tulip Dental Maplewood is your trusted local provider.
           </p>
         </Fade>
       </div>
@@ -106,7 +106,7 @@ export default function CosmeticDentistryPage() {
                           Top Reasons
                         </div>
                         <div className='wcu-title'>
-                          Why Choose Maple Dental for Cosmetic Dentistry?
+                          Why Choose Tulip Dental for Cosmetic Dentistry?
                         </div>
                         <div className='wcu-points-section'>
                           <ul className='wcu-points'>
@@ -114,7 +114,7 @@ export default function CosmeticDentistryPage() {
                             <li><CheckCircle />Advanced Techniques for Natural-Looking Results</li>
                             <li><CheckCircle />High-Quality Materials & Digital Imaging</li>
                             <li><CheckCircle />Flexible Financing & Insurance Assistance </li>
-                            <li><CheckCircle />Convenient Location in Harrisburg, PA</li>
+                            <li><CheckCircle />Convenient Location in Maplewood, NJ</li>
                           </ul>
                         </div>
                       </Fade>
@@ -132,7 +132,7 @@ export default function CosmeticDentistryPage() {
                                   Achieve the Smile You’ve Always Wanted
                                 </h2>
                                 <p className="features-description">
-                                  Cosmetic dentistry is more than just appearance—it’s about boosting your confidence and enhancing your quality of life. At Maple Dental Harrisburg, we take a comprehensive, patient-first approach to every smile transformation, big or small. Whether you’re preparing for a special event or simply want to feel better about your teeth, we’re here to help you love your smile again.
+                                  Cosmetic dentistry is more than just appearance—it’s about boosting your confidence and enhancing your quality of life. At Tulip Dental Maplewood, we take a comprehensive, patient-first approach to every smile transformation, big or small. Whether you’re preparing for a special event or simply want to feel better about your teeth, we’re here to help you love your smile again.
                                 </p>
                               </Fade>
                   
@@ -197,7 +197,7 @@ export default function CosmeticDentistryPage() {
           <AccordionTrigger className='faq-qn'>Does dental insurance cover cosmetic dentistry?</AccordionTrigger>
           <AccordionContent className='faq-ans'>
             <p>
-                Most cosmetic treatments are not covered by standard insurance plans, but Maple Dental Harrisburg offers flexible financing options to make care affordable. Our team will help you explore all your options during your consultation.
+                Most cosmetic treatments are not covered by standard insurance plans, but Tulip Dental Maplewood offers flexible financing options to make care affordable. Our team will help you explore all your options during your consultation.
             </p>
           
           </AccordionContent>
@@ -210,10 +210,10 @@ export default function CosmeticDentistryPage() {
      <div className="features-section">
                 <Fade direction="up" duration={1000}>
                   <h2 className="features-heading">
-                    Ready for a Smile Makeover in Harrisburg?
+                    Ready for a Smile Makeover in Maplewood?
                   </h2>
                   <p className="features-description">
-                    You deserve a smile you’re proud of. Whether it’s whitening, veneers, or a full smile makeover, Maple Dental Harrisburg is your go-to cosmetic dentist in Harrisburg and surrounding communities like Colonial Park, Penbrook, Lawnton, and Linglestown.
+                    You deserve a smile you’re proud of. Whether it’s whitening, veneers, or a full smile makeover, Tulip Dental Maplewood is your go-to cosmetic dentist in Maplewood and surrounding communities like South Orange, Millburn, West Orange, Livingston, Short Hills, and Montclair.
                   </p>
                 </Fade>
               </div>

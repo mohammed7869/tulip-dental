@@ -24,10 +24,10 @@ export default function RootCanalPage() {
     ]
   },
     {
-    icon: "/Images/icons/Dental Implant Process at Maple Dental.png",
+    icon: "/Images/icons/Dental Implant Process at Tulip Dental.png",
     title: "What Happens During a Root Canal?",
     description:
-      "A root canal involves removing the infected or inflamed pulp inside the tooth, disinfecting the area, and sealing it to prevent further damage. At Maple Dental Harrisburg, your comfort is our priority:",
+      "A root canal involves removing the infected or inflamed pulp inside the tooth, disinfecting the area, and sealing it to prevent further damage. At Tulip Dental Maplewood, your comfort is our priority:",
     points: [
       "Numbing the area for a pain-free experience",
       "Cleaning and reshaping the root canal",
@@ -36,14 +36,14 @@ export default function RootCanalPage() {
     ],
   },
   {
-    icon: "/Images/icons/Serving Harrisburg Nearby Communities.png",
-    title: "Root Canal Care for Patients in Harrisburg & Surrounding Communities",
+    icon: "/Images/icons/Serving Maplewood Nearby Communities.png",
+    title: "Root Canal Care for Patients in Maplewood & Surrounding Communities",
     description:
-      "Whether you’re located in Harrisburg (17110, 17109, 17111, 17112) or nearby in Penbrook, Progress, Colonial Park, or Lawnton, our centrally located dental office is easily accessible",
+      "Whether you’re located in Maplewood (07040) or nearby in South Orange, Millburn, West Orange, Livingston, Short Hills, or Montclair, our centrally located dental office is easily accessible",
     points: [
       "Flexible scheduling & same-day appointments available",
       "Insurance-friendly practice & payment plans",
-      "Trusted by families across the Harrisburg area",
+      "Trusted by families across the Maplewood area",
       "Top-rated “root canal dentist near me”",
     ],
   },
@@ -54,11 +54,11 @@ export default function RootCanalPage() {
                 <div className='details-page'>
                     <div className='details-page-header-section'>
                         <Fade direction='up' duration={1000}>
-                        <h1>Root Canal Therapy in Harrisburg, PA</h1>
+                        <h1>Root Canal Therapy in Maplewood, NJ</h1>
                         </Fade>
                         <Fade direction='down' duration={1000}>
                         <p className="text-center">
-                            Gentle Root Canal Treatment in Harrisburg | Maple Dental | Family & Cosmetic Dentist
+                            Gentle Root Canal Treatment in Maplewood | Tulip Dental | Family & Cosmetic Dentist
                         </p>
                         </Fade>
                         {/* <div className='flex items-center justify-center gap-2'> <Link href={'/'} className='font-medium'>Home </Link><span><ChevronRight/></span> <span className='text-white/80'>Emergency Dentistry</span></div> */}
@@ -90,10 +90,10 @@ export default function RootCanalPage() {
           <div className='desc-text-subtitle'>Root Canal</div>
           <h3 className='desc-text-title'>About Root Canal Therapy</h3>
           <p>
-            When a tooth becomes infected or severely decayed, a root canal may be the only way to save it and eliminate pain. At Maple Dental Harrisburg, we specialize in comfortable, efficient root canal treatments that restore your smile and protect your long-term oral health. 
+            When a tooth becomes infected or severely decayed, a root canal may be the only way to save it and eliminate pain. At Tulip Dental Maplewood, we specialize in comfortable, efficient root canal treatments that restore your smile and protect your long-term oral health. 
           </p>
           <p>
-            Our experienced dental team serves patients from Harrisburg (17110, 17109, 17111, 17112), Colonial Park (17109), Penbrook (17103), Paxtang (17111), Progress (17109, 17111), Lawnton (17111), and Linglestown (17112). So if you’re searching for a “root canal near me” or “dentist near you,” Maple Dental is right around the corner.
+            Our experienced dental team serves patients from Maplewood (07040), South Orange (07079), Millburn (07041), West Orange (07052), Livingston (07039), Short Hills (07078), and Montclair (07042). So if you’re searching for a “root canal near me” or “dentist near you,” Tulip Dental is right around the corner.
           </p>
         </Fade>
       </div>
@@ -106,7 +106,7 @@ export default function RootCanalPage() {
                       Top Reasons
                     </div>
                     <div className='wcu-title'>
-                      Why Choose Maple Dental for Root Canal Treatment?
+                      Why Choose Tulip Dental for Root Canal Treatment?
                     </div>
                     <div className='wcu-points-section'>
                       <ul className='wcu-points'>
@@ -114,7 +114,7 @@ export default function RootCanalPage() {
                         <li><CheckCircle />Advanced Technology & Digital Imaging  </li>
                         <li><CheckCircle /> Painless, Comfortable Procedures  </li>
                         <li><CheckCircle /> Affordable Payment Options & Insurance Accepted  </li>
-                        <li><CheckCircle /> Convenient Location in Harrisburg, PA</li>
+                        <li><CheckCircle /> Convenient Location in Maplewood, NJ</li>
                       </ul>
                     </div>
                   </Fade>
@@ -132,7 +132,7 @@ export default function RootCanalPage() {
                               Save Your Natural Tooth with Expert Root Canal Care
                             </h2>
                             <p className="features-description">
-                              Root canal therapy is a common, safe, and effective way to treat deep tooth infections while preserving your natural tooth. At Maple Dental Harrisburg, our gentle approach ensures that you feel calm and confident throughout the procedure. We prioritize patient comfort, using the latest tools and techniques to make your treatment smooth and stress-free.
+                              Root canal therapy is a common, safe, and effective way to treat deep tooth infections while preserving your natural tooth. At Tulip Dental Maplewood, our gentle approach ensures that you feel calm and confident throughout the procedure. We prioritize patient comfort, using the latest tools and techniques to make your treatment smooth and stress-free.
                             </p>
                           </Fade>
               
@@ -214,10 +214,10 @@ export default function RootCanalPage() {
               <div className="features-section">
                               <Fade direction="up" duration={1000}>
                                 <h2 className="features-heading">
-                                  Need Root Canal Treatment in Harrisburg?
+                                  Need Root Canal Treatment in Maplewood?
                                 </h2>
                                 <p className="features-description">
-                                  Don’t let tooth pain disrupt your life. If you're in need of a root canal near Harrisburg, PA, the expert team at Maple Dental is here to help. We serve families in Harrisburg, Colonial Park, Progress, Penbrook, Paxtang, Lawnton, and surrounding areas.
+                                  Don’t let tooth pain disrupt your life. If you're in need of a root canal near Maplewood, NJ, the expert team at Tulip Dental is here to help. We serve families in Maplewood, South Orange, Millburn, West Orange, Livingston, Short Hills, Montclair, and surrounding areas.
                                 </p>
                               </Fade>
                             </div>

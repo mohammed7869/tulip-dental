@@ -36,14 +36,14 @@ export default function ContactInfo() {
         <div>
           <h4 className="font-bold text-lg mb-2">Address:</h4>
           <p className="text-white/90 leading-relaxed">
-            2017 Eg Drive, Suite 200, Harrisburg, PA 17110
+            1585 Springfield Avenue, Store #1, Maplewood, NJ 07040
           </p>
         </div>
         
         <div>
           <h4 className="font-bold text-lg mb-2">Phone:</h4>
           <div className="space-y-1">
-            <a href="tel:7177452700" className="text-white/90 hover:text-white transition-colors">717-745-2700</a>
+            <a href="tel:9736715500" className="text-white/90 hover:text-white transition-colors">973-671-5500</a>
             {/* <p className="text-white/90">+12345 987 456</p> */}
           </div>
         </div>
@@ -51,7 +51,7 @@ export default function ContactInfo() {
         <div>
           <h4 className="font-bold text-lg mb-2">Email:</h4>
           <div className="space-y-1">
-            <p className="text-white/90"> <a href="mailto:harrisburg@mapledentalpa.com" className="underline"> harrisburg@mapledentalpa.com</a></p>
+            <p className="text-white/90"> <a href="mailto:maplewood@tulipdentalnj.com" className="underline"> maplewood@tulipdentalnj.com</a></p>
           </div>
         </div>
 

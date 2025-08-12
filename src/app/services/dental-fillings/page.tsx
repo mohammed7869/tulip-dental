@@ -38,12 +38,12 @@ export default function DentalFillingPage() {
       ],
     },
     {
-      icon: "/Images/icons/Serving Harrisburg Nearby Communities.png",
-      title: "Serving Harrisburg & Nearby Communities",
+      icon: "/Images/icons/Serving Maplewood Nearby Communities.png",
+      title: "Serving Maplewood & Nearby Communities",
       description:
-        "If you’re in Harrisburg (17110, 17109, 17111, 17112), or live nearby in Colonial Park, Penbrook, Progress, Paxtang, Lawnton, or Linglestown, our centrally located dental office is here for you. We provide quick, effective cavity care for kids, teens, and adults",
+        "If you’re in Maplewood (07040), or live nearby in South Orange, Millburn, West Orange, Livingston, Short Hills, or Montclair, our centrally located dental office is here for you. We provide quick, effective cavity care for kids, teens, and adults",
       points: [
-        "Convenient Harrisburg location",
+        "Convenient Maplewood location",
         "Family-friendly, gentle dental care",
         "Walk-ins and same-day availability",
         "Top-rated dental fillings near you",
@@ -56,11 +56,11 @@ export default function DentalFillingPage() {
         <div className='details-page'>
           <div className='details-page-header-section'>
             <Fade direction='up' duration={1000}>
-              <h1>Dental Fillings in Harrisburg, PA</h1>
+              <h1>Dental Fillings in Maplewood, NJ</h1>
             </Fade>
             <Fade direction='down' duration={1000}>
               <p className="text-center">
-                Dental Fillings & Cavity Treatments in Harrisburg | Maple Dental | Family & Cosmetic Dentist
+                Dental Fillings & Cavity Treatments in Maplewood | Tulip Dental | Family & Cosmetic Dentist
               </p>
             </Fade>
             {/* <div className='flex items-center justify-center gap-2'> <Link href={'/'} className='font-medium'>Home </Link><span><ChevronRight/></span> <span className='text-white/80'>Emergency Dentistry</span></div> */}
@@ -92,10 +92,10 @@ export default function DentalFillingPage() {
                 <div className='desc-text-subtitle'>Dental Fillings</div>
                 <h3 className='desc-text-title'>About Dental Fillings</h3>
                 <p>
-                  Dental fillings are a common solution for treating cavities and restoring the strength and function of your tooth. At Maple Dental Harrisburg, we use modern, tooth-colored composite fillings that blend naturally with your smile—so you get long-lasting results without compromising appearance.
+                  Dental fillings are a common solution for treating cavities and restoring the strength and function of your tooth. At Tulip Dental Maplewood, we use modern, tooth-colored composite fillings that blend naturally with your smile—so you get long-lasting results without compromising appearance.
                 </p>
                 <p>
-                  We proudly serve patients from Harrisburg (17110, 17109, 17111, 17112), Colonial Park (17109), Penbrook (17103), Paxtang (17111), Progress (17109, 17111), Lawnton (17111), and Linglestown (17112). If you're searching for a “dental filling near me” or “tooth repair near you,” Maple Dental is your trusted local provider.
+                  We proudly serve patients from Maplewood (07040), South Orange (07079), Millburn (07041), West Orange (07052), Livingston (07039), Short Hills (07078), and Montclair (07042). If you're searching for a “dental filling near me” or “tooth repair near you,” Tulip Dental is your trusted local provider.
                 </p>
               </Fade>
             </div>
@@ -108,7 +108,7 @@ export default function DentalFillingPage() {
                   Top Reasons
                 </div>
                 <div className='wcu-title'>
-                  Why Choose Maple Dental for Dental Fillings?
+                  Why Choose Tulip Dental for Dental Fillings?
                 </div>
                 <div className='wcu-points-section'>
                   <ul className='wcu-points'>
@@ -116,7 +116,7 @@ export default function DentalFillingPage() {
                     <li><CheckCircle />Gentle, Experienced Dentists</li>
                     <li><CheckCircle />Cavity Detection with Digital Imaging</li>
                     <li><CheckCircle />Fast, Comfortable Treatment</li>
-                    <li><CheckCircle />Central Harrisburg Location</li>
+                    <li><CheckCircle />Central Maplewood Location</li>
                     <li><CheckCircle />Insurance Accepted & Flexible Payment Plans</li>
                   </ul>
                 </div>
@@ -135,7 +135,7 @@ export default function DentalFillingPage() {
                 Strong, Natural-Looking Cavity Fillings That Last
               </h2>
               <p className="features-description">
-                At Maple Dental Harrisburg, we treat tooth decay before it can cause more serious issues. Our custom dental fillings are designed to restore strength, stop cavity progression, and keep your tooth structure intact. Using modern bonding techniques, we ensure a secure, durable seal—and a seamless finish that’s virtually invisible.
+                At Tulip Dental Maplewood, we treat tooth decay before it can cause more serious issues. Our custom dental fillings are designed to restore strength, stop cavity progression, and keep your tooth structure intact. Using modern bonding techniques, we ensure a secure, durable seal—and a seamless finish that’s virtually invisible.
               </p>
             </Fade>
 
@@ -201,7 +201,7 @@ export default function DentalFillingPage() {
                   <AccordionTrigger className='faq-qn'>Are dental fillings covered by insurance?</AccordionTrigger>
                   <AccordionContent className='faq-ans'>
                     <p>
-                      Yes, most dental insurance plans cover fillings either fully or partially. Maple Dental Harrisburg also offers affordable payment options for those without insurance.
+                      Yes, most dental insurance plans cover fillings either fully or partially. Tulip Dental Maplewood also offers affordable payment options for those without insurance.
                     </p>
                   </AccordionContent>
                 </AccordionItem>
@@ -215,10 +215,10 @@ export default function DentalFillingPage() {
           <div className="features-section">
             <Fade direction="up" duration={1000}>
               <h2 className="features-heading">
-                Need a Dental Filling in Harrisburg?
+                Need a Dental Filling in Maplewood?
               </h2>
               <p className="features-description">
-                Whether it’s a small cavity or a cracked filling, don’t wait to restore your smile. Maple Dental Harrisburg offers fast, effective, and natural-looking dental fillings to patients across Harrisburg, Colonial Park, Penbrook, Lawnton, and surrounding areas.
+                Whether it’s a small cavity or a cracked filling, don’t wait to restore your smile. Tulip Dental Maplewood offers fast, effective, and natural-looking dental fillings to patients across Maplewood, South Orange, Millburn, West Orange, Livingston, Short Hills, Montclair, and surrounding areas.
               </p>
             </Fade>
           </div>

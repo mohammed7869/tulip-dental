@@ -83,7 +83,7 @@ export default function AboutUs() {
                   </Fade>
                   <Fade direction='down' duration={1000}>
                     <p className="text-center">
-                      Cosmetic & Family Dentist in Harrisburg, PA
+                      Cosmetic & Family Dentist in Maplewood, NJ
                     </p>
                   </Fade>
                 </div>
@@ -93,7 +93,7 @@ export default function AboutUs() {
 
           <Fade delay={200}>
             <h2 className="text-2xl sm:text-3xl lg:text-5xl font-semibold text-primary leading-tight">
-              About Maple Dental Harrisburg
+              About Tulip Dental Maplewood
             </h2>
           </Fade>
           <Fade delay={500}>

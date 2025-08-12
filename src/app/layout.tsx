@@ -25,8 +25,8 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Maple Dental Harrisburg | Dentist in Harrisburg, PA | Cosmetic & Family Dentist",
-  description: "Top-rated cosmetic & family dentist in Harrisburg, PA. Serving patients from Colonial Park, Linglestown, Paxtang, and nearby. Call 717-745-2700 or visit us at 2017 Eg Drive, Suite 200, Harrisburg, PA 17110.",
+  title: "Tulip Dental Maplewood | Dentist in Maplewood, NJ | Cosmetic & Family Dentist",
+  description: "Top-rated cosmetic & family dentist in Maplewood, NJ. Serving patients from Maplewood and nearby areas. Call 973-671-5500 or visit us at 1585 Springfield Avenue, Store #1, Maplewood, NJ 07040.",
   viewport: {
     width: 'device-width',
     initialScale: 1,

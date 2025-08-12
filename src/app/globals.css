@@ -50,10 +50,10 @@
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  --primary: #1d6c94;
+  --primary: #0175e4;
   --primary-foreground: #ffff;
-  --secondary: #67c3b8;
-  --secondary-foreground: 210 100% 50%;
+  --secondary: #e72802;
+  --secondary-foreground: #ffff;
   --accent: 210 40% 96%;
   --accent-foreground: 210 100% 50%;
   --muted: oklch(0.97 0 0);
@@ -180,7 +180,6 @@
     /* equivalent to gap-4 */
   }
 
-
   .details-page-header-section {
     width: 100%;
     background-color: var(--primary);
@@ -193,15 +192,16 @@
     background-image:
       repeating-linear-gradient(0deg,
         rgba(255, 255, 255, 0.05) 0px,
-        rgba(255, 255, 255, 0.05) 1px,
-        transparent 1px,
+        rgba(255, 255, 255, 0.05) 3px,
+        transparent 3px,
         transparent 20px),
       repeating-linear-gradient(90deg,
         rgba(255, 255, 255, 0.05) 0px,
-        rgba(255, 255, 255, 0.05) 1px,
-        transparent 1px,
+        rgba(255, 255, 255, 0.05) 3px,
+        transparent 3px,
         transparent 20px);
   }
+  
 
   .details-page-header-section h1 {
     font-size: 3.25rem;

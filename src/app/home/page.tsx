@@ -23,8 +23,8 @@ import { services as allServices } from '../services/serviceList';
 const banners = [
     {
         image: '/Images/Banner1.jpg',
-        title: 'Welcome to Maple Dental Harrisburg',
-        subtitle: 'Your Trusted Cosmetic & Family Dentist in Harrisburg and Surrounding Areas',
+        title: 'Welcome to Tulip Dental Maplewood',
+        subtitle: 'Your Trusted Cosmetic & Family Dentist in Maplewood and Surrounding Areas',
         image2: '/Images/Banner1.jpg',
     },
     {
