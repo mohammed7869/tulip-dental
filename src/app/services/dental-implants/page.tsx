@@ -1,6 +1,4 @@
-"use client"
-
-
+import type { Metadata } from "next";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import React from 'react';
 import Reveal, { Fade, Zoom } from 'react-awesome-reveal';
@@ -8,6 +6,9 @@ import Link from 'next/link';
 import ServiceSidebar from '@/components/ServiceSidebar';
 import BookCallBtn from '../book-call-btn';
 import { CheckCircle } from 'lucide-react';
+import { generateServiceMetadata } from '@/lib/metadata';
+
+export const metadata: Metadata = generateServiceMetadata("dental-implants", "/Images/Dental Implants.webp");
 
 export default function DentalImplantsPage() {
     const features = [
@@ -24,9 +25,9 @@ export default function DentalImplantsPage() {
   },
     {
     icon: "/Images/icons/Smart Treatment Decisions Under Pressure.png",
-    title: "Dental Implant Process at Tulip Dental",
+    title: "Dental Implant Process at Maple Dental",
     description:
-      "At Tulip Dental Maplewood, we believe in making your dental implant journey as smooth and stress-free as possible. Our comprehensive approach ensures each step is performed with precision, comfort, and your long-term oral health in mind. From your initial consultation to your final restoration, we’re with you every step of the way",
+      "At Maple Dental Harrisburg, we believe in making your dental implant journey as smooth and stress-free as possible. Our comprehensive approach ensures each step is performed with precision, comfort, and your long-term oral health in mind. From your initial consultation to your final restoration, we’re with you every step of the way",
     points: [
       "Digital 3D imaging for precise planning",
       "Gentle surgical placement of the implant post",
@@ -36,13 +37,13 @@ export default function DentalImplantsPage() {
     ],
   },
   {
-    icon: "/Images/icons/Serving Maplewood Nearby Communities.png",
-    title: "Serving Maplewood & Surrounding Communities",
+    icon: "/Images/icons/Serving Harrisburg Nearby Communities.png",
+    title: "Serving Harrisburg & Surrounding Communities",
     description:
-      "Whether you're from Maplewood (07040) or nearby areas like South Orange, Millburn, West Orange, Livingston, Short Hills, or Montclair—Tulip Dental is your go-to provider for dental implants near you",
+      "Whether you're from Harrisburg (17110, 17109, 17111, 17112) or nearby areas like Colonial Park, Penbrook, Paxtang, Lawnton, Progress, or Linglestown—Maple Dental is your go-to provider for dental implants near you",
     points: [
-      "Conveniently located in Maplewood, NJ",
-      "Trusted by families across Maplewood area",
+      "Conveniently located in Harrisburg, PA",
+      "Trusted by families across Central PA",
       "Personalized care in a modern, friendly environment",
       "Comprehensive implant solutions under one roof",
     ],
@@ -54,12 +55,12 @@ export default function DentalImplantsPage() {
                 <div className='details-page'>
                     <div className='details-page-header-section'>
                         <Fade direction='up' duration={1000}>
-                        <h1>Dental Implants in Maplewood, NJ</h1>
+                        <h1>Dental Implants in Harrisburg, PA</h1>
                         </Fade>
                         <Fade direction='down' duration={1000}>
-                        <p className="text-center">
-                            Permanent Tooth Replacement in Maplewood | Tulip Dental | Family & Cosmetic Dentist
-                        </p>
+                        <h2 className="text-center">
+                            Permanent Tooth Replacement in Harrisburg | Maple Dental | Family & Cosmetic Dentist
+                        </h2>
                         </Fade>
                         {/* <div className='flex items-center justify-center gap-2'> <Link href={'/'} className='font-medium'>Home </Link><span><ChevronRight/></span> <span className='text-white/80'>Emergency Dentistry</span></div> */}
                     </div>
@@ -90,10 +91,10 @@ export default function DentalImplantsPage() {
           <div className='desc-text-subtitle'>Dental Implants</div>
           <h3 className='desc-text-title'>About Dental Implants</h3>
           <p>
-            Missing teeth can impact more than just your smile—they can affect your ability to chew, speak, and maintain jawbone health. At Tulip Dental Maplewood, we offer state-of-the-art dental implant solutions to help you restore both the function and appearance of your teeth with natural-looking, long-lasting results.
+            Missing teeth can impact more than just your smile—they can affect your ability to chew, speak, and maintain jawbone health. At Maple Dental Harrisburg, we offer state-of-the-art dental implant solutions to help you restore both the function and appearance of your teeth with natural-looking, long-lasting results.
           </p>
           <p>
-            Whether you’ve lost a single tooth or need multiple teeth replaced, dental implants offer a stable, permanent solution. We proudly serve patients in Maplewood (07040), South Orange (07079), Millburn (07041), West Orange (07052), Livingston (07039), Short Hills (07078), and Montclair (07042)—so if you’re looking for dental implants near me, you’ve found your trusted local provider.
+            Whether you’ve lost a single tooth or need multiple teeth replaced, dental implants offer a stable, permanent solution. We proudly serve patients in Harrisburg (17110, 17109, 17111, 17112), Colonial Park (17109), Penbrook (17103), Paxtang (17111), Progress (17109, 17111), Lawnton (17111), and Linglestown (17112)—so if you’re looking for dental implants near me, you’ve found your trusted local provider.
           </p>
         </Fade>
       </div>
@@ -106,14 +107,14 @@ export default function DentalImplantsPage() {
                       Top Reasons
                     </div>
                     <div className='wcu-title'>
-                      Why Choose Tulip Dental for Dental Implants?
+                      <h2>Why Choose Maple Dental for Dental Implants?</h2>
                     </div>
                     <div className='wcu-points-section'>
                       <ul className='wcu-points'>
                         <li><CheckCircle />Experienced Implant Dentists with Gentle Approach  </li>
                         <li><CheckCircle />Advanced Digital Imaging & Precision Planning  </li>
                         <li><CheckCircle /> Custom Implant Crowns for Natural Aesthetics  </li>
-                        <li><CheckCircle /> Convenient Location in Maplewood, NJ  </li>
+                        <li><CheckCircle /> Convenient Location in Harrisburg, PA  </li>
                         <li><CheckCircle /> Flexible Payment Plans & Insurance Options</li>
                       </ul>
                     </div>
@@ -132,7 +133,7 @@ export default function DentalImplantsPage() {
                               Reliable Tooth Replacement That Looks & Feels Natural
                             </h2>
                             <p className="features-description">
-                              At Tulip Dental Maplewood, we combine clinical expertise with advanced dental technology to deliver implant care that’s safe, predictable, and tailored to your needs. Whether you’re replacing one tooth or restoring your entire smile, our implants are designed to look, feel, and function like your natural teeth.
+                              At Maple Dental Harrisburg, we combine clinical expertise with advanced dental technology to deliver implant care that’s safe, predictable, and tailored to your needs. Whether you’re replacing one tooth or restoring your entire smile, our implants are designed to look, feel, and function like your natural teeth.
                             </p>
                           </Fade>
               
@@ -156,12 +157,12 @@ export default function DentalImplantsPage() {
                           </div>
                         </div>
     <div className='faq-section'>
-                <h4 className='faq-heading'>Dental Implants Q&A</h4>
+                <h2 className='faq-heading'>Dental Implants Q&A</h2>
                 <div className="faq-acc-container">
                   <Accordion type="single" collapsible className="w-full space-y-6">
                     <AccordionItem value="q1" className="faq-acc">
                       <AccordionTrigger className="faq-qn rounded-md">
-                        Am I a candidate for dental implants?
+                        <h3 className='text-lg'>Am I a candidate for dental implants?</h3>
                       </AccordionTrigger>
                       <AccordionContent className="faq-ans ">
                         Most adults in good health with sufficient jawbone are candidates for dental implants. During your consultation, we’ll assess your oral and overall health to determine the best treatment for you.
@@ -169,7 +170,7 @@ export default function DentalImplantsPage() {
                     </AccordionItem>
                     <AccordionItem value="q2" className="faq-acc">
                       <AccordionTrigger className="faq-qn rounded-md">
-                        How long do dental implants last?
+                        <h3 className='text-lg'>How long do dental implants last?</h3>
                       </AccordionTrigger>
                       <AccordionContent className="faq-ans">
                         <p className="mt-2">
@@ -180,7 +181,7 @@ export default function DentalImplantsPage() {
                     </AccordionItem>
                     <AccordionItem value="q3" className="faq-acc">
                       <AccordionTrigger className="faq-qn rounded-md">
-                        Are dental implants painful?
+                        <h3 className='text-lg'>Are dental implants painful?</h3>
                       </AccordionTrigger>
                       <AccordionContent className="faq-ans">
                         <p>
@@ -190,7 +191,7 @@ export default function DentalImplantsPage() {
                     </AccordionItem>
                     <AccordionItem value="q5" className="faq-acc">
                       <AccordionTrigger className="faq-qn rounded-md">
-                        What if I’m missing multiple teeth?
+                        <h3 className='text-lg'>What if I’m missing multiple teeth?</h3>
                       </AccordionTrigger>
                       <AccordionContent className="faq-ans">
                         <p className="mt-2">We offer implant-supported bridges and full-arch implant dentures for patients missing several or all of their teeth. These options provide greater stability and a more natural feel than traditional dentures.</p>
@@ -198,7 +199,7 @@ export default function DentalImplantsPage() {
                     </AccordionItem>
                     <AccordionItem value="q6" className="faq-acc">
                       <AccordionTrigger className="faq-qn rounded-md">
-                        How much do dental implants cost?
+                        <h3 className='text-lg'>How much do dental implants cost?</h3>
                       </AccordionTrigger>
                       <AccordionContent className="faq-ans">
                         <p className="mt-2">Costs can vary depending on the number of implants and complexity of treatment. We offer transparent pricing, accept most dental insurance, and have financing options to fit your budget.</p>
@@ -210,10 +211,10 @@ export default function DentalImplantsPage() {
               <div className="features-section">
                               <Fade direction="up" duration={1000}>
                                 <h2 className="features-heading">
-                                  Restore Your Smile with Dental Implants in Maplewood
+                                  Restore Your Smile with Dental Implants in Harrisburg
                                 </h2>
                                 <p className="features-description">
-                                  Don’t let missing teeth hold you back. Dental implants at Tulip Dental Maplewood offer a long-term solution for a confident, fully functional smile. Call us today at 973-671-5500 to schedule your consultation—we’re here to help patients across Maplewood, South Orange, Millburn, West Orange, Livingston, Short Hills, Montclair, and surrounding communities smile with confidence again.
+                                  Don’t let missing teeth hold you back. Dental implants at Maple Dental Harrisburg offer a long-term solution for a confident, fully functional smile. Call us today at 717-745-2700 to schedule your consultation—we’re here to help patients across Harrisburg, Colonial Park, Penbrook, and surrounding communities smile with confidence again.
                                 </p>
                               </Fade>
                             </div>

@@ -57,9 +57,9 @@ export default function InvisilinePage() {
                         <h1>Invisalign Treatment in Harrisburg, PA </h1>
                         </Fade>
                         <Fade direction='down' duration={1000}>
-                        <p className="text-center">
+                        <h2 className="text-center">
                             Clear Aligners & Orthodontics in Harrisburg | Maple Dental | Family & Cosmetic Dentist Near You
-                        </p>
+                        </h2>
                         </Fade>
                         {/* <div className='flex items-center justify-center gap-2'> <Link href={'/'} className='font-medium'>Home </Link><span><ChevronRight/></span> <span className='text-white/80'>Emergency Dentistry</span></div> */}
                     </div>
@@ -106,7 +106,7 @@ export default function InvisilinePage() {
                           Top Reasons
                         </div>
                         <div className='wcu-title'>
-                          Why Choose Maple Dental for Invisalign?
+                          <h2>Why Choose Maple Dental for Invisalign?</h2>
                         </div>
                         <div className='wcu-points-section'>
                           <ul className='wcu-points'>
@@ -156,12 +156,12 @@ export default function InvisilinePage() {
                               </div>
                             </div>
     <div className='faq-section'>
-           <h4 className='faq-heading'>Invisalign Q&A</h4>
+           <h2 className='faq-heading'>Invisalign Q&A</h2>
            <div className="faq-acc-container">
             <Accordion type="single" className="w-full space-y-5">
         
         <AccordionItem value="q1" className="faq-acc">
-          <AccordionTrigger className='faq-qn'>How long does Invisalign treatment take?</AccordionTrigger>
+          <AccordionTrigger className='faq-qn'><h3 className='text-lg'>How long does Invisalign treatment take?</h3></AccordionTrigger>
           <AccordionContent className='faq-ans'>
             <p>Most Invisalign cases take 6–18 months, depending on your specific alignment needs.</p>
             
@@ -169,7 +169,7 @@ export default function InvisilinePage() {
         </AccordionItem>
 
         <AccordionItem value="q2" className="faq-acc">
-          <AccordionTrigger className='faq-qn'>Is Invisalign painful?</AccordionTrigger>
+          <AccordionTrigger className='faq-qn'><h3 className='text-lg'>Is Invisalign painful?</h3></AccordionTrigger>
           <AccordionContent className='faq-ans'>
             <p>You may feel mild pressure at first, but most patients find Invisalign very comfortable.</p>
             
@@ -177,7 +177,7 @@ export default function InvisilinePage() {
         </AccordionItem>
 
         <AccordionItem value="q3" className="faq-acc">
-          <AccordionTrigger className='faq-qn'>How often do I need to wear the aligners?</AccordionTrigger>
+          <AccordionTrigger className='faq-qn'><h3 className='text-lg'>How often do I need to wear the aligners?</h3></AccordionTrigger>
           <AccordionContent className='faq-ans'>
             <p>Wear them 20–22 hours per day, removing them only to eat, drink (except water), and brush.</p>
             
@@ -185,7 +185,7 @@ export default function InvisilinePage() {
         </AccordionItem>
 
         <AccordionItem value="q4" className="faq-acc">
-          <AccordionTrigger className='faq-qn'>Is Invisalign good for teens?</AccordionTrigger>
+          <AccordionTrigger className='faq-qn'><h3 className='text-lg'>Is Invisalign good for teens?</h3></AccordionTrigger>
           <AccordionContent className='faq-ans'>
             <p>
                 Yes, Invisalign is a great option for teens, especially with Invisalign Teen which includes wear indicators.
@@ -194,7 +194,7 @@ export default function InvisilinePage() {
         </AccordionItem>
 
         <AccordionItem value="q5" className="faq-acc">
-          <AccordionTrigger className='faq-qn'>Will insurance cover Invisalign?</AccordionTrigger>
+          <AccordionTrigger className='faq-qn'><h3 className='text-lg'>Will insurance cover Invisalign?</h3>  </AccordionTrigger>
           <AccordionContent className='faq-ans'>
             <p>
                 Many dental insurance plans offer partial coverage for Invisalign. We also provide flexible payment options

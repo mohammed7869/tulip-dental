@@ -256,6 +256,8 @@ class ApiService {
       const appointmentData = this.mapToExternalFormat(bookingData);
 
       console.log('Sending to external API:', JSON.stringify(appointmentData, null, 2));
+      console.log('Insurance ID being sent:', appointmentData.insuranceId);
+      console.log('Has insurance being sent:', appointmentData.hasInsurance);
 
       const result = await this.makeRequest('/appointment/book', {
         method: 'POST',
@@ -308,7 +310,15 @@ class ApiService {
     const hasInsurance = !!bookingData.insuranceInfo;
     const insuranceId = hasInsurance && bookingData.insuranceInfo?.providerId
       ? parseInt(bookingData.insuranceInfo.providerId)
-      : 0; // Use actual selected insurance ID or 0 if no insurance
+      : null; // Use actual selected insurance ID or null if no insurance
+    
+    // Debug logging for insurance data
+    console.log('Insurance mapping debug:', {
+      hasInsurance,
+      insuranceInfo: bookingData.insuranceInfo,
+      providerId: bookingData.insuranceInfo?.providerId,
+      insuranceId
+    });
 
     // Handle date of birth (optional)
     let dateOfBirth = null;
@@ -324,7 +334,7 @@ class ApiService {
     const zipCode = locationData?.zipcode || locationData?.zipCode || '';
     const locationName = locationData?.name || '';
 
-    return {
+    const externalData = {
       reasonForVisit: bookingData.reason || "General consultation",
       firstName: firstName,
       lastName: lastName,
@@ -349,6 +359,11 @@ class ApiService {
       zipCode: zipCode,
       locationName: locationName
     };
+    
+    // Debug logging for final external data
+    console.log('Final external API data:', externalData);
+    
+    return externalData;
   }
 
   // Convert form data to appointment booking

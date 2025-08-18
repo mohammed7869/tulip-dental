@@ -59,9 +59,9 @@ export default function PerioProtectPage() {
                         <h1>Perio Protect Gum Treatment in Harrisburg, PA</h1>
                         </Fade>
                         <Fade direction='down' duration={1000}>
-                        <p className="text-center">
+                        <h2 className="text-center">
                             Non-Surgical Periodontal Therapy in Harrisburg | Maple Dental | Family & Cosmetic Dentist
-                        </p>
+                        </h2>
                         </Fade>
                         {/* <div className='flex items-center justify-center gap-2'> <Link href={'/'} className='font-medium'>Home </Link><span><ChevronRight/></span> <span className='text-white/80'>Emergency Dentistry</span></div> */}
                     </div>
@@ -108,7 +108,7 @@ export default function PerioProtectPage() {
                       Top Reasons
                     </div>
                     <div className='wcu-title'>
-                      Benefits of Perio Protect at Maple Dental
+                      <h2>Benefits of Perio Protect at Maple Dental</h2>
                     </div>
                     <div className='wcu-points-section'>
                       <ul className='wcu-points'>
@@ -158,12 +158,12 @@ export default function PerioProtectPage() {
                           </div>
                         </div>
     <div className='faq-section'>
-                <h4 className='faq-heading'>Perio Protect Q&A</h4>
+                <h2 className='faq-heading'>Perio Protect Q&A</h2>
                 <div className="faq-acc-container">
                   <Accordion type="single" collapsible className="w-full space-y-6">
                     <AccordionItem value="q1" className="faq-acc">
                       <AccordionTrigger className="faq-qn rounded-md">
-                        Is Perio Protect a replacement for dental cleanings?
+                        <h3 className='text-lg'>Is Perio Protect a replacement for dental cleanings?</h3>
                       </AccordionTrigger>
                       <AccordionContent className="faq-ans ">
                         No, it's a supplemental therapy that enhances your results between professional cleanings or deep cleanings.
@@ -171,7 +171,7 @@ export default function PerioProtectPage() {
                     </AccordionItem>
                     <AccordionItem value="q2" className="faq-acc">
                       <AccordionTrigger className="faq-qn rounded-md">
-                        Does it hurt to use Perio Protect trays?
+                        <h3 className='text-lg'>Does it hurt to use Perio Protect trays?</h3>
                       </AccordionTrigger>
                       <AccordionContent className="faq-ans">
                         <p className="mt-2">
@@ -182,7 +182,7 @@ export default function PerioProtectPage() {
                     </AccordionItem>
                     <AccordionItem value="q3" className="faq-acc">
                       <AccordionTrigger className="faq-qn rounded-md">
-                        How long do I need to wear the trays?
+                        <h3 className='text-lg'>How long do I need to wear the trays?</h3>
                       </AccordionTrigger>
                       <AccordionContent className="faq-ans">
                         <p>
@@ -192,7 +192,7 @@ export default function PerioProtectPage() {
                     </AccordionItem>
                     <AccordionItem value="q5" className="faq-acc">
                       <AccordionTrigger className="faq-qn rounded-md">
-                        Can I use Perio Protect if I already had gum surgery?
+                        <h3 className='text-lg'>Can I use Perio Protect if I already had gum surgery?</h3>
                       </AccordionTrigger>
                       <AccordionContent className="faq-ans">
                         <p className="mt-2">Yes, it can help maintain your results and reduce the need for additional procedures.</p>
@@ -200,7 +200,7 @@ export default function PerioProtectPage() {
                     </AccordionItem>
                     <AccordionItem value="q6" className="faq-acc">
                       <AccordionTrigger className="faq-qn rounded-md">
-                        Is Perio Protect covered by insurance?
+                        <h3 className='text-lg'>Is Perio Protect covered by insurance?</h3> 
                       </AccordionTrigger>
                       <AccordionContent className="faq-ans">
                         <p className="mt-2">Coverage varies. We’ll check with your provider and offer flexible payment options if needed.</p>

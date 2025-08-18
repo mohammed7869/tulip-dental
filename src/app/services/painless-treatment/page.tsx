@@ -59,9 +59,9 @@ export default function PainlessTreatmentPage() {
                         <h1>Gentle & Painless Dentistry in Harrisburg, PA</h1>
                         </Fade>
                         <Fade direction='down' duration={1000}>
-                        <p className="text-center">
+                        <h2 className="text-center">
                             Comfortable Dental Care in Harrisburg | Maple Dental | Family & Cosmetic Dentist
-                        </p>
+                        </h2>
                         </Fade>
                         {/* <div className='flex items-center justify-center gap-2'> <Link href={'/'} className='font-medium'>Home </Link><span><ChevronRight/></span> <span className='text-white/80'>Emergency Dentistry</span></div> */}
                     </div>
@@ -108,7 +108,7 @@ export default function PainlessTreatmentPage() {
                       Top Reasons
                     </div>
                     <div className='wcu-title'>
-                      Why Choose Maple Dental for Painless Dentistry?
+                      <h2>Why Choose Maple Dental for Painless Dentistry?</h2>
                     </div>
                     <div className='wcu-points-section'>
                       <ul className='wcu-points'>
@@ -158,12 +158,12 @@ export default function PainlessTreatmentPage() {
                           </div>
                         </div>
     <div className='faq-section'>
-                <h4 className='faq-heading'>Painless Dentistry Q&A</h4>
+                <h2 className='faq-heading'>Painless Dentistry Q&A</h2>
                 <div className="faq-acc-container">
                   <Accordion type="single" collapsible className="w-full space-y-6">
                     <AccordionItem value="q1" className="faq-acc">
                       <AccordionTrigger className="faq-qn rounded-md">
-                        Is painless dentistry really pain-free?
+                        <h3 className='text-lg'>Is painless dentistry really pain-free?</h3>
                       </AccordionTrigger>
                       <AccordionContent className="faq-ans ">
                         Yes, we use modern tools and techniques to eliminate or greatly reduce pain during treatments-even for more involved procedures like root canals or extractions.
@@ -171,7 +171,7 @@ export default function PainlessTreatmentPage() {
                     </AccordionItem>
                     <AccordionItem value="q2" className="faq-acc">
                       <AccordionTrigger className="faq-qn rounded-md">
-                        Is sedation used during every procedure?
+                        <h3 className='text-lg'>Is sedation used during every procedure?</h3>
                       </AccordionTrigger>
                       <AccordionContent className="faq-ans">
                         <p className="mt-2">
@@ -182,7 +182,7 @@ export default function PainlessTreatmentPage() {
                     </AccordionItem>
                     <AccordionItem value="q3" className="faq-acc">
                       <AccordionTrigger className="faq-qn rounded-md">
-                        What if I’m afraid of the dentist?
+                        <h3 className='text-lg'>What if I’m afraid of the dentist?</h3>
                       </AccordionTrigger>
                       <AccordionContent className="faq-ans">
                         <p>
@@ -192,7 +192,7 @@ export default function PainlessTreatmentPage() {
                     </AccordionItem>
                     <AccordionItem value="q5" className="faq-acc">
                       <AccordionTrigger className="faq-qn rounded-md">
-                        Is painless dentistry safe for kids?
+                        <h3 className='text-lg'>Is painless dentistry safe for kids?</h3>
                       </AccordionTrigger>
                       <AccordionContent className="faq-ans">
                         <p className="mt-2">Absolutely. We tailor all treatments to each child’s comfort level using non-threatening approaches and gentle techniques.</p>
@@ -200,7 +200,7 @@ export default function PainlessTreatmentPage() {
                     </AccordionItem>
                     <AccordionItem value="q6" className="faq-acc">
                       <AccordionTrigger className="faq-qn rounded-md">
-                        How do I book a painless dental visit?
+                        <h3 className='text-lg'>How do I book a painless dental visit?</h3> 
                       </AccordionTrigger>
                       <AccordionContent className="faq-ans">
                         <p className="mt-2">Simply call or book online. Let us know about any anxiety or concerns ahead of time, and we’ll plan your visit with extra care.</p>

@@ -25,7 +25,7 @@ export const blogPostsData: BlogPost[] = [
     </p>
     </section>
 <section class="mb-8">
-  <h2 class="text-md md:text-2xl font-bold mb-4">Understanding Dental Emergencies</h2>
+  <h2 class="text-md md:text-2xl font-bold mb-4 underline">Understanding Dental Emergencies</h2>
  
 </section>
 
@@ -61,7 +61,7 @@ export const blogPostsData: BlogPost[] = [
 
 
 <section class="mb-8">
-  <h2 class="text-md md:text-2xl font-bold mb-4">When to Seek Emergency Dental Care</h2>
+  <h2 class="text-md md:text-2xl font-bold mb-4 underline">When to Seek Emergency Dental Care</h2>
  
 </section>
 
@@ -113,7 +113,7 @@ export const blogPostsData: BlogPost[] = [
 </section>
 
 <section class="mb-8">
-  <h2 class="text-md md:text-2xl font-bold mb-4">Finding Emergency Dental Care in Harrisburg</h2>
+  <h2 class="text-md md:text-2xl font-bold mb-4 underline">Finding Emergency Dental Care in Harrisburg</h2>
  
 </section>
 
@@ -162,7 +162,7 @@ export const blogPostsData: BlogPost[] = [
 </section>
 
 <section class="mb-8">
-  <h3 class="text-md md:text-2xl font-bold mb-2">What to Expect During Emergency Treatment</h3>
+  <h3 class="text-md md:text-2xl font-bold mb-2 underline">What to Expect During Emergency Treatment</h3>
  
 </section>
 
@@ -210,7 +210,7 @@ export const blogPostsData: BlogPost[] = [
 </section>
 
 <section class="mb-8">
-  <h3 class="text-md md:text-2xl font-bold mb-2">Conclusion</h3>
+  <h3 class="text-md md:text-2xl font-bold mb-2 underline">Conclusion</h3>
  
 </section>
 <section class="mb-8">
@@ -225,7 +225,7 @@ In Harrisburg, skilled dental professionals understand emergencies don't follow 
 </p>
 </section>
 <section class="mb-8">
-  <h3 class="text-md md:text-2xl font-bold mb-2">FAQs</h3>
+  <h3 class="text-md md:text-2xl font-bold mb-2 underline">FAQs</h3>
  
 </section>
         <section class="mb-8">
@@ -384,7 +384,7 @@ Every 6 months is the golden rule—unless your dentist says otherwise.
 
 
 <section class="mb-8">
-  <h3 class="text-md md:text-2xl font-bold mb-2">Conclusion</h3>
+  <h3 class="text-md md:text-2xl font-bold mb-2 underline">Conclusion</h3>
  
 </section>
 <section class="mb-8">
@@ -393,7 +393,7 @@ Finding a trusted dentist in Harrisburg doesn’t have to be overwhelming. At Ma
 </p>
 </section>
 <section class="mb-8">
-  <h3 class="text-md md:text-2xl font-bold mb-2">FAQs</h3>
+  <h3 class="text-md md:text-2xl font-bold mb-2 underline">FAQs</h3>
  
 </section>
         <section class="mb-8">
@@ -592,7 +592,7 @@ Finding a trusted dentist in Harrisburg doesn’t have to be overwhelming. At Ma
 
 
 <section class="mb-8">
-  <h3 class="text-md md:text-2xl font-bold mb-2">Conclusion</h3>
+  <h3 class="text-md md:text-2xl font-bold mb-2 underline">Conclusion</h3>
  
 </section>
 <section class="mb-8">
@@ -604,7 +604,7 @@ Don’t wait until it’s too late. Whether you're in <strong>17110, 17109, 1711
 </p>
 </section>
 <section class="mb-8">
-  <h3 class="text-md md:text-2xl font-bold mb-2">FAQs</h3>
+  <h3 class="text-md md:text-2xl font-bold mb-2 underline">FAQs</h3>
  
 </section>
         <section class="mb-8">

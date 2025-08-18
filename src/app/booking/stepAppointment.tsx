@@ -2,24 +2,8 @@ import { Button } from "@/components/ui/button";
 import { Check, ChevronLeft, ChevronRight, Clock } from "lucide-react";
 import { useState, useEffect, useCallback } from "react";
 import { apiService, Location, TimeSlot, BookedSlot, TimeSlotWithAvailability } from "@/lib/apiService";
-import Image from 'next/image';
 
-// Heart Loader Component
-const HeartLoader = () => (
-  <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-white/90 overflow-hidden">
-    <div className="flex flex-col items-center justify-center relative">
-      <Image
-        src="/Images/heart.gif"
-        alt="Loading..."
-        width={100}
-        height={100}
-        className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32"
-        priority
-        style={{ maxWidth: '100%', height: 'auto' }}
-      />
-    </div>
-  </div>
-);
+
 
 // LocationTimeSlots Component
 interface LocationTimeSlotsProps {
@@ -27,6 +11,7 @@ interface LocationTimeSlotsProps {
   selectedLocation: number | null;
   selectedDateObj: any;
   selectedTime: string;
+  selectedDate: string; // Add selectedDate prop
   onTimeSelect: (time: string, locationId: number) => void;
   getTimeSlotsForDate: (dateObj: any, locationId: number) => Promise<TimeSlotWithAvailability[]>;
 }
@@ -36,6 +21,7 @@ const LocationTimeSlots: React.FC<LocationTimeSlotsProps> = ({
   selectedLocation,
   selectedDateObj,
   selectedTime,
+  selectedDate,
   onTimeSelect,
   getTimeSlotsForDate
 }) => {
@@ -44,6 +30,8 @@ const LocationTimeSlots: React.FC<LocationTimeSlotsProps> = ({
 
   // Load time slots for selected date and locations
   useEffect(() => {
+    console.log('LocationTimeSlots useEffect triggered:', { selectedDateObj: selectedDateObj?.fullDate, selectedLocation, locationsLength: locations.length });
+    
     if (!selectedDateObj) return;
 
     const loadTimeSlots = async () => {
@@ -55,7 +43,9 @@ const LocationTimeSlots: React.FC<LocationTimeSlotsProps> = ({
         // Create a cache key that includes the date
         const cacheKey = `${location.id}-${selectedDateObj.fullDate}`;
 
+        // Only load if we don't have the data and we're not already loading
         if (!timeSlotsMap[cacheKey] && !loadingSlots[cacheKey]) {
+          console.log('Loading time slots for location:', { locationId: location.id, date: selectedDateObj.fullDate, cacheKey });
           setLoadingSlots(prev => ({ ...prev, [cacheKey]: true }));
           try {
             const slots = await getTimeSlotsForDate(selectedDateObj, location.id);
@@ -66,12 +56,14 @@ const LocationTimeSlots: React.FC<LocationTimeSlotsProps> = ({
           } finally {
             setLoadingSlots(prev => ({ ...prev, [cacheKey]: false }));
           }
+        } else {
+          console.log('Using cached time slots for location:', { locationId: location.id, date: selectedDateObj.fullDate, cacheKey, hasData: !!timeSlotsMap[cacheKey], isLoading: loadingSlots[cacheKey] });
         }
       }
     };
 
     loadTimeSlots();
-  }, [selectedDateObj, selectedLocation, locations]);
+  }, [selectedDateObj?.fullDate, selectedLocation]); // Removed locations.length dependency to prevent unnecessary reloads in single location mode
 
   const locationsToShow = selectedLocation
     ? locations.filter(loc => loc.id === selectedLocation)
@@ -129,22 +121,40 @@ const LocationTimeSlots: React.FC<LocationTimeSlotsProps> = ({
                 ) : timeSlots.length > 0 ? (
                   <>
                     <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 mb-3">
-                      {timeSlots.map((slot: TimeSlotWithAvailability) => (
-                        <button
-                          key={slot.time}
-                          onClick={() => !slot.isBooked && onTimeSelect(slot.time, location.id)}
-                          disabled={slot.isBooked}
-                          className={`px-3 sm:px-4 py-2 text-xs sm:text-sm font-medium rounded-md border transition-all ${slot.isBooked
-                            ? 'bg-gray-100 text-gray-400 border-gray-200 cursor-not-allowed'
-                            : selectedTime === slot.time && selectedLocation === location.id
-                              ? 'bg-teal-600 text-white border-teal-600'
-                              : 'bg-white text-teal-600 border-teal-200 hover:bg-teal-50'
-                            }`}
-                          title={slot.isBooked ? 'This time slot is already booked' : ''}
-                        >
-                          {slot.time}
-                        </button>
-                      ))}
+                      {timeSlots.map((slot: TimeSlotWithAvailability) => {
+                        // Only show as selected if we have both a selected time AND the date matches
+                        const isSelected = selectedTime === slot.time && 
+                                         selectedLocation === location.id && 
+                                         selectedDate === selectedDateObj?.fullDate;
+                        
+                        console.log('Time slot rendering:', { 
+                          time: slot.time, 
+                          isSelected, 
+                          selectedTime, 
+                          selectedLocation, 
+                          selectedDate,
+                          currentDate: selectedDateObj?.fullDate,
+                          locationId: location.id,
+                          isBooked: slot.isBooked
+                        });
+                        
+                        return (
+                          <button
+                            key={slot.time}
+                            onClick={() => !slot.isBooked && onTimeSelect(slot.time, location.id)}
+                            disabled={slot.isBooked}
+                            className={`px-3 sm:px-4 py-2 text-xs sm:text-sm font-medium rounded-md border transition-all ${slot.isBooked
+                              ? 'bg-gray-100 text-gray-400 border-gray-200 cursor-not-allowed'
+                              : isSelected
+                                ? 'bg-teal-600 text-white border-teal-600'
+                                : 'bg-white text-teal-600 border-teal-200 hover:bg-teal-50'
+                              }`}
+                            title={slot.isBooked ? 'This time slot is already booked' : ''}
+                          >
+                            {slot.time}
+                          </button>
+                        );
+                      })}
                     </div>
                   </>
                 ) : (
@@ -175,8 +185,20 @@ const StepAppointment = ({ nextStep, formData, setFormData, dailyTimeSlots, load
   const [selectedLocation, setSelectedLocation] = useState<number | null>(formData.selectedLocation || null);
   const [selectedTime, setSelectedTime] = useState(formData.selectedTime || '');
   
+  // Add flag to track if we're in single location mode
+  const [isSingleLocationMode, setIsSingleLocationMode] = useState(false);
+  const [locationsLoaded, setLocationsLoaded] = useState(false);
+  
   // Update local state when formData changes (when navigating back to this step)
   useEffect(() => {
+    console.log('formData useEffect triggered:', { 
+      selectedDate: formData.selectedDate, 
+      selectedTime: formData.selectedTime, 
+      selectedLocationId: formData.selectedLocationId,
+      currentSelectedTime: selectedTime,
+      currentSelectedDate: selectedDate
+    });
+    
     setSelectedDate(formData.selectedDate || '');
     setIsNewClient(formData.isNewClient ?? true);
     setSelectedTime(formData.selectedTime || '');
@@ -196,7 +218,13 @@ const StepAppointment = ({ nextStep, formData, setFormData, dailyTimeSlots, load
     if (formData.selectedLocationId && formData.selectedLocationId !== selectedLocation) {
       setSelectedLocation(formData.selectedLocationId);
     }
-  }, [formData, selectedLocation]);
+    
+    console.log('Local state updated from formData:', { 
+      newSelectedDate: formData.selectedDate || '', 
+      newSelectedTime: formData.selectedTime || '', 
+      newSelectedLocationId: formData.selectedLocationId 
+    });
+  }, [formData.selectedDate, formData.isNewClient, formData.selectedTime, formData.selectedLocationId]); // Only depend on specific formData properties, not the entire object
 
   const handleNewClientChange = (checked: boolean) => {
     setIsNewClient(checked);
@@ -250,6 +278,13 @@ const StepAppointment = ({ nextStep, formData, setFormData, dailyTimeSlots, load
 
         console.log('Locations loaded:', locationsData.length, locationsData);
 
+        // Set single location mode flag
+        const singleLocationMode = locationsData.length === 1;
+        setIsSingleLocationMode(singleLocationMode);
+        setLocationsLoaded(true);
+
+        console.log('Single location mode:', singleLocationMode);
+
         // Set default location to first available location only if no location is already selected
         if (locationsData.length > 0 && !selectedLocation) {
           // Check if we have a saved location ID from formData
@@ -268,8 +303,13 @@ const StepAppointment = ({ nextStep, formData, setFormData, dailyTimeSlots, load
       }
     };
 
-    loadLocations();
-  }, [formData.selectedLocationId, selectedLocation]);
+    // Only load locations if we haven't loaded them yet or if we're not in single location mode
+    if (!locationsLoaded || locations.length === 0) {
+      loadLocations();
+    } else {
+      console.log('Skipping locations reload - already loaded or in single location mode');
+    }
+  }, []); // Only run once when component mounts
 
   // Load booked slots for the current week when week changes or component first loads
   useEffect(() => {
@@ -285,12 +325,18 @@ const StepAppointment = ({ nextStep, formData, setFormData, dailyTimeSlots, load
         const fromDate = fromDateVisible.toISOString().split('T')[0] + 'T00:00:00.00';
         const toDate = toDateVisible.toISOString().split('T')[0] + 'T23:59:59.99';
 
+        // Check if we already have cached data for this week and location
+        const cacheKey = `${selectedLocation}-${fromDateVisible.toISOString().split('T')[0]}`;
+        if (bookedSlotsCache[cacheKey]) {
+          console.log('Using cached booked slots for week:', { cacheKey, cachedSlots: bookedSlotsCache[cacheKey].length });
+          return; // Don't reload if we already have the data
+        }
+
         console.log('Loading booked slots for week:', { fromDate, toDate, locationId: selectedLocation, weekStart: currentWeekStart });
 
         const bookedSlots = await apiService.getBookedSlots(fromDate, toDate, selectedLocation);
 
         // Cache the booked slots with a key that includes the week and location
-        const cacheKey = `${selectedLocation}-${fromDateVisible.toISOString().split('T')[0]}`;
         setBookedSlotsCache(prev => ({ 
           ...prev, 
           [cacheKey]: bookedSlots 
@@ -303,7 +349,7 @@ const StepAppointment = ({ nextStep, formData, setFormData, dailyTimeSlots, load
     };
 
     loadBookedSlots();
-  }, [currentWeekStart, selectedLocation, locations.length]);
+  }, [currentWeekStart, selectedLocation]); // Removed locations.length dependency to prevent unnecessary reloads in single location mode
 
   // Generate dates for current and next month
   const generateDates = useCallback(() => {
@@ -376,6 +422,16 @@ const StepAppointment = ({ nextStep, formData, setFormData, dailyTimeSlots, load
 
     setCurrentWeekStart(newDate);
     setSelectedTime(''); // Reset selected time when navigating
+    
+    // Also clear the time from formData to ensure consistency
+    if (formData.selectedTime) {
+      setFormData({
+        ...formData,
+        selectedTime: '',
+        provider: null
+      });
+      console.log('Week navigated, time cleared from formData');
+    }
   };
 
   const getTimeSlotsForDate = async (dateObj: any, locationId: number) => {
@@ -567,21 +623,48 @@ const StepAppointment = ({ nextStep, formData, setFormData, dailyTimeSlots, load
 
 
   const handleDateSelect = (dateStr: string) => {
+    console.log('handleDateSelect called:', { dateStr, currentSelectedTime: selectedTime, currentSelectedDate: selectedDate });
+    
     // Find the date object that matches the monthDay format
     const dateObj = dates.find(d => d.date === dateStr);
     if (dateObj) {
+      console.log('Date object found:', dateObj);
+      
+      // Clear the selected time when date changes
+      setSelectedTime('');
+      
       setSelectedDate(dateObj.fullDate); // Use the full date (YYYY-MM-DD) instead of just monthDay
       
-      // Save to formData immediately to persist state
+      // Save to formData immediately to persist state, but clear the selected time
       setFormData({
         ...formData,
-        selectedDate: dateObj.fullDate
+        selectedDate: dateObj.fullDate,
+        selectedTime: '', // Clear the selected time in formData as well
+        provider: null // Clear the provider since time is cleared
       });
+      
+      console.log('Date selected, time cleared:', { 
+        newDate: dateObj.fullDate, 
+        timeCleared: true, 
+        previousTime: selectedTime,
+        formDataUpdated: true 
+      });
+    } else {
+      console.log('Date object not found for:', dateStr);
     }
-    setSelectedTime('');
   };
 
   const handleTimeSelect = (time: string, locationId: number) => {
+    console.log('handleTimeSelect called:', { time, locationId, currentSelectedTime: selectedTime, currentSelectedLocation: selectedLocation, isSingleLocationMode });
+    
+    // Only update if the selection actually changed
+    if (selectedTime === time && selectedLocation === locationId) {
+      console.log('No change needed, returning early');
+      return; // No change needed
+    }
+    
+    console.log('Updating time selection:', { from: { time: selectedTime, location: selectedLocation }, to: { time, location: locationId } });
+    
     setSelectedTime(time);
     setSelectedLocation(locationId);
     
@@ -621,8 +704,7 @@ const StepAppointment = ({ nextStep, formData, setFormData, dailyTimeSlots, load
 
   return (
     <>
-      {/* Heart Loader */}
-      {loading && <HeartLoader />}
+
       
       <div className="mt-4">
         {/* New Patient Checkbox */}
@@ -830,6 +912,7 @@ const StepAppointment = ({ nextStep, formData, setFormData, dailyTimeSlots, load
             selectedLocation={selectedLocation}
             selectedDateObj={selectedDateObj}
             selectedTime={selectedTime}
+            selectedDate={selectedDate}
             onTimeSelect={handleTimeSelect}
             getTimeSlotsForDate={getTimeSlotsForDate}
           />

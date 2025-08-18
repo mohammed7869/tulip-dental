@@ -4,24 +4,8 @@ import { Check, Clock } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css';
-import Image from 'next/image';
 
-// Heart Loader Component
-const HeartLoader = () => (
-  <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-white/90 overflow-hidden">
-    <div className="flex flex-col items-center justify-center relative">
-      <Image
-        src="/Images/heart.gif"
-        alt="Loading..."
-        width={100}
-        height={100}
-        className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32"
-        priority
-        style={{ maxWidth: '100%', height: 'auto' }}
-      />
-    </div>
-  </div>
-);
+
 
 // Step 2: Contact Info Component
 const StepContactInfo = ({ nextStep, prevStep, formData, setFormData }: any) => {
@@ -110,8 +94,7 @@ const StepContactInfo = ({ nextStep, prevStep, formData, setFormData }: any) => 
 
   return (
     <>
-      {/* Heart Loader */}
-      {isLoading && <HeartLoader />}
+
       
       <div className="mt-4">
         <div className="flex items-start gap-3">

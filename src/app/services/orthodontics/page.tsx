@@ -57,9 +57,9 @@ export default function OrthodonticsPage() {
                         <h1>Orthodontics in Harrisburg, PA</h1>
                         </Fade>
                         <Fade direction='down' duration={1000}>
-                        <p className="text-center">
+                        <h2 className="text-center">
                             Braces & Invisalign in Harrisburg | Maple Dental | Family & Cosmetic Dentist Near You
-                        </p>
+                        </h2>
                         </Fade>
                         {/* <div className='flex items-center justify-center gap-2'> <Link href={'/'} className='font-medium'>Home </Link><span><ChevronRight/></span> <span className='text-white/80'>Emergency Dentistry</span></div> */}
                     </div>
@@ -105,8 +105,8 @@ export default function OrthodonticsPage() {
                         <div className='wcu-subtitle'>
                           Top Reasons
                         </div>
-                        <div className='wcu-title'>
-                          Why Choose Maple Dental for Orthodontics?
+                        <div className='wcu-title'> 
+                          <h2>Why Choose Maple Dental for Orthodontics?</h2>
                         </div>
                         <div className='wcu-points-section'>
                           <ul className='wcu-points'>
@@ -156,12 +156,12 @@ export default function OrthodonticsPage() {
                               </div>
                             </div>
     <div className='faq-section'>
-           <h4 className='faq-heading'>Orthodontics Q&A</h4>
+           <h2 className='faq-heading'>Orthodontics Q&A</h2>
            <div className="faq-acc-container">
             <Accordion type="single" className="w-full space-y-5">
         
         <AccordionItem value="q1" className="faq-acc">
-          <AccordionTrigger className='faq-qn'>What age is best to start orthodontic treatment?</AccordionTrigger>
+          <AccordionTrigger className='faq-qn'><h3 className='text-lg'>What age is best to start orthodontic treatment?</h3></AccordionTrigger>
           <AccordionContent className='faq-ans'>
             <p>Orthodontic treatment can begin as early as age 7 for children, depending on dental development. However, teens and adults can benefit at any age. At Maple Dental, we evaluate each patient to recommend the best time to start.</p>
             
@@ -169,7 +169,7 @@ export default function OrthodonticsPage() {
         </AccordionItem>
 
         <AccordionItem value="q2" className="faq-acc">
-          <AccordionTrigger className='faq-qn'>How long does orthodontic treatment take?</AccordionTrigger>
+          <AccordionTrigger className='faq-qn'><h3 className='text-lg'>How long does orthodontic treatment take?</h3></AccordionTrigger>
           <AccordionContent className='faq-ans'>
             <p>Treatment times vary based on individual needs, but most orthodontic cases take 12–24 months. Clear aligners may offer faster results in mild cases.</p>
             
@@ -177,7 +177,7 @@ export default function OrthodonticsPage() {
         </AccordionItem>
 
         <AccordionItem value="q3" className="faq-acc">
-          <AccordionTrigger className='faq-qn'>Do clear aligners work as well as braces?</AccordionTrigger>
+          <AccordionTrigger className='faq-qn'><h3 className='text-lg'>Do clear aligners work as well as braces?</h3></AccordionTrigger>
           <AccordionContent className='faq-ans'>
             <p>Yes—for many cases, Invisalign can be just as effective as braces. However, some complex issues may respond better to traditional orthodontics. We’ll help you choose the right option.</p>
             
@@ -185,7 +185,7 @@ export default function OrthodonticsPage() {
         </AccordionItem>
 
         <AccordionItem value="q4" className="faq-acc">
-          <AccordionTrigger className='faq-qn'>Is orthodontic care covered by insurance?</AccordionTrigger>
+          <AccordionTrigger className='faq-qn'><h3 className='text-lg'>Is orthodontic care covered by insurance?</h3></AccordionTrigger>
           <AccordionContent className='faq-ans'>
             <p>
                 Many dental insurance plans offer partial coverage for orthodontics. We’ll help verify your benefits and offer flexible financing to fit your budget.

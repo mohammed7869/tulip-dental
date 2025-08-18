@@ -1,4 +1,58 @@
 User-agent: *
-Disallow: 
-Disallow: /cgi-bin/
-Sitemap: https://mapledentalpa.com/sitemap
+Allow: /
+
+# Allow specific pages
+Allow: /about-maple-dental-harrisburg-pa/
+Allow: /services/
+Allow: /service-areas/
+
+# Allow all new SEO-optimized service routes
+Allow: /services/emergency-dentistry-harrisburg-pa/
+Allow: /services/root-canal-treatment-harrisburg-pa/
+Allow: /services/oral-surgery-harrisburg-pa/
+Allow: /services/cosmetic-dentistry-harrisburg-pa/
+Allow: /services/dental-fillings-harrisburg-pa/
+Allow: /services/dental-implants-harrisburg-pa/
+Allow: /services/orthodontics-harrisburg-pa/
+Allow: /services/crowns-and-bridges-harrisburg-pa/
+Allow: /services/dental-emergencies-harrisburg-pa/
+Allow: /services/tooth-extraction-harrisburg-pa/
+Allow: /services/teeth-whitening-and-veneers-harrisburg-pa/
+Allow: /services/invisalign-clear-aligners-harrisburg-pa/
+Allow: /services/kids-and-children-dentistry-harrisburg-pa/
+Allow: /services/permanent-teeth-replacement-harrisburg-pa/
+Allow: /services/wisdom-teeth-harrisburg-pa/
+Allow: /services/endodontics-harrisburg-pa/
+Allow: /services/same-day-dentistry-harrisburg-pa/
+Allow: /services/painless-treatment-harrisburg-pa/
+Allow: /services/perio-protect-harrisburg-pa/
+Allow: /services/halitosis-harrisburg-pa/
+Allow: /services/sports-dentistry-harrisburg-pa/
+
+# Allow all new SEO-optimized service area routes
+Allow: /service-areas/harrisburg-pa-dentist-near-you/
+Allow: /service-areas/linglestown-pa-dentist-near-you/
+Allow: /service-areas/colonial-park-pa-dentist-near-you/
+Allow: /service-areas/penbrook-pa-dentist-near-you/
+Allow: /service-areas/paxtang-pa-dentist-near-you/
+Allow: /service-areas/progress-pa-dentist-near-you/
+Allow: /service-areas/lawnton-pa-dentist-near-you/
+
+Allow: /contact-us/
+Allow: /contact-maple-dental-harrisburg-pa/
+Allow: /reviews/
+Allow: /patient-reviews-harrisburg-pa/
+Allow: /providers/
+Allow: /offers/
+Allow: /teeth-whitening-offer-harrisburg-pa/
+Allow: /providers/simranjeet-dhaliwal-harrisburg-pa-dentist/
+Allow: /blog/
+Allow: /dental-blog/
+
+# Disallow admin and private areas
+Disallow: /admin/
+Disallow: /private/
+Disallow: /api/
+
+# Crawl delay (optional)
+Crawl-delay: 1

@@ -59,9 +59,9 @@ export default function Page() {
                         <h1>Halitosis Treatment in Harrisburg, PA</h1>
                         </Fade>
                         <Fade direction='down' duration={1000}>
-                        <p className="text-center">
+                        <h2 className="text-center">
                             Eliminate Bad Breath in Harrisburg | Maple Dental | Family & Cosmetic Dentist
-                        </p>
+                        </h2>
                         </Fade>
                         {/* <div className='flex items-center justify-center gap-2'> <Link href={'/'} className='font-medium'>Home </Link><span><ChevronRight/></span> <span className='text-white/80'>Emergency Dentistry</span></div> */}
                     </div>
@@ -108,7 +108,7 @@ export default function Page() {
                       Top Reasons
                     </div>
                     <div className='wcu-title'>
-                      Why Choose Maple Dental for Halitosis Treatment?
+                      <h2>Why Choose Maple Dental for Halitosis Treatment?</h2>
                     </div>
                     <div className='wcu-points-section'>
                       <ul className='wcu-points'>
@@ -161,12 +161,12 @@ export default function Page() {
                           </div>
                         </div>
     <div className='faq-section'>
-                <h4 className='faq-heading'>Halitosis Q&A</h4>
+                <h2 className='faq-heading'>Halitosis Q&A</h2>
                 <div className="faq-acc-container">
                   <Accordion type="single" collapsible className="w-full space-y-6">
                     <AccordionItem value="q1" className="faq-acc">
                       <AccordionTrigger className="faq-qn rounded-md">
-                        What causes chronic bad breath?
+                        <h3 className='text-lg'>What causes chronic bad breath?</h3>
                       </AccordionTrigger>
                       <AccordionContent className="faq-ans ">
                         Halitosis is often caused by gum disease, dry mouth, plaque buildup, or infections. It can also be linked to sinus issues, digestive problems, or certain medications.
@@ -174,7 +174,7 @@ export default function Page() {
                     </AccordionItem>
                     <AccordionItem value="q2" className="faq-acc">
                       <AccordionTrigger className="faq-qn rounded-md">
-                        How do dentists treat halitosis?
+                        <h3 className='text-lg'>How do dentists treat halitosis?</h3>
                       </AccordionTrigger>
                       <AccordionContent className="faq-ans">
                         <p className="mt-2">
@@ -185,7 +185,7 @@ export default function Page() {
                     </AccordionItem>
                     <AccordionItem value="q3" className="faq-acc">
                       <AccordionTrigger className="faq-qn rounded-md">
-                        Can bad breath be permanently fixed?
+                        <h3 className='text-lg'>Can bad breath be permanently fixed?</h3>
                       </AccordionTrigger>
                       <AccordionContent className="faq-ans">
                         <p>
@@ -195,7 +195,7 @@ export default function Page() {
                     </AccordionItem>
                     <AccordionItem value="q5" className="faq-acc">
                       <AccordionTrigger className="faq-qn rounded-md">
-                        Is bad breath always caused by poor brushing?
+                        <h3 className='text-lg'>Is bad breath always caused by poor brushing?</h3>
                       </AccordionTrigger>
                       <AccordionContent className="faq-ans">
                         <p className="mt-2">Not always. Even patients with good hygiene can experience halitosis due to hidden infections, tongue bacteria, or dry mouth.</p>
@@ -203,7 +203,7 @@ export default function Page() {
                     </AccordionItem>
                     <AccordionItem value="q6" className="faq-acc">
                       <AccordionTrigger className="faq-qn rounded-md">
-                        Is halitosis a sign of something serious?
+                        <h3 className='text-lg'>Is halitosis a sign of something serious?</h3>  
                       </AccordionTrigger>
                       <AccordionContent className="faq-ans">
                         <p className="mt-2">It can be. If left untreated, it may point to gum disease or underlying health issues. That’s why early evaluation is key.</p>

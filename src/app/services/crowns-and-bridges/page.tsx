@@ -36,13 +36,13 @@ export default function CrownsPage() {
     ],
   },
   {
-    icon: "/Images/icons/Serving Maplewood Nearby Communities.png",
-    title: "Trusted Restorative Dentist for Maplewood & Nearby Areas",
+    icon: "/Images/icons/Serving Harrisburg Nearby Communities.png",
+    title: "Trusted Restorative Dentist for Harrisburg & Nearby Areas",
     description:
-      "Whether you're replacing a missing tooth or restoring a damaged one, we’re here to help. Tulip Dental Maplewood is a go-to destination for dental crowns and bridges near you",
+      "Whether you're replacing a missing tooth or restoring a damaged one, we’re here to help. Maple Dental Harrisburg is a go-to destination for dental crowns and bridges near you",
     points: [
-      "Convenient to Maplewood (07040) and surrounding zip codes",
-      "Serving South Orange, Millburn, West Orange, Livingston, Short Hills & Montclair",
+      "Convenient to Harrisburg (17110, 17109, 17111, 17112) and surrounding zip codes",
+      "Serving Colonial Park, Paxtang, Penbrook, Progress, Lawnton & Linglestown",
       "Flexible appointments to fit your schedule",
       "Your neighborhood dental restoration expert near me",
     ],
@@ -54,12 +54,12 @@ export default function CrownsPage() {
         <div className='details-page'>
                     <div className='details-page-header-section'>
                         <Fade direction='up' duration={1000}>
-                        <h1>Dental Crowns & Bridges in Maplewood, NJ</h1>
+                        <h1>Dental Crowns & Bridges in Harrisburg, PA</h1>
                         </Fade>
                         <Fade direction='down' duration={1000}>
-                        <p className="text-center">
-                            Tooth Restoration in Maplewood | Tulip Dental | Family & Cosmetic Dentist
-                        </p>
+                        <h2 className="text-center">
+                            Tooth Restoration in Harrisburg | Maple Dental | Family & Cosmetic Dentist
+                        </h2>
                         </Fade>
                         {/* <div className='flex items-center justify-center gap-2'> <Link href={'/'} className='font-medium'>Home </Link><span><ChevronRight/></span> <span className='text-white/80'>Emergency Dentistry</span></div> */}
                     </div>
@@ -90,10 +90,10 @@ export default function CrownsPage() {
           <div className='desc-text-subtitle'>Dental Crowns & Bridges</div>
           <h3 className='desc-text-title'>About Dental Crowns & Bridges</h3>
           <p>
-           When teeth are damaged, weakened, or missing, dental crowns and bridges offer long-lasting, functional solutions to restore your smile. At Tulip Dental Maplewood, we specialize in custom restorations that not only improve appearance but also protect your oral health and bite alignment.
+           When teeth are damaged, weakened, or missing, dental crowns and bridges offer long-lasting, functional solutions to restore your smile. At Maple Dental Harrisburg, we specialize in custom restorations that not only improve appearance but also protect your oral health and bite alignment.
           </p>
           <p>
-           We proudly provide restorative dentistry to patients across Maplewood (07040), South Orange (07079), Millburn (07041), West Orange (07052), Livingston (07039), Short Hills (07078), and Montclair (07042). If you’re searching for “dental crowns near me” or “bridge dentist near you,” you’re in the right place.
+           We proudly provide restorative dentistry to patients across Harrisburg (17110, 17109, 17111, 17112), Colonial Park (17109), Penbrook (17103), Paxtang (17111), Progress (17109, 17111), Lawnton (17111), and Linglestown (17112). If you’re searching for “dental crowns near me” or “bridge dentist near you,” you’re in the right place.
           </p>
         </Fade>
       </div>
@@ -106,14 +106,14 @@ export default function CrownsPage() {
                           Top Reasons
                         </div>
                         <div className='wcu-title'>
-                          Why Choose Tulip Dental for Crowns & Bridges?
+                          <h2>Why Choose Maple Dental for Crowns & Bridges?</h2>
                         </div>
                         <div className='wcu-points-section'>
                           <ul className='wcu-points'>
                             <li><CheckCircle />Advanced restorative techniques & materials</li>
                             <li><CheckCircle />Custom-matched crowns for a natural look</li>
                             <li><CheckCircle />Tooth-saving solutions to restore function</li>
-                            <li><CheckCircle />Convenient Maplewood location with flexible scheduling </li>
+                            <li><CheckCircle />Convenient Harrisburg location with flexible scheduling </li>
                             <li><CheckCircle />Insurance accepted + affordable payment plans</li>
                           </ul>
                         </div>
@@ -132,7 +132,7 @@ export default function CrownsPage() {
                                   Restore Strength, Beauty & Function with Dental Crowns & Bridges
                                 </h2>
                                 <p className="features-description">
-                                  At Tulip Dental Maplewood, we believe in conservative dentistry—preserving your natural smile while providing strong, beautiful restorations. Whether you’ve chipped a tooth, lost a filling, or need to replace a missing tooth, our experienced team offers personalized care with precision and compassion.
+                                  At Maple Dental Harrisburg, we believe in conservative dentistry—preserving your natural smile while providing strong, beautiful restorations. Whether you’ve chipped a tooth, lost a filling, or need to replace a missing tooth, our experienced team offers personalized care with precision and compassion.
                                 </p>
                               </Fade>
                   
@@ -156,12 +156,12 @@ export default function CrownsPage() {
                               </div>
                             </div>
     <div className='faq-section'>
-           <h4 className='faq-heading'>Crowns & Bridges Q&A</h4>
+           <h2 className='faq-heading'>Crowns & Bridges Q&A</h2>
            <div className="faq-acc-container">
             <Accordion type="single" className="w-full space-y-5">
         
         <AccordionItem value="q1" className="faq-acc">
-          <AccordionTrigger className='faq-qn'>What is a dental crown?</AccordionTrigger>
+          <AccordionTrigger className='faq-qn'><h3 className='text-lg'>What is a dental crown?</h3></AccordionTrigger>
           <AccordionContent className='faq-ans'>
             <p>A dental crown is a custom-made cap that fits over a damaged, cracked, or weakened tooth to restore its shape, strength, and appearance. It’s often used after a root canal, large filling, or to protect a fractured tooth.</p>
             
@@ -169,7 +169,7 @@ export default function CrownsPage() {
         </AccordionItem>
 
         <AccordionItem value="q2" className="faq-acc">
-          <AccordionTrigger className='faq-qn'>What is a dental bridge?</AccordionTrigger>
+          <AccordionTrigger className='faq-qn'><h3 className='text-lg'>What is a dental bridge?</h3></AccordionTrigger>
           <AccordionContent className='faq-ans'>
             <p>A bridge is used to replace one or more missing teeth. It’s made up of one or more artificial teeth anchored in place using crowns on the adjacent natural teeth or dental implants.</p>
             
@@ -177,7 +177,7 @@ export default function CrownsPage() {
         </AccordionItem>
 
         <AccordionItem value="q3" className="faq-acc">
-          <AccordionTrigger className='faq-qn'>How long do crowns and bridges last?</AccordionTrigger>
+          <AccordionTrigger className='faq-qn'><h3 className='text-lg'>How long do crowns and bridges last?</h3></AccordionTrigger>
           <AccordionContent className='faq-ans'>
             <p>With proper care, dental crowns and bridges can last 10–15 years or more. Good oral hygiene, routine dental visits, and avoiding hard foods help extend their lifespan.</p>
             
@@ -185,7 +185,7 @@ export default function CrownsPage() {
         </AccordionItem>
 
         <AccordionItem value="q4" className="faq-acc">
-          <AccordionTrigger className='faq-qn'>Are crowns and bridges covered by insurance?</AccordionTrigger>
+          <AccordionTrigger className='faq-qn'><h3 className='text-lg'>Are crowns and bridges covered by insurance?</h3></AccordionTrigger>
           <AccordionContent className='faq-ans'>
             <p>
                 Most dental insurance plans cover a portion of the cost of crowns and bridges, especially if they are deemed medically necessary. Our team will work with your plan to maximize your benefits.
@@ -194,7 +194,7 @@ export default function CrownsPage() {
         </AccordionItem>
 
         <AccordionItem value="q5" className="faq-acc">
-          <AccordionTrigger className='faq-qn'>Is the procedure painful?</AccordionTrigger>
+          <AccordionTrigger className='faq-qn'><h3 className='text-lg'>Is the procedure painful?</h3></AccordionTrigger>
           <AccordionContent className='faq-ans'>
             <p>
                 No. The procedure is done under local anesthesia, and most patients experience minimal discomfort. We also offer sedation options for those with dental anxiety.
@@ -210,10 +210,10 @@ export default function CrownsPage() {
      <div className="features-section">
                 <Fade direction="up" duration={1000}>
                   <h2 className="features-heading">
-                    Looking for Crowns or Bridges Near You in Maplewood?
+                    Looking for Crowns or Bridges Near You in Harrisburg?
                   </h2>
                   <p className="features-description">
-                    Let Tulip Dental Maplewood restore your smile with durable, natural-looking dental crowns and bridges. Call 973-671-5500 to schedule your consultation and discover tooth restoration that fits your life and budget.
+                    Let Maple Dental Harrisburg restore your smile with durable, natural-looking dental crowns and bridges. Call <a href="tel:7177452700" className="text-primary hover:underline">717-745-2700</a> to schedule your consultation and discover tooth restoration that fits your life and budget.
                   </p>
                 </Fade>
               </div>

@@ -150,7 +150,7 @@ export default function BlogGridPage() {
         <div className="max-w-7xl mx-auto text-center">
           <Fade direction="down" triggerOnce>
             <h1>Dental Tips, News & Updates from Maple Dental</h1>
-            <p>Explore Expert Advice on Oral Health & Family Dentistry</p>
+            <h2>Explore Expert Advice on Oral Health & Family Dentistry</h2>
           </Fade>
         </div>
       </div>

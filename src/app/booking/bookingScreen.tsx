@@ -11,29 +11,13 @@ import StepContactInfo from './stepContactInfo';
 import RequestSubmitted from './requestSubmitted';
 import { usePathname, useRouter, useSearchParams } from 'next/navigation';
 import { apiService, TimeSlot } from '@/lib/apiService';
-import Image from 'next/image';
 
 interface BookingModalProps {
   open: boolean;
   setOpen: (open: boolean) => void;
 }
 
-// Heart Loader Component
-const HeartLoader = () => (
-  <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-white/90 overflow-hidden">
-    <div className="flex flex-col items-center justify-center relative">
-      <Image
-        src="/Images/heart.gif"
-        alt="Loading..."
-        width={100}
-        height={100}
-        className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32"
-        priority
-        style={{ maxWidth: '100%', height: 'auto' }}
-      />
-    </div>
-  </div>
-);
+
 
 // Component that uses useSearchParams - needs to be wrapped in Suspense
 const BookingModalContent: React.FC<BookingModalProps> = ({ open, setOpen }) => {
@@ -129,13 +113,12 @@ const BookingModalContent: React.FC<BookingModalProps> = ({ open, setOpen }) => 
 
     // Construct the new URL with current path and updated query
     const newUrl = `${pathname}?${params.toString()}`;
-    router.push(newUrl); // ✅ Updates the URL without full navigation
+    router.push(newUrl, { scroll: false }); // ✅ Updates the URL without full navigation
   }, [open]);
 
   return (
     <>
-      {/* Heart Loader */}
-      {(isLoading || isStepTransitioning) && <HeartLoader />}
+
       
       <Dialog open={open} onOpenChange={(open) => {
         setOpen(open);
@@ -144,7 +127,7 @@ const BookingModalContent: React.FC<BookingModalProps> = ({ open, setOpen }) => 
         <DialogContent className="max-w-full w-[95vw] sm:w-[90vw] md:!max-w-[900px] lg:!max-w-[1000px] p-0 gap-0 max-h-[95vh] sm:max-h-[90vh] flex flex-col">
           {/* Header */}
           <div className="flex items-center justify-between p-4 sm:p-6 border-b flex-shrink-0">
-            <h2 className="text-lg sm:text-xl font-semibold">Book Appointment</h2>
+            <h2 className="text-lg sm:text-xl font-semibold">Appointment Request</h2>
             {/* <button
               onClick={() => setOpen(false)}
               className="p-1 hover:bg-gray-100 rounded"
@@ -262,7 +245,7 @@ const BookingModalContent: React.FC<BookingModalProps> = ({ open, setOpen }) => 
 // Main Booking Modal Component with Suspense wrapper
 const BookingModal: React.FC<BookingModalProps> = ({ open, setOpen }) => {
   return (
-    <Suspense fallback={<div>Loading...</div>}>
+    <Suspense fallback={<div></div>}>
       <BookingModalContent open={open} setOpen={setOpen} />
     </Suspense>
   );

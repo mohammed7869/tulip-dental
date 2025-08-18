@@ -28,6 +28,19 @@ export default function ContactForm() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
+    // Validate required fields
+    if (!formData.phoneNumber.trim()) {
+      setSubmitStatus('error');
+      setStatusMessage('Phone number is required.');
+      return;
+    }
+    
+    if (!formData.message.trim()) {
+      setSubmitStatus('error');
+      setStatusMessage('Message is required.');
+      return;
+    }
+    
     setIsSubmitting(true);
     setSubmitStatus('idle');
     setStatusMessage('');
@@ -146,7 +159,7 @@ export default function ContactForm() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="group">
             <label className="block text-sm font-semibold text-gray-700 mb-2">
-              Phone Number
+              Phone Number <span className="text-red-500">*</span>
             </label>
             <PhoneInput
   country={'us'}
@@ -193,7 +206,7 @@ export default function ContactForm() {
         {/* Message Field */}
         <div className="group">
           <label className="block text-sm font-semibold text-gray-700 mb-2">
-            Message
+            Message <span className="text-red-500">*</span>
           </label>
           <div className="relative">
             <MessageSquare className="absolute left-3 top-4 w-5 h-5 text-gray-400 group-focus-within:text-cyan-500 transition-colors" />
@@ -203,6 +216,7 @@ export default function ContactForm() {
               onChange={handleChange}
               placeholder="Tell us more about your inquiry..."
               rows={3}
+              required
               className="w-full pl-12 pr-4 py-4 border-2 border-gray-200 rounded-xl focus:border-cyan-500 focus:ring-4 focus:ring-cyan-500/10 transition-all duration-300 bg-gray-50 focus:bg-white placeholder-gray-400 resize-none"
             />
           </div>

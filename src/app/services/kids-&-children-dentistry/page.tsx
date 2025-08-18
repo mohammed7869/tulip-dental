@@ -57,9 +57,9 @@ export default function KidsAndChildrenPage() {
                         <h1>Children’s Dentistry in Harrisburg, PA</h1>
                         </Fade>
                         <Fade direction='down' duration={1000}>
-                        <p className="text-center">
+                        <h2 className="text-center">
                             Gentle Pediatric Dental Care in Harrisburg | Maple Dental | Family & Cosmetic Dentist
-                        </p>
+                        </h2>
                         </Fade>
                         {/* <div className='flex items-center justify-center gap-2'> <Link href={'/'} className='font-medium'>Home </Link><span><ChevronRight/></span> <span className='text-white/80'>Emergency Dentistry</span></div> */}
                     </div>
@@ -106,7 +106,7 @@ export default function KidsAndChildrenPage() {
                           Top Reasons
                         </div>
                         <div className='wcu-title'>
-                          Why Parents Trust Maple Dental for Pediatric Dentistry?
+                          <h2>Why Parents Trust Maple Dental for Pediatric Dentistry?</h2>
                         </div>
                         <div className='wcu-points-section'>
                           <ul className='wcu-points'>
@@ -156,12 +156,12 @@ export default function KidsAndChildrenPage() {
                               </div>
                             </div>
     <div className='faq-section'>
-           <h4 className='faq-heading'>Kids & Children’s Dentistry Q&A</h4>
+           <h2 className='faq-heading'>Kids & Children’s Dentistry Q&A</h2>
            <div className="faq-acc-container">
             <Accordion type="single" className="w-full space-y-5">
         
         <AccordionItem value="q1" className="faq-acc">
-          <AccordionTrigger className='faq-qn'>At what age should my child see the dentist?</AccordionTrigger>
+          <AccordionTrigger className='faq-qn'><h3 className='text-lg'>At what age should my child see the dentist?</h3></AccordionTrigger>
           <AccordionContent className='faq-ans'>
             <p>We recommend the first visit by age one or when the first tooth appears. </p>
             
@@ -169,7 +169,7 @@ export default function KidsAndChildrenPage() {
         </AccordionItem>
 
         <AccordionItem value="q2" className="faq-acc">
-          <AccordionTrigger className='faq-qn'>Are baby teeth really that important?</AccordionTrigger>
+          <AccordionTrigger className='faq-qn'><h3 className='text-lg'>Are baby teeth really that important?</h3></AccordionTrigger>
           <AccordionContent className='faq-ans'>
             <p>Yes-healthy baby teeth are crucial for chewing, speech, and guiding adult teeth. </p>
             
@@ -177,7 +177,7 @@ export default function KidsAndChildrenPage() {
         </AccordionItem>
 
         <AccordionItem value="q3" className="faq-acc">
-          <AccordionTrigger className='faq-qn'>What if my child is scared of the dentist?</AccordionTrigger>
+          <AccordionTrigger className='faq-qn'><h3 className='text-lg'>What if my child is scared of the dentist?</h3></AccordionTrigger>
           <AccordionContent className='faq-ans'>
             <p>Our team is trained to help children feel relaxed and safe. We use gentle techniques and positive reinforcement.</p>
             
@@ -185,7 +185,7 @@ export default function KidsAndChildrenPage() {
         </AccordionItem>
 
         <AccordionItem value="q4" className="faq-acc">
-          <AccordionTrigger className='faq-qn'>Do kids need fluoride?</AccordionTrigger>
+          <AccordionTrigger className='faq-qn'><h3 className='text-lg'>Do kids need fluoride?</h3></AccordionTrigger>
           <AccordionContent className='faq-ans'>
             <p>
                 Yes, fluoride strengthens enamel and helps prevent tooth decay.
@@ -194,7 +194,7 @@ export default function KidsAndChildrenPage() {
         </AccordionItem>
 
        <AccordionItem value="q4" className="faq-acc">
-          <AccordionTrigger className='faq-qn'>Can my child get dental sealants?</AccordionTrigger>
+          <AccordionTrigger className='faq-qn'><h3 className='text-lg'>Can my child get dental sealants?</h3> </AccordionTrigger>
           <AccordionContent className='faq-ans'>
             <p>
                 Absolutely. Sealants are a safe, effective way to protect molars from cavities.

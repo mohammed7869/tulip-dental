@@ -59,9 +59,9 @@ export default function SameDayPage() {
                         <h1>Same-Day Dental Care Services in Harrisburg, PA</h1>
                         </Fade>
                         <Fade direction='down' duration={1000}>
-                        <p className="text-center">
+                        <h2 className="text-center">
                             Fast & Convenient Dental Services in Harrisburg | Maple Dental | Family & Cosmetic Dentist
-                        </p>
+                        </h2>
                         </Fade>
                         {/* <div className='flex items-center justify-center gap-2'> <Link href={'/'} className='font-medium'>Home </Link><span><ChevronRight/></span> <span className='text-white/80'>Emergency Dentistry</span></div> */}
                     </div>
@@ -108,7 +108,7 @@ export default function SameDayPage() {
                       Top Reasons
                     </div>
                     <div className='wcu-title'>
-                      Why Choose Maple Dental for Same-Day Dentistry?
+                      <h2>Why Choose Maple Dental for Same-Day Dentistry?</h2>
                     </div>
                     <div className='wcu-points-section'>
                       <ul className='wcu-points'>
@@ -158,12 +158,12 @@ export default function SameDayPage() {
                           </div>
                         </div>
     <div className='faq-section'>
-                <h4 className='faq-heading'>Same-Day Dentistry Q&A</h4>
+                <h2 className='faq-heading'>Same-Day Dentistry Q&A</h2>
                 <div className="faq-acc-container">
                   <Accordion type="single" collapsible className="w-full space-y-6">
                     <AccordionItem value="q1" className="faq-acc">
                       <AccordionTrigger className="faq-qn rounded-md">
-                        What is same-day dentistry?
+                        <h3 className='text-lg'>What is same-day dentistry?</h3>
                       </AccordionTrigger>
                       <AccordionContent className="faq-ans ">
                         It’s a service model that allows you to receive certain dental treatments, like crowns or fillings, in a single appointment.
@@ -171,7 +171,7 @@ export default function SameDayPage() {
                     </AccordionItem>
                     <AccordionItem value="q2" className="faq-acc">
                       <AccordionTrigger className="faq-qn rounded-md">
-                        Are same-day crowns as durable as traditional ones?
+                        <h3 className='text-lg'>Are same-day crowns as durable as traditional ones?</h3>
                       </AccordionTrigger>
                       <AccordionContent className="faq-ans">
                         <p className="mt-2">
@@ -182,7 +182,7 @@ export default function SameDayPage() {
                     </AccordionItem>
                     <AccordionItem value="q3" className="faq-acc">
                       <AccordionTrigger className="faq-qn rounded-md">
-                        Can I walk in for same-day dental care?
+                        <h3 className='text-lg'>Can I walk in for same-day dental care?</h3>
                       </AccordionTrigger>
                       <AccordionContent className="faq-ans">
                         <p>
@@ -192,7 +192,7 @@ export default function SameDayPage() {
                     </AccordionItem>
                     <AccordionItem value="q5" className="faq-acc">
                       <AccordionTrigger className="faq-qn rounded-md">
-                        How do I know if my treatment can be done in one visit?
+                        <h3 className='text-lg'>How do I know if my treatment can be done in one visit?</h3>
                       </AccordionTrigger>
                       <AccordionContent className="faq-ans">
                         <p className="mt-2">Our team will assess your needs and recommend the best plan based on urgency and procedure type.</p>
@@ -200,7 +200,7 @@ export default function SameDayPage() {
                     </AccordionItem>
                     <AccordionItem value="q6" className="faq-acc">
                       <AccordionTrigger className="faq-qn rounded-md">
-                        Does same-day treatment cost more?
+                        <h3 className='text-lg'>Does same-day treatment cost more?</h3>   
                       </AccordionTrigger>
                       <AccordionContent className="faq-ans">
                         <p className="mt-2">No-our pricing is competitive, and we accept most insurance plans.</p>

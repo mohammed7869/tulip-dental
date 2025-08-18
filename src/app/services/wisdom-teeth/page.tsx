@@ -53,9 +53,9 @@ export default function Page() {
                         <h1>Wisdom Teeth Removal in Harrisburg, PA</h1>
                         </Fade>
                         <Fade direction='down' duration={1000}>
-                        <p className="text-center">
+                        <h2 className="text-center">
                             Safe & Comfortable Extractions in Harrisburg | Maple Dental | Family & Cosmetic Dentist
-                        </p>
+                        </h2>
                         </Fade>
                         {/* <div className='flex items-center justify-center gap-2'> <Link href={'/'} className='font-medium'>Home </Link><span><ChevronRight/></span> <span className='text-white/80'>Emergency Dentistry</span></div> */}
                     </div>
@@ -102,7 +102,7 @@ export default function Page() {
                       Top Reasons
                     </div>
                     <div className='wcu-title'>
-                      Why Choose Maple Dental for Wisdom Tooth Extractions?
+                      <h2>Why Choose Maple Dental for Wisdom Tooth Extractions?</h2>
                     </div>
                     <div className='wcu-points-section'>
                       <ul className='wcu-points'>
@@ -152,12 +152,12 @@ export default function Page() {
                           </div>
                         </div>
     <div className='faq-section'>
-                <h4 className='faq-heading'>Wisdom Teeth Q&A</h4>
+                <h2 className='faq-heading'>Wisdom Teeth Q&A</h2>
                 <div className="faq-acc-container">
                   <Accordion type="single" collapsible className="w-full space-y-6">
                     <AccordionItem value="q1" className="faq-acc">
                       <AccordionTrigger className="faq-qn rounded-md">
-                        When should I get my wisdom teeth removed?
+                        <h3 className='text-lg'>When should I get my wisdom teeth removed?</h3>
                       </AccordionTrigger>
                       <AccordionContent className="faq-ans ">
                         Most people have them removed in their late teens or early 20s before they cause problems.
@@ -165,7 +165,7 @@ export default function Page() {
                     </AccordionItem>
                     <AccordionItem value="q2" className="faq-acc">
                       <AccordionTrigger className="faq-qn rounded-md">
-                        What are signs I need my wisdom teeth out?
+                        <h3 className='text-lg'>What are signs I need my wisdom teeth out?</h3>
                       </AccordionTrigger>
                       <AccordionContent className="faq-ans">
                         <p className="mt-2">
@@ -177,7 +177,7 @@ export default function Page() {
                     
                     <AccordionItem value="q6" className="faq-acc">
                       <AccordionTrigger className="faq-qn rounded-md">
-                        Are wisdom teeth always removed?
+                        <h3 className='text-lg'>Are wisdom teeth always removed?</h3>
                       </AccordionTrigger>
                       <AccordionContent className="faq-ans">
                         <p className="mt-2">Not always. If they’re healthy and positioned properly, they may not need extraction.</p>
@@ -186,7 +186,7 @@ export default function Page() {
 
                     <AccordionItem value="q3" className="faq-acc">
                       <AccordionTrigger className="faq-qn rounded-md">
-                        Is wisdom tooth removal painful?
+                        <h3 className='text-lg'>Is wisdom tooth removal painful?</h3>
                       </AccordionTrigger>
                       <AccordionContent className="faq-ans">
                         <p>
@@ -196,7 +196,7 @@ export default function Page() {
                     </AccordionItem>
                     <AccordionItem value="q5" className="faq-acc">
                       <AccordionTrigger className="faq-qn rounded-md">
-                        How long is recovery?
+                        <h3 className='text-lg'>How long is recovery?</h3>
                       </AccordionTrigger>
                       <AccordionContent className="faq-ans">
                         <p className="mt-2">Most patients recover within 3–5 days, though full healing may take a couple of weeks.</p>

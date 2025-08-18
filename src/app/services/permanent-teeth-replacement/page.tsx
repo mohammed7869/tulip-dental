@@ -54,9 +54,9 @@ export default function Page() {
                         <h1>Permanent Teeth Replacement in Harrisburg, PA</h1>
                         </Fade>
                         <Fade direction='down' duration={1000}>
-                        <p className="text-center">
+                        <h2 className="text-center">
                             Restore Missing Teeth in Harrisburg | Maple Dental | Family & Cosmetic Dentist 
-                        </p>
+                        </h2>
                         </Fade>
                         {/* <div className='flex items-center justify-center gap-2'> <Link href={'/'} className='font-medium'>Home </Link><span><ChevronRight/></span> <span className='text-white/80'>Emergency Dentistry</span></div> */}
                     </div>
@@ -103,7 +103,7 @@ export default function Page() {
                           Top Reasons
                         </div>
                         <div className='wcu-title'>
-                          Why Choose Maple Dental for Tooth Replacement?
+                          <h2>Why Choose Maple Dental for Tooth Replacement?</h2>
                         </div>
                         <div className='wcu-points-section'>
                           <ul className='wcu-points'>
@@ -153,12 +153,12 @@ export default function Page() {
                               </div>
                             </div>
     <div className='faq-section'>
-           <h4 className='faq-heading'>Tooth Replacement Q&A</h4>
+           <h2 className='faq-heading'>Tooth Replacement Q&A</h2>
            <div className="faq-acc-container">
             <Accordion type="single" className="w-full space-y-5">
         
         <AccordionItem value="q1" className="faq-acc">
-          <AccordionTrigger className='faq-qn'>What is the best option to replace missing teeth?</AccordionTrigger>
+          <AccordionTrigger className='faq-qn'><h3 className='text-lg'>What is the best option to replace missing teeth?</h3></AccordionTrigger>
           <AccordionContent className='faq-ans'>
             <p>Dental implants are often the best long-term solution, but we’ll guide you based on your goals and budget</p>
             
@@ -166,7 +166,7 @@ export default function Page() {
         </AccordionItem>
 
         <AccordionItem value="q2" className="faq-acc">
-          <AccordionTrigger className='faq-qn'>How long do permanent tooth replacements last?</AccordionTrigger>
+          <AccordionTrigger className='faq-qn'><h3 className='text-lg'>How long do permanent tooth replacements last?</h3></AccordionTrigger>
           <AccordionContent className='faq-ans'>
             <p>With proper care, implants can last a lifetime. Bridges and dentures also last many years with routine checkups.</p>
             
@@ -174,7 +174,7 @@ export default function Page() {
         </AccordionItem>
 
         <AccordionItem value="q3" className="faq-acc">
-          <AccordionTrigger className='faq-qn'>Are dental implants safe and effective?</AccordionTrigger>
+          <AccordionTrigger className='faq-qn'><h3 className='text-lg'>Are dental implants safe and effective?</h3></AccordionTrigger>
           <AccordionContent className='faq-ans'>
             <p>Yes-implants have a high success rate and are considered one of the safest and most effective dental procedures.</p>
             
@@ -182,7 +182,7 @@ export default function Page() {
         </AccordionItem>
 
         <AccordionItem value="q4" className="faq-acc">
-          <AccordionTrigger className='faq-qn'>Is the procedure painful?</AccordionTrigger>
+          <AccordionTrigger className='faq-qn'><h3 className='text-lg'>Is the procedure painful?</h3></AccordionTrigger>
           <AccordionContent className='faq-ans'>
             <p>
                 Our gentle techniques and sedation options ensure a comfortable experience throughout your treatment. 
@@ -191,7 +191,7 @@ export default function Page() {
         </AccordionItem>
 
         <AccordionItem value="q5" className="faq-acc">
-          <AccordionTrigger className='faq-qn'>How much do tooth replacements cost?</AccordionTrigger>
+          <AccordionTrigger className='faq-qn'><h3 className='text-lg'>How much do tooth replacements cost?</h3>  s</AccordionTrigger>
           <AccordionContent className='faq-ans'>
             <p>
                 Costs vary depending on the type of restoration. We offer affordable plans and accept most insurance.

@@ -79,7 +79,7 @@ export default function ServiceAreaPage() {
           {/* Text Section with Fade-in after delay */}
           <div className='desc-text-section'>
             <Fade cascade direction="up" delay={1000} duration={600}>
-              <h3 className='desc-text-title'>Cosmetic & Family Dentistry Near You in Colonial Park</h3>
+              <h2 className='text-2xl sm:text-3xl lg:text-4xl font-semibold'>Cosmetic & Family Dentistry Near You in Colonial Park</h2>
               <p>
                 Welcome to Maple Dental Harrisburg — your home for exceptional dental care in Colonial Park, PA (17109). Our experienced team is committed to offering personalized, comprehensive dentistry to families across Colonial Park and nearby areas like Penbrook, Progress, and Lawnton.
               </p>
@@ -92,7 +92,7 @@ export default function ServiceAreaPage() {
 
         {/* Comprehensive Dental Care Section */}
         <div className="flex flex-col gap-4 p-6 md:p-0">
-          <h3 className="text-2xl sm:text-3xl lg:text-4xl font-semibold">Comprehensive Dental Services in Colonial Park, Harrisburg</h3>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold">Comprehensive Dental Services in Colonial Park, Harrisburg</h2>
           <p>
             Our conveniently located dental office near Colonial Park is equipped with the latest technology to ensure your visits are comfortable, efficient, and stress-free. We proudly serve individuals and families in the 17109 area with services like:
           </p>
@@ -126,7 +126,7 @@ export default function ServiceAreaPage() {
           <div className='wcu-text-section'>
             <Fade cascade direction="up" delay={1000} duration={600}>
               <div className='wcu-title'>
-                Why Colonial Park Residents Choose Maple Dental?
+                <h2>Why Colonial Park Residents Choose Maple Dental?</h2>
               </div>
               <div className="wcu-desc">
                 Families in Colonial Park and the 17109 area count on Maple Dental for personalized care and advanced treatment options. Here’s why we’re a top choice for dental care in Harrisburg:
@@ -160,7 +160,7 @@ export default function ServiceAreaPage() {
               Whether you live in Colonial Park or the surrounding 17109 area, Maple Dental is here to serve your dental needs with excellence and compassion. Don’t wait—give your smile the care it deserves.
             </p>
             <p className="features-description">
-              <strong>Call today or schedule your visit online</strong> to discover the difference of dental care that puts you first.
+                <strong>Call today or schedule your visit online</strong> to discover the difference of dental care that puts you first.
             </p>
             <BookCallBtn />
           </Fade>

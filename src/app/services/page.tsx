@@ -121,9 +121,9 @@ export default function ServicesPage() {
           <h1 >
             Comprehensive Dental Services in Harrisburg, PA
           </h1>
-          <p className="text-center">
+          <h2 className="text-center">
             Family, Cosmetic & Restorative Dentistry Tailored to Your Needs
-          </p>
+          </h2>
         </div>
       </div>
       

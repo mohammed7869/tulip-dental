@@ -79,7 +79,7 @@ export default function ServiceAreasPage() {
           {/* Text Section with Fade-in after delay */}
           <div className='desc-text-section'>
             <Fade cascade direction="up" delay={1000} duration={600}>
-              <h3 className='desc-text-title'>Full-Service Dental Care in Paxtang | Maple Dental | Family & Cosmetic Dentist</h3>
+              <h2 className='text-2xl sm:text-3xl lg:text-4xl font-semibold'>Full-Service Dental Care in Paxtang | Maple Dental | Family & Cosmetic Dentist</h2>
               <p>
                 At Maple Dental, we’re proud to offer top-quality dental care to residents of Paxtang in Harrisburg, PA (zip code 17111). Whether you're new to the area or just looking for a dependable “dentist near me,” we provide complete care for patients of all ages—right in your neighborhood.
               </p>
@@ -92,7 +92,7 @@ export default function ServiceAreasPage() {
 
         {/* Comprehensive Dental Care Section */}
         <div className="flex flex-col gap-4 p-6 md:p-0">
-          <h3 className="text-2xl sm:text-3xl lg:text-4xl font-semibold">Personalized Dental Services for the Paxtang Community</h3>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold">Personalized Dental Services for the Paxtang Community</h2>
 
           <p>
             Our office near Paxtang is designed with comfort and convenience in mind. We offer a wide range of dental services under one roof so you and your family can get the care you need—when you need it.
@@ -127,7 +127,7 @@ export default function ServiceAreasPage() {
           <div className='wcu-text-section'>
             <Fade cascade direction="up" delay={1000} duration={600}>
               <div className='wcu-title'>
-                Why Paxtang Families Trust Maple Dental?
+                <h2>Why Paxtang Families Trust Maple Dental?</h2>
               </div>
               <div className="wcu-desc">
                 Patients in Paxtang and throughout the 17111 zip code choose Maple Dental for our:
@@ -161,7 +161,7 @@ export default function ServiceAreasPage() {
               Whether you live in Paxtang or anywhere in the 17111 area, Maple Dental is just minutes away. We’re here to make exceptional dental care convenient and accessible for your entire family.
             </p>
             <p className="features-description">
-              <strong>Call us today or schedule your appointment online</strong> to experience the Maple Dental difference—where your smile always comes first.
+              <strong>Call today or book your visit online</strong> to experience the Maple Dental difference—where your smile always comes first.
             </p>
             <BookCallBtn />
           </Fade>

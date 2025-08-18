@@ -70,15 +70,15 @@ export default function Header() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
           <Image
-            src="/Images/tulip-large-Blue-white-website-header (2).png"
-            alt="Tulip Dental Logo"
+            src="/Images/Maple MHA website header.png"
+            alt="Maple Dental Logo"
             width={isScrolled ? 180 : 220}
             height={isScrolled ? 90 : 110}
             className="hidden lg:block transition-all duration-300"
           />
           <Image
-            src="/Images/tulip-large-Blue-white-trnsprnt.png"
-            alt="Tulip Dental Logo"
+            src="/Images/Maple.png"
+            alt="Maple Dental Logo"
             width={isScrolled ? 32 : 42}
             height={isScrolled ? 18 : 24}
             className="block lg:hidden transition-all duration-300"
@@ -90,7 +90,7 @@ export default function Header() {
           <Link href="/" className="hover:text-primary transition">
             Home
           </Link>
-          <Link href="/about-us" className="hover:text-primary transition">
+          <Link href="/about-maple-dental-harrisburg-pa" className="hover:text-primary transition">
             About
           </Link>
           <Link href="/providers" className="hover:text-primary transition">
@@ -151,33 +151,33 @@ export default function Header() {
             <div className="absolute -left-5 mt-2 w-80 max-w-5xl bg-white border shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-40 rounded-lg">
   <div className="grid grid-cols-1 gap-6 p-6 text-sm">
     {[
-  "Maplewood, NJ",
-  "South Orange, NJ",
-  "Millburn, NJ",
-  "West Orange, NJ",
-  "Livingston, NJ",
-  "Short Hills, NJ",
-  "Montclair, NJ"
+  "Harrisburg, PA",
+  "Linglestown, PA",
+  "Colonial Park, PA",
+  "Penbrook, PA",
+  "Paxtang, PA",
+  "Progress, PA",
+  "Lawnton, PA"
 ].map((service, index) => {
   let slug = "";
-  if (service === "Maplewood, NJ") {
-    slug = "maplewood";
-  } else if (service === "South Orange, NJ") {
-    slug = "south-orange";
+  if (service === "Harrisburg, PA") {
+    slug = "harrisburg";
+  } else if (service === "Linglestown, PA") {
+    slug = "linglestown";
   }
-  if(service === "Millburn, NJ"){
-    slug = 'millburn';
+  if(service === "Colonial Park, PA"){
+    slug = 'colonial-park';
   }
-   if(service === "West Orange, NJ"){
-    slug = 'west-orange';
-  }if(service === "Livingston, NJ"){
-    slug = 'livingston';
+   if(service === "Penbrook, PA"){
+    slug = 'penbrook';
+  }if(service === "Paxtang, PA"){
+    slug = 'paxtang';
   }
-    if(service === "Short Hills, NJ"){
-    slug = 'short-hills';
+    if(service === "Progress, PA"){
+    slug = 'progress';
   }
-  if(service === "Montclair, NJ"){
-    slug = 'montclair';
+  if(service === "Lawnton, PA"){
+    slug = 'lawnton';
   }
 
   return slug ? (
@@ -201,8 +201,8 @@ export default function Header() {
 
         {/* Desktop Buttons */}
         <div className="hidden lg:flex gap-3">
-          <a href="tel:9736715500" className="border border-primary text-primary rounded-lg px-4 py-3 hover:opacity-50 text-sm font-medium transition">
-            973-671-5500
+          <a href="tel:7177452700" className="border border-primary text-primary rounded-lg px-4 py-3 hover:opacity-50 text-sm font-medium transition">
+            717-745-2700
           </a>
           <button onClick={()=>setIsBookingOpen(true)}  className="bg-primary text-white rounded-lg px-4 py-3 hover:bg-secondary text-sm font-medium transition">
             Book Online
@@ -212,10 +212,10 @@ export default function Header() {
         {/* Mobile Buttons and Menu Toggle */}
         <div className="flex lg:hidden items-center gap-2">
           {/* Mobile Action Buttons */}
-          <a href="tel:9736715500" className="border border-primary text-primary rounded-lg px-4 py-3 hover:bg-blue-50 text-xs font-medium transition">
-            973-671-5500
+          <a href="tel:7177452700" className="border border-primary text-primary rounded-lg px-4 py-3 hover:bg-blue-50 text-xs font-medium transition">
+            717-745-2700
           </a>
-          <button onClick={()=>setIsBookingOpen(true)} className="bg-primary text-white rounded-lg px-4 py-3 hover:bg-secondary text-xs font-medium transition">
+          <button onClick={()=>setIsBookingOpen(true)} className="bg-primary text-white rounded-lg px-4 py-3 hover:bg-blue-700 text-xs font-medium transition">
             Book Online
           </button>
           
@@ -264,8 +264,8 @@ export default function Header() {
           {/* Mobile Menu Header */}
           <div className="flex items-center justify-between p-4 border-b">
             <Image
-              src="/Images/tulip-large-Blue-white-website-header (1).png"
-              alt="Tulip Dental Logo"
+              src="/Images/Maple MHA website header.png"
+              alt="Maple Dental Logo"
               width={138}
               height={40}
             />
@@ -291,7 +291,7 @@ export default function Header() {
                 Home
               </Link>
               <Link
-                href="/about-us"
+                href="/about-maple-dental-harrisburg-pa"
                 className="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-primary transition border-b"
                 onClick={closeMobileMenu}
               >
@@ -353,21 +353,21 @@ export default function Header() {
               </div>
 
               <Link
-                href="/reviews"
+                href="/patient-reviews-harrisburg-pa"
                 className="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-primary transition border-b"
                 onClick={closeMobileMenu}
               >
                 Reviews
               </Link>
               <Link
-                href="/blog"
+                href="/dental-blog"
                 className="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-primary transition border-b"
                 onClick={closeMobileMenu}
               >
                 Blogs
               </Link>
               <Link
-                href="/contact-us"
+                href="/contact-maple-dental-harrisburg-pa"
                 className="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-primary transition border-b"
                 onClick={closeMobileMenu}
               >

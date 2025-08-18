@@ -79,7 +79,7 @@ export default function ServiceAreasPage() {
           {/* Text Section with Fade-in after delay */}
           <div className='desc-text-section'>
             <Fade cascade direction="up" delay={1000} duration={600}>
-              <h3 className='desc-text-title'>Complete Dental Care in Lawnton | Maple Dental | Family & Cosmetic Dentist</h3>
+              <h2 className='text-2xl sm:text-3xl lg:text-4xl font-semibold'>Complete Dental Care in Lawnton | Maple Dental | Family & Cosmetic Dentist</h2>
               <p>
                 At Maple Dental, we proudly provide top-quality dental care to residents of Lawnton in Harrisburg, PA (zip code 17111). Whether you're new to the area or looking for a dependable “dentist near me,” our friendly team is here to meet your needs with personalized care and advanced treatment options.
               </p>
@@ -92,7 +92,7 @@ export default function ServiceAreasPage() {
 
         {/* Comprehensive Dental Care Section */}
         <div className="flex flex-col gap-4 p-6 md:p-0">
-          <h3 className="text-2xl sm:text-3xl lg:text-4xl font-semibold">Dental Services Available for Lawnton Patients</h3>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold">Dental Services Available for Lawnton Patients</h2>
 
           <p>
             Located just minutes from Lawnton, our modern dental office is fully equipped to offer comprehensive dental services in a relaxing, welcoming environment. We proudly care for patients of all ages in the 17111 area with services such as:
@@ -127,7 +127,7 @@ export default function ServiceAreasPage() {
           <div className='wcu-text-section'>
             <Fade cascade direction="up" delay={1000} duration={600}>
               <div className='wcu-title'>
-                Why Lawnton Residents Choose Maple Dental?
+                <h2>Why Lawnton Residents Choose Maple Dental?</h2>
               </div>
               <div className="wcu-desc">
                 Maple Dental is a trusted choice for families in Lawnton and the surrounding 17111 area because we offer:
@@ -145,7 +145,7 @@ export default function ServiceAreasPage() {
           </div>
           <div className='wcu-img-section'>
             <Zoom cascade damping={0.3} duration={800}>
-              <img src="/Images/lawntown service area.webp" alt="dental" className="rounded-xl" />
+              <img src="/Images/lawntown service area.jpg" alt="dental" className="rounded-xl" />
             </Zoom>
           </div>
 
@@ -161,7 +161,7 @@ export default function ServiceAreasPage() {
               Whether you live right in Lawnton or elsewhere in the 17111 zip code, Maple Dental is your nearby partner in lifelong oral health. Experience the care, comfort, and convenience that local families trust.
             </p>
             <p className="features-description">
-              <strong>Call us today or schedule your appointment online</strong> to join the Maple Dental family and keep your smile looking its best.
+              <strong>Call us today or schedule online</strong> to join the Maple Dental family and keep your smile looking its best.
             </p>
             <BookCallBtn />
           </Fade>

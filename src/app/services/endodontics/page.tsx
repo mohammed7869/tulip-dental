@@ -54,9 +54,9 @@ export default function Page() {
                         <h1>Endodontics in Harrisburg, PA</h1>
                         </Fade>
                         <Fade direction='down' duration={1000}>
-                        <p className="text-center">
+                        <h2 className="text-center">
                             Advanced Root Canal Therapy in Harrisburg | Maple Dental | Family & Cosmetic Dentist
-                        </p>
+                        </h2>
                         </Fade>
                         {/* <div className='flex items-center justify-center gap-2'> <Link href={'/'} className='font-medium'>Home </Link><span><ChevronRight/></span> <span className='text-white/80'>Emergency Dentistry</span></div> */}
                     </div>
@@ -103,7 +103,7 @@ export default function Page() {
                           Top Reasons
                         </div>
                         <div className='wcu-title'>
-                          Why Choose Maple Dental for Endodontic Care?
+                          <h2>Why Choose Maple Dental for Endodontic Care?</h2>
                         </div>
                         <div className='wcu-points-section'>
                           <ul className='wcu-points'>
@@ -153,12 +153,12 @@ export default function Page() {
                               </div>
                             </div>
     <div className='faq-section'>
-           <h4 className='faq-heading'>Endodontics Q&A</h4>
+           <h2 className='faq-heading'>Endodontics Q&A</h2>
            <div className="faq-acc-container">
             <Accordion type="single" className="w-full space-y-5">
         
         <AccordionItem value="q1" className="faq-acc">
-          <AccordionTrigger className='faq-qn'>What is endodontics?</AccordionTrigger>
+          <AccordionTrigger className='faq-qn'><h3 className='text-lg'>What is endodontics?</h3></AccordionTrigger>
           <AccordionContent className='faq-ans'>
             <p>Endodontics is a dental specialty focused on treating infections and issues in the tooth’s root and pulp. </p>
             
@@ -166,7 +166,7 @@ export default function Page() {
         </AccordionItem>
 
         <AccordionItem value="q2" className="faq-acc">
-          <AccordionTrigger className='faq-qn'>Does a root canal hurt?</AccordionTrigger>
+          <AccordionTrigger className='faq-qn'><h3 className='text-lg'>Does a root canal hurt?</h3></AccordionTrigger>
           <AccordionContent className='faq-ans'>
             <p>No. With modern techniques and anesthesia, most patients experience little to no discomfort. </p>
             
@@ -174,7 +174,7 @@ export default function Page() {
         </AccordionItem>
 
         <AccordionItem value="q3" className="faq-acc">
-          <AccordionTrigger className='faq-qn'>How long does a root canal take?</AccordionTrigger>
+          <AccordionTrigger className='faq-qn'><h3 className='text-lg'>How long does a root canal take?</h3></AccordionTrigger>
           <AccordionContent className='faq-ans'>
             <p>Typically, the procedure takes 60–90 minutes and may require 1–2 visits</p>
             
@@ -182,7 +182,7 @@ export default function Page() {
         </AccordionItem>
 
         <AccordionItem value="q4" className="faq-acc">
-          <AccordionTrigger className='faq-qn'>Can a tooth be saved after infection?</AccordionTrigger>
+          <AccordionTrigger className='faq-qn'><h3 className='text-lg'>Can a tooth be saved after infection?</h3></AccordionTrigger>
           <AccordionContent className='faq-ans'>
             <p>
                 Yes. A root canal removes the infection and saves the natural tooth.
@@ -191,7 +191,7 @@ export default function Page() {
         </AccordionItem>
 
        <AccordionItem value="q4" className="faq-acc">
-          <AccordionTrigger className='faq-qn'>Is a crown always needed after a root canal?</AccordionTrigger>
+          <AccordionTrigger className='faq-qn'><h3 className='text-lg'>Is a crown always needed after a root canal?</h3>  </AccordionTrigger>
           <AccordionContent className='faq-ans'>
             <p>
                 In most cases, yes-a crown protects the tooth from future damage.

@@ -46,6 +46,19 @@ export default function FloatingTextForm() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
+    // Validate required fields
+    if (!phoneNumber.trim()) {
+      setSubmitStatus('error');
+      setStatusMessage('Phone number is required.');
+      return;
+    }
+    
+    if (!message.trim()) {
+      setSubmitStatus('error');
+      setStatusMessage('Message is required.');
+      return;
+    }
+
     setSubmitStatus('loading');
     setStatusMessage('Sending your message...');
 
@@ -151,33 +164,43 @@ export default function FloatingTextForm() {
 
             {/* Phone and Subject */}
             <div className="flex gap-2">
-              <PhoneInput
-                country={'us'}
-                value={phoneNumber}
-                onChange={(phone) => setPhoneNumber(phone)}
-                placeholder="Phone number *"
-                inputStyle={{ width: '100%' }}
-              />
+              {/* <div className="flex-1">
+                <label className="block text-xs text-gray-600 mb-1">
+                  Phone number <span className="text-red-500">*</span>
+                </label> */}
+                <PhoneInput
+                  country={'us'}
+                  value={phoneNumber}
+                  onChange={(phone) => setPhoneNumber(phone)}
+                  placeholder="Phone number *"
+                  inputStyle={{ width: '100%' }}
+                />
+              {/* </div> */}
                <Input
                 name="subject"
                 value={subject}
                 onChange={(e) => setSubject(e.target.value)}
-                placeholder="Subject"
+                placeholder="Subject *"
                 disabled={submitStatus === 'loading'}
               />
             </div>
 
 
             {/* Message */}
-            <Textarea
-              name="message"
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
-              placeholder="Tell us about your inquiry..."
-              className="resize-none"
-              rows={3}
-              disabled={submitStatus === 'loading'}
-            />
+            {/* <div>
+              <label className="block text-xs text-gray-600 mb-1">
+                Message <span className="text-red-500">*</span>
+              </label> */}
+              <Textarea
+                name="message"
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+                placeholder="Tell us about your inquiry... *"
+                className="resize-none"
+                rows={3}
+                disabled={submitStatus === 'loading'}
+              />
+            {/* </div> */}
 
             {/* Disclaimer */}
             <p className="text-xs text-gray-500 mt-2">

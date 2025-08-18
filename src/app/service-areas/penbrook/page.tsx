@@ -79,7 +79,7 @@ export default function ServiceAreasPage() {
           {/* Text Section with Fade-in after delay */}
           <div className='desc-text-section'>
             <Fade cascade direction="up" delay={1000} duration={600}>
-              <h3 className='desc-text-title'>Complete Dental Services in Penbrook | Maple Dental | Family & Cosmetic Dentist</h3>
+              <h2 className='text-2xl sm:text-3xl lg:text-4xl font-semibold'>Complete Dental Services in Penbrook | Maple Dental | Family & Cosmetic Dentist</h2>
               <p>
                 At Maple Dental, we proudly provide high-quality dental care to the Penbrook community in Harrisburg, PA (zip code 17103). Whether you're looking for preventive care, cosmetic enhancements, or restorative treatments, our experienced team delivers reliable, patient-focused care near you.
               </p>
@@ -92,7 +92,7 @@ export default function ServiceAreasPage() {
 
         {/* Comprehensive Dental Care Section */}
         <div className="flex flex-col gap-4 p-6 md:p-0">
-          <h3 className="text-2xl sm:text-3xl lg:text-4xl font-semibold">Dental Care You Can Trust in Penbrook, Harrisburg</h3>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold">Dental Care You Can Trust in Penbrook, Harrisburg</h2>
 
           <p>
             Our modern dental office near Penbrook is equipped with advanced dental technology to ensure your visit is efficient, comfortable, and stress-free. We proudly serve individuals and families in the 17103 area with a full range of dental services, including:
@@ -127,7 +127,7 @@ export default function ServiceAreasPage() {
           <div className='wcu-text-section'>
             <Fade cascade direction="up" delay={1000} duration={600}>
               <div className='wcu-title'>
-                Why Penbrook Residents Choose Maple Dental?
+                <h2>Why Penbrook Residents Choose Maple Dental?</h2>
               </div>
               <div className="wcu-desc">
                 Families and individuals in Penbrook and across the 17103 zip code choose Maple Dental for a reason. We’re known for:
@@ -161,7 +161,7 @@ export default function ServiceAreasPage() {
               If you're in Penbrook or anywhere within the 17103 area, Maple Dental Harrisburg is right around the corner. From routine checkups to advanced procedures, we’re here to keep your family’s smiles healthy and confident.
             </p>
             <p className="features-description">
-              <strong>Call us today or schedule your appointment online</strong> to discover a better dental experience close to home.
+                <strong>Call us today or schedule your appointment online</strong> to discover a better dental experience close to home.
             </p>
             <BookCallBtn />
           </Fade>

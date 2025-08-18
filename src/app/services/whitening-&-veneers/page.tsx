@@ -56,9 +56,9 @@ export default function WhiteningVeneersPage() {
                         <h1>Teeth Whitening & Veneers in Harrisburg, PA</h1>
                         </Fade>
                         <Fade direction='down' duration={1000}>
-                        <p className="text-center">
+                        <h2 className="text-center">
                             Cosmetic Smile Enhancements in Harrisburg | Maple Dental | Family & Cosmetic Dentist
-                        </p>
+                        </h2>
                         </Fade>
                         {/* <div className='flex items-center justify-center gap-2'> <Link href={'/'} className='font-medium'>Home </Link><span><ChevronRight/></span> <span className='text-white/80'>Emergency Dentistry</span></div> */}
                     </div>
@@ -105,7 +105,7 @@ export default function WhiteningVeneersPage() {
                       Top Reasons
                     </div>
                     <div className='wcu-title'>
-                      Why Choose Maple Dental for Whitening & Veneers?
+                      <h2>Why Choose Maple Dental for Whitening & Veneers?</h2>
                     </div>
                     <div className='wcu-points-section'>
                       <ul className='wcu-points'>
@@ -155,12 +155,12 @@ export default function WhiteningVeneersPage() {
                           </div>
                         </div>
     <div className='faq-section'>
-                <h4 className='faq-heading'>Whitening & Veneers Q&A</h4>
+                <h2 className='faq-heading'>Whitening & Veneers Q&A</h2>
                 <div className="faq-acc-container">
                   <Accordion type="single" collapsible className="w-full space-y-6">
                     <AccordionItem value="q1" className="faq-acc">
                       <AccordionTrigger className="faq-qn rounded-md">
-                        How long does professional teeth whitening last?
+                        <h3 className='text-lg'>How long does professional teeth whitening last?</h3>
                       </AccordionTrigger>
                       <AccordionContent className="faq-ans ">
                         Results can last 6 months to 2 years with good oral hygiene and occasional touch-ups.
@@ -168,7 +168,7 @@ export default function WhiteningVeneersPage() {
                     </AccordionItem>
                     <AccordionItem value="q2" className="faq-acc">
                       <AccordionTrigger className="faq-qn rounded-md">
-                        Are veneers permanent?
+                        <h3 className='text-lg'>Are veneers permanent?</h3>
                       </AccordionTrigger>
                       <AccordionContent className="faq-ans">
                         <p className="mt-2">
@@ -179,7 +179,7 @@ export default function WhiteningVeneersPage() {
                     </AccordionItem>
                     <AccordionItem value="q3" className="faq-acc">
                       <AccordionTrigger className="faq-qn rounded-md">
-                        Is the whitening procedure safe?
+                        <h3 className='text-lg'>Is the whitening procedure safe?</h3>
                       </AccordionTrigger>
                       <AccordionContent className="faq-ans">
                         <p>
@@ -189,7 +189,7 @@ export default function WhiteningVeneersPage() {
                     </AccordionItem>
                     <AccordionItem value="q5" className="faq-acc">
                       <AccordionTrigger className="faq-qn rounded-md">
-                        Will veneers look natural?
+                        <h3 className='text-lg'>Will veneers look natural?</h3>
                       </AccordionTrigger>
                       <AccordionContent className="faq-ans">
                         <p className="mt-2">Absolutely. Each veneer is custom-crafted to match the shape, size, and color of your natural teeth.</p>
@@ -197,7 +197,7 @@ export default function WhiteningVeneersPage() {
                     </AccordionItem>
                     <AccordionItem value="q6" className="faq-acc">
                       <AccordionTrigger className="faq-qn rounded-md">
-                        Can I combine whitening with veneers?
+                        <h3 className='text-lg'>Can I combine whitening with veneers?</h3>  
                       </AccordionTrigger>
                       <AccordionContent className="faq-ans">
                         <p className="mt-2">Yes. Whitening is often done before veneers for a complete smile makeover.</p>

@@ -79,7 +79,7 @@ const RequestSubmitted = ({  formData }: any) => {
                       </div>
                     </div>
                   </div>
-        <p className='my-3 text-sm sm:text-base'>Thank you for your booking. Your appointment has been confirmed. We look forward to assisting you!</p>
+        <p className='my-3 text-sm sm:text-base'>Thank you for your request. This is not a confirmation of your appointment. We will reach out promptly to confirm and finalize your appointment.</p>
         
         {/* Add to Calendar Button */}
         <div className="mb-6 text-center">

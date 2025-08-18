@@ -5,10 +5,10 @@ export default function SitemapPage() {
   const pages = {
     "Main Pages": [
       { name: "Home", link: "/" },
-      { name: "About Us", link: "/about-us" },
-      { name: "Contact Us", link: "/contact-us" },
-      { name: "Blog", link: "/blog" },
-      { name: "Reviews", link: "/reviews" },
+              { name: "About Us", link: "/about-maple-dental-harrisburg-pa" },
+      { name: "Contact Us", link: "/contact-maple-dental-harrisburg-pa" },
+      { name: "Blog", link: "/dental-blog" },
+      { name: "Reviews", link: "/patient-reviews-harrisburg-pa" },
       { name: "Providers", link: "/providers" },
       { name: "Services", link: "/services" },
       { name: "Offers", link: "/offers" },

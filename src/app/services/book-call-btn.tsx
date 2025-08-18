@@ -1,8 +1,8 @@
+"use client";
+
 import React, { useState } from 'react';
 import { Fade } from 'react-awesome-reveal';
 import BookingModal from '../booking/bookingScreen';
-
-
 
 const BookCallBtn: React.FC = () => {
   const [isBookingOpen, setIsBookingOpen] = useState(false);
@@ -16,7 +16,7 @@ const BookCallBtn: React.FC = () => {
                           717-745-2700
                         </a>
                         <button onClick={() => setIsBookingOpen(true)} className="w-full flex flex-col bg-primary text-white rounded-lg px-1 md:px-4 py-3 hover:bg-secondary text-sm font-medium transition">
-                          Book Online
+                          Book Now
                           <span className="text-[10px] md:text-base">Click Here for Appointment</span>
                         </button>
                       </div>

@@ -53,9 +53,9 @@ export default function SportsDentistryPage() {
                         <h1>Sports Dentistry in Harrisburg, PA</h1>
                         </Fade>
                         <Fade direction='down' duration={1000}>
-                        <p className="text-center">
+                        <h2 className="text-center">
                             Mouthguards & Injury Prevention in Harrisburg | Maple Dental | Family & Cosmetic Dentist
-                        </p>
+                        </h2>
                         </Fade>
                         {/* <div className='flex items-center justify-center gap-2'> <Link href={'/'} className='font-medium'>Home </Link><span><ChevronRight/></span> <span className='text-white/80'>Emergency Dentistry</span></div> */}
                     </div>
@@ -102,7 +102,7 @@ export default function SportsDentistryPage() {
                       Top Reasons
                     </div>
                     <div className='wcu-title'>
-                      Why Choose Maple Dental for Sports Dentistry?
+                      <h2>Why Choose Maple Dental for Sports Dentistry?</h2>
                     </div>
                     <div className='wcu-points-section'>
                       <ul className='wcu-points'>
@@ -152,12 +152,12 @@ export default function SportsDentistryPage() {
                           </div>
                         </div>
     <div className='faq-section'>
-                <h4 className='faq-heading'>Sports Dentistry Q&A</h4>
+                <h2 className='faq-heading'>Sports Dentistry Q&A</h2>
                 <div className="faq-acc-container">
                   <Accordion type="single" collapsible className="w-full space-y-6">
                     <AccordionItem value="q1" className="faq-acc">
                       <AccordionTrigger className="faq-qn rounded-md">
-                        What is sports dentistry?
+                        <h3 className='text-lg'>What is sports dentistry?</h3>
                       </AccordionTrigger>
                       <AccordionContent className="faq-ans ">
                         Sports dentistry focuses on preventing and treating dental injuries related to athletic activity, often using mouthguards and emergency care. 
@@ -165,7 +165,7 @@ export default function SportsDentistryPage() {
                     </AccordionItem>
                     <AccordionItem value="q2" className="faq-acc">
                       <AccordionTrigger className="faq-qn rounded-md">
-                        Why is a custom mouthguard better?
+                        <h3 className='text-lg'>Why is a custom mouthguard better?</h3>
                       </AccordionTrigger>
                       <AccordionContent className="faq-ans">
                         <p className="mt-2">
@@ -177,7 +177,7 @@ export default function SportsDentistryPage() {
                     
                     <AccordionItem value="q6" className="faq-acc">
                       <AccordionTrigger className="faq-qn rounded-md">
-                        When should my child wear a sports mouthguard?
+                        <h3 className='text-lg'>When should my child wear a sports mouthguard?</h3>
                       </AccordionTrigger>
                       <AccordionContent className="faq-ans">
                         <p className="mt-2">Any time they play contact or high-impact sports like football, soccer, or basketball.</p>
@@ -186,7 +186,7 @@ export default function SportsDentistryPage() {
 
                     <AccordionItem value="q3" className="faq-acc">
                       <AccordionTrigger className="faq-qn rounded-md">
-                        What should I do if a tooth gets knocked out?
+                        <h3 className='text-lg'>What should I do if a tooth gets knocked out?</h3>
                       </AccordionTrigger>
                       <AccordionContent className="faq-ans">
                         <p>
@@ -196,7 +196,7 @@ export default function SportsDentistryPage() {
                     </AccordionItem>
                     <AccordionItem value="q5" className="faq-acc">
                       <AccordionTrigger className="faq-qn rounded-md">
-                        How often should I replace a sports mouthguard?
+                        <h3 className='text-lg'>How often should I replace a sports mouthguard?</h3>  
                       </AccordionTrigger>
                       <AccordionContent className="faq-ans">
                         <p className="mt-2">At least once a year or sooner if it becomes worn, damaged, or your child grows</p>

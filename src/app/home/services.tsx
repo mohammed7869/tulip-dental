@@ -16,6 +16,7 @@ export default function ServicesSection() {
   const [isPaused, setIsPaused] = useState(false);
 
   const services = [
+    { id: 0, title: "Cosmetic Dentistry", description: "Cosmetic dentistry services", image: "/Images/Cosmetic Dentistry.webp", icon: "/Images/icons/Dental checkup.png", href: "/services/cosmetic-dentistry" },
     { id: 1, title: "Emergency Dentistry", description: "Urgent oral care services", image: "/Images/Emergency Dentistry.jpg", icon: "/Images/icons/Dental checkup.png", href: "/services/emergency-dentistry" },
     { id: 2, title: "Teeth Whitening", description: "Brighten your smile", image: "/Images/Whitening Veneers.webp", icon: "/Images/icons/tooth-whitening.png", href: "/services/whitening-&-veneers" },
     { id: 3, title: "Orthodontics", description: "Orthodontic correction", image: "/Images/Orthodontics.webp", icon: "/Images/icons/braces.png", href: "/services/orthodontics" },
@@ -104,7 +105,7 @@ export default function ServicesSection() {
     <section className="relative w-full mt-10 mx-auto px-4">
       <Fade delay={200}>
         <h2 className="text-center text-primary text-3xl md:text-5xl font-extrabold mb-10">
-          Services We Offer
+          Our Dental Services
         </h2>
       </Fade>
 
@@ -124,9 +125,8 @@ export default function ServicesSection() {
                     <img
                       src={service.image}
                       alt={service.title}
-                      className={`w-full h-full object-cover transition-opacity duration-200 ${
-                        imagesLoaded[service.image] ? 'opacity-100' : 'opacity-0'
-                      }`}
+                      className={`w-full h-full object-cover transition-opacity duration-200 ${imagesLoaded[service.image] ? 'opacity-100' : 'opacity-0'
+                        }`}
                       loading="eager"
                     />
                     {!imagesLoaded[service.image] && (
@@ -167,9 +167,8 @@ export default function ServicesSection() {
                     <img
                       src={service.image}
                       alt={service.title}
-                      className={`w-full h-full object-cover transition-opacity duration-300 ${
-                        imagesLoaded[service.image] ? 'opacity-100' : 'opacity-0'
-                      }`}
+                      className={`w-full h-full object-cover transition-opacity duration-300 ${imagesLoaded[service.image] ? 'opacity-100' : 'opacity-0'
+                        }`}
                       loading="eager"
                     />
                     {!imagesLoaded[service.image] && (
@@ -219,9 +218,8 @@ export default function ServicesSection() {
           <button
             key={index}
             onClick={() => goToSlide(index)}
-            className={`w-2 h-2 rounded-full transition-all duration-300 ${
-              index === currentSlide ? 'bg-primary' : 'bg-gray-300'
-            }`}
+            className={`w-2 h-2 rounded-full transition-all duration-300 ${index === currentSlide ? 'bg-primary' : 'bg-gray-300'
+              }`}
             aria-label={`Go to slide ${index + 1}`}
           />
         ))}
@@ -266,7 +264,7 @@ export default function ServicesSection() {
       </Fade>
       <Fade delay={600}>
         <div className="text-center">
-          <Button onClick={() => setIsBookingOpen(true)} size={'lg'}>Book Appointment</Button>
+          <Button onClick={() => setIsBookingOpen(true)} size={'lg'}>Book Online </Button>
         </div>
       </Fade>
       <BookingModal open={isBookingOpen} setOpen={setIsBookingOpen} />

@@ -113,7 +113,7 @@ export default function ServiceAreasPage() {
           {/* Text Section with Fade-in after delay */}
           <div className='desc-text-section'>
             <Fade cascade direction="up" delay={1000} duration={600}>
-              <h3 className='desc-text-title'>Full-Service Dental Care in Linglestown | Maple Dental | Family & Cosmetic Dentist</h3>
+              <h2 className='text-2xl sm:text-3xl lg:text-4xl font-semibold'>Full-Service Dental Care in Linglestown | Maple Dental | Family & Cosmetic Dentist</h2>
               <p>
                 At Maple Dental, we proudly serve the Linglestown community in Harrisburg, PA (zip code 17112) with high-quality dental care for patients of all ages. Whether you're new to the area or looking for a dependable “dentist near me,” our compassionate team is here to help you maintain a healthy, beautiful smile for life.
               </p>
@@ -126,7 +126,7 @@ export default function ServiceAreasPage() {
 
         {/* Comprehensive Dental Care Section */}
         <div className="flex flex-col gap-4 p-6 md:p-0">
-          <h3 className="text-2xl sm:text-3xl lg:text-4xl font-semibold">Dental Services for the Linglestown Community</h3>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold">Dental Services for the Linglestown Community</h2>
 
           <p>
             Our conveniently located office near Linglestown is equipped with advanced technology and modern amenities to ensure your dental experience is comfortable, efficient, and stress-free. We proudly provide the following services to patients in the 17112 area:
@@ -161,7 +161,7 @@ export default function ServiceAreasPage() {
           <div className='wcu-text-section'>
             <Fade cascade direction="up" delay={1000} duration={600}>
               <div className='wcu-title'>
-                Why Linglestown Residents Trust Maple Dental?
+                <h2>Why Linglestown Residents Trust Maple Dental?</h2>
               </div>
               <div className="wcu-desc">
                 Families and individuals in Linglestown and the surrounding 17112 area choose Maple Dental because we offer:
@@ -196,7 +196,7 @@ export default function ServiceAreasPage() {
               If you're located in Linglestown or anywhere in the 17112 zip code, Maple Dental is your local destination for expert family and cosmetic dentistry. We’re committed to making every visit comfortable and tailored to your needs.
             </p>
             <p className="features-description">
-              <strong>Call us today or schedule your appointment online</strong> to discover dental care designed around you and your family.
+                <strong>Call us today or book online</strong> to discover dental care designed around you and your family.
             </p>
             <BookCallBtn />
           </Fade>

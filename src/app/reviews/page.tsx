@@ -74,9 +74,9 @@ export default function ReviewsPage() {
       {/* Header Section */}
       <div className="details-page-header-section">
         <h1>What Patients Are Saying About Maple Dental</h1>
-        <p>
+        <h2>
           Real Reviews from Families Across Harrisburg
-        </p>
+        </h2>
       </div>
       <div className="max-w-7xl mt-10 mx-auto px-2 sm:px-4 md:px-8">
         <h2 className="text-center text-lg sm:text-xl font-semibold mb-8">Patient Reviews</h2>

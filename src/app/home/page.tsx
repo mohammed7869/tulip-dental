@@ -23,8 +23,8 @@ import { services as allServices } from '../services/serviceList';
 const banners = [
     {
         image: '/Images/Banner1.jpg',
-        title: 'Welcome to Tulip Dental Maplewood',
-        subtitle: 'Your Trusted Cosmetic & Family Dentist in Maplewood and Surrounding Areas',
+        title: 'Welcome to Maple Dental Harrisburg',
+        subtitle: 'Your Trusted Cosmetic & Family Dentist in Harrisburg and Surrounding Areas',
         image2: '/Images/Banner1.jpg',
     },
     {
@@ -40,10 +40,10 @@ const banners = [
         image2: '/Images/Banner3.webp',
     },
     {
-        image: '/Images/young-surprised-woman-with-hand-her-face.webp',
+        image: '/Images/young-surprised-woman-with-hand-her-face.jpg',
         title: 'Whiten Your Smile for Only $299',
         subtitle: 'Grab our limited-time professional teeth whitening deal and shine with confidence!',
-        image2: '/Images/young-surprised-woman-with-hand-her-face.webp',
+        image2: '/Images/young-surprised-woman-with-hand-her-face.jpg',
     },
 ];
 
@@ -195,9 +195,9 @@ export default function HomePage() {
                                             <h1 className="text-3xl md:text-3xl text-center md:text-left lg:text-5xl font-semibold mb-6 leading-tight">
                                                 {banner.title}
                                             </h1>
-                                            <p className="text-md md:text-xl lg:text-2xl text-center md:text-left font-light leading-relaxed opacity-95">
+                                            <h2 className="text-md md:text-xl lg:text-2xl text-center md:text-left font-light leading-relaxed opacity-95">
                                                 {banner.subtitle}
-                                            </p>
+                                            </h2>
 
 
                                             {/* Call to Action */}
@@ -220,7 +220,7 @@ export default function HomePage() {
                                                     <img
                                                         src={banner.image}
                                                         alt={banner.title}
-                                                        className="w-full h-64 md:h-110 lg:h-140 object-cover rounded-sm md:rounded-xl shadow-lg"
+                                                        className=" rounded-sm md:rounded-xl"
                                                     />
                                                 </div>
                                                 {/* Decorative elements around image */}
@@ -334,7 +334,7 @@ export default function HomePage() {
                         <img
                             src="/Images/About-Maple-Dental.jpg"
                             alt="dental-banner"
-                            className="rounded-md md:rounded-xl w-full h-full object-cover shadow-md"
+                            className="rounded-md md:rounded-xl mt-8 object-cover shadow-md"
                         />
                     </Slide>
 
@@ -360,7 +360,7 @@ export default function HomePage() {
 
                         <Fade delay={800}>
                             <Link
-                                href="/about-us"
+                                href="/about-maple-dental-harrisburg-pa"
                                 className="border border-primary text-primary rounded-lg px-4 py-3 hover:bg-blue-50 text-sm font-medium transition"
                             >
                                 Learn More
@@ -390,10 +390,10 @@ export default function HomePage() {
                                     <div className="text-3xl font-bold text-primary mb-2">
                                         ${inView ? (
                                             service.price.includes('/') ? (
-                                                <CountUp 
-                                                    end={parseInt(service.price.split('/')[0])} 
-                                                    duration={1.5} 
-                                                    separator="," 
+                                                <CountUp
+                                                    end={parseInt(service.price.split('/')[0])}
+                                                    duration={1.5}
+                                                    separator=","
                                                     suffix="/month"
                                                 />
                                             ) : (
@@ -488,7 +488,7 @@ export default function HomePage() {
 
                         <Fade delay={800}>
                             <a href="tel:717-745-2700">
-                                <Button>CALL TODAY!</Button>
+                                <Button>CALL TODAY</Button>
                             </a>
                         </Fade>
 
@@ -507,10 +507,10 @@ export default function HomePage() {
 
 function HomepageSections() {
     const sections = [
-        { label: 'About Us', icon: <InfoIcon />, bg: 'bg-primary', href: '/about-us' },
+        { label: 'About Us', icon: <InfoIcon />, bg: 'bg-primary', href: '/about-maple-dental-harrisburg-pa' },
         { label: 'Our Providers', icon: <User />, bg: 'bg-primary/70', href: '/providers' },
         { label: 'Our Services', icon: <Stethoscope />, bg: 'bg-secondary', href: '/services' },
-        { label: 'Contact Us', icon: <MessageCircle />, bg: 'bg-secondary/70', href: '/contact-us' },
+        { label: 'Contact Us', icon: <MessageCircle />, bg: 'bg-secondary/70', href: '/contact-maple-dental-harrisburg-pa' },
     ];
 
     return (

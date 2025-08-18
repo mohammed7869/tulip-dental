@@ -108,13 +108,13 @@ const EmailTemplate: React.FC<EmailTemplateProps> = ({ appointmentData }) => {
                 color: '#202124',
                 marginBottom: '2px'
               }}>
-                Tulip Dental NJ
+                Maple Dental NJ
               </div>
               <div style={{
                 fontSize: '12px',
                 color: '#5f6368'
               }}>
-                &lt;maplewood@tulipdentalnj.com&gt;
+                &lt;booking@mapledentalnj.com&gt;
               </div>
             </div>
           </div>
@@ -219,7 +219,7 @@ const EmailTemplate: React.FC<EmailTemplateProps> = ({ appointmentData }) => {
                     margin: '0 0 12px 0',
                     lineHeight: '24px'
                   }}>
-                    Appointment at Tulip Dental - New Patient
+                    Appointment at Maple Dental - New Patient
                   </h3>
 
                   <div style={{
@@ -433,7 +433,7 @@ const EmailTemplate: React.FC<EmailTemplateProps> = ({ appointmentData }) => {
               lineHeight: '20px',
               margin: '0 0 8px 0'
             }}>
-              Thank you for choosing <strong>Tulip Dental NJ</strong>.
+              Thank you for choosing <strong>Maple Dental NJ</strong>.
             </p>
 
             <p style={{
@@ -518,7 +518,7 @@ const EmailTemplate: React.FC<EmailTemplateProps> = ({ appointmentData }) => {
                 color: '#202124',
                 fontWeight: '500'
               }}>
-                {formatTime12h(appointmentTime)} Appointment at Tulip Dental - New Patient
+                {formatTime12h(appointmentTime)} Appointment at Maple Dental - New Patient
               </div>
             </div>
 

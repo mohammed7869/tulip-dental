@@ -79,7 +79,7 @@ const [selected, setSelected] = useState(locations[0]);
               {/* Text Section with Fade-in after delay */}
               <div className='desc-text-section'>
                 <Fade cascade direction="up" delay={1000} duration={600}>
-                  <h3 className='desc-text-title'>Comprehensive Dental Services in Progress | Maple Dental | Family & Cosmetic Dentist</h3>
+                  <h2 className='text-2xl sm:text-3xl lg:text-4xl font-semibold'>Comprehensive Dental Services in Progress | Maple Dental | Family & Cosmetic Dentist</h2>
                   <p>
                    At Maple Dental, we’re proud to serve the Progress community in Harrisburg, PA, including both zip codes 17109 and 17111. Whether you're new to the area or searching for a trusted “dentist near me,” we offer complete, high-quality dental care for every age and every smile—just minutes from home.
                   </p>
@@ -92,7 +92,7 @@ const [selected, setSelected] = useState(locations[0]);
 
         {/* Comprehensive Dental Care Section */}
         <div className="flex flex-col gap-4 p-6 md:p-0">
-          <h3 className="text-2xl sm:text-3xl lg:text-4xl font-semibold">Full-Service Dentistry for the Progress Neighborhood</h3>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold">Full-Service Dentistry for the Progress Neighborhood</h2>
           
           <p>
 Our state-of-the-art dental office is conveniently located to serve families and individuals living in and around Progress. We combine modern technology, flexible scheduling, and a warm atmosphere to provide exceptional care across the following services:
@@ -127,7 +127,7 @@ Our state-of-the-art dental office is conveniently located to serve families and
                             <div className='wcu-text-section'>
                               <Fade cascade direction="up" delay={1000} duration={600}>
                                 <div className='wcu-title'>
-                                  Why Progress Residents Choose Maple Dental?
+                                  <h2>Why Progress Residents Choose Maple Dental?</h2>
                                 </div>
                                 <div className="wcu-desc">
 Maple Dental is the go-to dentist for many families in Progress and surrounding areas of 17109 and 17111. Here's why:
@@ -161,7 +161,7 @@ Maple Dental is the go-to dentist for many families in Progress and surrounding 
                            If you're in Progress or nearby neighborhoods in zip codes 17109 or 17111, Maple Dental is just around the corner. Whether you need a routine checkup or a complete smile transformation, we’re here to help you every step of the way.
                           </p>
                           <p className="features-description">
-                            <strong>Call us today or schedule your appointment online</strong> to experience modern family dentistry close to home—done with care, comfort, and compassion.
+                            <strong>Call us today or book online</strong> to experience modern family dentistry close to home—done with care, comfort, and compassion.
                           </p>
                           <BookCallBtn/>
                         </Fade>

@@ -1,11 +1,13 @@
-"use client";
-
+import type { Metadata } from "next";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
-import React, { useState } from 'react';
+import React from 'react';
 import Reveal, { Fade, Zoom } from 'react-awesome-reveal';
 import ServiceSidebar from '@/components/ServiceSidebar';
 import { CheckCircle } from 'lucide-react';
 import BookCallBtn from '../book-call-btn';
+import { generateServiceMetadata } from '@/lib/metadata';
+
+export const metadata: Metadata = generateServiceMetadata("emergency-dentistry", "/Images/Emergency Dentistry.jpg");
 
 export default function EmergencyDentistryPage() {
 
@@ -35,11 +37,11 @@ export default function EmergencyDentistryPage() {
   },
   {
     icon: "/Images/icons/Serving Harrisburg Nearby Communities.png",
-    title: "Serving Maplewood & Nearby Communities",
+    title: "Serving Harrisburg & Nearby Communities",
     description:
-      "We are proud to be your trusted local emergency dental provider. Whether you're in Maplewood (07040) or nearby in South Orange, Millburn, West Orange, Livingston, Short Hills, or Montclair—we're right around the corner when you need us most.",
+      "We are proud to be your trusted local emergency dental provider. Whether you're in Harrisburg (17110, 17109, 17111, 17112) or nearby in Colonial Park, Paxtang, Penbrook, Lawnton, Progress, or Linglestown—we're right around the corner when you need us most.",
     points: [
-      "Convenient Maplewood location",
+      "Convenient Harrisburg location",
       "Walk-ins and urgent same-day care",
       "Insurance accepted + flexible payment options",
       "Top-rated emergency dentist near you",
@@ -53,12 +55,12 @@ export default function EmergencyDentistryPage() {
         <div className='details-page'>
           <div className='details-page-header-section'>
             <Fade direction='up' duration={1000}>
-              <h1>Emergency Dentistry in Maplewood, NJ</h1>
+              <h1>Emergency Dentistry in Harrisburg, PA</h1>
             </Fade>
             <Fade direction='down' duration={1000}>
-              <p className='text-center'>
-                Urgent Dental Care in Maplewood | Tulip Dental | Family & Cosmetic Dentist Near You
-              </p>
+              <h2 className='text-center'>
+                Urgent Dental Care in Harrisburg | Maple Dental | Family & Cosmetic Dentist Near You
+              </h2>
             </Fade>
             {/* <div className='flex items-center justify-center gap-2'> <Link href={'/'} className='font-medium'>Home </Link><span><ChevronRight/></span> <span className='text-white/80'>Emergency Dentistry</span></div> */}
           </div>
@@ -106,7 +108,7 @@ export default function EmergencyDentistryPage() {
                   Top Reasons
                 </div>
                 <div className='wcu-title'>
-                  Why Choose Maple Dental for Emergency Dental Care?
+                  <h2>Why Choose Maple Dental for Emergency Dental Care?</h2>
                 </div>
                 <div className='wcu-points-section'>
                   <ul className='wcu-points'>
@@ -159,12 +161,12 @@ export default function EmergencyDentistryPage() {
             </div>
           </div>
           <div className='faq-section'>
-            <h4 className='faq-heading'>Emergency Dentistry Q&A</h4>
+            <h2 className='faq-heading'>Emergency Dentistry Q&A</h2>
             <div className="faq-acc-container">
               <Accordion type="single" collapsible className="w-full space-y-6">
                 <AccordionItem value="q1" className="faq-acc">
                   <AccordionTrigger className="faq-qn rounded-md">
-                    What is emergency dentistry?
+                   <h3 className='text-lg'> What is emergency dentistry?</h3>
                   </AccordionTrigger>
                   <AccordionContent className="faq-ans ">
                     Emergency dentistry focuses on treating urgent, often painful dental conditions that require immediate attention. At Maple Dental Harrisburg, we offer fast diagnosis and treatment to relieve symptoms, stop further damage, and restore function. Whether it’s a broken crown or a severe toothache, we’re ready to help—no appointment needed.
@@ -172,7 +174,7 @@ export default function EmergencyDentistryPage() {
                 </AccordionItem>
                 <AccordionItem value="q2" className="faq-acc">
                   <AccordionTrigger className="faq-qn rounded-md">
-                    What are common dental emergencies?
+                   <h3 className='text-lg'> What are common dental emergencies?</h3>
                   </AccordionTrigger>
                   <AccordionContent className="faq-ans">
                     We provide emergency treatment for a variety of issues, including:
@@ -191,7 +193,7 @@ export default function EmergencyDentistryPage() {
                 </AccordionItem>
                 <AccordionItem value="q3" className="faq-acc">
                   <AccordionTrigger className="faq-qn rounded-md">
-                    What should I do before I get to the dentist?
+                   <h3 className='text-lg'> What should I do before I get to the dentist?</h3>
                   </AccordionTrigger>
                   <AccordionContent className="faq-ans">
                     <p className='mb-2'>Here are a few quick actions to take during a dental emergency:</p>
@@ -202,7 +204,7 @@ export default function EmergencyDentistryPage() {
                 </AccordionItem>
                 <AccordionItem value="q4" className="faq-acc">
                   <AccordionTrigger className="faq-qn rounded-md">
-                    How can I avoid dental emergencies?
+                   <h3 className='text-lg'> How can I avoid dental emergencies?</h3>
                   </AccordionTrigger>
                   <AccordionContent className="faq-ans">
                     While some emergencies are unavoidable, many can be prevented with good habits:
