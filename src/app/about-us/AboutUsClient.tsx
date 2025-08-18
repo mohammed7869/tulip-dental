@@ -86,12 +86,12 @@ export default function AboutUsClient() {
         <div className="flex-1 space-y-4 sm:space-y-6 lg:pr-8 order-2 lg:order-1 w-full">
           <Fade delay={200}>
             <h1 className="text-2xl sm:text-3xl lg:text-5xl font-semibold text-primary leading-tight">
-              About Maple Dental Harrisburg
+              About Tulip Dental Maplewood
             </h1>
           </Fade>
           <Fade delay={500}>
             <p>
-              Looking for a reliable dentist near you in Harrisburg, PA? At Maple Dental Harrisburg, we're committed to delivering high-quality, affordable dental care in a comfortable and welcoming environment. Located at 2017 Eg Drive, Suite 200, our practice proudly serves patients from Harrisburg (17110, 17109, 17111, 17112), Colonial Park (17109), Penbrook (17103), Paxtang (17111), Progress (17109, 17111), Lawnton (17111), and Linglestown (17112) - helping families and individuals maintain healthy, confident smiles.
+              Looking for a reliable dentist near you in Maplewood, NJ? At Tulip Dental Maplewood, we're committed to delivering high-quality, affordable dental care in a comfortable and welcoming environment. Located at 1585 Springfield Avenue, Store #1, our practice proudly serves patients from Maplewood (07040) and surrounding areas - helping families and individuals maintain healthy, confident smiles.
             </p>
           </Fade>
           <Fade delay={700}>
@@ -133,7 +133,7 @@ export default function AboutUsClient() {
             />
           </div>
           <div className="flex-1 lg:pl-12 order-1 lg:order-2">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-4 sm:mb-6 text-primary mt-2">Why Patients Choose Maple Dental Harrisburg</h2>
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-4 sm:mb-6 text-primary mt-2">Why Patients Choose Tulip Dental Maplewood</h2>
             <p>
               Each room is equipped with modern technology to ensure early diagnosis and minimally invasive procedures. We strive to make every visit as comfortable and efficient as possible, with a strong focus on patient education, preventative care, and long-term oral health.
             </p>

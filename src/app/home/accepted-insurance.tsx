@@ -168,7 +168,7 @@ const InsuranceSection = () => {
             We Accept Most Insurance Plans
           </h2>
           <p className="text-lg max-w-3xl mx-auto leading-relaxed">
-            At Maple Dental Harrisburg, we work with most major dental insurance providers. If you have any questions about your coverage, feel free to contact our office.
+            At Tulip Dental Maplewood, we work with most major dental insurance providers. If you have any questions about your coverage, feel free to contact our office.
           </p>
         </div>
 

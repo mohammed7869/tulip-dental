@@ -56,7 +56,7 @@ export default function FloatingPromo() {
           <div className="flex items-start gap-2">
             {/* Icon */}
             <div className="flex-shrink-0 w-8 h-8 md:w-10 md:h-10 flex items-center justify-center">
-              <img src="/Images/Maple.png" alt="Whitening Icon" className="w-auto h-auto" />
+              <img src="/Images/tulip.png" alt="Whitening Icon" className="w-auto h-auto" />
             </div>
 
             {/* Text Content */}

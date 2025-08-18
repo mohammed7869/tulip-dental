@@ -26,34 +26,34 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Maple Dental Harrisburg | Dentist in Harrisburg, PA | Cosmetic & Family Dentist",
-  description: "Top-rated cosmetic & family dentist in Harrisburg, PA. Serving patients from Colonial Park, Linglestown, Paxtang, and nearby. Call 717-745-2700 or visit us at 2017 Eg Drive, Suite 200, Harrisburg, PA 17110.",
-  keywords: "dentist harrisburg pa, cosmetic dentist harrisburg, family dentist harrisburg, dental implants harrisburg, root canal harrisburg, emergency dentist harrisburg",
-  authors: [{ name: "Maple Dental Harrisburg" }],
-  creator: "Maple Dental Harrisburg",
-  publisher: "Maple Dental Harrisburg",
+  title: "Tulip Dental Maplewood | Dentist in Maplewood, NJ | Cosmetic & Family Dentist",
+  description: "Top-rated cosmetic & family dentist in Maplewood, NJ. Serving patients from Maplewood and nearby areas. Call 973-671-5500 or visit us at 1585 Springfield Avenue, Store #1, Maplewood, NJ 07040.",
+  keywords: "dentist maplewood nj, cosmetic dentist maplewood, family dentist maplewood, dental implants maplewood, root canal maplewood, emergency dentist maplewood",
+  authors: [{ name: "Tulip Dental Maplewood" }],
+  creator: "Tulip Dental Maplewood",
+  publisher: "Tulip Dental Maplewood",
   robots: "index, follow",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://mapledentalharrisburg.com",
-    siteName: "Maple Dental Harrisburg",
-    title: "Maple Dental Harrisburg | Dentist in Harrisburg, PA | Cosmetic & Family Dentist",
-    description: "Top-rated cosmetic & family dentist in Harrisburg, PA. Serving patients from Colonial Park, Linglestown, Paxtang, and nearby. Call 717-745-2700 or visit us at 2017 Eg Drive, Suite 200, Harrisburg, PA 17110.",
+    url: "https://tulipdentalmaplewood.com",
+    siteName: "Tulip Dental Maplewood",
+    title: "Tulip Dental Maplewood | Dentist in Maplewood, NJ | Cosmetic & Family Dentist",
+    description: "Top-rated cosmetic & family dentist in Maplewood, NJ. Serving patients from Maplewood and nearby areas. Call 973-671-5500 or visit us at 1585 Springfield Avenue, Store #1, Maplewood, NJ 07040.",
     images: [
       {
-        url: "/Images/Maple-logo.jpeg",
+        url: "/Images/tulip-large-Blue-white-website-header.png",
         width: 1200,
         height: 630,
-        alt: "Maple Dental Harrisburg",
+        alt: "Tulip Dental Maplewood",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Maple Dental Harrisburg | Dentist in Harrisburg, PA | Cosmetic & Family Dentist",
-    description: "Top-rated cosmetic & family dentist in Harrisburg, PA. Serving patients from Colonial Park, Linglestown, Paxtang, and nearby. Call 717-745-2700 or visit us at 2017 Eg Drive, Suite 200, Harrisburg, PA 17110.",
-    images: ["/Images/Maple-logo.jpeg"],
+    title: "Tulip Dental Maplewood | Dentist in Maplewood, NJ | Cosmetic & Family Dentist",
+    description: "Top-rated cosmetic & family dentist in Maplewood, NJ. Serving patients from Maplewood and nearby areas. Call 973-671-5500 or visit us at 1585 Springfield Avenue, Store #1, Maplewood, NJ 07040.",
+    images: ["/Images/tulip-large-Blue-white-website-header.png"],
   },
   viewport: {
     width: 'device-width',
@@ -77,9 +77,9 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
         <meta name="theme-color" content="#ffffff" />
         <meta name="msapplication-TileColor" content="#ffffff" />
-        <link rel="canonical" href="https://mapledentalharrisburg.com" />
+                 <link rel="canonical" href="https://tulipdentalmaplewood.com" />
         <link rel="icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" href="/Images/Maple-logo.jpeg" />
+                 <link rel="apple-touch-icon" href="/Images/tulip-large-Blue-white-website-header.png" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${poppins.className} antialiased pt-18 md:pt-20`}

@@ -13,15 +13,15 @@ export default function OffersPage() {
             <div className="details-page-header-section flex flex-col items-center justify-center">
                 <h1>Teeth Whitening Special in Harrisburg, PA</h1>
                 <h2>
-                    Professional Whitening for Just $299 | Maple Dental | Family & Cosmetic Dentist
+                    Professional Whitening for Just $299 | Tulip Dental | Family & Cosmetic Dentist
                 </h2>
             </div>
 
             {/* Welcome Offer Section */}
             <div className="max-w-7xl mx-auto text-center py-10 px-4">
                 <h3 className="text-xl font-bold mb-2">Smile Brighter with Our Limited-Time Teeth Whitening Offer</h3>
-                <p className="mb-2">Looking for a way to refresh your smile without breaking the bank? At Maple Dental Harrisburg, we're making it easy with our $299 Teeth Whitening Special—a limited-time offer for new and existing patients. Enjoy professional-grade whitening in a single visit with no hidden fees, no pressure, and all the confidence that comes with a whiter smile.</p>
-                <p className="mb-2 p-4">Our dental office proudly serves Harrisburg (17110, 17109, 17111, 17112), Colonial Park (17109), Penbrook (17103), Paxtang (17111), Progress (17109, 17111), Lawnton (17111), and Linglestown (17112). If you've been searching for "teeth whitening near me," your brighter smile starts here.</p>
+                <p className="mb-2">Looking for a way to refresh your smile without breaking the bank? At Tulip Dental Maplewood, we're making it easy with our $299 Teeth Whitening Special—a limited-time offer for new and existing patients. Enjoy professional-grade whitening in a single visit with no hidden fees, no pressure, and all the confidence that comes with a whiter smile.</p>
+                <p className="mb-2 p-4">Our dental office proudly serves Maplewood (07040) and surrounding areas. If you've been searching for "teeth whitening near me," your brighter smile starts here.</p>
                 
                 <button 
                     onClick={() => setIsBookingOpen(true)}
@@ -67,14 +67,14 @@ export default function OffersPage() {
             {/* Why Choose Us Section */}
             <div className="w-full details-page-header-section text-left text-white py-10 px-4">
                 <div className="max-w-5xl mx-auto">
-                    <h2 className="text-xl md:text-3xl font-bold mb-4">Why Choose Maple Dental Harrisburg?</h2>
+                    <h2 className="text-xl md:text-3xl font-bold mb-4">Why Choose Tulip Dental Maplewood?</h2>
                     <p className="mb-4">Choosing the right dentist for cosmetic treatments matters. Here’s why patients across Harrisburg and nearby neighborhoods trust us:</p>
                     <ul className="space-y-2 text-base">
                         <li className="flex items-center gap-2"><CheckCircle size={18}/> Experienced, Gentle Cosmetic Dentists</li>
                         <li className="flex items-center gap-2"><CheckCircle size={18}/> Transparent Pricing – No Upsells or Hidden Fees</li>
                         <li className="flex items-center gap-2"><CheckCircle size={18}/> Comfortable, Modern Office Environment</li>
                         <li className="flex items-center gap-2"><CheckCircle size={18}/> Convenient Scheduling with Evening Hours Available</li>
-                        <li className="flex items-center gap-2"><CheckCircle size={18}/> Trusted by Families in Harrisburg, Colonial Park, Penbrook, and Beyond</li>
+                        <li className="flex items-center gap-2"><CheckCircle size={18}/> Trusted by Families in Maplewood and Beyond</li>
                     </ul>
                 </div>
             </div>
@@ -82,7 +82,7 @@ export default function OffersPage() {
             {/* What to Expect Section */}
             <div className="max-w-5xl mx-auto py-12 px-4">
                 <h2 className="text-xl md:text-3xl font-semibold mb-4 text-center">What to Expect During Your Whitening Appointment</h2>
-                <p className="text-center mb-8">From check-in to checkout, your visit at Maple Dental Harrisburg is all about comfort, efficiency, and results. Here's what your teeth whitening experience looks like:</p>
+                <p className="text-center mb-8">From check-in to checkout, your visit at Tulip Dental Maplewood is all about comfort, efficiency, and results. Here's what your teeth whitening experience looks like:</p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="bg-white rounded-lg shadow p-6 flex items-center gap-4">
                         <span className="text-primary text-2xl"><CheckCircle /></span>

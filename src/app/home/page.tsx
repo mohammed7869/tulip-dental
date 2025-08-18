@@ -23,8 +23,8 @@ import { services as allServices } from '../services/serviceList';
 const banners = [
     {
         image: '/Images/Banner1.jpg',
-        title: 'Welcome to Maple Dental Harrisburg',
-        subtitle: 'Your Trusted Cosmetic & Family Dentist in Harrisburg and Surrounding Areas',
+        title: 'Welcome to Tulip Dental Maplewood',
+        subtitle: 'Your Trusted Cosmetic & Family Dentist in Maplewood and Surrounding Areas',
         image2: '/Images/Banner1.jpg',
     },
     {
@@ -321,7 +321,7 @@ export default function HomePage() {
             </section>
 
             <div className='w-full bg-[#ffffff84] flex items-center justify-center overflow-hidden py-4 md:py-8'>
-                <img src="/Images/Maple MHA Logo.png" alt="dental-banner" className='w-auto h-16 md:h-32 object-cover' />
+                <img src="/Images/tulip-large-Blue-white-trnsprnt.png" alt="dental-banner" className='w-auto h-16 md:h-32 object-cover' />
 
             </div>
             <HomepageSections />
@@ -342,25 +342,25 @@ export default function HomePage() {
                     <div className="w-full md:w-1/2 text-center md:text-left space-y-6">
                         <Fade delay={200}>
                             <h2 className="text-3xl md:text-5xl font-semibold text-primary leading-tight">
-                                About Maple Dental
+                                About Tulip Dental
                             </h2>
                         </Fade>
 
                         <Fade delay={500}>
                             <p className="text-lg ">
-                                Your Trusted Cosmetic & Family Dentist in Harrisburg and Surrounding Areas
+                                Your Trusted Cosmetic & Family Dentist in Maplewood and Surrounding Areas
                             </p>
                         </Fade>
 
                         <Fade delay={700}>
                             <p className="text-base leading-relaxed">
-                                Looking for a reliable dentist near you in Harrisburg, PA? At <strong>Maple Dental Harrisburg</strong>, we’re committed to delivering high-quality, affordable dental care in a comfortable and welcoming environment. Located at 2017 Eg Drive, Suite 200, our practice proudly serves patients from <strong>Harrisburg (17110, 17109, 17111, 17112), Colonial Park (17109), Penbrook (17103), Paxtang (17111), Progress (17109, 17111), Lawnton (17111),</strong> and <strong>Linglestown (17112) </strong>– helping families and individuals maintain healthy, confident smiles.
+                                Looking for a reliable dentist near you in Maplewood, NJ? At <strong>Tulip Dental Maplewood</strong>, we're committed to delivering high-quality, affordable dental care in a comfortable and welcoming environment. Located at 1585 Springfield Avenue, Store #1, our practice proudly serves patients from <strong>Maplewood (07040)</strong> and surrounding areas – helping families and individuals maintain healthy, confident smiles.
                             </p>
                         </Fade>
 
                         <Fade delay={800}>
                             <Link
-                                href="/about-maple-dental-harrisburg-pa"
+                                href="/about-us"
                                 className="border border-primary text-primary rounded-lg px-4 py-3 hover:bg-blue-50 text-sm font-medium transition"
                             >
                                 Learn More
@@ -487,7 +487,7 @@ export default function HomePage() {
                         </Fade>
 
                         <Fade delay={800}>
-                            <a href="tel:717-745-2700">
+                            <a href="tel:973-671-5500">
                                 <Button>CALL TODAY</Button>
                             </a>
                         </Fade>
@@ -507,10 +507,10 @@ export default function HomePage() {
 
 function HomepageSections() {
     const sections = [
-        { label: 'About Us', icon: <InfoIcon />, bg: 'bg-primary', href: '/about-maple-dental-harrisburg-pa' },
+        { label: 'About Us', icon: <InfoIcon />, bg: 'bg-primary', href: '/about-us' },
         { label: 'Our Providers', icon: <User />, bg: 'bg-primary/70', href: '/providers' },
         { label: 'Our Services', icon: <Stethoscope />, bg: 'bg-secondary', href: '/services' },
-        { label: 'Contact Us', icon: <MessageCircle />, bg: 'bg-secondary/70', href: '/contact-maple-dental-harrisburg-pa' },
+        { label: 'Contact Us', icon: <MessageCircle />, bg: 'bg-secondary/70', href: '/contact-us' },
     ];
 
     return (

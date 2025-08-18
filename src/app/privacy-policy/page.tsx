@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 const privacySections = [
   {
     title: "PRIVACY STATEMENT",
-    content: `Maple Dental is committed to protecting your privacy and developing technology that gives you the most powerful and safe online experience. This Statement of Privacy applies to our Practice's Web site and governs data collection and usage. By using this website, you consent to the data practices described in this statement.`,
+    content: `Tulip Dental is committed to protecting your privacy and developing technology that gives you the most powerful and safe online experience. This Statement of Privacy applies to our Practice's Web site and governs data collection and usage. By using this website, you consent to the data practices described in this statement.`,
   },
   {
     title: "Collection of your Personal Information",
@@ -31,7 +31,7 @@ const privacySections = [
   },
   {
     title: "Contact Information",
-    content: `Please contact us by phone at 717-745-2700 or by mail at 2017 Eg Drive, Suite 200, Harrisburg, PA 17110`,
+    content: `Please contact us by phone at 973-671-5500 or by mail at 1585 Springfield Avenue, Store #1, Maplewood, NJ 07040`,
   },
 ];
 

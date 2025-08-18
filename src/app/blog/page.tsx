@@ -10,7 +10,7 @@ import { Fade, Slide } from "react-awesome-reveal";
 const blogPosts = [
   {
     id: 1,
-    title: "How to Handle Dental Emergencies in Harrisburg | Maple Dental Tips",
+    title: "How to Handle Dental Emergencies in Maplewood | Tulip Dental Tips",
     date: "Jul 16, 2025",
     description: "Picture this: you're enjoying a quiet evening in Harrisburg when suddenly, excruciating tooth pain strikes like lightning. Dental emergencies don't wait for convenient times, and knowing how to handle them can mean the difference between saving and losing a tooth",
     image: "/Images/banners/dental emergencies Harrisburg.webp",
@@ -18,17 +18,17 @@ const blogPosts = [
   },
   {
     id: 2,
-    title: "Harrisburg Trusted Dentists at Maple Dental - Oral Health Care Tips",
+    title: "Maplewood Trusted Dentists at Tulip Dental - Oral Health Care Tips",
     date: "May 18, 2025",
-    description: "Oral health is about more than just having a pretty smile—it's a window into your overall health. Yet, finding a trustworthy dentist can feel like searching for a needle in a haystack. If you're in Harrisburg, PA, consider your search over. Maple Dental has built a reputation as one of the most reliable dental practices in the area. Whether you're looking for a general check-up or need an emergency dentist in Harrisburg, Maple Dental is here to help.",
+          description: "Oral health is about more than just having a pretty smile—it's a window into your overall health. Yet, finding a trustworthy dentist can feel like searching for a needle in a haystack. If you're in Maplewood, NJ, consider your search over. Tulip Dental has built a reputation as one of the most reliable dental practices in the area. Whether you're looking for a general check-up or need an emergency dentist in Maplewood, Tulip Dental is here to help.",
     image: "/Images/banners/Trusted Dentists in Harrisburg.jpg",
     slug: "trusted-dentists-in-harrisburg"
   },
   {
     id: 3,
-    title: "5 Signs You Might Need a Root Canal in Harrisburg | Why Trust Maple Dental",
+    title: "5 Signs You Might Need a Root Canal in Maplewood | Why Trust Tulip Dental",
     date: "May 12, 2025",
-    description: "Discover the 5 critical signs that suggest you need a root canal treatment. Trust Maple Dental in Harrisburg for expert endodontic care and pain relief.",
+          description: "Discover the 5 critical signs that suggest you need a root canal treatment. Trust Tulip Dental in Maplewood for expert endodontic care and pain relief.",
     image: "/Images/banners/5 Signs You Might Need a Root Canal.jpg",
     slug: "5-signs-you-might-need-a-root-canal"
   },
@@ -149,7 +149,7 @@ export default function BlogGridPage() {
       <div className="details-page-header-section">
         <div className="max-w-7xl mx-auto text-center">
           <Fade direction="down" triggerOnce>
-            <h1>Dental Tips, News & Updates from Maple Dental</h1>
+            <h1>Dental Tips, News & Updates from Tulip Dental</h1>
             <h2>Explore Expert Advice on Oral Health & Family Dentistry</h2>
           </Fade>
         </div>
