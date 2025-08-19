@@ -142,7 +142,7 @@ export default function HomePage() {
             {/* Modern Hero Banner */}
             <section
                 ref={bannerRef}
-                className="relative w-full h-140 md:h-[112vh] min-h-[700px] max-h-[900px] overflow-hidden bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900"
+                className="relative w-full min-h-[820px] py-8 md:py-12 overflow-hidden bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900"
                 onTouchStart={onTouchStart}
                 onTouchMove={onTouchMove}
                 onTouchEnd={onTouchEnd}
@@ -174,7 +174,7 @@ export default function HomePage() {
                             <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 lg:gap-12 items-center">
                                 
                                 {/* Left Content - Text */}
-                                <div className="text-white z-20 space-y-4 md:space-y-6 lg:space-y-8 order-2 lg:order-1 pt-4 md:pt-8">
+                                <div className="text-white z-20 space-y-4 md:space-y-6 lg:space-y-8 order-2 lg:order-1 pt-4 md:pt-8 pb-16 md:pb-20">
                                     <Fade cascade direction='up' delay={300} duration={800}>
                                         {/* Badge */}
                                         <div className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-500 to-red-500 text-white px-3 py-2 md:px-4 md:py-3 rounded-full text-xs md:text-sm font-medium shadow-lg">
@@ -183,22 +183,22 @@ export default function HomePage() {
                                         </div>
 
                                         {/* Main Title */}
-                                        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight">
+                                        <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold leading-tight">
                                             {banner.title}
                                         </h1>
 
                                         {/* Subtitle */}
-                                        <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-300 leading-relaxed max-w-lg">
+                                        <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-300 leading-relaxed max-w-lg mb-4 md:mb-6">
                                             {banner.subtitle}
                                         </p>
 
                                         {/* Price Card */}
-                                        <div className="bg-white/10 backdrop-blur-md rounded-xl md:rounded-2xl p-4 md:p-6 border border-white/20 shadow-2xl">
+                                        <div className="bg-white/10 backdrop-blur-md rounded-xl md:rounded-2xl p-3 md:p-6 border border-white/20 shadow-2xl">
                                             <div className="flex items-center justify-between">
                                                 <div>
                                                     <p className="text-blue-300 text-xs md:text-sm font-medium">{banner.highlight}</p>
                                                     <div className="flex items-baseline gap-2">
-                                                        <span className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white">{banner.price}</span>
+                                                        <span className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold text-white">{banner.price}</span>
                                                         <span className="text-gray-400 text-xs md:text-sm">{banner.description}</span>
                                                     </div>
                                                 </div>
@@ -211,7 +211,7 @@ export default function HomePage() {
                                         {/* CTA Buttons */}
                                         <div className="flex flex-col sm:flex-row gap-3 md:gap-4">
                                             <button 
-                                                className="group bg-gradient-to-r from-blue-600 to-cyan-600 text-white px-6 py-3 md:px-8 md:py-4 rounded-lg md:rounded-xl font-semibold text-base md:text-lg hover:from-blue-700 hover:to-cyan-700 transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 flex items-center justify-center gap-2" 
+                                                className="group bg-gradient-to-r from-blue-600 to-cyan-600 text-white px-4 py-2.5 md:px-6 md:py-3 lg:px-8 lg:py-4 rounded-lg md:rounded-xl font-semibold text-sm md:text-base lg:text-lg hover:from-blue-700 hover:to-cyan-700 transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 flex items-center justify-center gap-2" 
                                                 onClick={() => setIsBookingOpen(true)}
                                             >
                                                 Book Your Appointment
@@ -224,13 +224,13 @@ export default function HomePage() {
                                         </div>
 
                                         {/* Trust Indicators */}
-                                        <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 md:gap-6 pt-2 md:pt-4">
+                                        <div className="flex flex-row items-center gap-3 md:gap-6 pt-2 md:pt-4 mb-8 md:mb-12">
                                             <div className="flex items-center gap-2">
-                                                <Shield className="w-4 h-4 md:w-5 md:h-5 text-green-400" />
+                                                <Shield className="hidden md:block w-4 h-4 md:w-5 md:h-5 text-green-400" />
                                                 <span className="text-xs md:text-sm text-gray-300">Licensed & Insured</span>
                                             </div>
                                             <div className="flex items-center gap-2">
-                                                <Heart className="w-4 h-4 md:w-5 md:h-5 text-red-400" />
+                                                <Heart className="hidden md:block w-4 h-4 md:w-5 md:h-5 text-red-400" />
                                                 <span className="text-xs md:text-sm text-gray-300">Family Owned</span>
                                             </div>
                                         </div>
@@ -238,7 +238,7 @@ export default function HomePage() {
                                 </div>
 
                                 {/* Right Content - Image */}
-                                <div className="relative z-20 order-1 lg:order-2">
+                                <div className="relative z-20 order-1 lg:order-2 mb-8 md:mb-0">
                                     <Fade direction="left" delay={600} duration={1000}>
                                         <div className="relative">
                                             {/* Main Image Container */}
@@ -246,11 +246,11 @@ export default function HomePage() {
                                                 <img
                                                     src={banner.image}
                                                     alt={banner.title}
-                                                    className="w-full h-[300px] sm:h-[400px] md:h-[450px] lg:h-[500px] object-cover rounded-xl md:rounded-2xl"
+                                                    className="w-full h-[250px] sm:h-[350px] md:h-[400px] lg:h-[450px] xl:h-[500px] object-cover rounded-xl md:rounded-2xl"
                                                 />
                                                 
                                                 {/* Floating Stats Card */}
-                                                <div className="absolute -bottom-3 -left-3 md:-bottom-6 md:-left-6 bg-white rounded-xl md:rounded-2xl p-3 md:p-4 shadow-xl">
+                                                <div className="absolute -bottom-2 -left-2 md:-bottom-6 md:-left-6 bg-white rounded-xl md:rounded-2xl p-2 md:p-4 shadow-xl">
                                                     <div className="text-center">
                                                         <div className="text-lg md:text-2xl font-bold text-blue-600">500+</div>
                                                         <div className="text-xs md:text-sm text-gray-600">Happy Patients</div>
@@ -258,7 +258,7 @@ export default function HomePage() {
                                                 </div>
 
                                                 {/* Floating Review Card */}
-                                                <div className="absolute -top-3 -right-3 md:-top-6 md:-right-6 bg-white rounded-xl md:rounded-2xl p-3 md:p-4 shadow-xl">
+                                                <div className="absolute -top-2 -right-2 md:-top-6 md:-right-6 bg-white rounded-xl md:rounded-2xl p-2 md:p-4 shadow-xl">
                                                     <div className="flex items-center gap-2">
                                                         <div className="flex">
                                                             {[...Array(5)].map((_, i) => (
@@ -285,7 +285,7 @@ export default function HomePage() {
                 ))}
 
                 {/* Modern Navigation Dots */}
-                <div className="absolute bottom-8 md:bottom-12 left-1/2 transform -translate-x-1/2 z-30">
+                <div className="absolute bottom-4 md:bottom-8 left-1/2 transform -translate-x-1/2 z-30">
                     <div className="flex gap-2 md:gap-3">
                         {banners.map((_, idx) => (
                             <button
@@ -324,7 +324,7 @@ export default function HomePage() {
                 </button>
 
                 {/* Scroll Indicator */}
-                <div className="absolute bottom-4 md:bottom-6 left-1/2 transform -translate-x-1/2 z-30">
+                <div className="absolute bottom-2 md:bottom-4 left-1/2 transform -translate-x-1/2 z-30">
                     <div className="w-4 h-8 md:w-6 md:h-10 border-2 border-white/30 rounded-full flex justify-center">
                         <div className="w-0.5 md:w-1 h-2 md:h-3 bg-white/60 rounded-full mt-2 animate-bounce"></div>
                     </div>
