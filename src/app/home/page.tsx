@@ -226,11 +226,11 @@ export default function HomePage() {
                                         {/* Trust Indicators */}
                                         <div className="flex flex-row items-center gap-3 md:gap-6 pt-2 md:pt-4 mb-8 md:mb-12">
                                             <div className="flex items-center gap-2">
-                                                <Shield className="hidden md:block w-4 h-4 md:w-5 md:h-5 text-green-400" />
+                                                <Shield className=" w-4 h-4 md:w-5 md:h-5 text-green-400" />
                                                 <span className="text-xs md:text-sm text-gray-300">Licensed & Insured</span>
                                             </div>
                                             <div className="flex items-center gap-2">
-                                                <Heart className="hidden md:block w-4 h-4 md:w-5 md:h-5 text-red-400" />
+                                                <Heart className=" w-4 h-4 md:w-5 md:h-5 text-red-400" />
                                                 <span className="text-xs md:text-sm text-gray-300">Family Owned</span>
                                             </div>
                                         </div>
