@@ -71,7 +71,7 @@ export default function OrthodonticsPage() {
           <Zoom cascade damping={0.3} duration={800}>
             <div className="main-image">
               <img
-                        src="/Images/Orthodontics.webp"
+                        src="/Images/Orthodontics.jpg"
                 alt="Main Banner"
               />
             </div>

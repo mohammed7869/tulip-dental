@@ -16,10 +16,10 @@ export default function ServicesSection() {
   const [isPaused, setIsPaused] = useState(false);
 
   const services = [
-    { id: 0, title: "Cosmetic Dentistry", description: "Cosmetic dentistry services", image: "/Images/Cosmetic Dentistry.webp", icon: "/Images/icons/Dental checkup.png", href: "/services/cosmetic-dentistry" },
+    { id: 0, title: "Cosmetic Dentistry", description: "Cosmetic dentistry services", image: "/Images/Cosmetic Dentistry.jpg", icon: "/Images/icons/Dental checkup.png", href: "/services/cosmetic-dentistry" },
     { id: 1, title: "Emergency Dentistry", description: "Urgent oral care services", image: "/Images/Emergency Dentistry.jpg", icon: "/Images/icons/Dental checkup.png", href: "/services/emergency-dentistry" },
     { id: 2, title: "Teeth Whitening", description: "Brighten your smile", image: "/Images/Whitening Veneers.webp", icon: "/Images/icons/tooth-whitening.png", href: "/services/whitening-&-veneers" },
-    { id: 3, title: "Orthodontics", description: "Orthodontic correction", image: "/Images/Orthodontics.webp", icon: "/Images/icons/braces.png", href: "/services/orthodontics" },
+    { id: 3, title: "Orthodontics", description: "Orthodontic correction", image: "/Images/Orthodontics.jpg", icon: "/Images/icons/braces.png", href: "/services/orthodontics" },
     { id: 4, title: "Root Canal", description: "Save infected teeth", image: "/Images/Root Canal.webp", icon: "/Images/icons/root-canal (1).png", href: "/services/root-canal" },
     { id: 5, title: "Dental Implants", description: "Permanent tooth replacement", image: "/Images/Dental Implants.webp", icon: "/Images/icons/implant.png", href: "/services/dental-implants" },
     { id: 6, title: "Oral Surgery", description: "Advanced procedures", image: "/Images/Oral Surgery.webp", icon: "/Images/icons/oral surgery.png", href: "/services/oral-surgery" },
@@ -139,7 +139,7 @@ export default function ServicesSection() {
                         <img src={service.icon} alt="icon" className="w-5 h-5" />
                         {service.title}
                       </h3>
-                      <p className="text-gray-600 text-xs mb-2">
+                      <p className="text-gray-600 text-xs mb-2  w-full">
                         {service.description}
                       </p>
                       <Link href={service.href} className="text-primary hover:text-blue-800 inline-flex items-center text-xs">
@@ -181,7 +181,7 @@ export default function ServicesSection() {
                         <img src={service.icon} alt="icon" className="w-8 h-8" />
                         {service.title}
                       </h3>
-                      <p className="text-gray-600 text-sm mb-3">
+                      <p className="text-gray-600 text-sm mb-3 w-full">
                         {service.description}
                       </p>
                       <Link href={service.href} className="text-primary hover:text-blue-800 inline-flex items-center">

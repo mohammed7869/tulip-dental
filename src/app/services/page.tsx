@@ -22,7 +22,7 @@ const services = [
   },
   {
     title: "Cosmetic Dentistry",
-    image: "/Images/Cosmetic Dentistry.webp",
+    image: "/Images/Cosmetic Dentistry.jpg",
     link: "/services/cosmetic-dentistry",
   },
   {
@@ -37,7 +37,7 @@ const services = [
   },
   {
     title: "Orthodontics",
-      image: "/Images/Orthodontics.webp",
+      image: "/Images/Orthodontics.jpg",
       link: "/services/orthodontics",
   },
   {

@@ -142,7 +142,7 @@ export default function HomePage() {
             {/* Modern Hero Banner */}
             <section
                 ref={bannerRef}
-                className="relative w-full h-screen min-h-[600px] md:min-h-[700px] overflow-hidden bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900"
+                className="relative w-full h-140 md:h-[92vh] min-h-[600px] max-h-[900px] overflow-hidden bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900"
                 onTouchStart={onTouchStart}
                 onTouchMove={onTouchMove}
                 onTouchEnd={onTouchEnd}
@@ -170,14 +170,14 @@ export default function HomePage() {
                             idx === current ? 'opacity-100 z-10' : 'opacity-0 z-0'
                         }`}
                     >
-                        <div className="container mx-auto px-4 md:px-6 h-full flex items-center">
+                        <div className="container mx-auto px-4 md:px-6 min-h-screen flex items-center justify-center py-8 md:py-12">
                             <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 lg:gap-12 items-center">
                                 
                                 {/* Left Content - Text */}
-                                <div className="text-white z-20 space-y-4 md:space-y-6 lg:space-y-8 order-2 lg:order-1">
+                                <div className="text-white z-20 space-y-4 md:space-y-6 lg:space-y-8 order-2 lg:order-1 pt-4 md:pt-8">
                                     <Fade cascade direction='up' delay={300} duration={800}>
                                         {/* Badge */}
-                                        <div className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-500 to-red-500 text-white px-3 py-2 md:px-4 md:py-2 rounded-full text-xs md:text-sm font-medium shadow-lg">
+                                        <div className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-500 to-red-500 text-white px-3 py-2 md:px-4 md:py-3 rounded-full text-xs md:text-sm font-medium shadow-lg">
                                             <Star className="w-3 h-3 md:w-4 md:h-4" />
                                             {banner.badge}
                                         </div>
@@ -285,7 +285,7 @@ export default function HomePage() {
                 ))}
 
                 {/* Modern Navigation Dots */}
-                <div className="absolute bottom-4 md:bottom-8 left-1/2 transform -translate-x-1/2 z-30">
+                <div className="absolute bottom-8 md:bottom-12 left-1/2 transform -translate-x-1/2 z-30">
                     <div className="flex gap-2 md:gap-3">
                         {banners.map((_, idx) => (
                             <button
@@ -324,7 +324,7 @@ export default function HomePage() {
                 </button>
 
                 {/* Scroll Indicator */}
-                <div className="absolute bottom-2 md:bottom-4 left-1/2 transform -translate-x-1/2 z-30">
+                <div className="absolute bottom-4 md:bottom-6 left-1/2 transform -translate-x-1/2 z-30">
                     <div className="w-4 h-8 md:w-6 md:h-10 border-2 border-white/30 rounded-full flex justify-center">
                         <div className="w-0.5 md:w-1 h-2 md:h-3 bg-white/60 rounded-full mt-2 animate-bounce"></div>
                     </div>
@@ -387,7 +387,7 @@ export default function HomePage() {
                     {/* Left Side - Image */}
                     <Slide direction="right" className="w-full md:w-1/2 h-64 md:h-120">
                         <img
-                            src="/Images/About-Maple-Dental.jpg"
+                            src="/Images/About-Maple-Dental.jpeg"
                             alt="dental-banner"
                             className="rounded-md md:rounded-xl mt-8 object-cover shadow-md"
                         />
