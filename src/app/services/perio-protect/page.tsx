@@ -73,7 +73,7 @@ export default function PerioProtectPage() {
           <Zoom cascade damping={0.3} duration={800}>
             <div className="main-image">
               <img
-                src="/Images/Perio Protect Image.webp"
+                src="/Images/Perio Protect Image.jpeg"
                 alt="Main Banner"
               />
             </div>

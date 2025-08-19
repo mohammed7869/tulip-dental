@@ -67,7 +67,7 @@ export default function SportsDentistryPage() {
           <Zoom cascade damping={0.3} duration={800}>
             <div className="main-image">
               <img
-                src="/Images/Sports Dentistry.webp"
+                src="/Images/Sports Dentistry.jpeg"
                 alt="Main Banner"
               />
             </div>

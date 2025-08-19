@@ -71,7 +71,7 @@ export default function ToothExtractionPage() {
                 <Zoom cascade damping={0.3} duration={800}>
                   <div className="main-image">
                     <img
-                      src="/Images/Tooth Extraction.webp"
+                      src="/Images/Tooth Extraction.jpeg"
                       alt="Main Banner"
                     />
                   </div>

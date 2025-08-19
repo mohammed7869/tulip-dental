@@ -73,7 +73,7 @@ export default function DentalFillingPage() {
                 <Zoom cascade damping={0.3} duration={800}>
                   <div className="main-image">
                     <img
-                      src="/Images/Dental Fillings.webp"
+                      src="/Images/dental-fillings.png"
                       alt="Main Banner"
                     />
                   </div>

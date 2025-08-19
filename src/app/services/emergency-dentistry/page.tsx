@@ -7,7 +7,7 @@ import { CheckCircle } from 'lucide-react';
 import BookCallBtn from '../book-call-btn';
 import { generateServiceMetadata } from '@/lib/metadata';
 
-export const metadata: Metadata = generateServiceMetadata("emergency-dentistry", "/Images/Emergency Dentistry.jpg");
+export const metadata: Metadata = generateServiceMetadata("emergency-dentistry", "/Images/Emergency Dentistry.jpeg");
 
 export default function EmergencyDentistryPage() {
 
@@ -72,7 +72,7 @@ export default function EmergencyDentistryPage() {
                 <Zoom cascade damping={0.3} duration={800}>
                   <div className="main-image">
                     <img
-                      src="/Images/Emergency Dentistry.jpg"
+                      src="/Images/Emergency Dentistry.jpeg"
                       alt="Main Banner"
                     />
                   </div>

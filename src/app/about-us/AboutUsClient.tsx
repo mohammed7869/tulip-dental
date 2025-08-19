@@ -216,7 +216,7 @@ export default function AboutUsClient() {
              </a>
             <button
               onClick={() => setIsBookingOpen(true)}
-              className="w-full flex flex-col bg-primary text-white rounded-lg px-4 py-3 hover:bg-secondary text-xs sm:text-sm font-medium transition"
+              className="w-full flex flex-col bg-primary text-white rounded-lg px-2 py-1 hover:bg-secondary text-xs sm:text-sm font-medium transition"
             >
               Book Now
               <span className="text-sm sm:text-base">Click Here for Appointment</span>

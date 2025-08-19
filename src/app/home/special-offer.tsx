@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Phone, CheckCircle, Globe, Clock, Users } from 'lucide-react';
+import { Phone, CheckCircle, Globe, Clock, Users, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Bounce, Fade } from 'react-awesome-reveal';
 import BookingModal from '../booking/bookingScreen';
@@ -127,7 +127,13 @@ const SpecialOffersSection = () => {
 
                 {/* CTA Button */}
                 <div className='text-center mt-2'>
-                <Button onClick={()=>setIsBookingOpen(true)} className='w-full'>Book Now</Button>
+                <button 
+                    className="group bg-gradient-to-r from-blue-600 to-cyan-600 text-white px-4 py-2.5 md:px-6 md:py-3 lg:px-8 lg:py-4 rounded-lg md:rounded-xl font-semibold text-sm md:text-base lg:text-lg hover:from-blue-700 hover:to-cyan-700 transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 flex items-center justify-center gap-2 w-full" 
+                    onClick={() => setIsBookingOpen(true)}
+                >
+                    Book Now
+                    <ArrowRight className="w-4 h-4 md:w-5 md:h-5 group-hover:translate-x-1 transition-transform" />
+                </button>
                 </div>
               </div>
             </div>
@@ -149,7 +155,7 @@ const SpecialOffersSection = () => {
               {languages.map((language, index) => (
                 <span 
                   key={index}
-                  className="bg-white/20 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-medium border border-white/30 hover:bg-white/30 transition-colors duration-200 font-bold"
+                  className="bg-primary text-white px-4 py-2 font-medium rounded-full text-sm border border-white/30 hover:bg-white/30 transition-colors duration-200"
                 >
                   {language}
                 </span>

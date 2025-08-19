@@ -71,7 +71,7 @@ export default function OralSurgeryPage() {
                 <Zoom cascade damping={0.3} duration={800}>
                   <div className="main-image">
                     <img
-                      src="/Images/Oral Surgery.webp"
+                      src="/Images/Oral Surgery.jpg"
                       alt="Main Banner"
                     />
                   </div>

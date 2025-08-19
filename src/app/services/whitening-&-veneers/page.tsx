@@ -70,7 +70,7 @@ export default function WhiteningVeneersPage() {
           <Zoom cascade damping={0.3} duration={800}>
             <div className="main-image">
               <img
-                src="/Images/Whitening Veneers.webp"
+                src="/Images/Whitening Veneers.png"
                 alt="Main Banner"
               />
             </div>

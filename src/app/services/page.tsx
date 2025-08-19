@@ -7,17 +7,17 @@ import clsx from "clsx";
 const services = [
   {
     title: "Emergency Dentistry",
-    image: "/Images/Emergency Dentistry.jpg",
+    image: "/Images/Emergency Dentistry.jpeg",
     link: "/services/emergency-dentistry",
   },
   {
     title: "Root Canal",
-      image: "/Images/Root Canal.webp",
+      image: "/Images/Root Canal.jpg",
     link: "/services/root-canal",
   },
   {
     title: "Oral Surgery",
-      image: "/Images/Oral Surgery.webp",
+      image: "/Images/Oral Surgery.jpg",
     link: "/services/oral-surgery",
   },
   {
@@ -27,12 +27,12 @@ const services = [
   },
   {
     title: "Dental Fillings",
-    image: "/Images/Dental Fillings.webp",
+    image: "/Images/dental-fillings.png",
     link: "/services/dental-fillings",
   },
   {
     title: "Dental Implants",
-      image: "/Images/Dental Implants.webp",
+      image: "/Images/Dental Implants.jpg",
     link: "/services/dental-implants",
   },
   {
@@ -52,22 +52,22 @@ const services = [
   },
   {
     title: "Tooth Extraction",
-    image: "/Images/Tooth Extraction.webp",
+    image: "/Images/Tooth Extraction.jpeg",
     link: "/services/tooth-extraction",
   },
   {
     title: "Whitening & Veneers",
-    image: "/Images/Whitening Veneers.webp",
+    image: "/Images/Whitening Veneers.png",
     link: "/services/whitening-&-veneers",
   },
   {
     title: "Invisalign",
-    image: "/Images/Invisalign.webp",
+    image: "/Images/Invisalign.jpeg",
     link: "/services/invisalign",
   },
   {
     title: "Kids & Children Dentistry",
-    image: "/Images/Kids Dentistry.webp",
+    image: "/Images/Kids Dentistry.jpg",
     link: "/services/kids-&-children-dentistry",
   },
   {
@@ -77,37 +77,37 @@ const services = [
   },
   {
     title: "Sports Dentistry",
-    image: "/Images/Sports Dentistry.webp",
+    image: "/Images/Sports Dentistry.jpeg",
     link: "/services/sports-dentistry",
   },
   {
     title: "Wisdom Teeth",
-    image: "/Images/Wisdom Teeth.webp",
+    image: "/Images/Wisdom Teeth.jpg",
     link: "/services/wisdom-teeth",
   },
   {
     title: "Endodontics",
-    image: "/Images/Endodontics.webp",
+    image: "/Images/Endodontics.jpeg",
     link: "/services/endodontics",
   },
   {
     title: "Same-day Dentistry",
-    image: "/Images/Same-day Dentistry.webp",
+    image: "/Images/Same-day Dentistry.jpeg",
     link: "/services/same-day-dentistry",
   },
   {
     title: "Painless Treatment",
-    image: "/Images/Painless Treatment.webp",
+    image: "/Images/Painless Treatment.jpeg",
     link: "/services/painless-treatment",
   },
   {
     title: "Perio Protect",
-    image: "/Images/Perio Protect Image.webp",
+    image: "/Images/Perio Protect Image.jpeg",
     link: "/services/perio-protect",
   },
   {
     title: "Halitosis",
-    image: "/Images/banners/Halitosis.webp",
+    image: "/Images/banners/Halitosis.jpeg",
     link: "/services/halitosis",
   },
 ];

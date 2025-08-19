@@ -429,7 +429,7 @@ Finding a trusted dentist in Harrisburg doesn’t have to be overwhelming. At Ma
   {
     slug: "5-signs-you-might-need-a-root-canal",
     title: "5 Signs You Might Need a Root Canal in Harrisburg | Why Trust Maple Dental",
-    image: "/Images/banners/5 Signs You Might Need a Root Canal.webp",
+    image: "/Images/banners/5 Signs You Might Need a Root Canal.jpg",
     datetime: "May 12, 2025",
     shortDescription:
       "Discover the 5 critical signs that suggest you need a root canal treatment. Trust Maple Dental in Harrisburg for expert endodontic care and pain relief.",

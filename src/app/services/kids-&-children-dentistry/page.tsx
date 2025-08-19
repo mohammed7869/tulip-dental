@@ -71,7 +71,7 @@ export default function KidsAndChildrenPage() {
           <Zoom cascade damping={0.3} duration={800}>
             <div className="main-image">
               <img
-                src="/Images/Kids Dentistry.webp"
+                src="/Images/Kids Dentistry.jpg"
                 alt="Main Banner"
               />
             </div>

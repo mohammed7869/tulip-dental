@@ -70,7 +70,7 @@ export default function RootCanalClient() {
           <Zoom cascade damping={0.3} duration={800}>
             <div className="main-image">
               <img
-                src="/Images/Root Canal.webp"
+                src="/Images/Root Canal.jpg"
                 alt="Main Banner"
               />
             </div>

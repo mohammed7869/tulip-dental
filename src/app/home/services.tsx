@@ -16,16 +16,17 @@ export default function ServicesSection() {
   const [isPaused, setIsPaused] = useState(false);
 
   const services = [
+    { id: 0, title: "Family Dentistry", description: "Family Dentistry services", image: "/Images/family-dentistry.jpg", icon: "/Images/icons/Dental checkup.png", href: "/services/cosmetic-dentistry" },
     { id: 0, title: "Cosmetic Dentistry", description: "Cosmetic dentistry services", image: "/Images/Cosmetic Dentistry.jpg", icon: "/Images/icons/Dental checkup.png", href: "/services/cosmetic-dentistry" },
-    { id: 1, title: "Emergency Dentistry", description: "Urgent oral care services", image: "/Images/Emergency Dentistry.jpg", icon: "/Images/icons/Dental checkup.png", href: "/services/emergency-dentistry" },
-    { id: 2, title: "Teeth Whitening", description: "Brighten your smile", image: "/Images/Whitening Veneers.webp", icon: "/Images/icons/tooth-whitening.png", href: "/services/whitening-&-veneers" },
+    { id: 1, title: "Emergency Dentistry", description: "Urgent oral care services", image: "/Images/Emergency Dentistry.jpeg", icon: "/Images/icons/Dental checkup.png", href: "/services/emergency-dentistry" },
+    { id: 2, title: "Teeth Whitening", description: "Brighten your smile", image: "/Images/Whitening Veneers.png", icon: "/Images/icons/tooth-whitening.png", href: "/services/whitening-&-veneers" },
     { id: 3, title: "Orthodontics", description: "Orthodontic correction", image: "/Images/Orthodontics.jpg", icon: "/Images/icons/braces.png", href: "/services/orthodontics" },
-    { id: 4, title: "Root Canal", description: "Save infected teeth", image: "/Images/Root Canal.webp", icon: "/Images/icons/root-canal (1).png", href: "/services/root-canal" },
-    { id: 5, title: "Dental Implants", description: "Permanent tooth replacement", image: "/Images/Dental Implants.webp", icon: "/Images/icons/implant.png", href: "/services/dental-implants" },
-    { id: 6, title: "Oral Surgery", description: "Advanced procedures", image: "/Images/Oral Surgery.webp", icon: "/Images/icons/oral surgery.png", href: "/services/oral-surgery" },
-    { id: 12, title: "Tooth Extraction", description: "Safe tooth removal", image: "/Images/Tooth Extraction.webp", icon: "/Images/icons/tooth-extraction.png", href: "/services/tooth-extraction" },
+    { id: 4, title: "Root Canal", description: "Save infected teeth", image: "/Images/Root Canal.jpg", icon: "/Images/icons/root-canal (1).png", href: "/services/root-canal" },
+    { id: 5, title: "Dental Implants", description: "Permanent tooth replacement", image: "/Images/Dental Implants.jpg", icon: "/Images/icons/implant.png", href: "/services/dental-implants" },
+    { id: 6, title: "Oral Surgery", description: "Advanced procedures", image: "/Images/Oral Surgery.jpg", icon: "/Images/icons/oral surgery.png", href: "/services/oral-surgery" },
+    { id: 12, title: "Tooth Extraction", description: "Safe tooth removal", image: "/Images/Tooth Extraction.jpeg", icon: "/Images/icons/tooth-extraction.png", href: "/services/tooth-extraction" },
     { id: 14, title: "Crowns and Bridges", description: "Restore damaged teeth", image: "/Images/Dental Crown Bridge.webp", icon: "/Images/icons/dental-crown (1).png", href: "/services/crowns-and-bridges" },
-    { id: 16, title: "Dental Fillings", description: "Repair cavities", image: "/Images/Dental Fillings.webp", icon: "/Images/icons/tooth-filling.png", href: "/services/fillings" },
+    { id: 16, title: "Dental Fillings", description: "Repair cavities", image: "/Images/dental-fillings.png", icon: "/Images/icons/tooth-filling.png", href: "/services/fillings" },
   ];
 
   // Duplicate services for seamless infinite loop
