@@ -10,7 +10,7 @@ import LocationTabs from './addresses';
 import { Fade, Slide, Zoom } from 'react-awesome-reveal';
 import FloatingFormButton from '@/components/ui/floatingButton';
 import FloatingTextForm from '@/components/ui/floatingButton';
-import { InfoIcon, MessageCircle, Stethoscope, User } from 'lucide-react';
+import { InfoIcon, MessageCircle, Stethoscope, User, Star, Award, Shield, Heart, ArrowRight, Play } from 'lucide-react';
 import Link from 'next/link';
 import { useInView } from 'react-intersection-observer';
 import CountUp from 'react-countup';
@@ -25,24 +25,40 @@ const banners = [
         image: '/Images/Banner-1.jpg',
         title: 'Welcome to Tulip Dental Maplewood',
         subtitle: 'Your Trusted Family & Cosmetic Dentist in Maplewood and Surrounding Areas',
+        highlight: 'New Patient Special',
+        price: '$79',
+        description: 'Exams, Cleaning & X-Rays',
+        badge: 'Limited Time',
         image2: '/Images/Banner-1.jpg',
     },
     {
         image: '/Images/Banner-2.jpg',
         title: 'Emergency Dental Visit Just $55',
         subtitle: 'Fast relief for toothaches or dental pain - includes exam & X-ray, no insurance needed.',
+        highlight: 'Emergency Visit',
+        price: '$55',
+        description: 'For new patients without insurance',
+        badge: 'One time offer',
         image2: '/Images/Banner-2.jpg',
     },
     {
         image: '/Images/Banner-3.jpeg',
         title: 'New Patient Special - Only $79',
         subtitle: 'Get a full dental exam, professional cleaning, and digital X-rays - perfect for first-time visitors.',
+        highlight: 'Complete oral examination',
+        price: '$79',
+        description: 'For new patients without insurance',
+        badge: 'Special Offer',
         image2: '/Images/Banner-3.jpeg',
     },
     {
         image: '/Images/Banner-4.jpg',
         title: 'Professional Teeth Whitening - Only $299',
         subtitle: 'Brighten your smile with our limited-time in-office whitening treatment.',
+        highlight: 'Family Care',
+        price: 'Only $299',
+        description: 'Complete family dental plans',
+        badge: 'All Ages Welcome',
         image2: '/Images/Banner-4.jpg',
     },
 ];
@@ -81,7 +97,7 @@ export default function HomePage() {
     useEffect(() => {
         const timer = setInterval(() => {
             setCurrent((prev) => (prev + 1) % banners.length);
-        }, 4000);
+        }, 5000);
         return () => clearInterval(timer);
     }, [current]);
 
@@ -115,146 +131,182 @@ export default function HomePage() {
         const isRightSwipe = distance < -minSwipeDistance;
 
         if (isLeftSwipe) {
-            // Swipe left - go to next banner
             handleNext();
         } else if (isRightSwipe) {
-            // Swipe right - go to previous banner
             handlePrevious();
         }
     };
 
     return (
         <div>
+            {/* Modern Hero Banner */}
             <section
                 ref={bannerRef}
-                className="relative w-full h-140 md:h-[92vh] min-h-[600px] max-h-[900px] overflow-hidden bg-gradient-to-br from-primary via-primary-500 to-secondary"
+                // className="relative w-full h-screen min-h-[700px] overflow-hidden bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900"
+                className="relative w-full h-screen min-h-[700px] overflow-hidden bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900"
                 onTouchStart={onTouchStart}
                 onTouchMove={onTouchMove}
                 onTouchEnd={onTouchEnd}
             >
-
-                {/* Decorative Background Elements */}
+                {/* Animated Background Elements */}
                 <div className="absolute inset-0 overflow-hidden">
-                    {/* Curved Shape */}
-                    <div className="absolute top-0 right-0 w-2/3 h-full">
-                        <svg
-                            viewBox="0 0 800 600"
-                            className="absolute inset-0 w-full h-full"
-                            preserveAspectRatio="none"
-                        >
-                            <path
-                                d="M300,0 Q400,100 450,200 Q500,300 480,400 Q460,500 400,600 L800,600 L800,0 Z"
-                                fill="rgba(255,255,255,0.05)"
-                            />
-                            <path
-                                d="M350,0 Q450,120 500,220 Q550,320 530,420 Q510,520 450,600 L800,600 L800,0 Z"
-                                fill="rgba(255,255,255,0.03)"
-                            />
-                        </svg>
+                    {/* Floating geometric shapes */}
+                    <div className="absolute top-20 left-10 w-32 h-32 bg-gradient-to-r from-blue-500/20 to-cyan-400/20 rounded-full blur-3xl animate-pulse"></div>
+                    <div className="absolute top-40 right-20 w-24 h-24 bg-gradient-to-r from-orange-400/20 to-red-400/20 rounded-full blur-2xl animate-pulse delay-1000"></div>
+                    <div className="absolute bottom-32 left-1/4 w-40 h-40 bg-gradient-to-r from-purple-500/10 to-pink-500/10 rounded-full blur-3xl animate-pulse delay-2000"></div>
+                    
+                    {/* Grid pattern overlay */}
+                    <div className="absolute inset-0 opacity-30">
+                        <div className="w-full h-full" style={{
+                            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Ccircle cx='30' cy='30' r='1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
+                        }}></div>
                     </div>
-
-                    {/* Decorative Elements */}
-                    <div className="absolute top-16 left-12">
-                        <div className="grid grid-cols-4 gap-2">
-                            {[...Array(12)].map((_, i) => (
-                                <div key={i} className="w-2 h-2 bg-white/30 rounded-full"></div>
-                            ))}
-                        </div>
-                    </div>
-
-                    {/* Medical Cross */}
-                    <div className="absolute top-24 left-32 text-white/25 text-4xl font-light">+</div>
-
-                    {/* Tooth Icon */}
-                    <div className="absolute top-32 left-16 text-white/20">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 2C8.5 2 6 4.5 6 8c0 2.5 1 4.5 2 6.5 1 2 2 4.5 2 6.5v1h4v-1c0-2-1-4.5-2-6.5-1-2-2-4-2-6.5 0-3.5 2.5-6 6-6s6 2.5 6 6c0 2.5-1 4.5-2 6.5-1 2-2 4.5-2 6.5v1h4v-1c0-2 1-4.5 2-6.5 1-2 2-4 2-6.5 0-3.5-2.5-6-6-6z" />
-                        </svg>
-                    </div>
-
-                    {/* Additional decorative dots */}
-                    <div className="absolute bottom-32 left-20 w-1.5 h-1.5 md:w-3 md:h-3 bg-white/20 rounded-full"></div>
-                    <div className="absolute top-40 left-8 w-2 h-2 md:w-4 md:h-4 bg-white/15 rounded-full"></div>
-                    <div className="absolute bottom-48 left-40 w-1 h-1 md:w-2 md:h-2 bg-white/25 rounded-full"></div>
                 </div>
 
                 {/* Banner Content */}
                 {banners.map((banner, idx) => (
                     <div
                         key={idx}
-                        className={`absolute inset-0 transition-all duration-700 ease-in-out ${idx === current ? 'opacity-100 z-10' : 'opacity-0 z-0'
-                            }`}
+                        className={`absolute inset-0 transition-all duration-1000 ease-in-out ${
+                            idx === current ? 'opacity-100 z-10' : 'opacity-0 z-0'
+                        }`}
                     >
-                        <div className="container mx-auto px-3 md:px-6 h-full flex items-start pt-12 md:pt-0 md:items-center">
-                            <div className="w-full flex flex-col md:flex-row items-center gap-8 md:gap-16">
+                        <div className="container mx-auto px-4 md:px-6 h-full flex items-center">
+                            <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                                
+                                {/* Left Content - Text */}
+                                <div className="text-white z-20 space-y-8">
+                                    <Fade cascade direction='up' delay={300} duration={800}>
+                                        {/* Badge */}
+                                        <div className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-500 to-red-500 text-white px-4 py-2 rounded-full text-sm font-medium shadow-lg">
+                                            <Star className="w-4 h-4" />
+                                            {banner.badge}
+                                        </div>
 
-                                {/* Left Content */}
-                                <div className="flex-1 text-white z-20 order-2 md:order-1">
-                                    <Fade cascade direction='up' delay={1000} duration={600}>
-                                        <div className="max-w-lg">
-                                            <h1 className="text-3xl md:text-3xl text-center md:text-left lg:text-5xl font-semibold mb-6 leading-tight">
-                                                {banner.title}
-                                            </h1>
-                                            <h2 className="text-md md:text-xl lg:text-2xl text-center md:text-left font-light leading-relaxed opacity-95">
-                                                {banner.subtitle}
-                                            </h2>
+                                        {/* Main Title */}
+                                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+                                            {banner.title}
+                                        </h1>
 
+                                        {/* Subtitle */}
+                                        <p className="text-lg md:text-xl text-gray-300 leading-relaxed max-w-lg">
+                                            {banner.subtitle}
+                                        </p>
 
-                                            {/* Call to Action */}
-                                            <div className="flex flex-col sm:flex-row gap-4 mt-4">
-                                                <button className="bg-white text-cyan-600 px-8 py-2 md:py-3 rounded-full font-semibold text-md hover:bg-gray-50 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105" onClick={() => setIsBookingOpen(true)}>
-                                                    Book Appointment
-                                                </button>
+                                        {/* Price Card */}
+                                        <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 shadow-2xl">
+                                            <div className="flex items-center justify-between">
+                                                <div>
+                                                    <p className="text-blue-300 text-sm font-medium">{banner.highlight}</p>
+                                                    <div className="flex items-baseline gap-2">
+                                                        <span className="text-3xl md:text-4xl font-bold text-white">{banner.price}</span>
+                                                        <span className="text-gray-400 text-sm">{banner.description}</span>
+                                                    </div>
+                                                </div>
+                                                <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full flex items-center justify-center">
+                                                    <Award className="w-8 h-8 text-white" />
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        {/* CTA Buttons */}
+                                        <div className="flex flex-col sm:flex-row gap-4">
+                                            <button 
+                                                className="group bg-gradient-to-r from-blue-600 to-cyan-600 text-white px-8 py-4 rounded-xl font-semibold text-lg hover:from-blue-700 hover:to-cyan-700 transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 flex items-center justify-center gap-2" 
+                                                onClick={() => setIsBookingOpen(true)}
+                                            >
+                                                Book Your Appointment
+                                                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                                            </button>
+                                            <button className="group bg-white/10 backdrop-blur-md text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-white/20 transition-all duration-300 border border-white/20 flex items-center justify-center gap-2">
+                                                <Play className="w-5 h-5" />
+                                                Watch Video
+                                            </button>
+                                        </div>
+
+                                        {/* Trust Indicators */}
+                                        <div className="flex items-center gap-6 pt-4">
+                                            <div className="flex items-center gap-2">
+                                                <Shield className="w-5 h-5 text-green-400" />
+                                                <span className="text-sm text-gray-300">Licensed & Insured</span>
+                                            </div>
+                                            <div className="flex items-center gap-2">
+                                                <Heart className="w-5 h-5 text-red-400" />
+                                                <span className="text-sm text-gray-300">Family Owned</span>
                                             </div>
                                         </div>
                                     </Fade>
                                 </div>
 
                                 {/* Right Content - Image */}
-                                <div className="flex-1 relative z-20 w-full max-w-lg md:order-2 lg:max-w-none">
-                                    <div className="relative max-w-full mx-auto">
-                                        {/* Image Container with curved background */}
-                                        <Zoom cascade damping={0.3} duration={800}>
-                                            <div className="relative">
-                                                <div className="bg-white/10 backdrop-blur-sm rounded-xl p-0 shadow-2xl border border-white/20">
-                                                    <img
-                                                        src={banner.image}
-                                                        alt={banner.title}
-                                                        className=" rounded-sm md:rounded-xl"
-                                                    />
+                                <div className="relative z-20">
+                                    <Fade direction="left" delay={600} duration={1000}>
+                                        <div className="relative">
+                                            {/* Main Image Container */}
+                                            <div className="relative bg-gradient-to-br from-white/20 to-white/5 backdrop-blur-sm rounded-3xl p-4 shadow-2xl border border-white/20">
+                                                <img
+                                                    src={banner.image}
+                                                    alt={banner.title}
+                                                    className="w-full h-[500px] object-cover rounded-2xl"
+                                                />
+                                                
+                                                {/* Floating Stats Card */}
+                                                <div className="absolute -bottom-6 -left-6 bg-white rounded-2xl p-4 shadow-xl">
+                                                    <div className="text-center">
+                                                        <div className="text-2xl font-bold text-blue-600">500+</div>
+                                                        <div className="text-sm text-gray-600">Happy Patients</div>
+                                                    </div>
                                                 </div>
-                                                {/* Decorative elements around image */}
-                                                <div className="absolute -bottom-4 -left-4 w-8 h-8 bg-white/20 rounded-full"></div>
-                                                <div className="absolute -top-2 left-8 w-4 h-4 bg-white/25 rounded-full"></div>
 
+                                                {/* Floating Review Card */}
+                                                <div className="absolute -top-6 -right-6 bg-white rounded-2xl p-4 shadow-xl">
+                                                    <div className="flex items-center gap-2">
+                                                        <div className="flex">
+                                                            {[...Array(5)].map((_, i) => (
+                                                                <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+                                                            ))}
+                                                        </div>
+                                                        <div className="text-sm">
+                                                            <div className="font-semibold">5.0</div>
+                                                            <div className="text-gray-500">Rating</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </Zoom>
-                                    </div>
+
+                                            {/* Decorative Elements */}
+                                            <div className="absolute -top-4 -left-4 w-8 h-8 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full animate-pulse"></div>
+                                            <div className="absolute -bottom-4 right-8 w-6 h-6 bg-gradient-to-r from-orange-500 to-red-500 rounded-full animate-pulse delay-1000"></div>
+                                        </div>
+                                    </Fade>
                                 </div>
                             </div>
                         </div>
                     </div>
                 ))}
 
-                {/* Navigation Dots */}
+                {/* Modern Navigation Dots */}
                 <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-30">
                     <div className="flex gap-3">
                         {banners.map((_, idx) => (
                             <button
                                 key={idx}
                                 onClick={() => handleNavigation(idx)}
-                                className={`transition-all duration-300 rounded-full ${idx === current
-                                    ? 'w-1.5 h-1.5 md:w-3 md:h-3 bg-white shadow-lg'
-                                    : ' w-1.5 h-1.5  bg-white/40 hover:bg-white/60'
-                                    }`}
+                                className={`transition-all duration-500 rounded-full ${
+                                    idx === current
+                                        ? 'w-12 h-3 bg-gradient-to-r from-blue-500 to-cyan-500 shadow-lg'
+                                        : 'w-3 h-3 bg-white/40 hover:bg-white/60 hover:scale-110'
+                                }`}
                                 aria-label={`Go to slide ${idx + 1}`}
                             />
                         ))}
                     </div>
                 </div>
+
+                {/* Navigation Arrows */}
                 <button
                     onClick={handlePrevious}
-                    className="hidden md:block absolute left-6 top-1/2 transform -translate-y-1/2 z-30 bg-white/10 hover:bg-white/20 text-white p-4 rounded-full backdrop-blur-sm transition-all duration-300 border border-white/20"
+                    className="hidden lg:block absolute left-8 top-1/2 transform -translate-y-1/2 z-30 bg-white/10 hover:bg-white/20 text-white p-4 rounded-full backdrop-blur-md transition-all duration-300 border border-white/20 hover:scale-110"
                     aria-label="Previous slide"
                 >
                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -264,23 +316,26 @@ export default function HomePage() {
 
                 <button
                     onClick={handleNext}
-                    className="hidden md:block absolute right-6 top-1/2 transform -translate-y-1/2 z-30 bg-white/10 hover:bg-white/20 text-white p-4 rounded-full backdrop-blur-sm transition-all duration-300 border border-white/20"
+                    className="hidden lg:block absolute right-8 top-1/2 transform -translate-y-1/2 z-30 bg-white/10 hover:bg-white/20 text-white p-4 rounded-full backdrop-blur-md transition-all duration-300 border border-white/20 hover:scale-110"
                     aria-label="Next slide"
                 >
                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>
                 </button>
+
+                {/* Scroll Indicator */}
+                <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-30">
+                    <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center">
+                        <div className="w-1 h-3 bg-white/60 rounded-full mt-2 animate-bounce"></div>
+                    </div>
+                </div>
             </section>
 
-            {/* Services Strip */}
-            <section className="w-full bg-gray-100 py-6 md:py-8 border-b border-gray-100">
+            {/* Modern Services Strip */}
+            <section className="w-full bg-gradient-to-r from-slate-50 to-blue-50 py-8 md:py-12 border-b border-slate-200">
                 <div className="w-full mx-auto px-4 md:px-6">
                     <div className="relative overflow-hidden">
-                        {/* Gradient overlays for smooth edges */}
-                        {/* <div className="absolute left-0 top-0 w-20 h-full bg-gradient-to-r from-white to-transparent z-10"></div>
-                        <div className="absolute right-0 top-0 w-20 h-full bg-gradient-to-l from-white to-transparent z-10"></div> */}
-
                         {/* Auto-scrolling services carousel */}
                         <div className="scroll-track-services flex animate-scroll-services">
                             {[...allServices, ...allServices].map((service, index) => (
@@ -289,7 +344,7 @@ export default function HomePage() {
                                     href={service.link}
                                     className="flex-shrink-0 mx-4 group hover:scale-105 transition-all duration-300"
                                 >
-                                    <span className="text-sm md:text-base font-medium text-gray-700 group-hover:text-primary group-hover:underline transition-all duration-300 whitespace-nowrap px-3 py-2 rounded-lg hover:bg-gray-50">
+                                    <span className="text-sm md:text-base font-medium text-slate-700 group-hover:text-blue-600 group-hover:bg-white group-hover:shadow-lg transition-all duration-300 whitespace-nowrap px-4 py-3 rounded-xl hover:border hover:border-blue-200">
                                         {service.name}
                                     </span>
                                 </Link>
@@ -320,9 +375,10 @@ export default function HomePage() {
                 `}</style>
             </section>
 
-            <div className='w-full bg-[#ffffff84] flex items-center justify-center overflow-hidden py-4 md:py-8'>
-                <img src="/Images/tulip-large-Blue-white-trnsprnt.png" alt="dental-banner" className='w-auto h-16 md:h-32 object-cover' />
-
+            <div className='w-full bg-gradient-to-r from-slate-50 to-blue-50 flex items-center justify-center overflow-hidden py-8 md:py-12 border-b border-slate-200'>
+                <div className="bg-white rounded-2xl p-6 shadow-lg border border-slate-200">
+                    <img src="/Images/tulip-large-Blue-white-trnsprnt.png" alt="Tulip Dental Logo" className='w-auto h-16 md:h-32 object-contain' />
+                </div>
             </div>
             <HomepageSections />
 
