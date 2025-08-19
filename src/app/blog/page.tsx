@@ -12,9 +12,9 @@ const blogPosts = [
     id: 1,
     title: "How to Handle Dental Emergencies in Maplewood | Tulip Dental Tips",
     date: "Jul 16, 2025",
-    description: "Picture this: you're enjoying a quiet evening in Harrisburg when suddenly, excruciating tooth pain strikes like lightning. Dental emergencies don't wait for convenient times, and knowing how to handle them can mean the difference between saving and losing a tooth",
+    description: "Picture this: you're enjoying a quiet evening in Maplewood when suddenly, excruciating tooth pain strikes like lightning. Dental emergencies don't wait for convenient times, and knowing how to handle them can mean the difference between saving and losing a tooth",
     image: "/Images/banners/dental emergencies Harrisburg.webp",
-    slug: "dental-emergencies-Harrisburg"
+    slug: "dental-emergencies-Maplewood"
   },
   {
     id: 2,
@@ -22,7 +22,7 @@ const blogPosts = [
     date: "May 18, 2025",
           description: "Oral health is about more than just having a pretty smile—it's a window into your overall health. Yet, finding a trustworthy dentist can feel like searching for a needle in a haystack. If you're in Maplewood, NJ, consider your search over. Tulip Dental has built a reputation as one of the most reliable dental practices in the area. Whether you're looking for a general check-up or need an emergency dentist in Maplewood, Tulip Dental is here to help.",
     image: "/Images/banners/Trusted Dentists in Harrisburg.jpg",
-    slug: "trusted-dentists-in-harrisburg"
+    slug: "trusted-dentists-in-maplewood"
   },
   {
     id: 3,

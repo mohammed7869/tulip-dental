@@ -5,10 +5,10 @@ export default function SitemapPage() {
   const pages = {
     "Main Pages": [
       { name: "Home", link: "/" },
-              { name: "About Us", link: "/about-maple-dental-harrisburg-pa" },
-      { name: "Contact Us", link: "/contact-maple-dental-harrisburg-pa" },
+              { name: "About Us", link: "/about-us" },
+      { name: "Contact Us", link: "/contact-us" },
       { name: "Blog", link: "/dental-blog" },
-      { name: "Reviews", link: "/patient-reviews-harrisburg-pa" },
+      { name: "Reviews", link: "/reviews" },
       { name: "Providers", link: "/providers" },
       { name: "Services", link: "/services" },
       { name: "Offers", link: "/offers" },
@@ -38,13 +38,7 @@ export default function SitemapPage() {
        { name: "Endodontics", link: "/services/endodontics" },
      ],
      "Service Areas": [
-       { name: "Harrisburg, PA", link: "/service-areas/harrisburg" },
-       { name: "Linglestown, PA", link: "/service-areas/linglestown" },
-       { name: "Colonial Park, PA", link: "/service-areas/colonial-park" },
-       { name: "Penbrook, PA", link: "/service-areas/penbrook" },
-       { name: "Paxtang, PA", link: "/service-areas/paxtang" },
-       { name: "Progress, PA", link: "/service-areas/progress" },
-       { name: "Lawnton, PA", link: "/service-areas/lawnton" },
+       { name: "Maplewood, NJ", link: "/service-areas" },
      ],
     "Legal & Information": [
       { name: "Terms and Conditions", link: "/terms-and-conditions" },

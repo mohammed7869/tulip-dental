@@ -77,16 +77,16 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
         <meta name="theme-color" content="#ffffff" />
         <meta name="msapplication-TileColor" content="#ffffff" />
-                 <link rel="canonical" href="https://tulipdentalmaplewood.com" />
+        <link rel="canonical" href="https://tulipdentalmaplewood.com" />
         <link rel="icon" href="/favicon.ico" />
-                 <link rel="apple-touch-icon" href="/Images/tulip-large-Blue-white-website-header.png" />
+        <link rel="apple-touch-icon" href="/Images/tulip-large-Blue-white-website-header.png" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${poppins.className} antialiased pt-18 md:pt-20`}
       >
         <GoogleTagManager />
         <DynamicMetadata />
-        <Header/>
+        <Header />
         <LoaderProvider>{children}</LoaderProvider>
         <Footer />
         <FloatingTextForm />

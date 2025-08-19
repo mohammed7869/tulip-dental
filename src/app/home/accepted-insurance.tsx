@@ -153,7 +153,7 @@ const InsuranceSection = () => {
       logo: "/Images/Insurance companies/2781630.webp",
       alt: "Aetna Dental Insurance"
     }
-    
+
   ];
 
   // Duplicate logos for seamless loop
@@ -168,8 +168,7 @@ const InsuranceSection = () => {
             We Accept Most Insurance Plans
           </h2>
           <p className="text-lg max-w-3xl mx-auto leading-relaxed">
-            At Tulip Dental Maplewood, we work with most major dental insurance providers. If you have any questions about your coverage, feel free to contact our office.
-          </p>
+            At Tulip Dental Maplewood, we proudly work with most major dental insurance providers to make your care as affordable as possible. If you’re unsure about your coverage or benefits, our friendly front desk team will be happy to assist you.          </p>
         </div>
 
         {/* Auto-scrolling logos container */}
@@ -216,7 +215,7 @@ const InsuranceSection = () => {
       </div>
 
       {/* Custom CSS for animation */}
-       <style jsx>{`
+      <style jsx>{`
          .scroll-track {
       width: fit-content;
     }

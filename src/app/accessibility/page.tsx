@@ -21,12 +21,12 @@ export default function Accessibility() {
       <p className="mb-4">
         This Accessibility Statement applies to:{" "}
         <a
-          href="https://mapledentalnj.com/"
+          href="https://tulipdentalmaplewood.com/"
           className="text-blue-600 underline"
           target="_blank"
           rel="noopener noreferrer"
         >
-          www.mapledentalpa.com
+          www.tulipdentalmaplewood.com
         </a>
       </p>
       <section className="mb-6">
@@ -52,7 +52,7 @@ export default function Accessibility() {
 We test using modern web browsers and assistive technologies such as JAWS, NVDA, VoiceOver, magnifiers, voice dictation tools, and keyboard-only navigation.
         </p>
         <p className="font-bold">
-          AudioEye certifies that www.mapledentalpa.com has engaged AudioEye to help www.mapledentalpa.com conform with WCAG 2.2 Level, AA Success Criteria.
+          AudioEye certifies that www.tulipdentalmaplewood.com has engaged AudioEye to help www.tulipdentalmaplewood.com conform with WCAG 2.2 Level, AA Success Criteria.
         </p>
         <p>
             AudioEye uses the following web browsers and web-based assistive technologies in testing its solutions:
@@ -72,7 +72,7 @@ We test using modern web browsers and assistive technologies such as JAWS, NVDA,
 
 Improving the user experience for everyone
 
-www.mapledentalpa.com has leveraged the Web Content Accessibility Guidelines (WCAG) 2.2 as reference to help ensure the web content made available from this website is more accessible for individuals with disabilities and user-friendly for everyone. These globally recognized best practices (as recommended by the World Wide Web Consortium) consist of three levels of accessibility measurement (A, AA, and AAA). AudioEye references Level AA of these guidelines in helping provide accessibility.
+www.tulipdentalmaplewood.com has leveraged the Web Content Accessibility Guidelines (WCAG) 2.2 as reference to help ensure the web content made available from this website is more accessible for individuals with disabilities and user-friendly for everyone. These globally recognized best practices (as recommended by the World Wide Web Consortium) consist of three levels of accessibility measurement (A, AA, and AAA). AudioEye references Level AA of these guidelines in helping provide accessibility.
         </p>
       </section>
 
@@ -86,7 +86,7 @@ www.mapledentalpa.com has leveraged the Web Content Accessibility Guidelines (WC
       <section className="mb-6">
         <h2 className="text-md font-semibold mb-2">Feedback & Support</h2>
         <p className="mb-2">
-          AudioEye is available to assist website visitors with any issues accessing content and the various services and functions made available across www.mapledentalpa.com. Website visitors are encouraged to engage with the Help Desk to report and troubleshoot web accessibility related issues.
+          AudioEye is available to assist website visitors with any issues accessing content and the various services and functions made available across www.tulipdentalmaplewood.com. Website visitors are encouraged to engage with the Help Desk to report and troubleshoot web accessibility related issues.
         </p>
       </section>
 

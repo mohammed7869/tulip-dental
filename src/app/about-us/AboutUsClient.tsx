@@ -76,9 +76,9 @@ export default function AboutUsClient() {
           <h1>About Us</h1>
         </Fade>
         <Fade direction='down' duration={1000}>
-          <h2 className="text-center">
-            Cosmetic & Family Dentist in Harrisburg, PA
-          </h2>
+                     <h2 className="text-center">
+             Cosmetic & Family Dentist in Maplewood, NJ
+           </h2>
         </Fade>
       </div>
       
@@ -137,9 +137,9 @@ export default function AboutUsClient() {
             <p>
               Each room is equipped with modern technology to ensure early diagnosis and minimally invasive procedures. We strive to make every visit as comfortable and efficient as possible, with a strong focus on patient education, preventative care, and long-term oral health.
             </p>
-            <p className="mb-4 sm:mb-6">
-              We're more than just your neighborhood dentist — we're your partners in oral health. Here's why patients from across Harrisburg and nearby areas trust us:
-            </p>
+                         <p className="mb-4 sm:mb-6">
+               We're more than just your neighborhood dentist — we're your partners in oral health. Here's why patients from across Maplewood and nearby areas trust us:
+             </p>
             <div className="space-y-4 sm:space-y-6">
               {features.map((feature, index) => (
                 <div key={index} className="flex items-center md:items-start gap-3 sm:gap-4">
@@ -210,10 +210,10 @@ export default function AboutUsClient() {
       <Fade direction="left" triggerOnce>
         <section className="py-8 sm:py-12 lg:py-16 px-4 sm:px-8 lg:px-16 max-w-7xl mx-auto">
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
-            <a href="tel:7177452700" className="w-full flex flex-col border border-primary text-primary rounded-lg px-4 py-3 hover:opacity-50 text-xs text-center sm:text-sm font-medium transition">
-              <span className="text-sm sm:text-base">Call us for Booking</span>
-              717-745-2700
-            </a>
+                         <a href="tel:9736715500" className="w-full flex flex-col border border-primary text-primary rounded-lg px-4 py-3 hover:opacity-50 text-xs text-center sm:text-sm font-medium transition">
+               <span className="text-sm sm:text-base">Call us for Booking</span>
+               973-671-5500
+             </a>
             <button
               onClick={() => setIsBookingOpen(true)}
               className="w-full flex flex-col bg-primary text-white rounded-lg px-4 py-3 hover:bg-secondary text-xs sm:text-sm font-medium transition"

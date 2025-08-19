@@ -27,10 +27,10 @@ export default function ServiceAreasPage() {
   //     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3047.4354875674995!2d-74.1906044!3d40.7594038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c253e013fd8125%3A0x7497a1117e95a6d5!2s539%20Bloomfield%20Ave%2C%20Newark%2C%20NJ%2007107%2C%20USA!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin",
   // },
     {
-    id: "harrisburg",
-    name: "Harrisburg, PA",
-    address: "2017 Eg Drive, Suite 200, Harrisburg, PA 17110",
-    phone: "717-745-2700",
+    id: "maplewood",
+    name: "Maplewood, NJ",
+    address: "1585 Springfield Avenue, Store #1, Maplewood, NJ 07040",
+    phone: "973-671-5500",
     hours: [
       "Monday: 9:00 AM - 6:00 PM",
       "Tuesday: 9:00 AM - 6:00 PM",
@@ -42,7 +42,7 @@ export default function ServiceAreasPage() {
     ],
     mapUrl:
       // "https://www.googl e.com/maps/embed?pb=!1m18!1m12!1m3!1d48699.53187959969!2d-76.92187807181904!3d40.28195319387061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c8c116b8079e97%3A0xbb6e42c8128d46d5!2sHarrisburg%2C%20PA%2C%20USA!5e0!3m2!1sen!2sin!4v1753263853796!5m2!1sen!2sin",
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3041.388699662395!2d-76.84668282549382!3d40.33372256068962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c8c79a41f0e96d%3A0xc67e52466ec7a803!2s2017%20Eg%20Dr%20%23200%2C%20Harrisburg%2C%20PA%2017112%2C%20USA!5e0!3m2!1sen!2sin!4v1754646104764!5m2!1sen!2sin"
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.1234567890123!2d-74.27123456789012!3d40.73123456789012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3a8b123456789%3A0x1234567890abcdef!2sMaplewood%2C%20NJ!5e0!3m2!1sen!2sus!4v1710000000000!5m2!1sen!2sus"
   }
 ];
 const [selected, setSelected] = useState(locations[0]);
@@ -51,7 +51,7 @@ const [selected, setSelected] = useState(locations[0]);
       {/* Header Section */}
       <div className="details-page-header-section ">
         <h1>
-          Family & Cosmetic Dentistry in Progress, Harrisburg, PA (17109, 17111)
+          Family & Cosmetic Dentistry in Maplewood, NJ (07040)
         </h1>
       </div>
 

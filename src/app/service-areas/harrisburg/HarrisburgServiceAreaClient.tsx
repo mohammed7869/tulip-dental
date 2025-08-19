@@ -9,10 +9,10 @@ import { Bounce, Fade, Zoom } from 'react-awesome-reveal';
 export default function HarrisburgServiceAreaClient() {
   const locations = [
     {
-      id: "harrisburg",
-      name: "Harrisburg, PA",
-      address: "2017 Eg Drive, Suite 200, Harrisburg, PA 17110",
-      phone: "717-745-2700",
+      id: "maplewood",
+      name: "Maplewood, NJ",
+      address: "1585 Springfield Avenue, Store #1, Maplewood, NJ 07040",
+      phone: "973-671-5500",
       hours: [
         "Monday: 9:00 AM - 6:00 PM",
         "Tuesday: 9:00 AM - 6:00 PM",
@@ -23,7 +23,7 @@ export default function HarrisburgServiceAreaClient() {
         "Sunday: Closed",
       ],
       mapUrl:
-        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3041.388699662395!2d-76.84668282549382!3d40.33372256068962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c8c79a41f0e96d%3A0xc67e52466ec7a803!2s2017%20Eg%20Dr%20%23200%2C%20Harrisburg%2C%20PA%2017112%2C%20USA!5e0!3m2!1sen!2sin!4v1754646104764!5m2!1sen!2sin"
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.1234567890123!2d-74.27123456789012!3d40.73123456789012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3a8b123456789%3A0x1234567890abcdef!2sMaplewood%2C%20NJ!5e0!3m2!1sen!2sus!4v1710000000000!5m2!1sen!2sus"
     },
   ];
   
@@ -34,7 +34,7 @@ export default function HarrisburgServiceAreaClient() {
       {/* Header Section */}
       <div className="details-page-header-section ">
         <h1>
-          Cosmetic & Family Dentistry in Harrisburg, PA
+          Cosmetic & Family Dentistry in Maplewood, NJ
         </h1>
       </div>
 
@@ -60,9 +60,9 @@ export default function HarrisburgServiceAreaClient() {
           {/* Text Section with Fade-in after delay */}
           <div className='desc-text-section'>
             <Fade cascade direction="up" delay={1000} duration={600}>
-              <h2 className='text-2xl sm:text-3xl lg:text-4xl font-semibold'>Comprehensive Dental Services in Harrisburg | Maple Dental | Family & Cosmetic Dentist</h2>
+              <h2 className='text-2xl sm:text-3xl lg:text-4xl font-semibold'>Comprehensive Dental Services in Maplewood | Tulip Dental | Family & Cosmetic Dentist</h2>
               <p>
-                At Maple Dental Harrisburg, we're proud to deliver high-quality, family-friendly dental care to residents of Harrisburg, PA, including the areas of 17110, 17109, 17111, and 17112. Whether you're new to the area or just searching for a reliable "dentist near me," we're right here in your neighborhood with state-of-the-art services for every smile.
+                At Tulip Dental Maplewood, we're proud to deliver high-quality, family-friendly dental care to residents of Maplewood, NJ (07040). Whether you're new to the area or just searching for a reliable "dentist near me," we're right here in your neighborhood with state-of-the-art services for every smile.
               </p>
               <p>
                 Our compassionate team provides everything from preventive cleanings to advanced cosmetic and restorative treatments. We treat patients of all ages and welcome you to join our dental family.
@@ -75,12 +75,12 @@ export default function HarrisburgServiceAreaClient() {
         <div className="flex flex-col gap-4 p-6 md:p-0">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold">Trusted Dental Care for Every Stage of Life</h2>
           <Fade cascade direction="up" delay={1000} duration={600}>
-            <p>
-              Our centrally located Harrisburg office is fully equipped with the latest dental technology and amenities to make your visit comfortable, efficient, and stress-free. We offer a wide range of services, including:
-            </p>
-            <p>
-              Our Harrisburg dental office is conveniently located to serve patients in 17110, 17109, 17111, and 17112. We provide comprehensive dental services under one roof to make quality care accessible for your entire family.
-            </p>
+                          <p>
+                Our centrally located Maplewood office is fully equipped with the latest dental technology and amenities to make your visit comfortable, efficient, and stress-free. We offer a wide range of services, including:
+              </p>
+              <p>
+                Our Maplewood dental office is conveniently located to serve patients in 07040. We provide comprehensive dental services under one roof to make quality care accessible for your entire family.
+              </p>
             <ul className="list-disc pl-6 space-y-2 text-sm md:text-lg">
               <li>
                 <span className="font-semibold">Emergency Dentistry</span><br />
@@ -111,10 +111,10 @@ export default function HarrisburgServiceAreaClient() {
           <div className='wcu-text-section'>
             <Fade cascade direction="up" delay={1000} duration={600}>
               <div className='wcu-title'>
-                <h2>Why Harrisburg Families Choose Maple Dental?</h2>
+                <h2>Why Maplewood Families Choose Tulip Dental?</h2>
               </div>
               <div className="wcu-desc">
-                Families throughout Harrisburg, including zip codes 17110, 17109, 17111, and 17112, trust us for a reason. Our commitment to patient care goes beyond the basics:
+                Families throughout Maplewood (07040) trust us for a reason. Our commitment to patient care goes beyond the basics:
               </div>
               <div className='wcu-points-section'>
                 <ul className='wcu-points'>
@@ -142,10 +142,10 @@ export default function HarrisburgServiceAreaClient() {
         <div className="features-section">
           <Fade direction="up" duration={1000}>
             <h2 className="features-heading">
-              Schedule Your Appointment in Harrisburg Today
+              Schedule Your Appointment in Maplewood Today
             </h2>
             <p className="features-description">
-              Whether you're in uptown (17110), midtown (17109), east Harrisburg (17111), or Linglestown-area (17112), Maple Dental Harrisburg is just around the corner. If you've been searching for a "dentist near me" that combines compassion with clinical excellence—you've found your home.
+              Tulip Dental Maplewood is conveniently located in Maplewood (07040). If you've been searching for a "dentist near me" that combines compassion with clinical excellence—you've found your home.
             </p>
             <p className="features-description">
               <strong>Call us today or book online</strong> to experience family dentistry done differently.

@@ -23,8 +23,8 @@ export default function ProvidersPage() {
         <div className="min-h-screen bg-gradient-to-br from-blue-50 to-white pb-12">
             {/* Header Section with blue background */}
             <div className="details-page-header-section">
-                <h1 >Meet Our Trusted Dental Providers in Harrisburg, PA</h1>
-                <h2>Compassionate, Experienced Care from the Maple Dental Team</h2>
+                                  <h1 >Meet Our Trusted Dental Providers in Maplewood, NJ</h1>
+                <h2>Compassionate, Experienced Care from the Tulip Dental Team</h2>
             </div>
             <div className="max-w-7xl mt-6 mx-auto px-2 sm:px-4 md:px-8">
                 <div

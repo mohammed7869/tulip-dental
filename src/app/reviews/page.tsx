@@ -73,9 +73,9 @@ export default function ReviewsPage() {
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-white pb-12">
       {/* Header Section */}
       <div className="details-page-header-section">
-        <h1>What Patients Are Saying About Maple Dental</h1>
+        <h1>What Patients Are Saying About Tulip Dental</h1>
         <h2>
-          Real Reviews from Families Across Harrisburg
+                      Real Reviews from Families Across Maplewood
         </h2>
       </div>
       <div className="max-w-7xl mt-10 mx-auto px-2 sm:px-4 md:px-8">

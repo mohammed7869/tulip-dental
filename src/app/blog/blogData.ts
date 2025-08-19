@@ -9,19 +9,19 @@ export interface BlogPost {
 
 export const blogPostsData: BlogPost[] = [
   {
-    slug: "dental-emergencies-Harrisburg",
-    title: "How to Handle Dental Emergencies in Harrisburg | Maple Dental Tips",
+    slug: "dental-emergencies-Maplewood",
+    title: "How to Handle Dental Emergencies in Maplewood | Tulip Dental Tips",
     image: "/Images/banners/dental emergencies Harrisburg.webp",
     datetime: "Jul 16, 2025",
     shortDescription:
-      "Picture this: you're enjoying a quiet evening in Harrisburg when suddenly, excruciating tooth pain strikes like lightning. Dental emergencies don't wait for convenient times, and knowing how to handle them can mean the difference between saving and losing a tooth.",
+      "Picture this: you're enjoying a quiet evening in Maplewood when suddenly, excruciating tooth pain strikes like lightning. Dental emergencies don't wait for convenient times, and knowing how to handle them can mean the difference between saving and losing a tooth.",
     detailsDescription: `
     <section class="mb-8">
     <p class="mb-2">
     Picture this: you're enjoying a quiet evening in Harrisburg when suddenly, excruciating tooth pain strikes like lightning. Dental emergencies don't wait for convenient times, and knowing how to handle them can mean the difference between saving and losing a tooth.
     </p>
     <p>
-    At Maple Dental Harrisburg, we understand how frightening dental emergencies can be. Whether you live in <strong>Colonial Park (17109), Paxtang (17111), Penbrook (17103),</strong> or <strong>Linglestown (17112),</strong> this guide will help you handle unexpected dental issues until you can reach a trusted <strong>emergency dentist in Harrisburg.</strong>
+    At Tulip Dental Maplewood, we understand how frightening dental emergencies can be. Whether you live in <strong>Maplewood (07040)</strong> or surrounding areas, this guide will help you handle unexpected dental issues until you can reach a trusted <strong>emergency dentist in Maplewood.</strong>
     </p>
     </section>
 <section class="mb-8">
@@ -44,8 +44,8 @@ export const blogPostsData: BlogPost[] = [
 </section>
 
 <section class="mb-8">
-  <h3 class="text-md md:text-xl font-semibold mb-2">Common Types of Dental Emergencies in Harrisburg</h3>
-  <p class="mb-2">Living in Harrisburg, our local dentists see these emergencies most frequently:</p>
+  <h3 class="text-md md:text-xl font-semibold mb-2">Common Types of Dental Emergencies in Maplewood</h3>
+  <p class="mb-2">Living in Maplewood, our local dentists see these emergencies most frequently:</p>
   <ul class="list-disc list-inside mb-2">
     <li><strong>Severe toothaches</strong> (often from deep decay or infections)</li>
     <li><strong>Knocked-out teeth</strong> (common during sports seasons)</li>
@@ -54,7 +54,7 @@ export const blogPostsData: BlogPost[] = [
     <li><strong>Dental abscesses</strong> (serious infections requiring immediate care)</li>
   </ul>
   <p>
-  As a leading dentist in Harrisburg, Maple Dental is equipped to handle all of these dental emergencies with compassion and urgency.
+  As a leading dentist in Maplewood, Tulip Dental is equipped to handle all of these dental emergencies with compassion and urgency.
   </p>
 </section>
 
@@ -113,7 +113,7 @@ export const blogPostsData: BlogPost[] = [
 </section>
 
 <section class="mb-8">
-  <h2 class="text-md md:text-2xl font-bold mb-4 underline">Finding Emergency Dental Care in Harrisburg</h2>
+  <h2 class="text-md md:text-2xl font-bold mb-4 underline">Finding Emergency Dental Care in Maplewood</h2>
  
 </section>
 
@@ -134,7 +134,7 @@ export const blogPostsData: BlogPost[] = [
 </section>
 
 <section class="mb-8">
-  <p class="mb-2"><strong>Harrisburg Options: </strong></p>
+  <p class="mb-2"><strong>Maplewood Options: </strong></p>
   
   <ul class="list-disc list-inside mb-2">
     <li>Many local practices have emergency contact numbers</li>
@@ -142,7 +142,7 @@ export const blogPostsData: BlogPost[] = [
    <li>Extended hours and weekend availability at select locations</li>
    <li>Identify hospitals with dental emergency services</li>
   </ul>
-  <p>Maple Dental Harrisburg, located at 2017 Eg Drive, Suite 200, serves patients from zip codes 17110, 17109, 17111, and 17112 with compassionate, reliable emergency care.</p>
+  <p>Tulip Dental Maplewood, located at 1585 Springfield Avenue, Store #1, serves patients from Maplewood (07040) and surrounding areas with compassionate, reliable emergency care.</p>
 </section>
 <section class="mb-8">
   <h2 class="text-md md:text-2xl font-semibold mb-4">After-Hours Dental Care Options</h2>
@@ -260,12 +260,12 @@ In Harrisburg, skilled dental professionals understand emergencies don't follow 
 `
   },
   {
-    slug: "trusted-dentists-in-harrisburg",
-    title: "Harrisburg Trusted Dentists at Maple Dental - Oral Health Care Tips",
+    slug: "trusted-dentists-in-maplewood",
+    title: "Maplewood Trusted Dentists at Tulip Dental - Oral Health Care Tips",
     image: "/Images/banners/Trusted Dentists in Harrisburg.webp",
     datetime: "May 18, 2025",
     shortDescription:
-      "Oral health is about more than just having a pretty smile—it's a window into your overall health. Yet, finding a trustworthy dentist can feel like searching for a needle in a haystack. If you're in Harrisburg, PA, consider your search over. Maple Dental has built a reputation as one of the most reliable dental practices in the area. Whether you're looking for a general check-up or need an emergency dentist in Harrisburg, Maple Dental is here to help.",
+      "Oral health is about more than just having a pretty smile—it's a window into your overall health. Yet, finding a trustworthy dentist can feel like searching for a needle in a haystack. If you're in Maplewood, NJ, consider your search over. Tulip Dental has built a reputation as one of the most reliable dental practices in the area. Whether you're looking for a general check-up or need an emergency dentist in Maplewood, Tulip Dental is here to help.",
     detailsDescription: `
     
 <section class="mb-8">
@@ -300,7 +300,7 @@ In Harrisburg, skilled dental professionals understand emergencies don't follow 
 </section>
 
 <section class="mb-8">
-  <h2 class="text-md md:text-2xl font-bold mb-4">Common Dental Myths Debunked by Maple Dental</h2>
+  <h2 class="text-md md:text-2xl font-bold mb-4">Common Dental Myths Debunked by Tulip Dental</h2>
 
 <ul class="list-disc list-inside mb-2">
  <h4 class="text-md md:text-xl font-semibold mb-2 ml-8"><li> “Bleeding Gums Are Normal”</li></h4>
@@ -313,14 +313,14 @@ In Harrisburg, skilled dental professionals understand emergencies don't follow 
 </section>
 
 <section class="mb-8">
-  <h2 class="text-md md:text-2xl font-bold mb-4">About Maple Dental</h2>
+  <h2 class="text-md md:text-2xl font-bold mb-4">About Tulip Dental</h2>
 
   <ul class="list-disc list-inside mb-2">
  <h4 class="text-md md:text-xl font-semibold mb-2 ml-8"><li>History and Mission</li></h4>
- <p class="mb-2">Maple Dental opened its doors with a simple mission: provide compassionate, high-quality dental care to Harrisburg and its surrounding communities. Over the years, they’ve grown from a small family clinic to a state-of-the-art dental facility—but they’ve never lost their personal touch.
+ <p class="mb-2">Tulip Dental opened its doors with a simple mission: provide compassionate, high-quality dental care to Maplewood and its surrounding communities. Over the years, they’ve grown from a small family clinic to a state-of-the-art dental facility—but they’ve never lost their personal touch.
  </p>
   <h4 class="text-md md:text-xl font-semibold mb-2 ml-8"><li>Location and Service Area</li></h4>
- <p>Conveniently located in the heart of Harrisburg, Maple Dental serves patients from all over Dauphin County and beyond. Whether you’re a local resident or just moved into town, you’ll find their location easy to access. Maple Dental proudly serves patients from Harrisburg (17110, 17109, 17111, 17112), Colonial Park (17109), Penbrook (17103), Paxtang (17111), Progress (17109, 17111), Lawnton (17111), and Linglestown (17112).
+ <p>Conveniently located in the heart of Maplewood, Tulip Dental serves patients from all over Essex County and beyond. Whether you’re a local resident or just moved into town, you’ll find their location easy to access. Tulip Dental proudly serves patients from Maplewood (07040) and surrounding areas.
  </p>
  </ul>
    <h4 class="text-md md:text-xl font-semibold mb-2 ml-8"><li>What Sets Maple Dental Apart</li></h4>

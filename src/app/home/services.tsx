@@ -105,7 +105,7 @@ export default function ServicesSection() {
     <section className="relative w-full mt-10 mx-auto px-4">
       <Fade delay={200}>
         <h2 className="text-center text-primary text-3xl md:text-5xl font-extrabold mb-10">
-          Our Dental Services
+          Services We Offer
         </h2>
       </Fade>
 
@@ -254,17 +254,17 @@ export default function ServicesSection() {
 
       <Fade delay={200}>
         <h2 className="text-center text-3xl md:text-5xl font-extrabold my-10">
-          Experiencing a dental emergency?
+        Emergency Dentistry - Same-Day Care
         </h2>
       </Fade>
       <Fade delay={500}>
         <h4 className="text-center text-md md:text-2xl font-bold mb-5">
-          <span className="font-medium">We're here to help -</span> Book an appointment with us today!
+          <span className="font-medium">Here When You Need Us Most -</span> Book an appointment with us!
         </h4>
       </Fade>
       <Fade delay={600}>
         <div className="text-center">
-          <Button onClick={() => setIsBookingOpen(true)} size={'lg'}>Book Online </Button>
+          <Button onClick={() => setIsBookingOpen(true)} size={'lg'}>Book Appointment </Button>
         </div>
       </Fade>
       <BookingModal open={isBookingOpen} setOpen={setIsBookingOpen} />

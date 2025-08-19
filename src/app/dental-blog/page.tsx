@@ -133,7 +133,7 @@ export default function DentalBlogPage() {
       <div className="details-page-header-section">
         <div className="max-w-7xl mx-auto text-center">
           <Fade direction="down" triggerOnce>
-            <h1>Dental Tips, News & Updates from Maple Dental</h1>
+            <h1>Dental Tips, News & Updates from Tulip Dental</h1>
             <h2>Explore Expert Advice on Oral Health & Family Dentistry</h2>
           </Fade>
         </div>

@@ -44,7 +44,7 @@ const termsSections = [
   {
     title: "Notices",
     icon: "/Images/Maple.png",
-    content: `Please contact us by phone at 717-745-2700 or by mail at 2017 Eg Drive, Suite 200, Harrisburg, PA 17110`,
+    content: `Please contact us by phone at 973-671-5500 or by mail at 1585 Springfield Avenue, Store #1, Maplewood, NJ 07040`,
   },
 ];
 
@@ -58,9 +58,9 @@ const importantPoints = [
 ];
 
 const contactInfo = {
-  phone: "717-745-2700",
-  email: "info@novadental.com",
-  address: "2017 Eg Drive, Suite 200, Harrisburg, PA 17110",
+  phone: "973-671-5500",
+  email: "maplewood@tulipdentalnj.com",
+  address: "1585 Springfield Avenue, Store #1, Maplewood, NJ 07040",
   hours: "Monday - Friday: 9:00 AM - 6:00 PM, Saturday: 9:00 AM - 3:30 PM",
 };
 

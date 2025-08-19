@@ -11,7 +11,7 @@ export default function OffersPage() {
         <div className="w-full">
             {/* Header Section */}
             <div className="details-page-header-section flex flex-col items-center justify-center">
-                <h1>Teeth Whitening Special in Harrisburg, PA</h1>
+                                 <h1>Teeth Whitening Special in Maplewood, NJ</h1>
                 <h2>
                     Professional Whitening for Just $299 | Tulip Dental | Family & Cosmetic Dentist
                 </h2>
@@ -68,7 +68,7 @@ export default function OffersPage() {
             <div className="w-full details-page-header-section text-left text-white py-10 px-4">
                 <div className="max-w-5xl mx-auto">
                     <h2 className="text-xl md:text-3xl font-bold mb-4">Why Choose Tulip Dental Maplewood?</h2>
-                    <p className="mb-4">Choosing the right dentist for cosmetic treatments matters. Here’s why patients across Harrisburg and nearby neighborhoods trust us:</p>
+                    <p className="mb-4">Choosing the right dentist for cosmetic treatments matters. Here’s why patients across Maplewood and nearby neighborhoods trust us:</p>
                     <ul className="space-y-2 text-base">
                         <li className="flex items-center gap-2"><CheckCircle size={18}/> Experienced, Gentle Cosmetic Dentists</li>
                         <li className="flex items-center gap-2"><CheckCircle size={18}/> Transparent Pricing – No Upsells or Hidden Fees</li>

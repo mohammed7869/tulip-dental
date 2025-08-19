@@ -22,28 +22,28 @@ import { services as allServices } from '../services/serviceList';
 
 const banners = [
     {
-        image: '/Images/Banner1.jpg',
+        image: '/Images/Banner-1.jpg',
         title: 'Welcome to Tulip Dental Maplewood',
-        subtitle: 'Your Trusted Cosmetic & Family Dentist in Maplewood and Surrounding Areas',
-        image2: '/Images/Banner1.jpg',
+        subtitle: 'Your Trusted Family & Cosmetic Dentist in Maplewood and Surrounding Areas',
+        image2: '/Images/Banner-1.jpg',
     },
     {
-        image: '/Images/Emergency Dentistry.jpg',
+        image: '/Images/Banner-2.jpg',
         title: 'Emergency Dental Visit Just $55',
-        subtitle: 'Quick relief for dental pain - exam included, no insurance required.',
-        image2: '/Images/Emergency Dentistry.jpg',
+        subtitle: 'Fast relief for toothaches or dental pain - includes exam & X-ray, no insurance needed.',
+        image2: '/Images/Banner-2.jpg',
     },
     {
-        image: '/Images/Banner3.webp',
-        title: 'New Patient Welcome Offer - Only $79',
-        subtitle: 'Enjoy a complete dental checkup with cleaning & X-rays, tailored for first-time visitors.',
-        image2: '/Images/Banner3.webp',
+        image: '/Images/Banner-3.jpeg',
+        title: 'New Patient Special - Only $79',
+        subtitle: 'Get a full dental exam, professional cleaning, and digital X-rays - perfect for first-time visitors.',
+        image2: '/Images/Banner-3.jpeg',
     },
     {
-        image: '/Images/young-surprised-woman-with-hand-her-face.jpg',
-        title: 'Whiten Your Smile for Only $299',
-        subtitle: 'Grab our limited-time professional teeth whitening deal and shine with confidence!',
-        image2: '/Images/young-surprised-woman-with-hand-her-face.jpg',
+        image: '/Images/Banner-4.jpg',
+        title: 'Professional Teeth Whitening - Only $299',
+        subtitle: 'Brighten your smile with our limited-time in-office whitening treatment.',
+        image2: '/Images/Banner-4.jpg',
     },
 ];
 
@@ -202,7 +202,7 @@ export default function HomePage() {
 
                                             {/* Call to Action */}
                                             <div className="flex flex-col sm:flex-row gap-4 mt-4">
-                                                <button className="bg-white text-cyan-600 px-8 py-2 md:py-3 rounded-full font-semibold text-md hover:bg-gray-50 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105" onClick={()=>setIsBookingOpen(true)}>
+                                                <button className="bg-white text-cyan-600 px-8 py-2 md:py-3 rounded-full font-semibold text-md hover:bg-gray-50 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105" onClick={() => setIsBookingOpen(true)}>
                                                     Book Appointment
                                                 </button>
                                             </div>
@@ -348,14 +348,12 @@ export default function HomePage() {
 
                         <Fade delay={500}>
                             <p className="text-lg ">
-                                Your Trusted Cosmetic & Family Dentist in Maplewood and Surrounding Areas
-                            </p>
+                                Trusted Family & Cosmetic Dentistry Across Maplewood and Surrounding Areas                            </p>
                         </Fade>
 
                         <Fade delay={700}>
                             <p className="text-base leading-relaxed">
-                                Looking for a reliable dentist near you in Maplewood, NJ? At <strong>Tulip Dental Maplewood</strong>, we're committed to delivering high-quality, affordable dental care in a comfortable and welcoming environment. Located at 1585 Springfield Avenue, Store #1, our practice proudly serves patients from <strong>Maplewood (07040)</strong> and surrounding areas – helping families and individuals maintain healthy, confident smiles.
-                            </p>
+                                Looking for a caring dentist near you in Maplewood, NJ? Tulip Dental provides modern, compassionate dental care for patients of every age. Conveniently located in Maplewood, we proudly serve families and individuals from Maplewood (07040), South Orange (07079), Irvington (07111), Vauxhall (07088), and Newark neighborhoods including 07106 and 07112. Our experienced team offers preventive care, restorative solutions, and cosmetic treatments - all in a relaxed, family-friendly environment.                            </p>
                         </Fade>
 
                         <Fade delay={800}>
@@ -477,7 +475,7 @@ export default function HomePage() {
                                     <li className="list-disc">
                                         <div className="flex gap-2">
                                             <Fade delay={1200}>
-                                                <strong>Senior Discounts During Special Hours</strong>
+                                            <span> <strong>Senior Discounts</strong> During Special Hours</span>
                                             </Fade>
                                         </div>
                                     </li>
@@ -488,7 +486,7 @@ export default function HomePage() {
 
                         <Fade delay={800}>
                             <a href="tel:973-671-5500">
-                                <Button>CALL TODAY</Button>
+                                <Button>CALL TODAY!</Button>
                             </a>
                         </Fade>
 

@@ -46,7 +46,7 @@ const SpecialOffersSection = () => {
   ];
 
   const languages = [
-    "English", "Spanish", "Portuguese", "Creole", "Arabic", "Hindi"
+    "English", "Spanish", "Portuguese",  "Arabic", "Hindi", "Creole",
   ];
 
   return (
@@ -69,9 +69,9 @@ const SpecialOffersSection = () => {
             </Bounce>
           </h2>
           <Fade>
-          <p className="text-3xl text-blue-100 max-w-2xl mx-auto text-center">
+          <h3 className="text-3xl text-white max-w-2xl mx-auto text-center">
             For Patients Without Insurance
-          </p>
+          </h3>
           </Fade>
         </div>
 
@@ -156,7 +156,7 @@ const SpecialOffersSection = () => {
               ))}
             </div>
 
-            <p className="text-blue-100 text-lg mb-8 text-center">
+            <p className="text-lg mb-8 text-center text-white">
               We are here to help you in your preferred language. Call us today!
             </p>
 
