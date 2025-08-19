@@ -23,7 +23,7 @@ const locations = [
   //   mapUrl:
   //     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3047.4354875674995!2d-74.1906044!3d40.7594038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c253e013fd8125%3A0x7497a1117e95a6d5!2s539%20Bloomfield%20Ave%2C%20Newark%2C%20NJ%2007107%2C%20USA!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin",
   // },
-    {
+  {
     id: "harrisburg",
     name: "Harrisburg, PA",
     address: "2017 Eg Drive, Suite 200, Harrisburg, PA 17110",
@@ -40,7 +40,7 @@ const locations = [
     mapUrl:
       // "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48699.53187959969!2d-76.92187807181904!3d40.28195319387061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c8c116b8079e97%3A0xbb6e42c8128d46d5!2sHarrisburg%2C%20PA%2C%20USA!5e0!3m2!1sen!2sin!4v1753263853796!5m2!1sen!2sin",
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3041.388699662395!2d-76.84668282549382!3d40.33372256068962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c8c79a41f0e96d%3A0xc67e52466ec7a803!2s2017%20Eg%20Dr%20%23200%2C%20Harrisburg%2C%20PA%2017112%2C%20USA!5e0!3m2!1sen!2sin!4v1754646104764!5m2!1sen!2sin",
-    },
+  },
   // {
   //   id: "downtown",
   //   name: "Downtown Newark",
@@ -79,7 +79,7 @@ const locations = [
 
 export default function LocationTabs() {
   const [selected, setSelected] = useState(locations[0]);
-const [isBookingOpen, setIsBookingOpen] = useState(false);
+  const [isBookingOpen, setIsBookingOpen] = useState(false);
 
   return (
     <div className="max-w-7xl mx-auto px-4 md:px-8 py-12 space-y-12">
@@ -97,57 +97,56 @@ const [isBookingOpen, setIsBookingOpen] = useState(false);
       </div> */}
       <div className="flex flex-col md:flex-row items-center justify-center gap-4">
 
-      {/* Info Block */}
-      <div className="flex-1 text-center relative bg-primary rounded-lg p-8 text-white shadow-lg overflow-hidden space-y-4">
-        <Bounce>
-        <h2 className="text-2xl font-bold">{selected.name}</h2>
-        </Bounce>
-        <p className="whitespace-pre-line text-white text-xs md:text-base text-center">{selected.address}</p>
+        {/* Info Block */}
+        <div className="flex-1 text-center relative bg-primary rounded-lg p-8 text-white shadow-lg overflow-hidden space-y-4">
+          <Bounce>
+            <h2 className="text-2xl font-bold">{selected.name}</h2>
+          </Bounce>
+          <p className="whitespace-pre-line text-white text-xs md:text-base text-center">{selected.address}</p>
 
-        <h3 className="text-md font-medium mt-4">Hours of Operation:</h3>
-        <Fade delay={400}>
-        <ul className="text-sm text-gray-700">
-          {selected.hours.map((hour, i) => {
-            const isToday = new Date().getDay() === (i + 1) % 7;
-            return(
-            <li key={i} className={`text-white ${
-                    isToday ? 'bg-white/10 border-2 rounded-md border-secondary' : ''
-                  }`}>{hour}</li>
-            )
-})}
-        </ul>
-        </Fade>
+          <h3 className="text-md font-medium mt-4">Hours of Operation:</h3>
+          <Fade delay={400}>
+            <ul className="text-sm text-gray-700">
+              {selected.hours.map((hour, i) => {
+                const isToday = new Date().getDay() === (i + 1) % 7;
+                return (
+                  <li key={i} className={`text-white ${isToday ? 'bg-white/10 border-2 rounded-md border-secondary' : ''
+                    }`}>{hour}</li>
+                )
+              })}
+            </ul>
+          </Fade>
 
-        <div className="mt-6 flex justify-center gap-4 flex-wrap">
-          <a
-            onClick={()=>setIsBookingOpen(true)}
-            className="border border-white bg-primary text-white px-5 py-2 rounded-md text-sm hover:bg-secondary transition cursor-pointer"
-          >
-            Book Online
-          </a>
-          <a
-            href={`tel:${selected.phone}`}
-            className="bg-blue-100 text-primary border border-primary px-5 py-2 rounded-md text-sm hover:opacity-50 transition"
-          >
-            {selected.phone}
-          </a>
+          <div className="mt-6 flex justify-center gap-4 flex-wrap">
+            <a
+              onClick={() => setIsBookingOpen(true)}
+              className="border border-white bg-primary text-white px-5 py-2 rounded-md text-sm hover:bg-secondary transition cursor-pointer"
+            >
+              Book Online
+            </a>
+            <a
+              href={`tel:${selected.phone}`}
+              className="bg-blue-100 text-primary border border-primary px-5 py-2 rounded-md text-sm hover:opacity-50 transition"
+            >
+              {selected.phone}
+            </a>
+          </div>
+        </div>
+
+        {/* Single Map */}
+        <div className="flex-1 w-full h-[400px] rounded-xl overflow-hidden shadow">
+          <iframe
+            src={selected.mapUrl}
+            width="100%"
+            height="100%"
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            className="border-0"
+          />
         </div>
       </div>
-
-      {/* Single Map */}
-      <div className="flex-1 w-full h-[400px] rounded-xl overflow-hidden shadow">
-        <iframe
-          src={selected.mapUrl}
-          width="100%"
-          height="100%"
-          allowFullScreen
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-          className="border-0"
-        />
-      </div>
-      </div>
-      <BookingModal open={isBookingOpen} setOpen={setIsBookingOpen}/>
+      <BookingModal open={isBookingOpen} setOpen={setIsBookingOpen} />
     </div>
   );
 }

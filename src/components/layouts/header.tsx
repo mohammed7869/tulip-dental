@@ -77,7 +77,7 @@ export default function Header() {
             className="hidden lg:block transition-all duration-300"
           />
           <Image
-            src="/Images/tulip-large-Blue-white-website-header (2).png"
+            src="/Images/tulip.png"
             alt="Tulip Dental Logo"
             width={isScrolled ? 32 : 42}
             height={isScrolled ? 18 : 24}
