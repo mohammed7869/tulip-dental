@@ -142,7 +142,7 @@ export default function HomePage() {
             {/* Modern Hero Banner */}
             <section
                 ref={bannerRef}
-                className="relative w-full h-140 md:h-[92vh] min-h-[600px] max-h-[900px] overflow-hidden bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900"
+                className="relative w-full h-140 md:h-[112vh] min-h-[700px] max-h-[900px] overflow-hidden bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900"
                 onTouchStart={onTouchStart}
                 onTouchMove={onTouchMove}
                 onTouchEnd={onTouchEnd}
