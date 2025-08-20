@@ -169,7 +169,7 @@ export default function HomePage() {
                         className={`absolute inset-0 transition-all duration-1000 ease-in-out ${idx === current ? 'opacity-100 z-10' : 'opacity-0 z-0'
                             }`}
                     >
-                        <div className="container mx-auto px-4 md:px-6 min-h-screen flex items-center justify-center py-8 md:py-12">
+                        <div className="container mx-auto px-4 md:px-6 min-h-screen flex items-center justify-center py-8 md:py-6">
                             <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 lg:gap-12 items-center">
 
                                 {/* Left Content - Text */}
