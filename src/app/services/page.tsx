@@ -12,12 +12,12 @@ const services = [
   },
   {
     title: "Root Canal",
-      image: "/Images/Root Canal.jpg",
+    image: "/Images/Root Canal.jpg",
     link: "/services/root-canal",
   },
   {
     title: "Oral Surgery",
-      image: "/Images/Oral Surgery.jpg",
+    image: "/Images/Oral Surgery.jpg",
     link: "/services/oral-surgery",
   },
   {
@@ -32,13 +32,13 @@ const services = [
   },
   {
     title: "Dental Implants",
-      image: "/Images/Dental Implants.jpg",
+    image: "/Images/Dental Implants.jpg",
     link: "/services/dental-implants",
   },
   {
     title: "Orthodontics",
-      image: "/Images/Orthodontics.jpg",
-      link: "/services/orthodontics",
+    image: "/Images/Orthodontics.jpg",
+    link: "/services/orthodontics",
   },
   {
     title: "Crowns and Bridges",
@@ -119,14 +119,13 @@ export default function ServicesPage() {
       <div className="w-full details-page-header-section py-8 sm:py-12 px-4 md:px-0 mb-8 sm:mb-12">
         <div className="text-center">
           <h1 >
-            Comprehensive Dental Services in Harrisburg, PA
+            Comprehensive Dental Services in Maplewood, NJ
           </h1>
           <h2 className="text-center">
-            Family, Cosmetic & Restorative Dentistry Tailored to Your Needs
-          </h2>
+            Family, Cosmetic & Restorative Dentistry Designed for You          </h2>
         </div>
       </div>
-      
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Responsive Grid Layout */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 2xl:grid-cols-5 gap-4 sm:gap-6 lg:gap-8">

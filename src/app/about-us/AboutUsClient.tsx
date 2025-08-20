@@ -48,7 +48,7 @@ const features = [
 
 const team = [
   {
-    img: "/Images/Dr-Dhariwal1.png",
+    img: "/Images/Dr Urvashi Banerjee DMD.png",
     name: "Dr. Urvashi Banerjee, DMD",
     role: "Doctor of Dental Surgery",
     time: "11 am - 03 pm",

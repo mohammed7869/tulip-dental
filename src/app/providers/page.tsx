@@ -12,8 +12,8 @@ import clsx from "clsx";
 
 const providers = [
     {
-        name: "Dr. Simranjeet Dhaliwal, D.D.S.",
-        image: "/Images/Dr-Dhariwal1.png",
+        name: "Dr. Urvashi Banerjee, DMD",
+        image: "/Images/Dr Urvashi Banerjee DMD.png",
         link: "/providers/simranjeet-dhaliwal",
     },
 ];
@@ -23,7 +23,7 @@ export default function ProvidersPage() {
         <div className="min-h-screen bg-gradient-to-br from-blue-50 to-white pb-12">
             {/* Header Section with blue background */}
             <div className="details-page-header-section">
-                                  <h1 >Meet Our Trusted Dental Providers in Maplewood, NJ</h1>
+                                  <h1 > Meet Our Trusted Dental Providers in Maplewood, NJ </h1>
                 <h2>Compassionate, Experienced Care from the Tulip Dental Team</h2>
             </div>
             <div className="max-w-7xl mt-6 mx-auto px-2 sm:px-4 md:px-8">

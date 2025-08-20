@@ -29,18 +29,17 @@ function StarRating({ rating }: { rating: number }) {
 const doctors = [
   {
     slug: "simranjeet-dhaliwal",
-    name: "Dr. Simranjeet Dhaliwal, D.D.S.",
+    name: " Dr. Urvashi Banerjee DMD ",
     title: "Family Dentist",
-    image: "/Images/Dr-Dhariwal1.png",
-    description: `Dr. Simran Dhaliwal has been working as a dentist in Pennsylvania since 2017, providing compassionate care to patients from diverse backgrounds and with wide range of dental needs. Her guiding philosophy is rooted in the belief that prevention is better than cure. This approach is reflected in her personalized treatment plans, which focus on the patient education and the establishment of realistic, achievable oral health goals.
+    image: "/Images/Dr Urvashi Banerjee DMD.png",
+    description: `Dr. Banerjee is a compassionate and highly accomplished dentist committed to providing exceptional care and high-quality dentistry to her patients, so that they can feel at ease and even excited about visiting the dentist. Dr. Banerjee graduated from the prestigious University of Pennsylvania School of Dental Medicine with honors in Community Oral Health. 
     
-    Dedicated to creating a comfortable and reassuring environment, Dr. Dhaliwal strives to make every patient's experience as painless and stress-free as possible. She takes great pride in helping her patients regain their confidence with a healthy, radiant smile.
+She practiced in Connecticut, Massachusetts and NY state before calling New Jersey her home. Dr. Banerjee is an active member of the American Dental Association, New Jersey Dental association and American Academy of clear aligners. With expertise in restorative and cosmetic dentistry, and Invisalign, and her focus on patient comfort, Dr Banerjee takes pride in crafting personalized treatment plans that help each patient achieve their ideal smile. 
 
-    Dr. Dhaliwal is passionate about treating entire families – from children to grandparents – and believes that when families approach oral health as a unit, they can motivate and support one another in developing lifelong healthy habits.
 
-    Dr. Dhaliwal earned her Doctor of Dental Surgery (DDS) degree from the University of Washington, School of Dentistry (UW). Prior to moving to the United States, she had been practicing as a licensed dentist in India since 2010. During her time at UW, she completed her externship with the Indian Health Services in Omak, Washington, and actively volunteered in various community outreach programs. One of her most meaningful experiences was volunteering at a senior assisted living center – a role that, combined with her clinical expertise, has given her a special affinity for working with geriatric patients. Her gentle approach and empathetic nature help put patients at ease, especially before beginning treatment.
+Banerjee strongly values continuing education and has completed extensive CE to further enhance her skills and learn the newest advancements in dentistry allowing her to serve her patients better. When not in office, Dr. Banerjee likes to spend time with her family and friends and explore new cuisines and cultures
 
-    Outside of dentistry, Dr. Dhaliwal enjoys traveling and spending quality time with her family and friends. She lives in Pennsylvania with her husband and their two wonderful children.`
+    `
   },
   // {
   //   slug: "bhavneet-singh",
@@ -109,7 +108,7 @@ export default function DoctorProfilePage() {
       {/* Header Section */}
       <div className="details-page-header-section">
         <h1>{doctor.name}</h1>
-        <h2>Cosmetic and Family Dentist located in Harrisburg, Colonial Park, Penbrook, Paxtang, Progress, Lawnton, and Linglestown, PA</h2>
+        <h2>Family & Cosmetic Dentist serving Maplewood, South Orange, Irvington, Vauxhall, and nearby Newark, NJ</h2>
       </div>
       {/* Main Content Section */}
       <div className="max-w-5xl mx-auto px-4 py-16">
@@ -128,9 +127,9 @@ export default function DoctorProfilePage() {
           </div>
           {/* Doctor Info */}
           <div className="flex-1 w-full">
-            <h2 className="text-3xl font-semibold mb-2">Meet {doctor.name}</h2>
-            <div className="text-lg text-gray-700 mb-2">{doctor.title}</div>
-            <StarRating rating={5} />
+            <h2 className="text-3xl font-semibold mb-2">{doctor.name}</h2>
+            {/* <div className="text-lg text-gray-700 mb-2">{doctor.title}</div> */}
+            {/* <StarRating rating={5} /> */}
             <hr className="mb-6" />
             <p className="leading-relaxed whitespace-pre-line text-justify">
               {doctor.description}
