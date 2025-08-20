@@ -12,8 +12,8 @@ export default function Footer() {
           <div className="flex items-center gap-2 mb-2">
             <Image src="/Images/tulip-large-Blue-white-website-header (1).png" alt="Tulip Dental Logo" width={160} height={100} className="w-32 sm:w-40 md:w-48 h-auto" />
           </div>
-          <p className="text-xs sm:text-sm text-gray-200">
-            Tulip Dental is your trusted dentist in Maplewood, providing comprehensive dental care with advanced treatments and personalized service. Our team offers routine checkups, restorative procedures, and serves as your reliable emergency dentist Maplewood residents trust for urgent needs. We help families achieve lasting oral health through compassionate care and modern technology.
+          <p className="text-xs sm:text-sm text-white">
+            Tulip Dental is your trusted dentist in Maplewood, NJ, delivering exceptional family, cosmetic, and restorative dental care with advanced treatments and personalized attention. Our skilled team provides everything from routine cleanings, fillings, and preventive care to professional teeth whitening, porcelain veneers, dental implants, and same-day emergency dental services.
           </p>
           <div className="flex items-center gap-3 mt-4">
             <a href="#" onClick={(e) => e.preventDefault()}>
@@ -81,13 +81,13 @@ export default function Footer() {
 
       {/* Bottom Row */}
       <div className="border-t border-white/20 mt-8 pt-4 flex flex-col md:flex-row items-center justify-between text-xs text-gray-300 gap-2">
-        <div className="flex items-center ">
+        <div className="flex items-center text-white">
           {/* <div className="flex items-center"> */}
           <span>&copy; {new Date().getFullYear()} Tulip Dental. All rights reserved.</span>
           {/* <span className="hidden md:inline"></span> */}
           {/* <span> */}
         </div>
-        <div className="flex items-center">
+        <div className="flex items-center text-white">
           <span>
             Designed by{' '}
             <a
@@ -99,15 +99,15 @@ export default function Footer() {
               Clear Concept Solutions
             </a>
           </span>
-        {/* </div> */}
+          {/* </div> */}
+        </div>
+        <div className="flex flex-wrap gap-2 sm:gap-4 justify-center md:justify-end w-full md:w-auto text-white">
+          <Link href="/privacy-policy" className="hover:underline">Privacy Policy</Link>
+          <Link href="/terms-and-conditions" className="hover:underline">Terms & Conditions</Link>
+          <Link href="/accessibility" className="hover:underline">Accessibility</Link>
+          <Link href="/contact-us" className="hover:underline">Contact Us</Link>
+        </div>
       </div>
-      <div className="flex flex-wrap gap-2 sm:gap-4 justify-center md:justify-end w-full md:w-auto">
-        <Link href="/privacy-policy" className="hover:underline">Privacy Policy</Link>
-        <Link href="/terms-and-conditions" className="hover:underline">Terms & Conditions</Link>
-        <Link href="/accessibility" className="hover:underline">Accessibility</Link>
-        <Link href="/contact-us" className="hover:underline">Contact Us</Link>
-      </div>
-    </div>
     </footer >
   );
 }

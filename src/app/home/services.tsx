@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import { useIsMobile } from "@/lib/hooks/useIsMobile";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 import Link from "next/link";
 import React, { useState, useRef, useEffect } from "react";
 import { Fade } from "react-awesome-reveal";
@@ -255,19 +255,29 @@ export default function ServicesSection() {
 
       <Fade delay={200}>
         <h2 className="text-center text-3xl md:text-5xl font-extrabold my-10">
-        Emergency Dentistry - Same-Day Care
+          Emergency Dentistry - Same-Day Care
         </h2>
       </Fade>
       <Fade delay={500}>
-        <h4 className="text-center text-md md:text-2xl font-bold mb-5">
+        <h3 className="text-center text-md md:text-2xl font-bold mb-5">
           <span className="font-medium">Here When You Need Us Most -</span> Book an appointment with us!
-        </h4>
+        </h3>
       </Fade>
-      <Fade delay={600}>
-        <div className="text-center">
-          <Button onClick={() => setIsBookingOpen(true)} size={'lg'}>Book Appointment </Button>
+      {/* <Fade delay={600}>
+        
+          <Button onClick={() => setIsBookingOpen(true)} size={'lg'}>Book Appointment</Button>
         </div>
-      </Fade>
+      </Fade> */}
+      <div className="flex justify-center">
+  <button
+    className="group bg-gradient-to-r from-blue-600 to-cyan-600 text-white px-4 py-2.5 md:px-6 md:py-3 lg:px-8 lg:py-4 rounded-lg md:rounded-xl font-semibold text-sm md:text-base lg:text-lg hover:from-blue-700 hover:to-cyan-700 transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 flex items-center gap-2"
+    onClick={() => setIsBookingOpen(true)}
+  >
+    Book Appointment
+    <ArrowRight className="w-4 h-4 md:w-5 md:h-5 group-hover:translate-x-1 transition-transform" />
+  </button>
+</div>
+
       <BookingModal open={isBookingOpen} setOpen={setIsBookingOpen} />
     </section>
   );

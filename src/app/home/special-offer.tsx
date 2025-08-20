@@ -151,11 +151,11 @@ const SpecialOffersSection = () => {
             </h3>
             
             {/* Language Tags */}
-            <div className="flex flex-wrap justify-center gap-3 mb-6 font-bold">
+            <div className="flex flex-wrap justify-center  gap-3 mb-6 font-bold">
               {languages.map((language, index) => (
                 <span 
                   key={index}
-                  className="bg-primary text-white px-4 py-2 font-medium rounded-full text-sm border border-white/30 hover:bg-white/30 transition-colors duration-200"
+                  className="bg-gradient-to-r from-blue-600 to-cyan-600 text-white hover:from-blue-700 hover:to-cyan-700 transition-all duration-300 px-4 py-2 font-medium rounded-full text-sm border border-white/30 hover:bg-white/30 transition-colors duration-200"
                 >
                   {language}
                 </span>

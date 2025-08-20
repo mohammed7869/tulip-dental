@@ -8,6 +8,7 @@ import { useInView } from 'react-intersection-observer';
 import CountUp from 'react-countup';
 import Link from "next/link";
 import BookingModal from "../booking/bookingScreen";
+import { ArrowRight } from "lucide-react";
 
 const services = [
   {
@@ -31,24 +32,24 @@ const features = [
   {
     icon: "/Images/icons/emergency denstiry.png",
     title: "Experienced & Friendly Team",
-    desc: "Our dentists bring years of clinical expertise and treat every patient like family.",
+    desc: "Our dentists bring years of clinical expertise and treat every patient with kindness and respect.",
   },
   {
     icon: "/Images/icons/orthodontics.png",
-    title: "Emergency Dental Care",
-    desc: "We provide advanced care for dental emergencies to ensure you're never left in pain",
+    title: "Same-Day Emergency Dental Care",
+    desc: "We provide prompt, compassionate care for dental emergencies so you’re never left in pain.",
   },
   {
     icon: "/Images/icons/dental-floss.png",
-    title: "Full Range of Treatments",
-    desc: "From cosmetic enhancements to restorative work and pediatric care — everything under one roof.",
+    title: "Comprehensive Services in One Location",
+    desc: "From cosmetic dentistry to restorative treatments and pediatric care - we offer it all under one roof.",
   },
 ];
 
 const team = [
   {
     img: "/Images/Dr-Dhariwal1.png",
-    name: "Dr. Simranjeet Dhaliwal, D.D.S.",
+    name: "Dr. Urvashi Banerjee, DMD",
     role: "Doctor of Dental Surgery",
     time: "11 am - 03 pm",
     rating: 5.0,
@@ -73,41 +74,41 @@ export default function AboutUsClient() {
     <div className="w-full min-h-screen bg-background text-foreground font-sans overflow-x-hidden relative">
       <div className='details-page-header-section'>
         <Fade direction='up' duration={1000}>
-          <h1>About Us</h1>
+          <h1>About Tulip Dental Maplewood</h1>
         </Fade>
         <Fade direction='down' duration={1000}>
-                     <h2 className="text-center">
-             Cosmetic & Family Dentist in Maplewood, NJ
-           </h2>
+          <h2 className="text-center">
+            Your Caring Family & Cosmetic Dentist in Maplewood, NJ
+          </h2>
         </Fade>
       </div>
-      
+
       <section className="flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-8 py-8 sm:py-12 lg:py-16 px-4 sm:px-8 lg:px-16 max-w-7xl mx-auto">
         <div className="flex-1 space-y-4 sm:space-y-6 lg:pr-8 order-2 lg:order-1 w-full">
           <Fade delay={200}>
-            <h1 className="text-2xl sm:text-3xl lg:text-5xl font-semibold text-primary leading-tight">
-              About Tulip Dental Maplewood
-            </h1>
+            <h2 className="text-2xl sm:text-3xl lg:text-5xl font-semibold text-primary leading-tight">
+              About Us
+            </h2>
           </Fade>
           <Fade delay={500}>
             <p>
-              Looking for a reliable dentist near you in Maplewood, NJ? At Tulip Dental Maplewood, we're committed to delivering high-quality, affordable dental care in a comfortable and welcoming environment. Located at 1585 Springfield Avenue, Store #1, our practice proudly serves patients from Maplewood (07040) and surrounding areas - helping families and individuals maintain healthy, confident smiles.
-            </p>
+              Looking for a caring dentist near you in Maplewood, NJ? Tulip Dental provides modern, compassionate dental care for patients of every age. Conveniently located in Maplewood, we proudly serve families and individuals from <strong>Maplewood (07040), South Orange (07079), Irvington (07111), Vauxhall (07088) </strong>, and <strong>Newark</strong> neighborhoods including <strong>07106 </strong>  and <strong>07112</strong>. Our experienced team offers preventive care, restorative solutions, and cosmetic treatments - all in a relaxed, family-friendly environment.            </p>
           </Fade>
           <Fade delay={700}>
             <p>
-              Whether you need a routine checkup or advanced cosmetic treatment, our expert team offers comprehensive services using the latest dental technology. From preventive care to smile makeovers, we tailor each treatment plan to your unique needs and goals.
-            </p>
+              Whether you’re visiting for a routine dental check-up or seeking advanced cosmetic treatment, our friendly and experienced team at Tulip Dental Maplewood is here to help. We proudly offer a full range of services - from preventive cleanings to smile makeovers - all delivered in a modern, welcoming environment. Every treatment plan is personalized to meet your unique needs and goals, ensuring you receive the care you deserve.            </p>
           </Fade>
 
-          <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 mt-4 sm:mt-6 items-start sm:items-center">
-            <Button
+          <div className="flex justify-left">
+            <button
+              className="group bg-gradient-to-r from-blue-600 to-cyan-600 text-white px-4 py-2.5 md:px-6 md:py-3 lg:px-8 lg:py-4 rounded-lg md:rounded-xl font-semibold text-sm md:text-base lg:text-lg hover:from-blue-700 hover:to-cyan-700 transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 flex items-center gap-2"
               onClick={() => setIsBookingOpen(true)}
-              className="bg-primary text-white hover:bg-secondary/80 w-full sm:w-auto"
             >
               Book Appointment
-            </Button>
+              <ArrowRight className="w-4 h-4 md:w-5 md:h-5 group-hover:translate-x-1 transition-transform" />
+            </button>
           </div>
+
         </div>
         <div className="flex-1 flex justify-center lg:justify-end order-1 lg:order-2 w-full">
           <Slide direction="right">
@@ -126,7 +127,7 @@ export default function AboutUsClient() {
         <section className="flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-8 py-8 sm:py-12 lg:py-16 px-4 sm:px-8 lg:px-16 max-w-7xl mx-auto">
           <div className="flex-1 flex justify-center lg:justify-start mb-6 lg:mb-0 order-2 lg:order-1 w-full">
             <img
-              src="/Images/Banner_1.webp"
+              src="/Images/banners/Banner_1.jpg"
               alt="Dental procedure"
               className="rounded-xl shadow-lg w-full max-w-sm sm:max-w-md lg:max-w-lg object-cover"
               loading="lazy"
@@ -135,11 +136,11 @@ export default function AboutUsClient() {
           <div className="flex-1 lg:pl-12 order-1 lg:order-2">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-4 sm:mb-6 text-primary mt-2">Why Patients Choose Tulip Dental Maplewood</h2>
             <p>
-              Each room is equipped with modern technology to ensure early diagnosis and minimally invasive procedures. We strive to make every visit as comfortable and efficient as possible, with a strong focus on patient education, preventative care, and long-term oral health.
+              Our treatment rooms are equipped with modern dental technology, allowing us to detect and address issues early while using minimally invasive techniques. Your comfort is our top priority, and we focus on making each visit efficient, stress-free, and informative.
             </p>
-                         <p className="mb-4 sm:mb-6">
-               We're more than just your neighborhood dentist — we're your partners in oral health. Here's why patients from across Maplewood and nearby areas trust us:
-             </p>
+            <p className="mb-4 sm:mb-6">
+              We’re more than just a dentist near you - we’re your partners in lifelong oral health. Here’s why patients from Maplewood (07040), South Orange (07079), Irvington (07111), Vauxhall (07088), and nearby Newark (07106, 07112) trust us:
+            </p>
             <div className="space-y-4 sm:space-y-6">
               {features.map((feature, index) => (
                 <div key={index} className="flex items-center md:items-start gap-3 sm:gap-4">
@@ -210,16 +211,16 @@ export default function AboutUsClient() {
       <Fade direction="left" triggerOnce>
         <section className="py-8 sm:py-12 lg:py-16 px-4 sm:px-8 lg:px-16 max-w-7xl mx-auto">
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
-                         <a href="tel:9736715500" className="w-full flex flex-col border border-primary text-primary rounded-lg px-4 py-3 hover:opacity-50 text-xs text-center sm:text-sm font-medium transition">
-               <span className="text-sm sm:text-base">Call us for Booking</span>
-               973-671-5500
-             </a>
+            <a href="tel:9736715500" className="w-full flex flex-col border border-primary text-primary rounded-lg px-4 py-3 hover:opacity-50 text-xs text-center sm:text-sm font-medium transition">
+              <span className="text-sm sm:text-base">Call us for Booking</span>
+              973-671-5500
+            </a>
             <button
               onClick={() => setIsBookingOpen(true)}
-              className="w-full flex flex-col bg-primary text-white rounded-lg px-2 py-1 hover:bg-secondary text-xs sm:text-sm font-medium transition"
+              className="w-full flex flex-col bg-primary text-white rounded-lg px-2 py-3 hover:bg-secondary text-xs sm:text-sm font-medium transition"
             >
               Book Now
-              <span className="text-sm sm:text-base">Click Here for Appointment</span>
+              <span className="text-sm sm:text-base ">Click Here for Appointment</span>
             </button>
           </div>
         </section>

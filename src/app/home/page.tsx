@@ -153,7 +153,7 @@ export default function HomePage() {
                     <div className="absolute top-20 left-10 w-16 h-16 md:w-32 md:h-32 bg-gradient-to-r from-blue-500/20 to-cyan-400/20 rounded-full blur-3xl animate-pulse"></div>
                     <div className="absolute top-40 right-20 w-12 h-12 md:w-24 md:h-24 bg-gradient-to-r from-orange-400/20 to-red-400/20 rounded-full blur-2xl animate-pulse delay-1000"></div>
                     <div className="absolute bottom-32 left-1/4 w-20 h-20 md:w-40 md:h-40 bg-gradient-to-r from-purple-500/10 to-pink-500/10 rounded-full blur-3xl animate-pulse delay-2000"></div>
-                    
+
                     {/* Grid pattern overlay */}
                     <div className="absolute inset-0 opacity-30">
                         <div className="w-full h-full" style={{
@@ -166,13 +166,12 @@ export default function HomePage() {
                 {banners.map((banner, idx) => (
                     <div
                         key={idx}
-                        className={`absolute inset-0 transition-all duration-1000 ease-in-out ${
-                            idx === current ? 'opacity-100 z-10' : 'opacity-0 z-0'
-                        }`}
+                        className={`absolute inset-0 transition-all duration-1000 ease-in-out ${idx === current ? 'opacity-100 z-10' : 'opacity-0 z-0'
+                            }`}
                     >
                         <div className="container mx-auto px-4 md:px-6 min-h-screen flex items-center justify-center py-8 md:py-12">
                             <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 lg:gap-12 items-center">
-                                
+
                                 {/* Left Content - Text */}
                                 <div className="text-white z-20 space-y-4 md:space-y-6 lg:space-y-8 order-2 lg:order-1 pt-4 md:pt-8 pb-16 md:pb-20">
                                     <Fade cascade direction='up' delay={300} duration={800}>
@@ -188,7 +187,7 @@ export default function HomePage() {
                                         </h1>
 
                                         {/* Subtitle */}
-                                        <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-300 leading-relaxed max-w-lg mb-4 md:mb-6">
+                                        <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-300 leading-relaxed max-w-lg mb-4 md:mb-6 text-left">
                                             {banner.subtitle}
                                         </p>
 
@@ -210,8 +209,8 @@ export default function HomePage() {
 
                                         {/* CTA Buttons */}
                                         <div className="flex flex-col sm:flex-row gap-3 md:gap-4">
-                                            <button 
-                                                className="group bg-gradient-to-r from-blue-600 to-cyan-600 text-white px-4 py-2.5 md:px-6 md:py-3 lg:px-8 lg:py-4 rounded-lg md:rounded-xl font-semibold text-sm md:text-base lg:text-lg hover:from-blue-700 hover:to-cyan-700 transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 flex items-center justify-center gap-2" 
+                                            <button
+                                                className="group bg-gradient-to-r from-blue-600 to-cyan-600 text-white px-4 py-2.5 md:px-6 md:py-3 lg:px-8 lg:py-4 rounded-lg md:rounded-xl font-semibold text-sm md:text-base lg:text-lg hover:from-blue-700 hover:to-cyan-700 transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 flex items-center justify-center gap-2"
                                                 onClick={() => setIsBookingOpen(true)}
                                             >
                                                 Book Your Appointment
@@ -248,7 +247,7 @@ export default function HomePage() {
                                                     alt={banner.title}
                                                     className="w-full h-[250px] sm:h-[350px] md:h-[400px] lg:h-[450px] xl:h-[500px] object-cover rounded-xl md:rounded-2xl"
                                                 />
-                                                
+
                                                 {/* Floating Stats Card */}
                                                 <div className="absolute -bottom-2 -left-2 md:-bottom-6 md:-left-6 bg-white rounded-xl md:rounded-2xl p-2 md:p-4 shadow-xl">
                                                     <div className="text-center">
@@ -291,11 +290,10 @@ export default function HomePage() {
                             <button
                                 key={idx}
                                 onClick={() => handleNavigation(idx)}
-                                className={`transition-all duration-500 rounded-full ${
-                                    idx === current
-                                        ? 'w-8 md:w-12 h-2 md:h-3 bg-gradient-to-r from-blue-500 to-cyan-500 shadow-lg'
-                                        : 'w-2 md:w-3 h-2 md:h-3 bg-white/40 hover:bg-white/60 hover:scale-110'
-                                }`}
+                                className={`transition-all duration-500 rounded-full ${idx === current
+                                    ? 'w-8 md:w-12 h-2 md:h-3 bg-gradient-to-r from-blue-500 to-cyan-500 shadow-lg'
+                                    : 'w-2 md:w-3 h-2 md:h-3 bg-white/40 hover:bg-white/60 hover:scale-110'
+                                    }`}
                                 aria-label={`Go to slide ${idx + 1}`}
                             />
                         ))}
@@ -402,13 +400,13 @@ export default function HomePage() {
                         </Fade>
 
                         <Fade delay={500}>
-                            <p className="text-lg ">
-                                Trusted Family & Cosmetic Dentistry Across Maplewood and Surrounding Areas                            </p>
+                            <h2 className="text-lg ">
+                                Trusted Family & Cosmetic Dentistry Across Maplewood and Surrounding Areas                            </h2>
                         </Fade>
 
                         <Fade delay={700}>
                             <p className="text-base leading-relaxed">
-                                Looking for a caring dentist near you in Maplewood, NJ? Tulip Dental provides modern, compassionate dental care for patients of every age. Conveniently located in Maplewood, we proudly serve families and individuals from Maplewood (07040), South Orange (07079), Irvington (07111), Vauxhall (07088), and Newark neighborhoods including 07106 and 07112. Our experienced team offers preventive care, restorative solutions, and cosmetic treatments - all in a relaxed, family-friendly environment.                            </p>
+                                Looking for a caring dentist near you in Maplewood, NJ? Tulip Dental provides modern, compassionate dental care for patients of every age. Conveniently located in Maplewood, we proudly serve families and individuals from <strong>Maplewood (07040), South Orange (07079), Irvington (07111), Vauxhall (07088) </strong>, and Newark neighborhoods including <strong>07106 </strong>  and <strong>07112</strong>. Our experienced team offers preventive care, restorative solutions, and cosmetic treatments - all in a relaxed, family-friendly environment.                            </p>
                         </Fade>
 
                         <Fade delay={800}>
@@ -530,7 +528,7 @@ export default function HomePage() {
                                     <li className="list-disc">
                                         <div className="flex gap-2">
                                             <Fade delay={1200}>
-                                            <span> <strong>Senior Discounts</strong> During Special Hours</span>
+                                                <span> <strong>Senior Discounts</strong> During Special Hours</span>
                                             </Fade>
                                         </div>
                                     </li>
