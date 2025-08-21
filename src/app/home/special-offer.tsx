@@ -172,7 +172,7 @@ const SpecialOffersSection = () => {
                 <Phone className="w-5 h-5" />
                 Call Now
               </a>
-              <button onClick={()=>setIsBookingOpen(true)} className="inline-flex items-center justify-center gap-3 bg-transparent border-2 border-white text-white font-semibold py-4 px-8 rounded-xl hover:bg-white/10 transition-colors duration-200 w-full sm:w-auto min-w-[200px] h-[56px]">
+              <button onClick={()=>setIsBookingOpen(true)} className="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-blue-600 to-cyan-600 text-white font-semibold py-4 px-8 rounded-xl hover:from-blue-700 hover:to-cyan-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 w-full sm:w-auto min-w-[200px] h-[56px]">
                 <Users className="w-5 h-5" />
                 Book Online
               </button>

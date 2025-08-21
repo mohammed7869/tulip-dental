@@ -201,10 +201,10 @@ export default function Header() {
 
         {/* Desktop Buttons */}
         <div className="hidden lg:flex gap-3">
-          <a href="tel:9736715500" className="border border-primary text-primary rounded-lg px-4 py-3 hover:opacity-50 text-sm font-medium transition">
+          <a href="tel:9736715500" className="border border-primary text-primary rounded-lg px-4 py-3 hover:bg-blue-50 text-sm font-medium transition">
             973-671-5500
           </a>
-          <button onClick={()=>setIsBookingOpen(true)}  className="bg-primary text-white rounded-lg px-4 py-3 hover:bg-secondary text-sm font-medium transition">
+          <button onClick={()=>setIsBookingOpen(true)}  className="bg-gradient-to-r from-blue-600 to-cyan-600 text-white rounded-lg px-4 py-3 hover:from-blue-700 hover:to-cyan-700 text-sm font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
             Book Online
           </button>
         </div>
@@ -215,7 +215,7 @@ export default function Header() {
           <a href="tel:9736715500" className="border border-primary text-primary rounded-lg px-4 py-3 hover:bg-blue-50 text-xs font-medium transition">
             973-671-5500
           </a>
-          <button onClick={()=>setIsBookingOpen(true)} className="bg-primary text-white rounded-lg px-4 py-3 hover:bg-blue-700 text-xs font-medium transition">
+          <button onClick={()=>setIsBookingOpen(true)} className="bg-gradient-to-r from-blue-600 to-cyan-600 text-white rounded-lg px-4 py-3 hover:from-blue-700 hover:to-cyan-700 text-xs font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
             Book Online
           </button>
           

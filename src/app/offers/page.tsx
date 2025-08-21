@@ -25,7 +25,7 @@ export default function OffersPage() {
                 
                 <button 
                     onClick={() => setIsBookingOpen(true)}
-                    className="bg-primary text-white px-6 py-2 rounded font-semibold shadow hover:bg-primary/90 transition"
+                    className="bg-gradient-to-r from-blue-600 to-cyan-600 text-white px-6 py-2 rounded font-semibold shadow-lg hover:shadow-xl hover:from-blue-700 hover:to-cyan-700 transition-all duration-300 transform hover:scale-105"
                 >
                     Claim Your Special Offer Now
                 </button>
@@ -105,7 +105,7 @@ export default function OffersPage() {
                 <div className="flex justify-center mt-8">
                     <button 
                         onClick={() => setIsBookingOpen(true)}
-                        className="bg-primary text-white px-6 py-2 rounded font-semibold shadow hover:bg-primary/90 transition"
+                        className="bg-gradient-to-r from-blue-600 to-cyan-600 text-white px-6 py-2 rounded font-semibold shadow-lg hover:shadow-xl hover:from-blue-700 hover:to-cyan-700 transition-all duration-300 transform hover:scale-105"
                     >
                         Claim Your Free Exam Today!
                     </button>

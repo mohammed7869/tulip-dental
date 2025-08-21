@@ -121,7 +121,7 @@ export default function LocationTabs() {
           <div className="mt-6 flex justify-center gap-4 flex-wrap">
             <a
               onClick={() => setIsBookingOpen(true)}
-              className="border border-white bg-primary text-white px-3 py-2 rounded-md text-sm hover:bg-secondary transition cursor-pointer"
+              className="bg-gradient-to-r from-blue-600 to-cyan-600 text-white px-3 py-2 rounded-md text-sm hover:from-blue-700 hover:to-cyan-700 font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 cursor-pointer"
             >
               Book Online
             </a>

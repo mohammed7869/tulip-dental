@@ -101,7 +101,7 @@ export default function ServiceAreasPage() {
             Tulip Dental is proud to serve the communities of Maplewood, NJ with high-quality, personalized dental care.<br />
             Ready to experience exceptional dentistry? Contact us today to schedule your appointment!
           </p>
-          <a href="/booking" className="bg-primary text-white px-6 py-3 rounded-md text-lg font-semibold hover:bg-secondary transition">BOOK ONLINE</a>
+          <a href="/booking" className="bg-gradient-to-r from-blue-600 to-cyan-600 text-white px-6 py-3 rounded-md text-lg font-semibold hover:from-blue-700 hover:to-cyan-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">BOOK ONLINE</a>
         </div>
 
         {/* Map Section */}
@@ -134,7 +134,7 @@ export default function ServiceAreasPage() {
             </div>
             <div className="flex flex-col md:flex-row gap-2 justify-center mt-4">
               <a href="tel:9736715500" className="bg-blue-100 text-primary border border-primary px-5 py-2 rounded-md text-sm hover:opacity-50 transition">973-671-5500</a>
-              <a href="/booking" className="bg-primary text-white px-5 py-2 rounded-md text-sm hover:bg-secondary transition">BOOK ONLINE</a>
+              <a href="/booking" className="bg-gradient-to-r from-blue-600 to-cyan-600 text-white px-5 py-2 rounded-md text-sm hover:from-blue-700 hover:to-cyan-700 font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">BOOK ONLINE</a>
             </div>
           </div>
         </div>

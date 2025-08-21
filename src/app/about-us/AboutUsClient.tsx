@@ -210,14 +210,14 @@ export default function AboutUsClient() {
       {/* Call to Action Section */}
       <Fade direction="left" triggerOnce>
         <section className="py-8 sm:py-12 lg:py-16 px-4 sm:px-8 lg:px-16 max-w-7xl mx-auto">
-          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
-            <a href="tel:9736715500" className="w-full flex flex-col border border-primary text-primary rounded-lg px-4 py-3 hover:opacity-50 text-xs text-center sm:text-sm font-medium transition">
+          <div className="flex text-center flex-col sm:flex-row gap-3 sm:gap-4">
+            <a href="tel:9736715500" className="w-full flex flex-col bg-gradient-to-r from-blue-600 to-cyan-600 text-white rounded-lg px-2 py-3 hover:from-blue-700 hover:to-cyan-700 text-xs sm:text-sm font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
               <span className="text-sm sm:text-base">Call us for Booking</span>
               973-671-5500
             </a>
             <button
               onClick={() => setIsBookingOpen(true)}
-              className="w-full flex flex-col bg-primary text-white rounded-lg px-2 py-3 hover:bg-secondary text-xs sm:text-sm font-medium transition"
+              className="w-full flex flex-col bg-gradient-to-r from-blue-600 to-cyan-600 text-white rounded-lg px-2 py-3 hover:from-blue-700 hover:to-cyan-700 text-xs sm:text-sm font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
             >
               Book Now
               <span className="text-sm sm:text-base ">Click Here for Appointment</span>
