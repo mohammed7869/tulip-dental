@@ -10,56 +10,56 @@ import { CheckCircle } from 'lucide-react';
 
 export default function ToothExtractionPage() {
 
-
   const features = [
     {
       icon: "/Images/icons/tooth-extraction.png",
-      title: "Simple & Surgical Tooth Extractions",
-      description: "We offer both routine and surgical extractions depending on your needs, ensuring proper aftercare and minimal healing time",
+      title: "Severe Decay or Irreversible Damage",
+      description:
+        "When a tooth is beyond repair due to deep decay or fractures, removing it prevents infection from spreading to surrounding teeth and gums.",
       points: [
-        "Non-impacted tooth removal",
-        "Wisdom teeth extraction",
-        "Infected or broken tooth removal",
-        "Surgical extractions for impacted teeth",
-      ]
+        "Comprehensive exam and X-rays to assess the extent of damage.",
+        "Gentle extraction technique to preserve bone and gum tissue.",
+        "Immediate infection control and cleaning of the extraction site.",
+        "Planning for future restoration options like implants or bridges.",
+      ],
     },
     {
       icon: "/Images/icons/Smart Treatment Decisions Under Pressure.png",
-      title: "Pain-Free Experience, Every Time",
+      title: "Advanced Gum Disease (Periodontal Damage)",
       description:
-        "Your comfort is our top priority. We use local anesthesia, gentle techniques, and sedation options to reduce stress and discomfort during the procedure",
+        "Periodontal disease can weaken the bone and tissue supporting a tooth, making extraction necessary to protect nearby healthy teeth.",
       points: [
-        "Numbing agents and conscious sedation",
-        "Clear communication and aftercare instructions",
-        "Fast healing with minimal swelling",
-        "Patient-focused care from start to finish",
+        "Assessment of bone loss through periodontal charting and imaging.",
+        "Removal of loose or severely compromised teeth.",
+        "Thorough cleaning of the area to reduce bacteria and inflammation.",
+        "Referral for periodontal therapy or restorative planning as needed.",
       ],
     },
     {
       icon: "/Images/icons/Serving Harrisburg Nearby Communities.png",
-      title: "Serving Harrisburg & Surrounding Neighborhoods",
+      title: "Impacted or Problematic Wisdom Teeth",
       description:
-        "Whether you're in Harrisburg or a nearby area, Maple Dental is your trusted provider for safe and professional extractions",
+        "Wisdom teeth that grow in at the wrong angle or fail to emerge fully can cause pain, infection, and crowding of other teeth.",
       points: [
-        "Conveniently located in Harrisburg (17110–17112)Serving Harrisburg (17110, 17109, 17111, 17112) & surrounding areas",
-        "Welcoming patients from Colonial Park, Lawnton, Penbrook, Progress, Paxtang & Linglestown",
-        "Same-day appointments available",
-        "Your trusted dentist for extractions near you",
+        "Panoramic X-rays to check position and root formation.",
+        "Surgical or simple extraction depending on tooth location.",
+        "Pain management with local anesthesia or sedation options.",
+        "Post-op instructions for smooth healing and swelling control.",
       ],
     },
   ];
+  
   return (
     <div className='flex min-h-screen bg-gray-50'>
       <main className='details-page-container'>
         <div className='details-page'>
           <div className='details-page-header-section'>
             <Fade direction='up' duration={1000}>
-              <h1>Tooth Extractions in Harrisburg, PA</h1>
+              <h1>Tooth Extractions in Maplewood, NJ</h1>
             </Fade>
             <Fade direction='down' duration={1000}>
               <h2 className="text-center">
-                Safe & Gentle Tooth Removal in Harrisburg | Maple Dental | Family & Cosmetic Dentist Near You
-              </h2>
+                Gentle & Precise Tooth Removal in Maplewood | Tulip Dental | Family & Cosmetic Dentist               </h2>
             </Fade>
             {/* <div className='flex items-center justify-center gap-2'> <Link href={'/'} className='font-medium'>Home </Link><span><ChevronRight/></span> <span className='text-white/80'>Emergency Dentistry</span></div> */}
           </div>
@@ -88,13 +88,11 @@ export default function ToothExtractionPage() {
             <div className='desc-text-section'>
               <Fade cascade direction="up" delay={1000} duration={600}>
                 <div className='desc-text-subtitle'>Tooth Extractions</div>
-                <h3 className='desc-text-title'>About Tooth Extractions</h3>
+                <h2 className='text-2xl sm:text-3xl md:text-4xl font-semibold'> About Tooth Extractions</h2>
                 <p>
-                  Tooth extraction may be necessary to protect your oral health when a tooth is damaged beyond repair, severely decayed, or causing crowding or infection. At Maple Dental Harrisburg, we provide comfortable, stress-free extractions using advanced techniques and a compassionate approach.
-                </p>
+                  Sometimes, the best way to protect your oral health is to remove a tooth that’s too damaged, decayed, or impacted to save. At Tulip Dental, we perform extractions with precision, care, and a focus on keeping you comfortable throughout the process.Whether it’s a badly infected tooth, a wisdom tooth causing pain, or preparation for orthodontic treatment, we ensure your procedure is as stress-free as possible.               </p>
                 <p>
-                  We serve patients from Harrisburg (17110, 17109, 17111, 17112), Colonial Park (17109), Penbrook (17103), Paxtang (17111), Lawnton (17111), Progress (17109, 17111), and Linglestown (17112). If you're searching for a tooth extraction near me, we’re close by and ready to help.
-                </p>
+                  We serve Maplewood (07040), South Orange (07079), Vauxhall (07088), Irvington (07111), and Newark (07106, 07112).                </p>
               </Fade>
             </div>
           </div>
@@ -102,23 +100,41 @@ export default function ToothExtractionPage() {
 
             <div className='wcu-text-section'>
               <Fade cascade direction="up" delay={1000} duration={600}>
-                <div className='wcu-subtitle'>
-                  Top Reasons
-                </div>
                 <div className='wcu-title'>
-                  <h2>Why Choose Maple Dental for Tooth Extractions?</h2>
+                  <h2>Top Reasons to Choose Tulip Dental for Tooth Extractions</h2>
                 </div>
                 <div className='wcu-points-section'>
                   <ul className='wcu-points'>
-                    <li><CheckCircle />Gentle Extractions with Minimal Discomfort</li>
-                    <li><CheckCircle />Wisdom Tooth & Surgical Extractions Available</li>
-                    <li><CheckCircle />Sedation Dentistry for Anxiety-Free Visits</li>
-                    <li><CheckCircle />Convenient Harrisburg Location </li>
-                    <li><CheckCircle />Insurance Plans Accepted & Flexible Payments</li>
+                    <li>
+                      <h3 className="text-lg flex items-center gap-2">
+                        <CheckCircle /> Gentle Techniques &amp; Pain Management
+                      </h3>
+                    </li>
+                    <li>
+                      <h3 className="text-lg flex items-center gap-2">
+                        <CheckCircle /> Advanced Digital Imaging for Accuracy
+                      </h3>
+                    </li>
+                    <li>
+                      <h3 className="text-lg flex items-center gap-2">
+                        <CheckCircle /> Same-Day Emergency Extractions Available
+                      </h3>
+                    </li>
+                    <li>
+                      <h3 className="text-lg flex items-center gap-2">
+                        <CheckCircle /> Sedation Options for Nervous Patients
+                      </h3>
+                    </li>
+                    <li>
+                      <h3 className="text-lg flex items-center gap-2">
+                        <CheckCircle /> Flexible Payment &amp; Insurance-Friendly Care
+                      </h3>
+                    </li>
                   </ul>
                 </div>
               </Fade>
             </div>
+
             <div className='wcu-img-section'>
               <Zoom cascade damping={0.3} duration={800}>
                 <img src="/Images/banners/top-reasons.jpeg" alt="dental" />
@@ -129,10 +145,11 @@ export default function ToothExtractionPage() {
           <div className="features-section">
             <Fade direction="up" duration={1000}>
               <h2 className="features-heading">
-                Comfortable, Professional Tooth Removal for a Healthier Smile
-              </h2>
+                When Tooth Extraction Becomes the Best Option              </h2>
               <p className="features-description">
-                Our team makes every effort to save your natural teeth-but when extraction is necessary, we ensure it's done safely and comfortably. Whether it’s a routine removal or a more complex case, you can count on us for compassionate care every step of the way.                                </p>
+                Sometimes a tooth is too damaged, decayed, or compromised to be saved, and in these cases, extraction is the healthiest choice for your smile and overall oral health. At Tulip Dental, we perform extractions with precision, care, and a focus on minimizing discomfort while planning the next steps to restore your function and aesthetics.
+                <br /><br />
+                Here are the Most Common Situations Where We Recommend Tooth Extraction at Tulip Dental:              </p>
             </Fade>
 
             <div className="features-grid">
@@ -155,65 +172,74 @@ export default function ToothExtractionPage() {
             </div>
           </div>
           <div className='faq-section'>
-            <h2 className='faq-heading'>Tooth Extraction Q&A</h2>
-            <div className="faq-acc-container">
-              <Accordion type="single" className="w-full space-y-5">
+  <h2 className='faq-heading'>Tooth Extraction FAQs</h2>
+  <div className="faq-acc-container">
+    <Accordion type="single" className="w-full space-y-5">
 
-                <AccordionItem value="q1" className="faq-acc">
-                  <AccordionTrigger className='faq-qn'><h3 className='text-lg'>When is a tooth extraction necessary?</h3></AccordionTrigger>
-                  <AccordionContent className='faq-ans'>
-                    <p>Extraction is needed when a tooth is severely decayed, broken, infected, or causing crowding.</p>
+      <AccordionItem value="q1" className="faq-acc">
+        <AccordionTrigger className='faq-qn'>
+          <h3 className='text-lg'>Is tooth extraction painful?</h3>
+        </AccordionTrigger>
+        <AccordionContent className='faq-ans'>
+          <p>
+            No—our gentle techniques and anesthesia options make the process virtually painless, 
+            with only mild soreness afterward.
+          </p>
+        </AccordionContent>
+      </AccordionItem>
 
-                  </AccordionContent>
-                </AccordionItem>
+      <AccordionItem value="q2" className="faq-acc">
+        <AccordionTrigger className='faq-qn'>
+          <h3 className='text-lg'>When is a tooth extraction necessary?</h3>
+        </AccordionTrigger>
+        <AccordionContent className='faq-ans'>
+          <p>
+            We recommend extractions for severe decay, advanced gum disease, broken teeth beyond repair, 
+            impacted wisdom teeth, or overcrowding before orthodontics.
+          </p>
+        </AccordionContent>
+      </AccordionItem>
 
-                <AccordionItem value="q2" className="faq-acc">
-                  <AccordionTrigger className='faq-qn'><h3 className='text-lg'>Is tooth extraction painful?</h3></AccordionTrigger>
-                  <AccordionContent className='faq-ans'>
-                    <p>No, we numb the area thoroughly and offer sedation to ensure you feel no pain during the procedure.</p>
+      <AccordionItem value="q3" className="faq-acc">
+        <AccordionTrigger className='faq-qn'>
+          <h3 className='text-lg'>How long is recovery after an extraction?</h3>
+        </AccordionTrigger>
+        <AccordionContent className='faq-ans'>
+          <p>
+            Most patients feel better within a few days, with complete healing in 1–2 weeks 
+            depending on the complexity of the case.
+          </p>
+        </AccordionContent>
+      </AccordionItem>
 
-                  </AccordionContent>
-                </AccordionItem>
+      <AccordionItem value="q4" className="faq-acc">
+        <AccordionTrigger className='faq-qn'>
+          <h3 className='text-lg'>Can I replace my tooth after extraction?</h3>
+        </AccordionTrigger>
+        <AccordionContent className='faq-ans'>
+          <p>
+            Yes—dental implants, bridges, or partial dentures can restore your smile 
+            and prevent shifting of nearby teeth.
+          </p>
+        </AccordionContent>
+      </AccordionItem>
 
-                <AccordionItem value="q3" className="faq-acc">
-                  <AccordionTrigger className='faq-qn'><h3 className='text-lg'>How long is the recovery period?</h3></AccordionTrigger>
-                  <AccordionContent className='faq-ans'>
-                    <p>Most patients recover in 2–3 days, with complete healing in 1–2 weeks depending on the case.</p>
+    </Accordion>
+  </div>
+</div>
 
-                  </AccordionContent>
-                </AccordionItem>
+<div className="features-section">
+  <Fade direction="up" duration={1000}>
+    <h2 className="features-heading">
+      Need a Tooth Extraction in Maplewood, NJ?
+    </h2>
+    <p className="features-description">
+      If you’re in pain or think you may need a tooth removed, Tulip Dental offers safe, gentle 
+      extractions to protect your oral health. We welcome both scheduled and same-day appointments.
+    </p>
+  </Fade>
+</div>
 
-                <AccordionItem value="q4" className="faq-acc">
-                  <AccordionTrigger className='faq-qn'><h3 className='text-lg'>What should I eat after a tooth extraction?</h3></AccordionTrigger>
-                  <AccordionContent className='faq-ans'>
-                    <p>
-                      Stick to soft foods like yogurt, mashed potatoes, and smoothies for the first few days.
-                    </p>
-                  </AccordionContent>
-                </AccordionItem>
-
-                <AccordionItem value="q5" className="faq-acc">
-                  <AccordionTrigger className='faq-qn'><h3 className='text-lg'>Need a Tooth Removed in Harrisburg?</h3></AccordionTrigger>
-                  <AccordionContent className='faq-ans'>
-                    <p>
-                      Trust Maple Dental Harrisburg for gentle and professional extractions near you. Call <a href="tel:7177452700" className="text-primary hover:underline">717-745-2700</a> today to book a same-day consultation.                    </p>
-                  </AccordionContent>
-                </AccordionItem>
-
-
-              </Accordion>
-            </div>
-          </div>
-          <div className="features-section">
-            <Fade direction="up" duration={1000}>
-              <h2 className="features-heading">
-                Do I need a replacement after extraction?
-              </h2>
-              <p className="features-description">
-                Ready to start your journey toward a straighter smile? Maple Dental Harrisburg offers expert orthodontic care in a welcoming, patient-focused environment. Call us today at <a href="tel:7177452700" className="text-primary hover:underline">717-745-2700</a> or book online—we’re here to help, right in your neighborhood.
-              </p>
-            </Fade>
-          </div>
           <BookCallBtn />
         </div>
       </main>

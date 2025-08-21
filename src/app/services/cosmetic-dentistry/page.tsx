@@ -92,7 +92,7 @@ export default function CosmeticDentistryPage() {
             <div className='desc-text-section'>
               <Fade cascade direction="up" delay={1000} duration={600}>
                 <div className='desc-text-subtitle'>Cosmetic Dentistry</div>
-                <h2 className='desc-text-title'>About Cosmetic Dentistry</h2>
+                <h2 className='text-2xl sm:text-3xl md:text-4xl font-semibold'>About Cosmetic Dentistry</h2>
                 <p>
                   Your smile is one of the first things people notice-why not make it unforgettable? At Tulip Dental in Maplewood, NJ, we offer modern, high-quality cosmetic dental treatments to help you feel more confident every time you smile. Whether you’re looking to whiten your teeth, fix chips and gaps, or completely transform your look with veneers or a full smile makeover, our skilled team is here to help.                </p>
                 <p>

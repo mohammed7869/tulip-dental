@@ -87,7 +87,7 @@ export default function RootCanalClient() {
             <div className='desc-text-section'>
               <Fade cascade direction="up" delay={1000} duration={600}>
                 <div className='desc-text-subtitle'>Root Canal</div>
-                <h3 className='desc-text-title'>About Root Canal Treatment</h3>
+                <h2 className='text-2xl sm:text-3xl md:text-4xl font-semibold'>About Root Canal Treatment</h2>
                 <p>
                   When tooth pain won’t go away, a root canal may be the solution to save your natural tooth and stop the infection at its source. At Tulip Dental in Maplewood, NJ, we offer gentle, effective root canal therapy in a relaxing and modern setting. Root canals aren’t what they used to be-today’s treatment is fast, comfortable, and highly successful. Whether you're dealing with deep decay, infection, or damage from trauma, our team is here to help you feel better and preserve your natural smile.          </p>
                 <p>

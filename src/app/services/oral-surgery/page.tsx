@@ -92,7 +92,7 @@ export default function OralSurgeryPage() {
             <div className='desc-text-section'>
               <Fade cascade direction="up" delay={1000} duration={600}>
                 <div className='desc-text-subtitle'>Oral Surgery</div>
-                <h3 className='desc-text-title'>About Oral Surgery</h3>
+                <h2 className='text-2xl sm:text-3xl md:text-4xl font-semibold'>About Oral Surgery</h2>
                 <p>
                 Oral surgery may sound intimidating, but at Tulip Dental in Maplewood, we make the process safe, gentle, and stress-free. Whether you need a simple tooth extraction, wisdom tooth removal, or more complex surgical care, our experienced team is here to help.We provide in-house surgical procedures using advanced tools and sedation options for maximum comfort.                 </p>
                 <p>

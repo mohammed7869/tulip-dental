@@ -25,7 +25,7 @@ export default function ServicesSection() {
     { id: 5, title: "Dental Implants", description: "Permanent tooth replacement", image: "/Images/Dental Implants.jpg", icon: "/Images/icons/implant.png", href: "/services/dental-implants" },
     { id: 6, title: "Oral Surgery", description: "Advanced procedures", image: "/Images/Oral Surgery.jpg", icon: "/Images/icons/oral surgery.png", href: "/services/oral-surgery" },
     { id: 12, title: "Tooth Extraction", description: "Safe tooth removal", image: "/Images/Tooth Extraction.jpeg", icon: "/Images/icons/tooth-extraction.png", href: "/services/tooth-extraction" },
-    { id: 14, title: "Crowns and Bridges", description: "Restore damaged teeth", image: "/Images/Dental Crown Bridge.webp", icon: "/Images/icons/dental-crown (1).png", href: "/services/crowns-and-bridges" },
+    { id: 14, title: "Crowns and Bridges", description: "Restore damaged teeth", image: "/Images/Dental Crown Bridge.jpg", icon: "/Images/icons/dental-crown (1).png", href: "/services/crowns-and-bridges" },
     { id: 16, title: "Dental Fillings", description: "Repair cavities", image: "/Images/dental-fillings.png", icon: "/Images/icons/tooth-filling.png", href: "/services/fillings" },
   ];
 

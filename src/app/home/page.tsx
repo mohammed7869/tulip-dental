@@ -478,7 +478,7 @@ export default function HomePage() {
                     {/* Left Side - Image */}
                     <Slide direction="right" className="w-full md:w-1/2 h-64 md:h-80">
                         <img
-                            src="/Images/Insurance.webp"
+                            src="/Images/Insurance.jpg"
                             alt="dental-banner"
                             className="rounded-md md:rounded-xl w-full h-full object-cover shadow-md"
                         />

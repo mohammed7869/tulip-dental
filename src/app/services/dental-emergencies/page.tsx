@@ -14,51 +14,53 @@ export default function DentalEmergencyPage() {
   const features = [
     {
       icon: "/Images/icons/Immediate Pain Relief.png",
-      title: "Prompt Relief & Compassionate Support",
-      description: "When pain strikes, you need a dental team that acts fast. From infections to broken restorations, we provide quick diagnosis and same-day treatment to get you back to feeling your best",
+      title: "Severe Tooth Pain & Active Infections",
+      description:
+        "Severe, ongoing pain or visible swelling usually means infection or deep decay and requires immediate assessment to control pain and stop the spread.",
       points: [
-        "Emergency pain relief & dental sedation",
-        "Treatment for swelling, abscesses, or oral injuries",
-        "Broken fillings, fractured teeth, or crown issues",
-        "Care for kids, adults, and seniors",
-      ]
+        "Emergency pain control and diagnostic imaging to find the source",
+        "Antibiotic therapy and swelling management when infection is present",
+        "Emergency root canal therapy to remove infected pulp and save the tooth",
+        "Incision & drainage for abscesses when clinically necessary",
+      ],
     },
     {
       icon: "/Images/icons/Smart Treatment Decisions Under Pressure.png",
-      title: "Timely Solutions That Protect Your Smile",
+      title: "Trauma, Fractures & Knocked-Out Teeth",
       description:
-        "Our experienced dentists understand that the right response in a dental emergency can mean saving your tooth and avoiding costly treatments down the road. We provide honest recommendations and fast solutions",
+        "Traumatic injuries need fast, appropriate action - correct first-aid plus urgent dental care gives the best chance of saving the tooth.",
       points: [
-        "Emergency root canals & extractions",
-        "Repairs for broken crowns or veneers",
-        "Temporary & permanent restoration options",
-        "Immediate post-trauma care",
+        "Reattachment or composite bonding for fractured/chipped teeth",
+        "Reimplantation of knocked-out permanent teeth (when handled correctly and quickly)",
+        "Splinting and stabilization for loosened or displaced teeth",
+        "Care for soft-tissue injuries (lacerations, suturing, wound management)",
       ],
     },
     {
       icon: "/Images/icons/Serving Harrisburg Nearby Communities.png",
-      title: "Emergency Dental Care Across Harrisburg & Nearby Areas",
+      title: "Lost or Damaged Restorations & Orthodontic Emergencies",
       description:
-        "From cracked teeth to dental infections, Maple Dental Harrisburg is your go-to provider for emergency dental services near you. No matter where you are in the area, help is never far away",
+        "Broken crowns, lost fillings, or damaged braces can expose teeth and cause pain - we stabilize the situation immediately and plan definitive repair.",
       points: [
-        "Convenient to Harrisburg (17110, 17109, 17111, 17112)",
-        "Also serving Colonial Park, Lawnton, Penbrook, Progress, Paxtang & Linglestown",
-        "Walk-in availability and same-day service",
-        "Top-rated dental emergency team near me",
+        "Temporary repairs (bonding, provisional crowns) to protect exposed tooth structure",
+        "Replacement or permanent restoration planning and expedited scheduling",
+        "Emergency orthodontic fixes (trim wires, reattach brackets) to stop irritation",
+        "Same-day stabilization to prevent further damage and reduce infection risk",
       ],
     },
   ];
+  
   return (
     <div className='flex min-h-screen bg-gray-50'>
       <main className='details-page-container'>
         <div className='details-page'>
           <div className='details-page-header-section'>
             <Fade direction='up' duration={1000}>
-              <h1>Dental Emergencies in Harrisburg, PA</h1>
+              <h1>Dental Emergencies in Maplewood, NJ</h1>
             </Fade>
             <Fade direction='down' duration={1000}>
               <h2 className="text-center">
-                Emergency Dental Services in Harrisburg | Maple Dental | Family & Cosmetic Dentist Near You
+                Same-Day Urgent Dental Care in Maplewood | Tulip Dental | Family & Cosmetic Dentist
               </h2>
             </Fade>
             {/* <div className='flex items-center justify-center gap-2'> <Link href={'/'} className='font-medium'>Home </Link><span><ChevronRight/></span> <span className='text-white/80'>Emergency Dentistry</span></div> */}
@@ -71,7 +73,7 @@ export default function DentalEmergencyPage() {
                 <Zoom cascade damping={0.3} duration={800}>
                   <div className="main-image">
                     <img
-                      src="/Images/Dental Emergencies.webp"
+                      src="/Images/Dental Emergencies.jpg"
                       alt="Main Banner"
                     />
                   </div>
@@ -83,13 +85,11 @@ export default function DentalEmergencyPage() {
             <div className='desc-text-section'>
               <Fade cascade direction="up" delay={1000} duration={600}>
                 <div className='desc-text-subtitle'>Dental Emergencies</div>
-                <h3 className='desc-text-title'>About Dental Emergencies</h3>
+                <h2 className='text-2xl sm:text-3xl md:text-4xl font-semibold'> About Dental Emergencies</h2>
                 <p>
-                  Dental emergencies can be unexpected, painful, and stressful. Whether you're dealing with a broken tooth, intense toothache, or dental trauma, quick treatment is essential to avoid complications and restore your comfort. At Maple Dental Harrisburg, we offer same-day emergency dental care with a focus on gentle, expert service.
-                </p>
+                  When a dental emergency strikes, quick action can mean the difference between saving and losing a tooth. At Tulip Dental, we prioritize same-day appointments for urgent cases, helping to relieve pain and protect your oral health right away. From severe toothaches to knocked-out teeth, our experienced team is here to provide fast, compassionate care.                 </p>
                 <p>
-                  We proudly serve Harrisburg (17110, 17109, 17111, 17112), Colonial Park (17109), Penbrook (17103), Paxtang (17111), Progress (17109, 17111), Lawnton (17111), and Linglestown (17112). Searching online for a “dental emergency near me”? Our team is nearby, experienced, and ready to help.
-                </p>
+                  Patients from Maplewood (07040), South Orange (07079), Vauxhall (07088), Irvington (07111), and Newark (07106, 07112) trust us when they search “emergency dentist near me.”                 </p>
               </Fade>
             </div>
           </div>
@@ -97,23 +97,42 @@ export default function DentalEmergencyPage() {
 
             <div className='wcu-text-section'>
               <Fade cascade direction="up" delay={1000} duration={600}>
-                <div className='wcu-subtitle'>
-                  Top Reasons
-                </div>
                 <div className='wcu-title'>
-                  <h2>Why Choose Maple Dental for Emergency Dental Services?</h2>
+                  <h2>Top Reasons to Choose Tulip Dental for Emergency Care</h2>
                 </div>
                 <div className='wcu-points-section'>
                   <ul className='wcu-points'>
-                    <li><CheckCircle />Same-Day & Walk-In Appointments Available</li>
-                    <li><CheckCircle />Digital Imaging & Accurate Diagnoses</li>
-                    <li><CheckCircle />Gentle, Compassionate Care for All Ages</li>
-                    <li><CheckCircle />Convenient Harrisburg Location </li>
-                    <li><CheckCircle />Insurance Accepted & Payment Options Available</li>
+                    <li>
+                      <h3 className="text-lg flex items-center gap-2">
+                        <CheckCircle /> Fast, Same-Day Appointments
+                      </h3>
+                    </li>
+                    <li>
+                      <h3 className="text-lg flex items-center gap-2">
+                        <CheckCircle /> Comprehensive Emergency Services
+                      </h3>
+                    </li>
+                    <li>
+                      <h3 className="text-lg flex items-center gap-2">
+                        <CheckCircle /> Gentle, Pain-Relieving Treatments
+                      </h3>
+                    </li>
+                    <li>
+                      <h3 className="text-lg flex items-center gap-2">
+                        <CheckCircle /> Experienced & Compassionate Team
+                      </h3>
+                    </li>
+                    <li>
+                      <h3 className="text-lg flex items-center gap-2">
+                        <CheckCircle /> Flexible Payment & Insurance Options
+                      </h3>
+                    </li>
                   </ul>
                 </div>
               </Fade>
             </div>
+
+
             <div className='wcu-img-section'>
               <Zoom cascade damping={0.3} duration={800}>
                 <img src="/Images/banners/top-reasons.jpeg" alt="dental" />
@@ -124,10 +143,14 @@ export default function DentalEmergencyPage() {
           <div className="features-section">
             <Fade direction="up" duration={1000}>
               <h2 className="features-heading">
-                Fast, Effective Emergency Dentistry When You Need It Most
+                Common Dental Emergencies We Treat
               </h2>
               <p className="features-description">
-                Dental emergencies require immediate care—and you shouldn’t have to wait. At Maple Dental Harrisburg, we’re equipped to handle a full range of urgent dental issues quickly and compassionately. Whether it’s late in the day or first thing in the morning, we’ll work to get you the relief you need without delay.
+                Dental emergencies come in many forms - from sudden, severe pain to traumatic injuries - and quick, expert care often makes the difference between saving and losing a tooth
+                <br /><br />
+                Tulip Dental provides prompt, tooth-preserving treatment and clear next steps so you get relief fast and proper follow-up care.
+                <br /><br />
+                Here are Few Dental Emergencies We Treat at Tulip Dental:
               </p>
             </Fade>
 
@@ -151,59 +174,74 @@ export default function DentalEmergencyPage() {
             </div>
           </div>
           <div className='faq-section'>
-            <h2 className='faq-heading'>Dental Emergency Q&A</h2>
-            <div className="faq-acc-container">
-              <Accordion type="single" className="w-full space-y-5">
+  <h2 className='faq-heading'>Dental Emergency FAQs</h2>
+  <div className="faq-acc-container">
+    <Accordion type="single" className="w-full space-y-5">
 
-                <AccordionItem value="q1" className="faq-acc">
-                  <AccordionTrigger className='faq-qn'>
-                    <h3 className='text-lg'>What qualifies as a dental emergency?</h3></AccordionTrigger>
-                  <AccordionContent className='faq-ans'>
-                    <p>Any issue causing severe pain, bleeding, or risking permanent tooth damage requires urgent care.</p>
+      <AccordionItem value="q1" className="faq-acc">
+        <AccordionTrigger className='faq-qn'>
+          <h3 className='text-lg'>What should I do if I knock out a tooth?</h3>
+        </AccordionTrigger>
+        <AccordionContent className='faq-ans'>
+          <p>
+            Handle it by the crown (not the root), gently rinse it, and place it back in the socket
+            or in milk. Seek immediate dental care.
+          </p>
+        </AccordionContent>
+      </AccordionItem>
 
-                  </AccordionContent>
-                </AccordionItem>
+      <AccordionItem value="q2" className="faq-acc">
+        <AccordionTrigger className='faq-qn'>
+          <h3 className='text-lg'>Can I go to the ER for a dental emergency?</h3>
+        </AccordionTrigger>
+        <AccordionContent className='faq-ans'>
+          <p>
+            Hospitals can manage severe pain and infection, but they may not provide full dental
+            treatment. We recommend calling us first for most cases.
+          </p>
+        </AccordionContent>
+      </AccordionItem>
 
-                <AccordionItem value="q2" className="faq-acc">
-                  <AccordionTrigger className='faq-qn'><h3 className='text-lg'>What are common dental emergencies you treat?</h3></AccordionTrigger>
-                  <AccordionContent className='faq-ans'>
-                    <p>We treat broken teeth, knocked-out teeth, infections, abscesses, lost fillings, and trauma to gums or soft tissues.</p>
+      <AccordionItem value="q3" className="faq-acc">
+        <AccordionTrigger className='faq-qn'>
+          <h3 className='text-lg'>How do I know if it’s a true dental emergency?</h3>
+        </AccordionTrigger>
+        <AccordionContent className='faq-ans'>
+          <p>
+            If you’re in severe pain, bleeding, or risk losing a tooth, it’s an emergency—call us
+            right away.
+          </p>
+        </AccordionContent>
+      </AccordionItem>
 
-                  </AccordionContent>
-                </AccordionItem>
+      <AccordionItem value="q4" className="faq-acc">
+        <AccordionTrigger className='faq-qn'>
+          <h3 className='text-lg'>Are dental emergencies covered by insurance?</h3>
+        </AccordionTrigger>
+        <AccordionContent className='faq-ans'>
+          <p>
+            Many insurance plans cover emergency visits. We’ll verify your benefits and help you
+            understand costs upfront.
+          </p>
+        </AccordionContent>
+      </AccordionItem>
 
-                <AccordionItem value="q3" className="faq-acc">
-                  <AccordionTrigger className='faq-qn'><h3 className='text-lg'>What should I do before reaching the dentist?</h3></AccordionTrigger>
-                  <AccordionContent className='faq-ans'>
-                    <p>Rinse gently, use a cold compress, and save any broken tooth or crown fragments to bring with you.</p>
+    </Accordion>
+  </div>
+</div>
 
-                  </AccordionContent>
-                </AccordionItem>
+<div className="features-section">
+  <Fade direction="up" duration={1000}>
+    <h2 className="features-heading">
+      Need Emergency Dental Care in Maplewood, NJ?
+    </h2>
+    <p className="features-description">
+      At Tulip Dental, we’re here to protect your smile when it matters most. Don’t wait—call us
+      now for same-day emergency care.
+    </p>
+  </Fade>
+</div>
 
-                <AccordionItem value="q4" className="faq-acc">
-                  <AccordionTrigger className='faq-qn'><h3 className='text-lg'>How can I avoid dental emergencies?</h3></AccordionTrigger>
-                  <AccordionContent className='faq-ans'>
-                    <p>
-                      Maintain routine checkups, wear mouthguards during sports, and avoid biting hard objects.
-                    </p>
-                  </AccordionContent>
-                </AccordionItem>
-
-
-
-              </Accordion>
-            </div>
-          </div>
-          <div className="features-section">
-            <Fade direction="up" duration={1000}>
-              <h2 className="features-heading">
-                Experiencing a Dental Emergency in Harrisburg?
-              </h2>
-              <p className="features-description">
-                Call Maple Dental Harrisburg at <a href="tel:7177452700" className="text-primary hover:underline">717-745-2700</a> for urgent dental care near you. We offer same-day appointments, walk-in availability, and trusted support when you need it most.
-              </p>
-            </Fade>
-          </div>
           <BookCallBtn />
         </div>
       </main>

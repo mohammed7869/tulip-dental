@@ -86,7 +86,7 @@ export default function OrthodonticsPage() {
             <div className='desc-text-section'>
               <Fade cascade direction="up" delay={1000} duration={600}>
                 <div className='desc-text-subtitle'>Orthodontic Treatment</div>
-                <h3 className='desc-text-title'>About Orthodontics</h3>
+                <h2 className='text-2xl sm:text-3xl md:text-4xl font-semibold'>About Orthodontics</h2>
                 <p>
                   Crooked teeth, gaps, or bite issues? Orthodontic treatment improves not just the appearance of your smile-but also how your teeth function and fit together.At Tulip Dental, we offer braces and clear aligners for children, teens, and adults in a friendly, no-pressure environment. Whether you’re considering Invisalign® or traditional braces, we personalize your care plan to match your goals and lifestyle.                </p>
                 <p>
@@ -172,86 +172,86 @@ export default function OrthodonticsPage() {
             </div>
           </div>
           <div className='faq-section'>
-  <h2 className='faq-heading'>Orthodontics FAQs</h2>
-  <div className="faq-acc-container">
-    <Accordion type="single" className="w-full space-y-5">
+            <h2 className='faq-heading'>Orthodontics FAQs</h2>
+            <div className="faq-acc-container">
+              <Accordion type="single" className="w-full space-y-5">
 
-      <AccordionItem value="q1" className="faq-acc">
-        <AccordionTrigger className='faq-qn'>
-          <h3 className='text-lg'>What is the best age to get braces?</h3>
-        </AccordionTrigger>
-        <AccordionContent className='faq-ans'>
-          <p>
-            The ideal time is between ages 10–14, but orthodontic care is effective at any age—
-            including adults.
-          </p>
-        </AccordionContent>
-      </AccordionItem>
+                <AccordionItem value="q1" className="faq-acc">
+                  <AccordionTrigger className='faq-qn'>
+                    <h3 className='text-lg'>What is the best age to get braces?</h3>
+                  </AccordionTrigger>
+                  <AccordionContent className='faq-ans'>
+                    <p>
+                      The ideal time is between ages 10–14, but orthodontic care is effective at any age—
+                      including adults.
+                    </p>
+                  </AccordionContent>
+                </AccordionItem>
 
-      <AccordionItem value="q2" className="faq-acc">
-        <AccordionTrigger className='faq-qn'>
-          <h3 className='text-lg'>What’s the difference between braces and clear aligners?</h3>
-        </AccordionTrigger>
-        <AccordionContent className='faq-ans'>
-          <p>
-            Braces use wires and brackets, while aligners are clear trays. Both straighten teeth,
-            but aligners are more discreet and removable.
-          </p>
-        </AccordionContent>
-      </AccordionItem>
+                <AccordionItem value="q2" className="faq-acc">
+                  <AccordionTrigger className='faq-qn'>
+                    <h3 className='text-lg'>What’s the difference between braces and clear aligners?</h3>
+                  </AccordionTrigger>
+                  <AccordionContent className='faq-ans'>
+                    <p>
+                      Braces use wires and brackets, while aligners are clear trays. Both straighten teeth,
+                      but aligners are more discreet and removable.
+                    </p>
+                  </AccordionContent>
+                </AccordionItem>
 
-      <AccordionItem value="q3" className="faq-acc">
-        <AccordionTrigger className='faq-qn'>
-          <h3 className='text-lg'>How long does orthodontic treatment take?</h3>
-        </AccordionTrigger>
-        <AccordionContent className='faq-ans'>
-          <p>
-            Most patients complete treatment in 12 to 24 months, though minor adjustments
-            may take less time.
-          </p>
-        </AccordionContent>
-      </AccordionItem>
+                <AccordionItem value="q3" className="faq-acc">
+                  <AccordionTrigger className='faq-qn'>
+                    <h3 className='text-lg'>How long does orthodontic treatment take?</h3>
+                  </AccordionTrigger>
+                  <AccordionContent className='faq-ans'>
+                    <p>
+                      Most patients complete treatment in 12 to 24 months, though minor adjustments
+                      may take less time.
+                    </p>
+                  </AccordionContent>
+                </AccordionItem>
 
-      <AccordionItem value="q4" className="faq-acc">
-        <AccordionTrigger className='faq-qn'>
-          <h3 className='text-lg'>Are braces painful?</h3>
-        </AccordionTrigger>
-        <AccordionContent className='faq-ans'>
-          <p>
-            Mild discomfort is normal during adjustments, but it fades quickly. Aligners typically
-            cause less irritation than braces.
-          </p>
-        </AccordionContent>
-      </AccordionItem>
+                <AccordionItem value="q4" className="faq-acc">
+                  <AccordionTrigger className='faq-qn'>
+                    <h3 className='text-lg'>Are braces painful?</h3>
+                  </AccordionTrigger>
+                  <AccordionContent className='faq-ans'>
+                    <p>
+                      Mild discomfort is normal during adjustments, but it fades quickly. Aligners typically
+                      cause less irritation than braces.
+                    </p>
+                  </AccordionContent>
+                </AccordionItem>
 
-      <AccordionItem value="q5" className="faq-acc">
-        <AccordionTrigger className='faq-qn'>
-          <h3 className='text-lg'>Is orthodontic treatment covered by insurance?</h3>
-        </AccordionTrigger>
-        <AccordionContent className='faq-ans'>
-          <p>
-            Many dental insurance plans cover orthodontics. We’ll check your benefits and
-            offer payment plans to fit your budget.
-          </p>
-        </AccordionContent>
-      </AccordionItem>
+                <AccordionItem value="q5" className="faq-acc">
+                  <AccordionTrigger className='faq-qn'>
+                    <h3 className='text-lg'>Is orthodontic treatment covered by insurance?</h3>
+                  </AccordionTrigger>
+                  <AccordionContent className='faq-ans'>
+                    <p>
+                      Many dental insurance plans cover orthodontics. We’ll check your benefits and
+                      offer payment plans to fit your budget.
+                    </p>
+                  </AccordionContent>
+                </AccordionItem>
 
-    </Accordion>
-  </div>
-</div>
+              </Accordion>
+            </div>
+          </div>
 
-<div className="features-section">
-  <Fade direction="up" duration={1000}>
-    <h2 className="features-heading">
-      Ready to Transform Your Smile with Braces or Invisalign in Maplewood, NJ?
-    </h2>
-    <p className="features-description">
-      At Tulip Dental, our orthodontic solutions are comfortable, effective, and designed
-      to fit your lifestyle—no matter your age. Let us help you achieve the confident,
-      healthy smile you deserve.
-    </p>
-  </Fade>
-</div>
+          <div className="features-section">
+            <Fade direction="up" duration={1000}>
+              <h2 className="features-heading">
+                Ready to Transform Your Smile with Braces or Invisalign in Maplewood, NJ?
+              </h2>
+              <p className="features-description">
+                At Tulip Dental, our orthodontic solutions are comfortable, effective, and designed
+                to fit your lifestyle—no matter your age. Let us help you achieve the confident,
+                healthy smile you deserve.
+              </p>
+            </Fade>
+          </div>
 
           <BookCallBtn />
         </div>

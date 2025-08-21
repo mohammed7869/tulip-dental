@@ -68,7 +68,7 @@ export default function Page() {
           <Zoom cascade damping={0.3} duration={800}>
             <div className="main-image">
               <img
-                src="/Images/Teeth Replacement.webp"
+                src="/Images/Teeth Replacement.jpeg"
                 alt="Main Banner"
               />
             </div>

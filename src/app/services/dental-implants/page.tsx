@@ -88,7 +88,7 @@ export default function DentalImplantsPage() {
             <div className='desc-text-section'>
               <Fade cascade direction="up" delay={1000} duration={600}>
                 <div className='desc-text-subtitle'>Dental Implants</div>
-                <h3 className='desc-text-title'>About Dental Implants</h3>
+                <h2 className='text-2xl sm:text-3xl md:text-4xl font-semibold'>About Dental Implants</h2>
                 <p>
                   Missing a tooth? Dental implants offer a permanent, natural-looking solution to restore both your smile and your bite. At Tulip Dental, we specialize in providing high-quality implants in a relaxing, judgment-free environment. Whether you’re replacing a single tooth or several, we tailor your care to ensure function, comfort, and aesthetics-all in one complete treatment.                 </p>
                 <p>

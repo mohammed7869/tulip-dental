@@ -91,7 +91,7 @@ export default function DentalFillingPage() {
             <div className='desc-text-section'>
               <Fade cascade direction="up" delay={1000} duration={600}>
                 <div className='desc-text-subtitle'>Dental Fillings</div>
-                <h2 className='desc-text-title'>About Dental Fillings</h2>
+                <h2 className='text-2xl sm:text-3xl md:text-4xl font-semibold'>About Dental Fillings</h2>
                 <p>
                   Dental fillings are one of the most common and effective ways to treat cavities and prevent further tooth damage. At Tulip Dental in Maplewood, NJ, we use tooth-colored, mercury-free materials to restore strength and appearance-without the metallic look of traditional fillings. Whether it’s your first filling or a replacement for an old one, our skilled team ensures your treatment is comfortable and long-lasting.                </p>
                 <p>

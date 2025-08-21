@@ -42,12 +42,12 @@ const services = [
   },
   {
     title: "Crowns and Bridges",
-    image: "/Images/Dental Crown Bridge.webp",
+    image: "/Images/Dental Crown Bridge.jpg",
     link: "/services/crowns-and-bridges",
   },
   {
     title: "Dental Emergencies",
-    image: "/Images/Dental Emergencies.webp",
+    image: "/Images/Dental Emergencies.jpg",
     link: "/services/dental-emergencies",
   },
   {
@@ -72,7 +72,7 @@ const services = [
   },
   {
     title: "Permanent Teeth Replacement",
-    image: "/Images/Teeth Replacement.webp",
+    image: "/Images/Teeth Replacement.jpeg",
     link: "/services/permanent-teeth-replacement",
   },
   {
