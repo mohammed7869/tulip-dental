@@ -189,7 +189,7 @@ export default function EmergencyDentistryPage() {
               <Accordion type="single" collapsible className="w-full space-y-6">
                 <AccordionItem value="q1" className="faq-acc">
                   <AccordionTrigger className="faq-qn rounded-md">
-                    <h2 className='text-lg'> What qualifies as a dental emergency?</h2>
+                    <h3 className='text-lg'> What qualifies as a dental emergency?</h3>
                   </AccordionTrigger>
                   <AccordionContent className="faq-ans ">
                     Dental emergencies include any condition that causes severe pain, swelling, bleeding, or damage to your teeth or gums. These situations require prompt care to prevent complications.                   </AccordionContent>

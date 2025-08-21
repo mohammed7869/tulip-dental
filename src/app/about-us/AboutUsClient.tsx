@@ -113,7 +113,7 @@ export default function AboutUsClient() {
         <div className="flex-1 flex justify-center lg:justify-end order-1 lg:order-2 w-full">
           <Slide direction="right">
             <img
-              src="/Images/banners/doctor-presenting-something-isolated-white-background.webp"
+              src="/Images/banners/about-us-1.jpeg"
               alt="Dentists with patient"
               className="rounded-xl shadow-lg w-full max-w-sm sm:max-w-md lg:max-w-lg object-cover"
               loading="lazy"

@@ -156,7 +156,8 @@ export default function DentalEmergencyPage() {
               <Accordion type="single" className="w-full space-y-5">
 
                 <AccordionItem value="q1" className="faq-acc">
-                  <AccordionTrigger className='faq-qn'><h3 className='text-lg'>What qualifies as a dental emergency?</h3></AccordionTrigger>
+                  <AccordionTrigger className='faq-qn'>
+                    <h3 className='text-lg'>What qualifies as a dental emergency?</h3></AccordionTrigger>
                   <AccordionContent className='faq-ans'>
                     <p>Any issue causing severe pain, bleeding, or risking permanent tooth damage requires urgent care.</p>
 

@@ -14,52 +14,56 @@ export default function OralSurgeryPage() {
   const features = [
     {
       icon: "/Images/icons/Immediate Pain Relief.png",
-      title: "Tooth Extractions with a Gentle Touch",
-      description: "Sometimes a tooth must be removed due to severe decay, damage, or infection that cannot be saved with restorative care. When this happens, our team provides a safe and gentle extraction process using local anesthesia and modern techniques",
+      title: "Our Most Common Oral Surgery Procedures",
+      description:
+        "At Tulip Dental, we perform a wide range of oral surgery services designed to restore your oral health, relieve pain, and support long-term dental wellness.",
       points: [
-        "Simple and surgical extractions",
-        "Bone-preserving techniques when needed",
-        "Post-extraction care and replacement options (implants, bridges, etc.)",
-        "Patient-first comfort and pain control",
-      ]
+        "Simple & Surgical Tooth Extractions",
+        "Impacted Wisdom Tooth Removal",
+        "Bone Grafts for Dental Implants",
+        "Treatment of Dental Infections & Abscesses",
+        "Oral Lesion Removal & Biopsies",
+      ],
     },
     {
       icon: "/Images/icons/Smart Treatment Decisions Under Pressure.png",
-      title: "Wisdom Tooth Removal in Harrisburg",
+      title: "Sedation & Pain Management Options Available",
       description:
-        "Wisdom teeth often cause problems when they erupt late, crowd existing teeth, or become impacted beneath the gums. At Maple Dental, we offer expert evaluation and removal of wisdom teeth for teens and adults",
+        "Your comfort matters to us. We offer several sedation options and thoughtful care protocols to ensure a calm, pain-free surgical experience.",
       points: [
-        "Diagnostic imaging to plan safe removal",
-        "Sedation options to keep you relaxed",
-        "Skilled removal of impacted or infected wisdom teeth",
-        "Post-op care instructions and support",
+        "Local Anesthesia for Targeted Numbness",
+        "Nitrous Oxide (Laughing Gas) for Relaxation",
+        "Calming Environment & Compassionate Care",
+        "Post-Operative Guidance & Recovery Support",
+        "Follow-Up Appointments to Monitor Healing",
       ],
     },
     {
       icon: "/Images/icons/Serving Harrisburg Nearby Communities.png",
-      title: "Serving Harrisburg & Surrounding Neighborhoods",
+      title: "Serving Maplewood & Nearby Communities",
       description:
-        "We are proud to be a trusted provider of dental surgery near you. Whether you’re located in Harrisburg (17110, 17109, 17111, 17112) or nearby areas like Colonial Park, Progress, Lawnton, Penbrook, or Linglestown, we’re here when you need expert oral care",
+        "We’re proud to provide expert oral surgery care to patients across Maplewood and the surrounding areas. Whether you're nearby or just a short drive away, we're here to help.",
       points: [
-        "Conveniently located in Harrisburg",
-        "Flexible appointments & efficient procedures",
-        "Insurance-friendly & payment plans available",
-        "Top-rated oral surgery near me in Central PA",
+        "Maplewood – 07040",
+        "South Orange – 07079",
+        "Vauxhall – 07088",
+        "Irvington – 07111",
+        "Newark – 07106 & 07112",
       ],
     },
   ];
+  
   return (
     <div className='flex min-h-screen bg-gray-50'>
       <main className='details-page-container'>
         <div className='details-page'>
           <div className='details-page-header-section'>
             <Fade direction='up' duration={1000}>
-              <h1>Oral Surgery in Harrisburg, PA</h1>
+              <h1>Oral Surgery in Maplewood, NJ</h1>
             </Fade>
             <Fade direction='down' duration={1000}>
               <h2 className="text-center">
-                Expert Oral Surgery in Harrisburg | Maple Dental | Family & Cosmetic Dentist
-              </h2>
+              Expert Oral Surgery Care at Tulip Dental in Maplewood | Tulip Dental | Family & Cosmetic Dentist              </h2>
             </Fade>
             {/* <div className='flex items-center justify-center gap-2'> <Link href={'/'} className='font-medium'>Home </Link><span><ChevronRight/></span> <span className='text-white/80'>Emergency Dentistry</span></div> */}
           </div>
@@ -90,11 +94,9 @@ export default function OralSurgeryPage() {
                 <div className='desc-text-subtitle'>Oral Surgery</div>
                 <h3 className='desc-text-title'>About Oral Surgery</h3>
                 <p>
-                  Oral surgery may sound intimidating, but at Maple Dental Harrisburg, it’s performed with precision, care, and a focus on your comfort. Whether you need a simple tooth extraction or a more complex procedure like wisdom tooth removal, we ensure a safe, smooth experience backed by advanced dental technology and experienced hands.
-                </p>
+                Oral surgery may sound intimidating, but at Tulip Dental in Maplewood, we make the process safe, gentle, and stress-free. Whether you need a simple tooth extraction, wisdom tooth removal, or more complex surgical care, our experienced team is here to help.We provide in-house surgical procedures using advanced tools and sedation options for maximum comfort.                 </p>
                 <p>
-                  We proudly serve patients from Harrisburg (17110, 17109, 17111, 17112), Colonial Park (17109), Penbrook (17103), Paxtang (17111), Progress (17109, 17111), Lawnton (17111), and Linglestown (17112). If you’re searching for an oral surgeon near me or dental surgery near you, Maple Dental is your trusted neighborhood choice.
-                </p>
+                Patients from Maplewood (07040), South Orange (07079), Vauxhall (07088), Irvington (07111), and nearby areas of Newark (07106, 07112) trust us for convenient, compassionate surgical care-right in their neighborhood. If you're searching for an "oral surgeon near me," Tulip Dental is nearby and ready to support your dental health with precision and care.                </p>
               </Fade>
             </div>
           </div>
@@ -106,17 +108,38 @@ export default function OralSurgeryPage() {
                   Top Reasons
                 </div>
                 <div className='wcu-title'>
-                  Why Choose Maple Dental for Oral Surgery?
-                </div>
-                <div className='wcu-points-section'>
-                  <ul className='wcu-points'>
-                    <li><CheckCircle />Skilled Dentists with Gentle Approach</li>
-                    <li><CheckCircle />Modern Technology & Comfortable Techniques</li>
-                    <li><CheckCircle />Sedation Dentistry Available</li>
-                    <li><CheckCircle />Central Harrisburg Location </li>
-                    <li><CheckCircle />Affordable Payment Plans</li>
-                  </ul>
-                </div>
+  <h2>Top Reasons To Choose Tulip Dental for Oral Surgery?</h2>
+</div>
+<div className='wcu-points-section'>
+  <ul className="wcu-points">
+    <li>
+      <h3 className="text-lg flex items-center gap-2">
+        <CheckCircle /> Experienced Surgical Team
+      </h3>
+    </li>
+    <li>
+      <h3 className="text-lg flex items-center gap-2">
+        <CheckCircle /> State-of-the-Art Equipment
+      </h3>
+    </li>
+    <li>
+      <h3 className="text-lg flex items-center gap-2">
+        <CheckCircle /> Comfortable, Stress-Free Environment
+      </h3>
+    </li>
+    <li>
+      <h3 className="text-lg flex items-center gap-2">
+        <CheckCircle /> Same-Day Consultations Available
+      </h3>
+    </li>
+    <li>
+      <h3 className="text-lg flex items-center gap-2">
+        <CheckCircle /> Serving Maplewood & Surrounding Communities
+      </h3>
+    </li>
+  </ul>
+</div>
+
               </Fade>
             </div>
             <div className='wcu-img-section'>
@@ -129,11 +152,10 @@ export default function OralSurgeryPage() {
           <div className="features-section">
             <Fade direction="up" duration={1000}>
               <h2 className="features-heading">
-                Comfortable & Precise Oral Surgery, Close to Home
-              </h2>
+              Comfortable, Safe & Expert Dental Surgery Near You               </h2>
               <p className="features-description">
-                At Maple Dental Harrisburg, oral surgery is never a one-size-fits-all approach. We take time to evaluate your needs, explain your options, and tailor treatment to ensure the best outcomes. From routine extractions to surgical removal of impacted teeth, we’re here to help you heal quickly—with minimal discomfort and maximum support.
-              </p>
+              Oral surgery doesn’t have to be stressful. At Tulip Dental, our goal is to make every surgical procedure-from extractions to minor jaw surgeries-as smooth and pain-free as possible. We use advanced diagnostics, modern techniques, and gentle care every step of the way.
+              <br /><br />Here’s What Makes Our Service Different              </p>
             </Fade>
 
             <div className="features-grid">
@@ -156,67 +178,80 @@ export default function OralSurgeryPage() {
             </div>
           </div>
           <div className='faq-section'>
-            <h2 className='faq-heading'>Oral Surgery Q&A</h2>
-            <div className="faq-acc-container">
-              <Accordion type="single" className="w-full space-y-5">
+  <h2 className='faq-heading'>Oral Surgery FAQs</h2>
+  <div className="faq-acc-container">
+    <Accordion type="single" className="w-full space-y-5">
 
-                <AccordionItem value="q1" className="faq-acc">
-                  <AccordionTrigger className='faq-qn'><h3 className='text-lg'>What is considered oral surgery?</h3></AccordionTrigger>
-                  <AccordionContent className='faq-ans'>
-                    <p>Oral surgery includes procedures that treat conditions affecting the mouth, teeth, and jaw. Common types include tooth extractions, wisdom teeth removal, surgical treatment of infections or abscesses, and preparation for dental implants.</p>
+      <AccordionItem value="q1" className="faq-acc">
+        <AccordionTrigger className='faq-qn'>
+          <h3 className='text-lg'>When is oral surgery necessary?</h3>
+        </AccordionTrigger>
+        <AccordionContent className='faq-ans'>
+          <p>
+            Oral surgery is needed when a dental condition can’t be treated with non-surgical methods. Common reasons include impacted teeth, severe decay, dental infections, or preparation for dental implants.
+          </p>
+        </AccordionContent>
+      </AccordionItem>
 
-                  </AccordionContent>
-                </AccordionItem>
+      <AccordionItem value="q2" className="faq-acc">
+        <AccordionTrigger className='faq-qn'>
+          <h3 className='text-lg'>Does oral surgery hurt?</h3>
+        </AccordionTrigger>
+        <AccordionContent className='faq-ans'>
+          <p>
+            Not with us! We use local anesthesia and offer sedation options to ensure a pain-free experience. Most patients report little to no discomfort during the procedure.
+          </p>
+        </AccordionContent>
+      </AccordionItem>
 
-                <AccordionItem value="q2" className="faq-acc">
-                  <AccordionTrigger className='faq-qn'><h3 className='text-lg'>Do tooth extractions hurt?</h3></AccordionTrigger>
-                  <AccordionContent className='faq-ans'>
-                    <p>No—our team ensures your comfort with local anesthesia and, if needed, dental sedation. Most patients report little to no discomfort during the procedure and mild soreness afterward that resolves within a few days.</p>
+      <AccordionItem value="q3" className="faq-acc">
+        <AccordionTrigger className='faq-qn'>
+          <h3 className='text-lg'>What should I expect after oral surgery?</h3>
+        </AccordionTrigger>
+        <AccordionContent className='faq-ans'>
+          <p>
+            Mild swelling and discomfort are normal, and we provide detailed aftercare instructions to support healing. Most patients recover within a few days.
+          </p>
+        </AccordionContent>
+      </AccordionItem>
 
-                  </AccordionContent>
-                </AccordionItem>
+      <AccordionItem value="q4" className="faq-acc">
+        <AccordionTrigger className='faq-qn'>
+          <h3 className='text-lg'>How do I prepare for a dental surgery appointment?</h3>
+        </AccordionTrigger>
+        <AccordionContent className='faq-ans'>
+          <p>
+            Avoid eating or drinking if sedation is planned, follow any instructions we provide, and arrange for someone to drive you home if needed.
+          </p>
+        </AccordionContent>
+      </AccordionItem>
 
-                <AccordionItem value="q3" className="faq-acc">
-                  <AccordionTrigger className='faq-qn'><h3 className='text-lg'>How do I know if my wisdom teeth need to be removed?</h3></AccordionTrigger>
-                  <AccordionContent className='faq-ans'>
-                    <p>You may need your wisdom teeth removed if you experience pain, swelling, infection, or overcrowding. X-rays often reveal impaction or potential issues even before symptoms appear. Our team will evaluate and recommend the best course of action.</p>
+      <AccordionItem value="q5" className="faq-acc">
+        <AccordionTrigger className='faq-qn'>
+          <h3 className='text-lg'>Is oral surgery covered by insurance?</h3>
+        </AccordionTrigger>
+        <AccordionContent className='faq-ans'>
+          <p>
+            Many oral surgery procedures are covered by dental insurance. Our team will help you verify your benefits and explain all your financial options.
+          </p>
+        </AccordionContent>
+      </AccordionItem>
 
-                  </AccordionContent>
-                </AccordionItem>
+    </Accordion>
+  </div>
+</div>
 
-                <AccordionItem value="q4" className="faq-acc">
-                  <AccordionTrigger className='faq-qn'><h3 className='text-lg'>What should I do after an extraction or surgery?</h3></AccordionTrigger>
-                  <AccordionContent className='faq-ans'>
-                    <p>
-                      After surgery, we’ll provide detailed aftercare instructions. Typically, patients should rest, avoid hard foods, use cold compresses to reduce swelling, and follow prescribed medications to manage pain or prevent infection.
-                    </p>
-                  </AccordionContent>
-                </AccordionItem>
+<div className="features-section">
+  <Fade direction="up" duration={1000}>
+    <h2 className="features-heading">
+      Need Oral Surgery in Maplewood, NJ?
+    </h2>
+    <p className="features-description">
+      From extractions to wisdom teeth removal, Tulip Dental is here with the surgical expertise and gentle care you deserve. Let us help you protect your smile and your overall health with expert oral surgery — close to home.
+    </p>
+  </Fade>
+</div>
 
-                <AccordionItem value="q5" className="faq-acc">
-                  <AccordionTrigger className='faq-qn'><h3 className='text-lg'>Is oral surgery covered by insurance?</h3></AccordionTrigger>
-                  <AccordionContent className='faq-ans'>
-                    <p>
-                      Many oral surgery procedures are covered fully or partially by dental insurance. Our team is happy to help verify your benefits and offer flexible payment options to make care affordable.
-                    </p>
-
-                  </AccordionContent>
-                </AccordionItem>
-
-
-              </Accordion>
-            </div>
-          </div>
-          <div className="features-section">
-            <Fade direction="up" duration={1000}>
-              <h2 className="features-heading">
-                Need Oral Surgery in Harrisburg?
-              </h2>
-              <p className="features-description">
-                Whether you need a simple extraction or complex oral surgery, Maple Dental Harrisburg is here to provide expert care with compassion. We proudly serve Harrisburg and nearby communities like Colonial Park, Progress, Penbrook, Paxtang, Lawnton, and Linglestown.
-              </p>
-            </Fade>
-          </div>
           <BookCallBtn />
         </div>
       </main>
