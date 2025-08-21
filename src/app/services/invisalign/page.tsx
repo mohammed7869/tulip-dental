@@ -121,7 +121,7 @@ export default function InvisilinePage() {
                     </div>
                     <div className='wcu-img-section'>
                       <Zoom cascade damping={0.3} duration={800}>
-                        <img src="/Images/banners/doctor-presenting-something-isolated-white-background.webp" alt="dental" />
+                        <img src="/Images/banners/top-reasons.jpeg" alt="dental" />
                       </Zoom>
                     </div>
         

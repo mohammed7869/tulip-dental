@@ -46,7 +46,7 @@ const blogPosts = blogPostsData.map((post, index) => ({
   //   title: "Emergency Dentist: Same-Day Appointments in Newark & East Orange | Maple Dental",
   //   date: "Jan 31, 2025",
   //   description: "Don't wait for dental emergencies to get worse. Maple Dental offers same-day emergency appointments to provide immediate relief and treatment when you're experiencing severe dental pain.",
-  //   image: "/Images/banners/doctor-presenting-something-isolated-white-background.webp",
+  //   image: "/Images/banners/top-reasons.jpeg",
   //   slug: "emergency-dentist-same-day-appointments"
   // },
   // {

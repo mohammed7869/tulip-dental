@@ -11,56 +11,59 @@ export const metadata: Metadata = generateServiceMetadata("cosmetic-dentistry", 
 
 export default function CosmeticDentistryPage() {
 
-
   const features = [
     {
       icon: "/Images/icons/tooth-whitening.png",
-      title: "Teeth Whitening in Harrisburg",
-      description: "Tired of stains or yellow teeth? Our professional teeth whitening treatments are faster and more effective than over-the-counter options. We offer both in-office and take-home whitening kits to fit your lifestyle.",
+      title: "Our Most Popular Cosmetic Services",
+      description:
+        "Our cosmetic offerings are designed to fit a range of goals, timelines, and budgets.",
       points: [
-        "Brighten your smile by several shades",
-        "Safe for enamel and gum health",
-        "Quick in-office results in just one visit",
-        "Customized trays for at-home use",
-      ]
+        "Porcelain Veneers",
+        "Teeth Whitening (In-Office & Take-Home)",
+        "Dental Bonding for Chips & Gaps",
+        "Tooth-Colored Fillings & Restorations",
+        "Smile Makeover Consultations",
+      ],
     },
     {
       icon: "/Images/icons/Smart Treatment Decisions Under Pressure.png",
-      title: "Porcelain Veneers & Bonding",
+      title: "The Power of a Confident Smile",
       description:
-        "Veneers and cosmetic bonding can instantly correct issues like chips, gaps, stains, or misaligned teeth—without braces or lengthy procedures",
+        "Feeling good about your smile can impact every part of your life—from relationships to career.",
       points: [
-        "Custom veneers for a flawless smile",
-        "Composite bonding for quick aesthetic fixes",
-        "Natural-looking results that last",
-        "Minimally invasive with little to no downtime",
+        "Look younger and more vibrant",
+        "Enhance first impressions",
+        "Smile more freely and confidently",
+        "Improve symmetry and tooth shape",
+        "Correct years of wear and discoloration",
       ],
     },
     {
       icon: "/Images/icons/Serving Harrisburg Nearby Communities.png",
-      title: "Smile Makeovers Near You",
+      title: "Cosmetic Dentistry for Maplewood & Nearby Areas",
       description:
-        "Looking for a complete transformation? Our smile makeovers combine multiple cosmetic treatments to give you the smile you've always dreamed of. From reshaping gums to realigning teeth, we tailor every plan to your goals",
+        "We’re proud to be your trusted local cosmetic dentist serving:",
       points: [
-        "Full evaluations and digital mock-ups",
-        "Combination of whitening, veneers, bonding, and more",
-        "Designed to match your facial features",
-        "Affordable treatment plans available",
+        "Maplewood – 07040",
+        "South Orange – 07079",
+        "Vauxhall – 07088",
+        "Irvington – 07111",
+        "Newark – 07106 & 07112",
       ],
     },
   ];
+
   return (
     <div className='flex min-h-screen bg-gray-50'>
       <main className='details-page-container'>
         <div className='details-page'>
           <div className='details-page-header-section'>
             <Fade direction='up' duration={1000}>
-              <h1>Cosmetic Dentistry in Harrisburg, PA</h1>
+              <h1>Cosmetic Dentistry in Maplewood, NJ</h1>
             </Fade>
             <Fade direction='down' duration={1000}>
               <h2 className="text-center">
-                Enhance Your Smile in Harrisburg | Maple Dental | Family & Cosmetic Dentist
-              </h2>
+                Transform Your Smile with Cosmetic Dentistry in Maplewood | Tulip Dental | Family & Cosmetic Dentist              </h2>
             </Fade>
             {/* <div className='flex items-center justify-center gap-2'> <Link href={'/'} className='font-medium'>Home </Link><span><ChevronRight/></span> <span className='text-white/80'>Emergency Dentistry</span></div> */}
           </div>
@@ -89,13 +92,11 @@ export default function CosmeticDentistryPage() {
             <div className='desc-text-section'>
               <Fade cascade direction="up" delay={1000} duration={600}>
                 <div className='desc-text-subtitle'>Cosmetic Dentistry</div>
-                <h3 className='desc-text-title'>About Cosmetic Dentistry</h3>
+                <h2 className='desc-text-title'>About Cosmetic Dentistry</h2>
                 <p>
-                  Your smile is one of the first things people notice—and with cosmetic dentistry at Maple Dental Harrisburg, you can feel confident every time you show it. Whether you're looking to brighten, reshape, or completely transform your smile, we offer customized solutions using the latest techniques and materials.
-                </p>
+                  Your smile is one of the first things people notice-why not make it unforgettable? At Tulip Dental in Maplewood, NJ, we offer modern, high-quality cosmetic dental treatments to help you feel more confident every time you smile. Whether you’re looking to whiten your teeth, fix chips and gaps, or completely transform your look with veneers or a full smile makeover, our skilled team is here to help.                </p>
                 <p>
-                  We proudly serve patients from Harrisburg (17110, 17109, 17111, 17112), Colonial Park (17109), Penbrook (17103), Paxtang (17111), Progress (17109, 17111), Lawnton (17111), and Linglestown (17112). So if you’re searching for a “cosmetic dentist near me” or want a smile makeover near you, Maple Dental Harrisburg is your trusted local provider.
-                </p>
+                  We proudly serve patients from Maplewood (07040), South Orange (07079), Vauxhall (07088), Irvington (07111), and nearby Newark (07106 and 07112). Searching for a “cosmetic dentist near me”? You’ve just found one who truly cares.                </p>
               </Fade>
             </div>
           </div>
@@ -107,22 +108,43 @@ export default function CosmeticDentistryPage() {
                   Top Reasons
                 </div>
                 <div className='wcu-title'>
-                  <h2>Why Choose Maple Dental for Cosmetic Dentistry?</h2>
+                  <h2>Why Choose Tulip Dental for Cosmetic Dentistry?</h2>
                 </div>
                 <div className='wcu-points-section'>
                   <ul className='wcu-points'>
-                    <li><CheckCircle />Personalized Smile Design & Planning</li>
-                    <li><CheckCircle />Advanced Techniques for Natural-Looking Results</li>
-                    <li><CheckCircle />High-Quality Materials & Digital Imaging</li>
-                    <li><CheckCircle />Flexible Financing & Insurance Assistance </li>
-                    <li><CheckCircle />Convenient Location in Harrisburg, PA</li>
+                    <li>
+                      <h3 className="text-sm flex items-center gap-2">
+                        <CheckCircle /> Personalized Smile Makeovers
+                      </h3>
+                    </li>
+                    <li>
+                      <h3 className="text-lg flex items-center gap-2">
+                        <CheckCircle /> Advanced Technology & Materials
+                      </h3>
+                    </li>
+                    <li>
+                      <h3 className="text-lg flex items-center gap-2">
+                        <CheckCircle /> Natural-Looking Enhancements
+                      </h3>
+                    </li>
+                    <li>
+                      <h3 className="text-lg flex items-center gap-2">
+                        <CheckCircle /> Flexible Financing Options
+                      </h3>
+                    </li>
+                    <li>
+                      <h3 className="text-lg flex items-center gap-2">
+                        <CheckCircle /> Convenient Location in Maplewood, NJ
+                      </h3>
+                    </li>
                   </ul>
                 </div>
+
               </Fade>
             </div>
             <div className='wcu-img-section'>
               <Zoom cascade damping={0.3} duration={800}>
-                <img src="/Images/banners/doctor-presenting-something-isolated-white-background.webp" alt="dental" />
+                <img src="/Images/banners/top-reasons.jpeg" alt="dental" />
               </Zoom>
             </div>
 
@@ -130,10 +152,13 @@ export default function CosmeticDentistryPage() {
           <div className="features-section">
             <Fade direction="up" duration={1000}>
               <h2 className="features-heading">
-                Achieve the Smile You’ve Always Wanted
+                Cosmetic Dentistry Services That Make You Smile
               </h2>
               <p className="features-description">
-                Cosmetic dentistry is more than just appearance—it’s about boosting your confidence and enhancing your quality of life. At Maple Dental Harrisburg, we take a comprehensive, patient-first approach to every smile transformation, big or small. Whether you’re preparing for a special event or simply want to feel better about your teeth, we’re here to help you love your smile again.
+                Cosmetic dentistry isn’t just about looks-it’s about how you feel. We take a conservative yet artistic approach to every procedure, ensuring natural results that boost your self-esteem and oral health.
+                <br />
+                <br />
+                Here’s what we offer at Tulip Dental:
               </p>
             </Fade>
 
@@ -157,75 +182,76 @@ export default function CosmeticDentistryPage() {
             </div>
           </div>
           <div className='faq-section'>
-            <h2 className='faq-heading'>Cosmetic Dentistry Q&A</h2>
+            <h2 className='faq-heading'>Cosmetic Dentistry FAQs</h2>
             <div className="faq-acc-container">
               <Accordion type="single" className="w-full space-y-5">
 
                 <AccordionItem value="q1" className="faq-acc">
                   <AccordionTrigger className='faq-qn'><h3 className='text-lg'>What is cosmetic dentistry?</h3></AccordionTrigger>
                   <AccordionContent className='faq-ans'>
-                    <p>Cosmetic dentistry focuses on improving the appearance of your teeth, gums, and overall smile. Treatments can include whitening, veneers, bonding, reshaping, and full smile makeovers—all aimed at giving you a smile you’ll love.</p>
-
+                    <p>
+                      Cosmetic dentistry focuses on improving the appearance of your teeth, gums, and overall smile.
+                      It includes treatments like whitening, veneers, bonding, and more.
+                    </p>
                   </AccordionContent>
                 </AccordionItem>
 
                 <AccordionItem value="q2" className="faq-acc">
-                  <AccordionTrigger className='faq-qn'><h3 className='text-lg'>Is cosmetic dentistry painful?</h3></AccordionTrigger>
+                  <AccordionTrigger className='faq-qn'><h3 className='text-lg'>How do I know which cosmetic treatment is right for me?</h3></AccordionTrigger>
                   <AccordionContent className='faq-ans'>
-                    <p>Most cosmetic procedures are minimally invasive and pain-free. For procedures like veneers or bonding, we use gentle techniques and local anesthesia if needed to ensure your comfort throughout.</p>
-
+                    <p>
+                      We’ll begin with a personalized consultation to assess your goals and discuss which treatments
+                      best fit your needs, lifestyle, and budget.
+                    </p>
                   </AccordionContent>
                 </AccordionItem>
 
                 <AccordionItem value="q3" className="faq-acc">
-                  <AccordionTrigger className='faq-qn'><h3 className='text-lg'>How long do cosmetic results last?</h3></AccordionTrigger>
+                  <AccordionTrigger className='faq-qn'><h3 className='text-lg'>Is cosmetic dentistry painful?</h3></AccordionTrigger>
                   <AccordionContent className='faq-ans'>
-                    <p>With proper care, cosmetic dental treatments can last for many years. Veneers can last 10–15 years, bonding can last 5–7 years, and professional whitening results can last several months to a few years depending on diet and habits.</p>
-
+                    <p>
+                      Not at all. Most cosmetic procedures are minimally invasive and require little to no recovery time.
+                      We ensure your comfort every step of the way.
+                    </p>
                   </AccordionContent>
                 </AccordionItem>
 
                 <AccordionItem value="q4" className="faq-acc">
-                  <AccordionTrigger className='faq-qn'><h3 className='text-lg'>Can I combine treatments?</h3></AccordionTrigger>
+                  <AccordionTrigger className='faq-qn'><h3 className='text-lg'>How long do cosmetic results last?</h3></AccordionTrigger>
                   <AccordionContent className='faq-ans'>
                     <p>
-                      Yes! Many patients choose to combine treatments like whitening, bonding, and veneers for a complete smile makeover. We’ll build a personalized plan that matches your goals, timeline, and budget.
+                      It depends on the treatment and your oral care routine. Veneers can last 10–15 years or more,
+                      while whitening may need occasional touch-ups. We’ll guide you on how to maintain your results.
                     </p>
                   </AccordionContent>
                 </AccordionItem>
 
                 <AccordionItem value="q5" className="faq-acc">
-                  <AccordionTrigger className='faq-qn'><h3 className='text-lg'>Does dental insurance cover cosmetic dentistry?</h3></AccordionTrigger>
+                  <AccordionTrigger className='faq-qn'><h3 className='text-lg'>Can cosmetic dentistry fix crooked teeth?</h3></AccordionTrigger>
                   <AccordionContent className='faq-ans'>
                     <p>
-                      Most cosmetic treatments are not covered by standard insurance plans, but Maple Dental Harrisburg offers flexible financing options to make care affordable. Our team will help you explore all your options during your consultation.
+                      Yes! Mild alignment issues can often be corrected with veneers or bonding.
+                      For more advanced cases, we may recommend Invisalign or orthodontic options.
                     </p>
-
                   </AccordionContent>
                 </AccordionItem>
-                <AccordionItem value="q6" className="faq-acc">
-                  <AccordionTrigger className='faq-qn'><h3 className='text-lg'>Ready for a Smile Makeover in Harrisburg?</h3></AccordionTrigger>
-                  <AccordionContent className='faq-ans'>
-                    <p>
-                      You deserve a smile you’re proud of. Whether it’s whitening, veneers, or a full smile makeover, Maple Dental Harrisburg is your go-to cosmetic dentist in Harrisburg and surrounding communities like Colonial Park, Penbrook, Lawnton, and Linglestown.            </p>
-
-                  </AccordionContent>
-                </AccordionItem>
-
 
               </Accordion>
             </div>
           </div>
+
           <div className="features-section">
             <Fade direction="up" duration={1000}>
               <h2 className="features-heading">
-                Ready for a Smile Makeover in Harrisburg?
+                Ready to Love Your Smile Again?
               </h2>
               <p className="features-description">
-                You deserve a smile you’re proud of. Whether it’s whitening, veneers, or a full smile makeover, Maple Dental Harrisburg is your go-to cosmetic dentist in Harrisburg and surrounding communities like Colonial Park, Penbrook, Lawnton, and Linglestown.
+                If you’re tired of hiding your smile, Tulip Dental is here to help. From subtle enhancements
+                to full smile makeovers, we offer compassionate, expert care in a comfortable setting.
               </p>
             </Fade>
           </div>
+
           <BookCallBtn />
         </div>
       </main>
