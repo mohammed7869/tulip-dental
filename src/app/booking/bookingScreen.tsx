@@ -1,29 +1,31 @@
-
 // components/BookingModal.tsx
-'use client';
+"use client";
 
-import { Dialog, DialogContent } from '@/components/ui/dialog';
-import { useEffect, useState, Suspense } from 'react';
-import {  Check } from 'lucide-react';
-import StepAppointment from './stepAppointment';
-import StepInsuranceInfo from './stepInsuranceInfo';
-import StepContactInfo from './stepContactInfo';
-import RequestSubmitted from './requestSubmitted';
-import { usePathname, useRouter, useSearchParams } from 'next/navigation';
-import { apiService, TimeSlot } from '@/lib/apiService';
+import { Dialog, DialogContent } from "@/components/ui/dialog";
+import { useEffect, useState, Suspense } from "react";
+import { Check } from "lucide-react";
+import StepAppointment from "./stepAppointment";
+import StepInsuranceInfo from "./stepInsuranceInfo";
+import StepContactInfo from "./stepContactInfo";
+import RequestSubmitted from "./requestSubmitted";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import { apiService, TimeSlot } from "@/lib/apiService";
 
 interface BookingModalProps {
   open: boolean;
   setOpen: (open: boolean) => void;
 }
 
-
-
 // Component that uses useSearchParams - needs to be wrapped in Suspense
-const BookingModalContent: React.FC<BookingModalProps> = ({ open, setOpen }) => {
+const BookingModalContent: React.FC<BookingModalProps> = ({
+  open,
+  setOpen,
+}) => {
   const [step, setStep] = useState(1);
   const [isNewClient, setIsNewPatient] = useState(true);
-  const [selectedLocation, setSelectedLocation] = useState('539 Bloomfield Avenue');
+  const [selectedLocation, setSelectedLocation] = useState(
+    "539 Bloomfield Avenue"
+  );
   const [formData, setFormData] = useState<any>({});
   const [dailyTimeSlots, setDailyTimeSlots] = useState<TimeSlot[]>([]);
   const [loadingDailySlots, setLoadingDailySlots] = useState(false);
@@ -34,15 +36,15 @@ const BookingModalContent: React.FC<BookingModalProps> = ({ open, setOpen }) => 
   const searchParams = useSearchParams();
 
   const locations = [
-    '539 Bloomfield Avenue',
-    '240 Mulberry Street',
-    'Downtown Newark'
+    "539 Bloomfield Avenue",
+    "240 Mulberry Street",
+    "Downtown Newark",
   ];
 
   const nextStep = async () => {
     setIsStepTransitioning(true);
     // Add a small delay to show the loader
-    await new Promise(resolve => setTimeout(resolve, 300));
+    await new Promise((resolve) => setTimeout(resolve, 300));
     setStep((prev) => prev + 1);
     setIsStepTransitioning(false);
   };
@@ -50,7 +52,7 @@ const BookingModalContent: React.FC<BookingModalProps> = ({ open, setOpen }) => 
   const prevStep = async () => {
     setIsStepTransitioning(true);
     // Add a small delay to show the loader
-    await new Promise(resolve => setTimeout(resolve, 300));
+    await new Promise((resolve) => setTimeout(resolve, 300));
     setStep((prev) => prev - 1);
     setIsStepTransitioning(false);
   };
@@ -64,9 +66,9 @@ const BookingModalContent: React.FC<BookingModalProps> = ({ open, setOpen }) => 
           setIsLoading(true);
           const slots = await apiService.getDailyTimeSlots();
           setDailyTimeSlots(slots);
-          console.log('Daily time slots loaded:', slots);
+          console.log("Daily time slots loaded:", slots);
         } catch (error) {
-          console.error('Error loading daily time slots:', error);
+          console.error("Error loading daily time slots:", error);
         } finally {
           setLoadingDailySlots(false);
           setIsLoading(false);
@@ -80,8 +82,8 @@ const BookingModalContent: React.FC<BookingModalProps> = ({ open, setOpen }) => 
   const handleComplete = async () => {
     try {
       // Handle appointment booking completion
-      console.log('Appointment booked:', formData);
-      
+      console.log("Appointment booked:", formData);
+
       // Here you would typically send the data to your backend
       // For now, we'll just proceed to the confirmation step
       setStep(4);
@@ -89,7 +91,7 @@ const BookingModalContent: React.FC<BookingModalProps> = ({ open, setOpen }) => 
       // Update the URL to reflect booking confirmation state (keep literal =)
       router.push(`${pathname}?modal=booking=confirm`);
     } catch (error) {
-      console.error('Error booking appointment:', error);
+      console.error("Error booking appointment:", error);
       // Handle error appropriately
     }
   };
@@ -98,7 +100,7 @@ const BookingModalContent: React.FC<BookingModalProps> = ({ open, setOpen }) => 
     setStep(1);
     setFormData({});
     setIsNewPatient(true);
-    setSelectedLocation('539 Bloomfield Avenue');
+    setSelectedLocation("539 Bloomfield Avenue");
     // Don't reset dailyTimeSlots as they should persist
   };
 
@@ -106,9 +108,9 @@ const BookingModalContent: React.FC<BookingModalProps> = ({ open, setOpen }) => 
     const params = new URLSearchParams(searchParams.toString());
 
     if (open) {
-      params.set('modal', 'booking');
+      params.set("modal", "booking");
     } else {
-      params.delete('modal');
+      params.delete("modal");
     }
 
     // Construct the new URL with current path and updated query
@@ -118,16 +120,19 @@ const BookingModalContent: React.FC<BookingModalProps> = ({ open, setOpen }) => 
 
   return (
     <>
-
-      
-      <Dialog open={open} onOpenChange={(open) => {
-        setOpen(open);
-        if (!open) resetModal();
-      }}>
+      <Dialog
+        open={open}
+        onOpenChange={(open) => {
+          setOpen(open);
+          if (!open) resetModal();
+        }}
+      >
         <DialogContent className="max-w-full w-[95vw] sm:w-[90vw] md:!max-w-[900px] lg:!max-w-[1000px] p-0 gap-0 max-h-[95vh] sm:max-h-[90vh] flex flex-col">
           {/* Header */}
           <div className="flex items-center justify-between p-4 sm:p-6 border-b flex-shrink-0">
-            <h2 className="text-lg sm:text-xl font-semibold">Appointment Request</h2>
+            <h2 className="text-lg sm:text-xl font-semibold">
+              Appointment Request
+            </h2>
             {/* <button
               onClick={() => setOpen(false)}
               className="p-1 hover:bg-gray-100 rounded"
@@ -166,7 +171,7 @@ const BookingModalContent: React.FC<BookingModalProps> = ({ open, setOpen }) => 
               <select
                 value={selectedLocation}
                 onChange={(e) => setSelectedLocation(e.target.value)}
-                className="w-full px-3 py-2 bg-gray-50 border border-gray-200 rounded text-sm focus:outline-none focus:ring-1 focus:ring-teal-500 focus:border-teal-500"
+                className="w-full px-3 py-2 bg-gray-50 border border-gray-200 rounded text-sm focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
               >
                 {locations.map((location) => (
                   <option key={location} value={location}>{location}</option>
@@ -230,11 +235,7 @@ const BookingModalContent: React.FC<BookingModalProps> = ({ open, setOpen }) => 
                 onComplete={handleComplete}
               />
             )}
-            {step === 4 && (
-              <RequestSubmitted
-                formData={formData}
-              />
-            )}
+            {step === 4 && <RequestSubmitted formData={formData} />}
           </div>
         </DialogContent>
       </Dialog>

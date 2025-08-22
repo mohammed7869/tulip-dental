@@ -1,9 +1,13 @@
 import { Button } from "@/components/ui/button";
 import { Check, ChevronLeft, ChevronRight, Clock } from "lucide-react";
 import { useState, useEffect, useCallback } from "react";
-import { apiService, Location, TimeSlot, BookedSlot, TimeSlotWithAvailability } from "@/lib/apiService";
-
-
+import {
+  apiService,
+  Location,
+  TimeSlot,
+  BookedSlot,
+  TimeSlotWithAvailability,
+} from "@/lib/apiService";
 
 // LocationTimeSlots Component
 interface LocationTimeSlotsProps {
@@ -13,7 +17,10 @@ interface LocationTimeSlotsProps {
   selectedTime: string;
   selectedDate: string; // Add selectedDate prop
   onTimeSelect: (time: string, locationId: number) => void;
-  getTimeSlotsForDate: (dateObj: any, locationId: number) => Promise<TimeSlotWithAvailability[]>;
+  getTimeSlotsForDate: (
+    dateObj: any,
+    locationId: number
+  ) => Promise<TimeSlotWithAvailability[]>;
 }
 
 const LocationTimeSlots: React.FC<LocationTimeSlotsProps> = ({
@@ -23,20 +30,26 @@ const LocationTimeSlots: React.FC<LocationTimeSlotsProps> = ({
   selectedTime,
   selectedDate,
   onTimeSelect,
-  getTimeSlotsForDate
+  getTimeSlotsForDate,
 }) => {
-  const [timeSlotsMap, setTimeSlotsMap] = useState<Record<string, TimeSlotWithAvailability[]>>({});
+  const [timeSlotsMap, setTimeSlotsMap] = useState<
+    Record<string, TimeSlotWithAvailability[]>
+  >({});
   const [loadingSlots, setLoadingSlots] = useState<Record<string, boolean>>({});
 
   // Load time slots for selected date and locations
   useEffect(() => {
-    console.log('LocationTimeSlots useEffect triggered:', { selectedDateObj: selectedDateObj?.fullDate, selectedLocation, locationsLength: locations.length });
-    
+    console.log("LocationTimeSlots useEffect triggered:", {
+      selectedDateObj: selectedDateObj?.fullDate,
+      selectedLocation,
+      locationsLength: locations.length,
+    });
+
     if (!selectedDateObj) return;
 
     const loadTimeSlots = async () => {
       const locationsToLoad = selectedLocation
-        ? locations.filter(loc => loc.id === selectedLocation)
+        ? locations.filter((loc) => loc.id === selectedLocation)
         : locations;
 
       for (const location of locationsToLoad) {
@@ -45,19 +58,35 @@ const LocationTimeSlots: React.FC<LocationTimeSlotsProps> = ({
 
         // Only load if we don't have the data and we're not already loading
         if (!timeSlotsMap[cacheKey] && !loadingSlots[cacheKey]) {
-          console.log('Loading time slots for location:', { locationId: location.id, date: selectedDateObj.fullDate, cacheKey });
-          setLoadingSlots(prev => ({ ...prev, [cacheKey]: true }));
+          console.log("Loading time slots for location:", {
+            locationId: location.id,
+            date: selectedDateObj.fullDate,
+            cacheKey,
+          });
+          setLoadingSlots((prev) => ({ ...prev, [cacheKey]: true }));
           try {
-            const slots = await getTimeSlotsForDate(selectedDateObj, location.id);
-            setTimeSlotsMap(prev => ({ ...prev, [cacheKey]: slots }));
+            const slots = await getTimeSlotsForDate(
+              selectedDateObj,
+              location.id
+            );
+            setTimeSlotsMap((prev) => ({ ...prev, [cacheKey]: slots }));
           } catch (error) {
-            console.error(`Error loading time slots for location ${location.id}:`, error);
-            setTimeSlotsMap(prev => ({ ...prev, [cacheKey]: [] }));
+            console.error(
+              `Error loading time slots for location ${location.id}:`,
+              error
+            );
+            setTimeSlotsMap((prev) => ({ ...prev, [cacheKey]: [] }));
           } finally {
-            setLoadingSlots(prev => ({ ...prev, [cacheKey]: false }));
+            setLoadingSlots((prev) => ({ ...prev, [cacheKey]: false }));
           }
         } else {
-          console.log('Using cached time slots for location:', { locationId: location.id, date: selectedDateObj.fullDate, cacheKey, hasData: !!timeSlotsMap[cacheKey], isLoading: loadingSlots[cacheKey] });
+          console.log("Using cached time slots for location:", {
+            locationId: location.id,
+            date: selectedDateObj.fullDate,
+            cacheKey,
+            hasData: !!timeSlotsMap[cacheKey],
+            isLoading: loadingSlots[cacheKey],
+          });
         }
       }
     };
@@ -66,7 +95,7 @@ const LocationTimeSlots: React.FC<LocationTimeSlotsProps> = ({
   }, [selectedDateObj?.fullDate, selectedLocation]); // Removed locations.length dependency to prevent unnecessary reloads in single location mode
 
   const locationsToShow = selectedLocation
-    ? locations.filter(loc => loc.id === selectedLocation)
+    ? locations.filter((loc) => loc.id === selectedLocation)
     : []; // Don't show any locations if none selected
 
   return (
@@ -77,7 +106,10 @@ const LocationTimeSlots: React.FC<LocationTimeSlotsProps> = ({
         const isLoading = loadingSlots[cacheKey];
 
         return (
-          <div key={location.id} className="border border-gray-200 rounded-lg p-3 sm:p-4">
+          <div
+            key={location.id}
+            className="border border-gray-200 rounded-lg p-3 sm:p-4"
+          >
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 lg:gap-6">
               {/* Provider Info */}
               <div className="lg:col-span-4">
@@ -94,15 +126,21 @@ const LocationTimeSlots: React.FC<LocationTimeSlotsProps> = ({
                   {/* Provider Details */}
                   <div className="flex-1 min-w-0">
                     <h4 className="font-medium text-gray-900 text-sm mb-1">
-                      {location.name.length > 20 ? `${location.name.substring(0, 20)}...` : location.name}
+                      {location.name.length > 20
+                        ? `${location.name.substring(0, 20)}...`
+                        : location.name}
                     </h4>
                     <div className="text-xs text-gray-600 space-y-0.5">
                       <div>{location.address}</div>
-                      <div>{location.city}, {location.state} {location.zipcode}</div>
+                      <div>
+                        {location.city}, {location.state} {location.zipcode}
+                      </div>
                     </div>
                     <div className="flex items-center gap-1 mt-2 sm:mt-3 pt-1 border-t border-gray-100">
                       <Clock className="w-3 h-3 text-gray-500" />
-                      <span className="text-xs text-gray-500">Appointments in EST</span>
+                      <span className="text-xs text-gray-500">
+                        Appointments in EST
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -123,33 +161,42 @@ const LocationTimeSlots: React.FC<LocationTimeSlotsProps> = ({
                     <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 mb-3">
                       {timeSlots.map((slot: TimeSlotWithAvailability) => {
                         // Only show as selected if we have both a selected time AND the date matches
-                        const isSelected = selectedTime === slot.time && 
-                                         selectedLocation === location.id && 
-                                         selectedDate === selectedDateObj?.fullDate;
-                        
-                        console.log('Time slot rendering:', { 
-                          time: slot.time, 
-                          isSelected, 
-                          selectedTime, 
-                          selectedLocation, 
+                        const isSelected =
+                          selectedTime === slot.time &&
+                          selectedLocation === location.id &&
+                          selectedDate === selectedDateObj?.fullDate;
+
+                        console.log("Time slot rendering:", {
+                          time: slot.time,
+                          isSelected,
+                          selectedTime,
+                          selectedLocation,
                           selectedDate,
                           currentDate: selectedDateObj?.fullDate,
                           locationId: location.id,
-                          isBooked: slot.isBooked
+                          isBooked: slot.isBooked,
                         });
-                        
+
                         return (
                           <button
                             key={slot.time}
-                            onClick={() => !slot.isBooked && onTimeSelect(slot.time, location.id)}
+                            onClick={() =>
+                              !slot.isBooked &&
+                              onTimeSelect(slot.time, location.id)
+                            }
                             disabled={slot.isBooked}
-                            className={`px-3 sm:px-4 py-2 text-xs sm:text-sm font-medium rounded-md border transition-all ${slot.isBooked
-                              ? 'bg-gray-100 text-gray-400 border-gray-200 cursor-not-allowed'
-                              : isSelected
-                                ? 'bg-teal-600 text-white border-teal-600'
-                                : 'bg-white text-teal-600 border-teal-200 hover:bg-teal-50'
-                              }`}
-                            title={slot.isBooked ? 'This time slot is already booked' : ''}
+                            className={`px-3 sm:px-4 py-2 text-xs sm:text-sm font-medium rounded-md border transition-all ${
+                              slot.isBooked
+                                ? "bg-gray-100 text-gray-400 border-gray-200 cursor-not-allowed"
+                                : isSelected
+                                ? "bg-gradient-to-r from-blue-600 to-cyan-600 text-white border-blue-600"
+                                : "bg-white text-blue-600 border-blue-200 hover:bg-blue-50"
+                            }`}
+                            title={
+                              slot.isBooked
+                                ? "This time slot is already booked"
+                                : ""
+                            }
                           >
                             {slot.time}
                           </button>
@@ -179,61 +226,77 @@ interface StepAppointmentProps {
   loadingDailySlots: boolean;
 }
 
-const StepAppointment = ({ nextStep, formData, setFormData, dailyTimeSlots, loadingDailySlots }: StepAppointmentProps) => {
-  const [selectedDate, setSelectedDate] = useState(formData.selectedDate || '');
+const StepAppointment = ({
+  nextStep,
+  formData,
+  setFormData,
+  dailyTimeSlots,
+  loadingDailySlots,
+}: StepAppointmentProps) => {
+  const [selectedDate, setSelectedDate] = useState(formData.selectedDate || "");
   const [isNewClient, setIsNewClient] = useState(formData.isNewClient ?? true);
-  const [selectedLocation, setSelectedLocation] = useState<number | null>(formData.selectedLocation || null);
-  const [selectedTime, setSelectedTime] = useState(formData.selectedTime || '');
-  
+  const [selectedLocation, setSelectedLocation] = useState<number | null>(
+    formData.selectedLocation || null
+  );
+  const [selectedTime, setSelectedTime] = useState(formData.selectedTime || "");
+
   // Add flag to track if we're in single location mode
   const [isSingleLocationMode, setIsSingleLocationMode] = useState(false);
   const [locationsLoaded, setLocationsLoaded] = useState(false);
-  
+
   // Update local state when formData changes (when navigating back to this step)
   useEffect(() => {
-    console.log('formData useEffect triggered:', { 
-      selectedDate: formData.selectedDate, 
-      selectedTime: formData.selectedTime, 
+    console.log("formData useEffect triggered:", {
+      selectedDate: formData.selectedDate,
+      selectedTime: formData.selectedTime,
       selectedLocationId: formData.selectedLocationId,
       currentSelectedTime: selectedTime,
-      currentSelectedDate: selectedDate
+      currentSelectedDate: selectedDate,
     });
-    
-    setSelectedDate(formData.selectedDate || '');
+
+    setSelectedDate(formData.selectedDate || "");
     setIsNewClient(formData.isNewClient ?? true);
-    setSelectedTime(formData.selectedTime || '');
-    
+    setSelectedTime(formData.selectedTime || "");
+
     // Update currentWeekStart to show the week containing the selected date
     if (formData.selectedDate) {
       const selectedDateObj = new Date(formData.selectedDate);
       const weekStart = getMondayOfWeek(selectedDateObj);
       setCurrentWeekStart(weekStart);
-      
+
       // Clear booked slots cache to force reload for the new week
-      console.log('Clearing booked slots cache due to selected date change');
+      console.log("Clearing booked slots cache due to selected date change");
       setBookedSlotsCache({});
     }
-    
+
     // Only update selectedLocation if we have a valid savedLocationId and it's different from current
-    if (formData.selectedLocationId && formData.selectedLocationId !== selectedLocation) {
+    if (
+      formData.selectedLocationId &&
+      formData.selectedLocationId !== selectedLocation
+    ) {
       setSelectedLocation(formData.selectedLocationId);
     }
-    
-    console.log('Local state updated from formData:', { 
-      newSelectedDate: formData.selectedDate || '', 
-      newSelectedTime: formData.selectedTime || '', 
-      newSelectedLocationId: formData.selectedLocationId 
+
+    console.log("Local state updated from formData:", {
+      newSelectedDate: formData.selectedDate || "",
+      newSelectedTime: formData.selectedTime || "",
+      newSelectedLocationId: formData.selectedLocationId,
     });
-  }, [formData.selectedDate, formData.isNewClient, formData.selectedTime, formData.selectedLocationId]); // Only depend on specific formData properties, not the entire object
+  }, [
+    formData.selectedDate,
+    formData.isNewClient,
+    formData.selectedTime,
+    formData.selectedLocationId,
+  ]); // Only depend on specific formData properties, not the entire object
 
   const handleNewClientChange = (checked: boolean) => {
     setIsNewClient(checked);
     setFormData({
       ...formData,
-      isNewClient: checked
+      isNewClient: checked,
     });
   };
-  
+
   // Helper function to get Monday of the current week
   const getMondayOfWeek = (date: Date) => {
     const d = new Date(date);
@@ -241,7 +304,7 @@ const StepAppointment = ({ nextStep, formData, setFormData, dailyTimeSlots, load
     const diff = d.getDate() - day + (day === 0 ? -6 : 1); // adjust when day is Sunday
     return new Date(d.setDate(diff));
   };
-  
+
   const [currentWeekStart, setCurrentWeekStart] = useState(() => {
     // If there's a selected date in formData, show the week containing that date
     if (formData.selectedDate) {
@@ -253,20 +316,12 @@ const StepAppointment = ({ nextStep, formData, setFormData, dailyTimeSlots, load
     return getMondayOfWeek(today);
   });
 
-
-
-
-
-
-
-
-
-
-
   const [locations, setLocations] = useState<Location[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const [bookedSlotsCache, setBookedSlotsCache] = useState<Record<string, BookedSlot[]>>({});
+  const [bookedSlotsCache, setBookedSlotsCache] = useState<
+    Record<string, BookedSlot[]>
+  >({});
 
   // Load locations from API
   useEffect(() => {
@@ -276,28 +331,31 @@ const StepAppointment = ({ nextStep, formData, setFormData, dailyTimeSlots, load
         const locationsData = await apiService.getLocations();
         setLocations(locationsData);
 
-        console.log('Locations loaded:', locationsData.length, locationsData);
+        console.log("Locations loaded:", locationsData.length, locationsData);
 
         // Set single location mode flag
         const singleLocationMode = locationsData.length === 1;
         setIsSingleLocationMode(singleLocationMode);
         setLocationsLoaded(true);
 
-        console.log('Single location mode:', singleLocationMode);
+        console.log("Single location mode:", singleLocationMode);
 
         // Set default location to first available location only if no location is already selected
         if (locationsData.length > 0 && !selectedLocation) {
           // Check if we have a saved location ID from formData
           const savedLocationId = formData.selectedLocationId;
-          if (savedLocationId && locationsData.find(loc => loc.id === savedLocationId)) {
+          if (
+            savedLocationId &&
+            locationsData.find((loc) => loc.id === savedLocationId)
+          ) {
             setSelectedLocation(savedLocationId);
           } else {
             setSelectedLocation(locationsData[0].id);
           }
         }
       } catch (err) {
-        console.error('Error loading locations:', err);
-        setError('Failed to load locations. Please try again.');
+        console.error("Error loading locations:", err);
+        setError("Failed to load locations. Please try again.");
       } finally {
         setLoading(false);
       }
@@ -307,7 +365,9 @@ const StepAppointment = ({ nextStep, formData, setFormData, dailyTimeSlots, load
     if (!locationsLoaded || locations.length === 0) {
       loadLocations();
     } else {
-      console.log('Skipping locations reload - already loaded or in single location mode');
+      console.log(
+        "Skipping locations reload - already loaded or in single location mode"
+      );
     }
   }, []); // Only run once when component mounts
 
@@ -322,29 +382,49 @@ const StepAppointment = ({ nextStep, formData, setFormData, dailyTimeSlots, load
         const toDateVisible = new Date(currentWeekStart);
         toDateVisible.setDate(fromDateVisible.getDate() + 6); // 7 days from start
 
-        const fromDate = fromDateVisible.toISOString().split('T')[0] + 'T00:00:00.00';
-        const toDate = toDateVisible.toISOString().split('T')[0] + 'T23:59:59.99';
+        const fromDate =
+          fromDateVisible.toISOString().split("T")[0] + "T00:00:00.00";
+        const toDate =
+          toDateVisible.toISOString().split("T")[0] + "T23:59:59.99";
 
         // Check if we already have cached data for this week and location
-        const cacheKey = `${selectedLocation}-${fromDateVisible.toISOString().split('T')[0]}`;
+        const cacheKey = `${selectedLocation}-${
+          fromDateVisible.toISOString().split("T")[0]
+        }`;
         if (bookedSlotsCache[cacheKey]) {
-          console.log('Using cached booked slots for week:', { cacheKey, cachedSlots: bookedSlotsCache[cacheKey].length });
+          console.log("Using cached booked slots for week:", {
+            cacheKey,
+            cachedSlots: bookedSlotsCache[cacheKey].length,
+          });
           return; // Don't reload if we already have the data
         }
 
-        console.log('Loading booked slots for week:', { fromDate, toDate, locationId: selectedLocation, weekStart: currentWeekStart });
+        console.log("Loading booked slots for week:", {
+          fromDate,
+          toDate,
+          locationId: selectedLocation,
+          weekStart: currentWeekStart,
+        });
 
-        const bookedSlots = await apiService.getBookedSlots(fromDate, toDate, selectedLocation);
+        const bookedSlots = await apiService.getBookedSlots(
+          fromDate,
+          toDate,
+          selectedLocation
+        );
 
         // Cache the booked slots with a key that includes the week and location
-        setBookedSlotsCache(prev => ({ 
-          ...prev, 
-          [cacheKey]: bookedSlots 
+        setBookedSlotsCache((prev) => ({
+          ...prev,
+          [cacheKey]: bookedSlots,
         }));
 
-        console.log('Booked slots loaded and cached for week:', { cacheKey, bookedSlots: bookedSlots.length, slots: bookedSlots });
+        console.log("Booked slots loaded and cached for week:", {
+          cacheKey,
+          bookedSlots: bookedSlots.length,
+          slots: bookedSlots,
+        });
       } catch (error) {
-        console.error('Error loading booked slots:', error);
+        console.error("Error loading booked slots:", error);
       }
     };
 
@@ -359,13 +439,21 @@ const StepAppointment = ({ nextStep, formData, setFormData, dailyTimeSlots, load
     const startDate = new Date(currentWeekStart);
 
     // Generate weeks worth of dates starting from Monday
-    for (let i = 0; i < 84; i++) { // 12 weeks
+    for (let i = 0; i < 84; i++) {
+      // 12 weeks
       const date = new Date(startDate);
       date.setDate(startDate.getDate() + i);
 
-      const dayName = date.toLocaleDateString('en-US', { weekday: 'short' }).toUpperCase();
-      const monthDay = date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
-      const dayKey = date.toLocaleDateString('en-US', { weekday: 'long' }).toLowerCase();
+      const dayName = date
+        .toLocaleDateString("en-US", { weekday: "short" })
+        .toUpperCase();
+      const monthDay = date.toLocaleDateString("en-US", {
+        month: "short",
+        day: "numeric",
+      });
+      const dayKey = date
+        .toLocaleDateString("en-US", { weekday: "long" })
+        .toLowerCase();
 
       const loopDate = new Date(date);
       loopDate.setHours(0, 0, 0, 0);
@@ -373,9 +461,9 @@ const StepAppointment = ({ nextStep, formData, setFormData, dailyTimeSlots, load
       dates.push({
         day: dayName,
         date: monthDay,
-        fullDate: date.toISOString().split('T')[0],
+        fullDate: date.toISOString().split("T")[0],
         dayKey: dayKey,
-        available: loopDate >= today
+        available: loopDate >= today,
       });
     }
 
@@ -392,45 +480,53 @@ const StepAppointment = ({ nextStep, formData, setFormData, dailyTimeSlots, load
   const getVisibleDates = () => {
     const today = new Date();
     today.setHours(0, 0, 0, 0);
-    
+
     // Calculate how many days from the first generated date to current week start
     const firstGeneratedDate = new Date(currentWeekStart);
-    const startIndex = Math.floor((currentWeekStart.getTime() - firstGeneratedDate.getTime()) / (1000 * 60 * 60 * 24));
-    
+    const startIndex = Math.floor(
+      (currentWeekStart.getTime() - firstGeneratedDate.getTime()) /
+        (1000 * 60 * 60 * 24)
+    );
+
     return dates.slice(startIndex, startIndex + 7); // Always show exactly 7 days
   };
 
-  const navigateWeek = (direction: 'prev' | 'next') => {
+  const navigateWeek = (direction: "prev" | "next") => {
     const newDate = new Date(currentWeekStart);
-    newDate.setDate(currentWeekStart.getDate() + (direction === 'next' ? 7 : -7));
+    newDate.setDate(
+      currentWeekStart.getDate() + (direction === "next" ? 7 : -7)
+    );
 
     // Don't go before the current week
     const today = new Date();
     const currentWeekMonday = getMondayOfWeek(today);
-    
+
     // Normalize both dates to midnight for proper comparison
     const newDateNormalized = new Date(newDate);
     newDateNormalized.setHours(0, 0, 0, 0);
-    
+
     const currentWeekMondayNormalized = new Date(currentWeekMonday);
     currentWeekMondayNormalized.setHours(0, 0, 0, 0);
-    
-    if (direction === 'prev' && newDateNormalized < currentWeekMondayNormalized) {
+
+    if (
+      direction === "prev" &&
+      newDateNormalized < currentWeekMondayNormalized
+    ) {
       // If navigating back would go before current week, don't allow it
       return;
     }
 
     setCurrentWeekStart(newDate);
-    setSelectedTime(''); // Reset selected time when navigating
-    
+    setSelectedTime(""); // Reset selected time when navigating
+
     // Also clear the time from formData to ensure consistency
     if (formData.selectedTime) {
       setFormData({
         ...formData,
-        selectedTime: '',
-        provider: null
+        selectedTime: "",
+        provider: null,
       });
-      console.log('Week navigated, time cleared from formData');
+      console.log("Week navigated, time cleared from formData");
     }
   };
 
@@ -439,20 +535,18 @@ const StepAppointment = ({ nextStep, formData, setFormData, dailyTimeSlots, load
       return [];
     }
 
-
-
     try {
       // Use the passed dailyTimeSlots instead of calling the API again
       if (loadingDailySlots || dailyTimeSlots.length === 0) {
-        console.log('Daily time slots not ready yet');
+        console.log("Daily time slots not ready yet");
         return [];
       }
 
       const dayOfWeek = new Date(dateObj.fullDate).getDay(); // 0 = Sunday, 1 = Monday, etc.
 
       // Filter slots for the specific location and day
-      const relevantSlots = dailyTimeSlots.filter(slot =>
-        slot.locationId === locationId && slot.dayOfWeek === dayOfWeek
+      const relevantSlots = dailyTimeSlots.filter(
+        (slot) => slot.locationId === locationId && slot.dayOfWeek === dayOfWeek
       );
 
       if (relevantSlots.length === 0) {
@@ -462,7 +556,7 @@ const StepAppointment = ({ nextStep, formData, setFormData, dailyTimeSlots, load
       // Generate time slots based on the slot configuration
       const timeSlots: string[] = [];
 
-      relevantSlots.forEach(slot => {
+      relevantSlots.forEach((slot) => {
         const startTime = new Date(`2000-01-01T${slot.startTime}`);
         const endTime = new Date(`2000-01-01T${slot.endTime}`);
 
@@ -473,16 +567,18 @@ const StepAppointment = ({ nextStep, formData, setFormData, dailyTimeSlots, load
         let currentTime = new Date(startTime);
 
         while (currentTime < endTime) {
-          const timeString = currentTime.toLocaleTimeString('en-US', {
-            hour: 'numeric',
-            minute: '2-digit',
-            hour12: true
+          const timeString = currentTime.toLocaleTimeString("en-US", {
+            hour: "numeric",
+            minute: "2-digit",
+            hour12: true,
           });
 
           timeSlots.push(timeString);
 
           // Add duration minutes to current time
-          currentTime = new Date(currentTime.getTime() + (durationMinutes * 60 * 1000));
+          currentTime = new Date(
+            currentTime.getTime() + durationMinutes * 60 * 1000
+          );
         }
       });
 
@@ -494,32 +590,34 @@ const StepAppointment = ({ nextStep, formData, setFormData, dailyTimeSlots, load
       });
 
       // Get booked slots from cache for the current visible week
-      const cacheKey = `${locationId}-${currentWeekStart.toISOString().split('T')[0]}`;
+      const cacheKey = `${locationId}-${
+        currentWeekStart.toISOString().split("T")[0]
+      }`;
       const bookedSlots = bookedSlotsCache[cacheKey] || [];
 
-      console.log('Getting time slots for date:', {
+      console.log("Getting time slots for date:", {
         dateString: dateObj.fullDate,
         locationId,
         cacheKey,
         bookedSlotsInCache: bookedSlots.length,
-        allCacheKeys: Object.keys(bookedSlotsCache)
+        allCacheKeys: Object.keys(bookedSlotsCache),
       });
 
       // Filter booked slots for the specific date
       const dateString = dateObj.fullDate;
-      const bookedSlotsForDate = bookedSlots.filter(slot =>
+      const bookedSlotsForDate = bookedSlots.filter((slot) =>
         slot.SlotDate.startsWith(dateString)
       );
 
-      console.log('Booked slots for specific date:', {
+      console.log("Booked slots for specific date:", {
         dateString,
         bookedSlotsForDate: bookedSlotsForDate.length,
-        slots: bookedSlotsForDate
+        slots: bookedSlotsForDate,
       });
 
       // Create a set of booked time strings for easy lookup
       const bookedTimeSet = new Set<string>();
-      bookedSlotsForDate.forEach(slot => {
+      bookedSlotsForDate.forEach((slot) => {
         // Convert 24-hour format to 12-hour format for comparison
         const startTime = convert24To12Hour(slot.StartTime);
 
@@ -527,409 +625,418 @@ const StepAppointment = ({ nextStep, formData, setFormData, dailyTimeSlots, load
         bookedTimeSet.add(startTime);
       });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
       // Return all time slots with availability status
-      const timeSlotsWithAvailability = allTimeSlots.map(timeSlot => {
-        const isToday = dateString === new Date().toISOString().split('T')[0];
+      const timeSlotsWithAvailability = allTimeSlots.map((timeSlot) => {
+        const isToday = dateString === new Date().toISOString().split("T")[0];
         const now = new Date();
         const slotTime = new Date(`${dateString} ${timeSlot}`);
         const isPast = isToday && slotTime < now;
 
         return {
           time: timeSlot,
-          isBooked: bookedTimeSet.has(timeSlot) || isPast
+          isBooked: bookedTimeSet.has(timeSlot) || isPast,
         };
       });
 
-      console.log(`Time slots with availability for ${dateString}:`, timeSlotsWithAvailability);
+      console.log(
+        `Time slots with availability for ${dateString}:`,
+        timeSlotsWithAvailability
+      );
       console.log(`Booked slots for ${dateString}:`, bookedSlotsForDate);
 
       return timeSlotsWithAvailability;
     } catch (error) {
-      console.error('Error getting time slots:', error);
+      console.error("Error getting time slots:", error);
       return [];
     }
   };
 
   // Helper method to convert 24-hour format to 12-hour format
   const convert24To12Hour = (time24: string): string => {
-    const [hours, minutes] = time24.split(':');
+    const [hours, minutes] = time24.split(":");
     const hour = parseInt(hours);
-    const ampm = hour >= 12 ? 'PM' : 'AM';
+    const ampm = hour >= 12 ? "PM" : "AM";
     const hour12 = hour % 12 || 12;
     return `${hour12}:${minutes} ${ampm}`;
   };
 
   // Helper function to check if a date has available time slots
   const hasTimeSlotsForDate = (dateObj: any, locationId: number): boolean => {
-    if (!dateObj.available || !locationId || loadingDailySlots || dailyTimeSlots.length === 0) {
+    if (
+      !dateObj.available ||
+      !locationId ||
+      loadingDailySlots ||
+      dailyTimeSlots.length === 0
+    ) {
       return false;
     }
 
     const dayOfWeek = new Date(dateObj.fullDate).getDay(); // 0 = Sunday, 1 = Monday, etc.
 
     // Check if there are any slots configured for this day and location
-    const relevantSlots = dailyTimeSlots.filter(slot =>
-      slot.locationId === locationId && slot.dayOfWeek === dayOfWeek
+    const relevantSlots = dailyTimeSlots.filter(
+      (slot) => slot.locationId === locationId && slot.dayOfWeek === dayOfWeek
     );
 
     return relevantSlots.length > 0;
   };
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   const handleDateSelect = (dateStr: string) => {
-    console.log('handleDateSelect called:', { dateStr, currentSelectedTime: selectedTime, currentSelectedDate: selectedDate });
-    
+    console.log("handleDateSelect called:", {
+      dateStr,
+      currentSelectedTime: selectedTime,
+      currentSelectedDate: selectedDate,
+    });
+
     // Find the date object that matches the monthDay format
-    const dateObj = dates.find(d => d.date === dateStr);
+    const dateObj = dates.find((d) => d.date === dateStr);
     if (dateObj) {
-      console.log('Date object found:', dateObj);
-      
+      console.log("Date object found:", dateObj);
+
       // Clear the selected time when date changes
-      setSelectedTime('');
-      
+      setSelectedTime("");
+
       setSelectedDate(dateObj.fullDate); // Use the full date (YYYY-MM-DD) instead of just monthDay
-      
+
       // Save to formData immediately to persist state, but clear the selected time
       setFormData({
         ...formData,
         selectedDate: dateObj.fullDate,
-        selectedTime: '', // Clear the selected time in formData as well
-        provider: null // Clear the provider since time is cleared
+        selectedTime: "", // Clear the selected time in formData as well
+        provider: null, // Clear the provider since time is cleared
       });
-      
-      console.log('Date selected, time cleared:', { 
-        newDate: dateObj.fullDate, 
-        timeCleared: true, 
+
+      console.log("Date selected, time cleared:", {
+        newDate: dateObj.fullDate,
+        timeCleared: true,
         previousTime: selectedTime,
-        formDataUpdated: true 
+        formDataUpdated: true,
       });
     } else {
-      console.log('Date object not found for:', dateStr);
+      console.log("Date object not found for:", dateStr);
     }
   };
 
   const handleTimeSelect = (time: string, locationId: number) => {
-    console.log('handleTimeSelect called:', { time, locationId, currentSelectedTime: selectedTime, currentSelectedLocation: selectedLocation, isSingleLocationMode });
-    
+    console.log("handleTimeSelect called:", {
+      time,
+      locationId,
+      currentSelectedTime: selectedTime,
+      currentSelectedLocation: selectedLocation,
+      isSingleLocationMode,
+    });
+
     // Only update if the selection actually changed
     if (selectedTime === time && selectedLocation === locationId) {
-      console.log('No change needed, returning early');
+      console.log("No change needed, returning early");
       return; // No change needed
     }
-    
-    console.log('Updating time selection:', { from: { time: selectedTime, location: selectedLocation }, to: { time, location: locationId } });
-    
+
+    console.log("Updating time selection:", {
+      from: { time: selectedTime, location: selectedLocation },
+      to: { time, location: locationId },
+    });
+
     setSelectedTime(time);
     setSelectedLocation(locationId);
-    
+
     // Save to formData immediately to persist state
-    const selectedLocationData = locations.find(loc => loc.id === locationId);
+    const selectedLocationData = locations.find((loc) => loc.id === locationId);
     setFormData({
       ...formData,
       selectedDate,
       selectedTime: time,
-      selectedLocation: selectedLocationData?.name || '',
+      selectedLocation: selectedLocationData?.name || "",
       selectedLocationId: locationId,
-      provider: selectedLocationData
+      provider: selectedLocationData,
     });
   };
 
   const handleNext = () => {
     if (selectedTime && selectedLocation) {
-      const selectedLocationData = locations.find(loc => loc.id === selectedLocation);
+      const selectedLocationData = locations.find(
+        (loc) => loc.id === selectedLocation
+      );
       setFormData({
         ...formData,
         selectedDate,
         selectedTime,
-        selectedLocation: selectedLocationData?.name || '',
+        selectedLocation: selectedLocationData?.name || "",
         selectedLocationId: selectedLocation,
         provider: selectedLocationData,
-        isNewClient
+        isNewClient,
       });
       nextStep();
     }
   };
 
   const visibleDates = getVisibleDates();
-  const selectedDateObj = dates.find(d => d.fullDate === selectedDate);
-
-
-
+  const selectedDateObj = dates.find((d) => d.fullDate === selectedDate);
 
   return (
     <>
-
-      
       <div className="mt-4">
         {/* New Patient Checkbox */}
         <div className="flex items-center gap-3 mb-6">
-        <div className="relative">
-          <input
-            type="checkbox"
-            checked={isNewClient}
-            onChange={(e) => handleNewClientChange(e.target.checked)}
-            className="sr-only"
-          />
-          <div
-            onClick={() => handleNewClientChange(!isNewClient)}
-            className={`w-5 h-5 rounded border-2 cursor-pointer flex items-center justify-center ${isNewClient ? 'bg-teal-600 border-teal-600' : 'border-gray-300'
+          <div className="relative">
+            <input
+              type="checkbox"
+              checked={isNewClient}
+              onChange={(e) => handleNewClientChange(e.target.checked)}
+              className="sr-only"
+            />
+            <div
+              onClick={() => handleNewClientChange(!isNewClient)}
+              className={`w-5 h-5 rounded border-2 cursor-pointer flex items-center justify-center ${
+                isNewClient
+                  ? "bg-gradient-to-r from-blue-600 to-cyan-600 border-blue-600"
+                  : "border-gray-300"
               }`}
-          >
-            {isNewClient && <Check className="w-3 h-3 text-white" />}
-          </div>
-        </div>
-        <label className="text-sm text-gray-700 cursor-pointer" onClick={() => handleNewClientChange(!isNewClient)}>
-          I&apos;m a new patient at this practice
-        </label>
-      </div>
-
-      {/* Location Selection */}
-      {loading ? (
-        <div className="mb-6">
-          <label className="w-full text-sm font-medium text-gray-700 mb-2">Location</label>
-          <div className="text-sm bg-gray-100 p-2 rounded-md">
-            <div>Loading locations...</div>
-          </div>
-        </div>
-      ) : error ? (
-        <div className="mb-6">
-          <label className="w-full text-sm font-medium text-gray-700 mb-2">Location</label>
-          <div className="text-sm bg-red-100 p-2 rounded-md text-red-600">
-            <div>{error}</div>
-          </div>
-        </div>
-      ) : (
-        <div className="mb-6">
-          <label className="w-full text-sm font-medium text-gray-700 mb-2">
-            {locations.length === 1 ? 'Location' : 'Select Location *'}
-          </label>
-
-          {locations.length === 1 ? (
-            // Single location - show location details directly
-            <div className="w-full px-3 py-2 border border-gray-300 rounded text-sm bg-gray-50">
-              {(() => {
-                const location = locations[0];
-                console.log('Single location mode:', location);
-                return (
-                  <div>
-                    <div className="font-medium text-gray-900">{location.name}</div>                    <div className="text-gray-600">{location.address},{location.city}, {location.state} {location.zipcode}</div>
-                  </div>
-                );
-              })()}
+            >
+              {isNewClient && <Check className="w-3 h-3 text-white" />}
             </div>
-          ) : (
-            // Multiple locations - show dropdown
-            <>
-              {console.log('Multiple locations mode:', locations.length, locations)}
-              <select
-                value={selectedLocation || ''}
-                onChange={(e) => {
-                  const locationId = e.target.value ? parseInt(e.target.value) : null;
-                  setSelectedLocation(locationId);
-                  setSelectedTime(''); // Reset time when location changes
-                  
-                  // Save to formData immediately to persist state
-                  if (locationId) {
-                    const selectedLocationData = locations.find(loc => loc.id === locationId);
-                    setFormData({
-                      ...formData,
-                      selectedLocationId: locationId,
-                      selectedLocation: selectedLocationData?.name || '',
-                      provider: selectedLocationData,
-                      selectedTime: '' // Reset time in formData too
-                    });
-                  }
-                }}
-                className="w-full px-3 py-2 border border-gray-300 rounded text-sm focus:outline-none focus:ring-1 focus:ring-teal-500 focus:border-teal-500"
-              >
-                <option value="">Choose a location</option>
-                {locations.map((location) => (
-                  <option key={location.id} value={location.id}>
-                   {location.address},{location.city}, {location.state} {location.zipcode}
-                  </option>
-                ))}
-              </select>
-            </>
-          )}
-        </div>
-      )}
-
-      {/* Progress Steps */}
-      <div className="flex items-center gap-2 sm:gap-4 mb-6 sm:mb-8 w-full overflow-x-auto pb-2 sm:pb-0">
-        {/* Step 1 */}
-        <div className="flex items-center gap-1 sm:gap-2 flex-shrink-0">
-          <div className="w-6 h-6 sm:w-8 sm:h-8 flex items-center justify-center rounded-full text-white text-xs sm:text-sm font-medium bg-teal-600">
-            1
           </div>
-          <span className="text-xs sm:text-sm text-gray-900 font-medium whitespace-nowrap">Appointment details</span>
+          <label
+            className="text-sm text-gray-700 cursor-pointer"
+            onClick={() => handleNewClientChange(!isNewClient)}
+          >
+            I&apos;m a new patient at this practice
+          </label>
         </div>
 
-        <div className="flex-1 h-0.5 bg-gray-300 min-w-[20px]"></div>
-
-        {/* Step 2 */}
-        <div className="flex items-center gap-1 sm:gap-2 flex-shrink-0">
-          <div className="w-6 h-6 sm:w-8 sm:h-8 flex items-center justify-center rounded-full bg-gray-200 text-gray-600 text-xs sm:text-sm font-medium">
-            2
-          </div>
-          <span className="text-xs sm:text-sm text-gray-500 whitespace-nowrap">Contact info</span>
-        </div>
-
-        <div className="flex-1 h-0.5 bg-gray-300 min-w-[20px]"></div>
-
-        {/* Step 3 */}
-        <div className="flex items-center gap-1 sm:gap-2 flex-shrink-0">
-          <div className="w-6 h-6 sm:w-8 sm:h-8 flex items-center justify-center rounded-full bg-gray-200 text-gray-600 text-xs sm:text-sm font-medium">
-            3
-          </div>
-          <span className="text-xs sm:text-sm text-gray-500 whitespace-nowrap">Insurance info</span>
-        </div>
-      </div>
-
-      {/* Choose a time */}
-      <h3 className="text-base sm:text-lg font-semibold mb-4 sm:mb-6">Choose a time</h3>
-
-      {/* Date Navigation */}
-      <div className="flex items-center justify-between mb-4 sm:mb-6">
-        <button
-          onClick={() => navigateWeek('prev')}
-          className="p-1 sm:p-2 hover:bg-gray-100 rounded-full flex-shrink-0 disabled:opacity-50 disabled:cursor-not-allowed"
-          disabled={(() => {
-            const today = new Date();
-            const currentWeekMonday = getMondayOfWeek(today);
-            return currentWeekStart.getTime() <= currentWeekMonday.getTime();
-          })()}
-        >
-          <ChevronLeft className="w-4 h-4 sm:w-5 sm:h-5 text-gray-600" />
-        </button>
-
-        <div className="flex gap-1 sm:gap-2 overflow-x-auto flex-1 mx-2 sm:mx-4 pb-2 sm:pb-0">
-          {visibleDates.map((dateObj) => {
-            const hasSlots = selectedLocation ? hasTimeSlotsForDate(dateObj, selectedLocation) : false;
-            const isSelected = selectedDate === dateObj.fullDate;
-            const isDisabled = !dateObj.available || !hasSlots;
-            
-            return (
-              <button
-                key={dateObj.fullDate}
-                onClick={() => handleDateSelect(dateObj.date)}
-                disabled={isDisabled}
-                className={`flex flex-col items-center px-2 sm:px-4 py-2 sm:py-3 rounded-lg text-xs sm:text-sm min-w-[60px] sm:min-w-[80px] transition-all flex-shrink-0 ${isSelected
-                  ? 'bg-teal-600 text-white shadow-md'
-                  : !isDisabled
-                    ? 'bg-gray-50 hover:bg-gray-100 text-gray-700 border border-gray-200'
-                    : 'bg-gray-50 text-gray-400 cursor-not-allowed'
-                  }`}
-              >
-                <span className="text-xs font-medium">{dateObj.day}</span>
-                <span className="font-semibold">{dateObj.date}</span>
-
-                {!hasSlots && dateObj.available && (
-                  <span className="text-xs text-red-500 font-medium">Closed</span>
-                )}
-                {isSelected && (
-                  <div className="w-2 h-2 bg-white rounded-full mt-1"></div>
-                )}
-              </button>
-            );
-          })}
-        </div>
-
-        <button
-          onClick={() => navigateWeek('next')}
-          className="p-1 sm:p-2 hover:bg-gray-100 rounded-full flex-shrink-0"
-        >
-          <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5 text-gray-600" />
-        </button>
-      </div>
-
-      {/* Providers and Time Slots */}
-      <div className="space-y-4 sm:space-y-6 overflow-y-auto max-h-[25vh] sm:max-h-[30vh]">
+        {/* Location Selection */}
         {loading ? (
-          <div className="flex items-center justify-center h-32 text-gray-500 text-sm">
-            Loading locations...
+          <div className="mb-6">
+            <label className="w-full text-sm font-medium text-gray-700 mb-2">
+              Location
+            </label>
+            <div className="text-sm bg-gray-100 p-2 rounded-md">
+              <div>Loading locations...</div>
+            </div>
           </div>
         ) : error ? (
-          <div className="flex items-center justify-center h-32 text-red-500 text-sm">
-            {error}
-          </div>
-        ) : loadingDailySlots ? (
-          <div className="flex items-center justify-center h-32 text-gray-500 text-sm">
-            Loading time slots...
-          </div>
-        ) : !selectedLocation ? (
-          <div className="flex items-center justify-center h-32 text-gray-500 text-sm">
-            Please select a location to view available time slots
+          <div className="mb-6">
+            <label className="w-full text-sm font-medium text-gray-700 mb-2">
+              Location
+            </label>
+            <div className="text-sm bg-red-100 p-2 rounded-md text-red-600">
+              <div>{error}</div>
+            </div>
           </div>
         ) : (
-          <LocationTimeSlots
-            locations={locations}
-            selectedLocation={selectedLocation}
-            selectedDateObj={selectedDateObj}
-            selectedTime={selectedTime}
-            selectedDate={selectedDate}
-            onTimeSelect={handleTimeSelect}
-            getTimeSlotsForDate={getTimeSlotsForDate}
-          />
-        )}
-      </div>
+          <div className="mb-6">
+            <label className="w-full text-sm font-medium text-gray-700 mb-2">
+              {locations.length === 1 ? "Location" : "Select Location *"}
+            </label>
 
-      {/* Next Button */}
-      <div className="flex justify-end mt-6 sm:mt-8">
-        <Button
-          onClick={handleNext}
-          disabled={!selectedTime || !selectedLocation}
-          className="bg-teal-600 hover:bg-teal-700 text-white px-6 sm:px-8 py-2 sm:py-3 text-sm font-medium disabled:opacity-50 disabled:cursor-not-allowed"
-        >
-          Next
-        </Button>
+            {locations.length === 1 ? (
+              // Single location - show location details directly
+              <div className="w-full px-3 py-2 border border-gray-300 rounded text-sm bg-gray-50">
+                {(() => {
+                  const location = locations[0];
+                  console.log("Single location mode:", location);
+                  return (
+                    <div>
+                      <div className="font-medium text-gray-900">
+                        {location.name}
+                      </div>{" "}
+                      <div className="text-gray-600">
+                        {location.address},{location.city}, {location.state}{" "}
+                        {location.zipcode}
+                      </div>
+                    </div>
+                  );
+                })()}
+              </div>
+            ) : (
+              // Multiple locations - show dropdown
+              <>
+                {console.log(
+                  "Multiple locations mode:",
+                  locations.length,
+                  locations
+                )}
+                <select
+                  value={selectedLocation || ""}
+                  onChange={(e) => {
+                    const locationId = e.target.value
+                      ? parseInt(e.target.value)
+                      : null;
+                    setSelectedLocation(locationId);
+                    setSelectedTime(""); // Reset time when location changes
+
+                    // Save to formData immediately to persist state
+                    if (locationId) {
+                      const selectedLocationData = locations.find(
+                        (loc) => loc.id === locationId
+                      );
+                      setFormData({
+                        ...formData,
+                        selectedLocationId: locationId,
+                        selectedLocation: selectedLocationData?.name || "",
+                        provider: selectedLocationData,
+                        selectedTime: "", // Reset time in formData too
+                      });
+                    }
+                  }}
+                  className="w-full px-3 py-2 border border-gray-300 rounded text-sm focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
+                >
+                  <option value="">Choose a location</option>
+                  {locations.map((location) => (
+                    <option key={location.id} value={location.id}>
+                      {location.address},{location.city}, {location.state}{" "}
+                      {location.zipcode}
+                    </option>
+                  ))}
+                </select>
+              </>
+            )}
+          </div>
+        )}
+
+        {/* Progress Steps */}
+        <div className="flex items-center gap-2 sm:gap-4 mb-6 sm:mb-8 w-full overflow-x-auto pb-2 sm:pb-0">
+          {/* Step 1 */}
+          <div className="flex items-center gap-1 sm:gap-2 flex-shrink-0">
+            <div className="w-6 h-6 sm:w-8 sm:h-8 flex items-center justify-center rounded-full text-white text-xs sm:text-sm font-medium bg-gradient-to-r from-blue-600 to-cyan-600">
+              1
+            </div>
+            <span className="text-xs sm:text-sm text-gray-900 font-medium whitespace-nowrap">
+              Appointment details
+            </span>
+          </div>
+
+          <div className="flex-1 h-0.5 bg-gradient-to-r from-blue-600 to-cyan-600 min-w-[20px]"></div>
+
+          {/* Step 2 */}
+          <div className="flex items-center gap-1 sm:gap-2 flex-shrink-0">
+            <div className="w-6 h-6 sm:w-8 sm:h-8 flex items-center justify-center rounded-full bg-gray-200 text-gray-600 text-xs sm:text-sm font-medium">
+              2
+            </div>
+            <span className="text-xs sm:text-sm text-gray-500 whitespace-nowrap">
+              Contact info
+            </span>
+          </div>
+
+          <div className="flex-1 h-0.5 bg-gradient-to-r from-blue-600 to-cyan-600 min-w-[20px]"></div>
+
+          {/* Step 3 */}
+          <div className="flex items-center gap-1 sm:gap-2 flex-shrink-0">
+            <div className="w-6 h-6 sm:w-8 sm:h-8 flex items-center justify-center rounded-full bg-gray-200 text-gray-600 text-xs sm:text-sm font-medium">
+              3
+            </div>
+            <span className="text-xs sm:text-sm text-gray-500 whitespace-nowrap">
+              Insurance info
+            </span>
+          </div>
+        </div>
+
+        {/* Choose a time */}
+        <h3 className="text-base sm:text-lg font-semibold mb-4 sm:mb-6">
+          Choose a time
+        </h3>
+
+        {/* Date Navigation */}
+        <div className="flex items-center justify-between mb-4 sm:mb-6">
+          <button
+            onClick={() => navigateWeek("prev")}
+            className="p-1 sm:p-2 hover:bg-gray-100 rounded-full flex-shrink-0 disabled:opacity-50 disabled:cursor-not-allowed"
+            disabled={(() => {
+              const today = new Date();
+              const currentWeekMonday = getMondayOfWeek(today);
+              return currentWeekStart.getTime() <= currentWeekMonday.getTime();
+            })()}
+          >
+            <ChevronLeft className="w-4 h-4 sm:w-5 sm:h-5 text-gray-600" />
+          </button>
+
+          <div className="flex gap-1 sm:gap-2 overflow-x-auto flex-1 mx-2 sm:mx-4 pb-2 sm:pb-0">
+            {visibleDates.map((dateObj) => {
+              const hasSlots = selectedLocation
+                ? hasTimeSlotsForDate(dateObj, selectedLocation)
+                : false;
+              const isSelected = selectedDate === dateObj.fullDate;
+              const isDisabled = !dateObj.available || !hasSlots;
+
+              return (
+                <button
+                  key={dateObj.fullDate}
+                  onClick={() => handleDateSelect(dateObj.date)}
+                  disabled={isDisabled}
+                  className={`flex flex-col items-center px-2 sm:px-4 py-2 sm:py-3 rounded-lg text-xs sm:text-sm min-w-[60px] sm:min-w-[80px] transition-all flex-shrink-0 ${
+                    isSelected
+                      ? "bg-gradient-to-r from-blue-600 to-cyan-600 text-white shadow-md"
+                      : !isDisabled
+                      ? "bg-gray-50 hover:bg-gray-100 text-gray-700 border border-gray-200"
+                      : "bg-gray-50 text-gray-400 cursor-not-allowed"
+                  }`}
+                >
+                  <span className="text-xs font-medium">{dateObj.day}</span>
+                  <span className="font-semibold">{dateObj.date}</span>
+
+                  {!hasSlots && dateObj.available && (
+                    <span className="text-xs text-red-500 font-medium">
+                      Closed
+                    </span>
+                  )}
+                  {isSelected && (
+                    <div className="w-2 h-2 bg-white rounded-full mt-1"></div>
+                  )}
+                </button>
+              );
+            })}
+          </div>
+
+          <button
+            onClick={() => navigateWeek("next")}
+            className="p-1 sm:p-2 hover:bg-gray-100 rounded-full flex-shrink-0"
+          >
+            <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5 text-gray-600" />
+          </button>
+        </div>
+
+        {/* Providers and Time Slots */}
+        <div className="space-y-4 sm:space-y-6 overflow-y-auto max-h-[25vh] sm:max-h-[30vh]">
+          {loading ? (
+            <div className="flex items-center justify-center h-32 text-gray-500 text-sm">
+              Loading locations...
+            </div>
+          ) : error ? (
+            <div className="flex items-center justify-center h-32 text-red-500 text-sm">
+              {error}
+            </div>
+          ) : loadingDailySlots ? (
+            <div className="flex items-center justify-center h-32 text-gray-500 text-sm">
+              Loading time slots...
+            </div>
+          ) : !selectedLocation ? (
+            <div className="flex items-center justify-center h-32 text-gray-500 text-sm">
+              Please select a location to view available time slots
+            </div>
+          ) : (
+            <LocationTimeSlots
+              locations={locations}
+              selectedLocation={selectedLocation}
+              selectedDateObj={selectedDateObj}
+              selectedTime={selectedTime}
+              selectedDate={selectedDate}
+              onTimeSelect={handleTimeSelect}
+              getTimeSlotsForDate={getTimeSlotsForDate}
+            />
+          )}
+        </div>
+
+        {/* Next Button */}
+        <div className="flex justify-end mt-6 sm:mt-8">
+          <Button
+            onClick={handleNext}
+            disabled={!selectedTime || !selectedLocation}
+            className="bg-gradient-to-r from-blue-600 to-cyan-600 text-white px-3 py-2 rounded-md text-sm hover:from-blue-700 hover:to-cyan-700 font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
+          >
+            Next
+          </Button>
+        </div>
       </div>
-    </div>
     </>
   );
 };
