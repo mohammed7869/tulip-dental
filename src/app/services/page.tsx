@@ -118,11 +118,10 @@ export default function ServicesPage() {
       {/* Header Section with blue background */}
       <div className="w-full details-page-header-section py-8 sm:py-12 px-4 md:px-0 mb-8 sm:mb-12">
         <div className="text-center">
-          <h1 >
-            Comprehensive Dental Services in Maplewood, NJ
-          </h1>
+          <h1>Comprehensive Dental Services in Maplewood, NJ</h1>
           <h2 className="text-center">
-            Family, Cosmetic & Restorative Dentistry Designed for You          </h2>
+            Family, Cosmetic & Restorative Dentistry Designed for You{" "}
+          </h2>
         </div>
       </div>
 
@@ -151,7 +150,7 @@ export default function ServicesPage() {
                 </h2>
                 <Link
                   href={service.link}
-                  className="bg-primary text-white rounded-lg px-3 py-2 hover:bg-secondary text-xs sm:text-sm font-medium mb-2 transition-colors duration-200  text-center"
+                  className=" flex flex-col bg-gradient-to-r from-blue-600 to-cyan-600 text-white rounded-lg px-1 md:px-4 py-3 hover:from-blue-700 hover:to-cyan-700 text-sm font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
                 >
                   Learn More
                 </Link>
@@ -162,4 +161,4 @@ export default function ServicesPage() {
       </div>
     </div>
   );
-} 
+}
