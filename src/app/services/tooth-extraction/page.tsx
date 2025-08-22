@@ -196,8 +196,12 @@ export default function ToothExtractionPage() {
                   <p>{service.description}</p>
                   <ul className="feature-list">
                     {service.points.map((point, i) => (
-                      <li key={i} className="feature-list-item">
-                        <CheckCircle /> {point}
+                      <li
+                        key={i}
+                        className="feature-list-item flex items-start gap-2"
+                      >
+                        <CheckCircle className="text-[#66aef2] shrink-0 mt-[2px]" />
+                        <span className="leading-snug">{point}</span>
                       </li>
                     ))}
                   </ul>
