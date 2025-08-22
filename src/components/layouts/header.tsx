@@ -8,8 +8,8 @@ export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
-    const [isBookingOpen, setIsBookingOpen] = useState(false);
-    const [isServicesAreasOpen, setIsServicesAreasOpen] = useState(false);
+  const [isBookingOpen, setIsBookingOpen] = useState(false);
+  const [isServicesAreasOpen, setIsServicesAreasOpen] = useState(false);
 
   useEffect(() => {
     const onScroll = () => {
@@ -23,12 +23,12 @@ export default function Header() {
   // Close mobile menu when clicking outside
   useEffect(() => {
     if (isMobileMenuOpen) {
-      document.body.style.overflow = 'hidden';
+      document.body.style.overflow = "hidden";
     } else {
-      document.body.style.overflow = 'unset';
+      document.body.style.overflow = "unset";
     }
     return () => {
-      document.body.style.overflow = 'unset';
+      document.body.style.overflow = "unset";
     };
   }, [isMobileMenuOpen]);
 
@@ -90,45 +90,78 @@ export default function Header() {
           <Link href="/" className="hover:text-primary transition">
             Home
           </Link>
-          <Link href="/about-maple-dental-harrisburg-pa" className="hover:text-primary transition">
+          <Link
+            href="/about-maple-dental-harrisburg-pa"
+            className="hover:text-primary transition"
+          >
             About
           </Link>
           <Link href="/providers" className="hover:text-primary transition">
             Providers
           </Link>
-          
+
           {/* Services with Desktop Dropdown */}
           <div className="relative group">
-            <Link href="/services" className="hover:text-primary transition flex items-center gap-1">
+            <Link
+              href="/services"
+              className="hover:text-primary transition flex items-center gap-1"
+            >
               Services
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              <svg
+                className="w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M19 9l-7 7-7-7"
+                />
               </svg>
             </Link>
-            
+
             {/* Desktop Dropdown */}
             <div className="absolute -left-38 mt-2 w-[100vh] max-w-5xl bg-white border shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-40 rounded-lg">
-  <div className="grid grid-cols-4 gap-6 p-6 text-sm">
-    {[
-      "Emergency Dentistry", "Root Canal", "Oral Surgery", "Cosmetic Dentistry",
-      "Dental Fillings", "Dental Implants", "Orthodontics", "Crowns and Bridges",
-      "Dental Emergencies", "Tooth Extraction", "Whitening & Veneers", "Invisalign",
-      "Kids & Children Dentistry", "Permanent Teeth Replacement", "Sports Dentistry", "Wisdom Teeth",
-      "Endodontics", "Same-Day Dentistry", "Painless Treatment", "Perio Protect",
-      "Halitosis"
-    ].map((service, index) => (
-      <Link
-        key={index}
-        href={`/services/${service.toLowerCase().replace(/\s+/g, "-")}`}
-        className="text-gray-700 hover:text-primary hover:underline transition"
-      >
-        {service}
-      </Link>
-    ))}
-  </div>
-</div>
+              <div className="grid grid-cols-4 gap-6 p-6 text-sm">
+                {[
+                  "Emergency Dentistry",
+                  "Root Canal",
+                  "Oral Surgery",
+                  "Cosmetic Dentistry",
+                  "Dental Fillings",
+                  "Dental Implants",
+                  "Orthodontics",
+                  "Crowns and Bridges",
+                  "Dental Emergencies",
+                  "Tooth Extraction",
+                  "Whitening & Veneers",
+                  "Invisalign",
+                  "Kids & Children Dentistry",
+                  "Permanent Teeth Replacement",
+                  "Sports Dentistry",
+                  "Wisdom Teeth",
+                  "Endodontics",
+                  "Same-Day Dentistry",
+                  "Painless Treatment",
+                  "Perio Protect",
+                  "Halitosis",
+                ].map((service, index) => (
+                  <Link
+                    key={index}
+                    href={`/services/${service
+                      .toLowerCase()
+                      .replace(/\s+/g, "-")}`}
+                    className="text-gray-700 hover:text-primary hover:underline transition"
+                  >
+                    {service}
+                  </Link>
+                ))}
+              </div>
+            </div>
           </div>
-          
+
           <Link href="/reviews" className="hover:text-primary transition">
             Reviews
           </Link>
@@ -141,70 +174,78 @@ export default function Header() {
           <div className="relative group">
             <span className="hover:text-primary transition flex items-center gap-1 cursor-pointer">
               Services Areas
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              <svg
+                className="w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M19 9l-7 7-7-7"
+                />
               </svg>
             </span>
 
-            
             {/* Desktop Dropdown */}
             <div className="absolute -left-5 mt-2 w-80 max-w-5xl bg-white border shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-40 rounded-lg">
-  <div className="grid grid-cols-1 gap-6 p-6 text-sm">
-    {[
-  "Harrisburg, PA",
-  "Linglestown, PA",
-  "Colonial Park, PA",
-  "Penbrook, PA",
-  "Paxtang, PA",
-  "Progress, PA",
-  "Lawnton, PA"
-].map((service, index) => {
-  let slug = "";
-  if (service === "Harrisburg, PA") {
-    slug = "harrisburg";
-  } else if (service === "Linglestown, PA") {
-    slug = "linglestown";
-  }
-  if(service === "Colonial Park, PA"){
-    slug = 'colonial-park';
-  }
-   if(service === "Penbrook, PA"){
-    slug = 'penbrook';
-  }if(service === "Paxtang, PA"){
-    slug = 'paxtang';
-  }
-    if(service === "Progress, PA"){
-    slug = 'progress';
-  }
-  if(service === "Lawnton, PA"){
-    slug = 'lawnton';
-  }
+              <div className="grid grid-cols-1 gap-6 p-6 text-sm">
+                {[
+                  "Maplewood, NJ",
+                  "South Orange, NJ",
+                  "Irvington, NJ",
+                  "Vauxhall, NJ",
+                  "Newark, NJ",
+                ].map((service, index) => {
+                  let slug = "";
+                  if (service === "Maplewood, NJ") {
+                    slug = "harrisburg";
+                  } else if (service === "South Orange, NJ") {
+                    slug = "linglestown";
+                  }
+                  if (service === "Irvington, NJ") {
+                    slug = "colonial-park";
+                  }
+                  if (service === "Vauxhall, NJ") {
+                    slug = "penbrook";
+                  }
+                  if (service === "Newark, NJ") {
+                    slug = "paxtang";
+                  }
 
-  return slug ? (
-    <Link
-      key={index}
-      href={`/service-areas/${slug}`}
-      className="text-gray-700 hover:text-primary hover:underline transition"
-    >
-      {service}
-    </Link>
-  ) : (
-    <span key={index} className="text-gray-500">
-      {service}
-    </span>
-  );
-})}
-  </div>
-</div>
+                  return slug ? (
+                    <Link
+                      key={index}
+                      href={`/service-areas/${slug}`}
+                      className="text-gray-700 hover:text-primary hover:underline transition"
+                    >
+                      {service}
+                    </Link>
+                  ) : (
+                    <span key={index} className="text-gray-500">
+                      {service}
+                    </span>
+                  );
+                })}
+              </div>
+            </div>
           </div>
         </nav>
 
         {/* Desktop Buttons */}
         <div className="hidden lg:flex gap-3">
-          <a href="tel:9736715500" className="border border-primary text-primary rounded-lg px-4 py-3 hover:bg-blue-50 text-sm font-medium transition">
+          <a
+            href="tel:9736715500"
+            className="border border-primary text-primary rounded-lg px-4 py-3 hover:bg-blue-50 text-sm font-medium transition"
+          >
             973-671-5500
           </a>
-          <button onClick={()=>setIsBookingOpen(true)}  className="bg-gradient-to-r from-blue-600 to-cyan-600 text-white rounded-lg px-4 py-3 hover:from-blue-700 hover:to-cyan-700 text-sm font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
+          <button
+            onClick={() => setIsBookingOpen(true)}
+            className="bg-gradient-to-r from-blue-600 to-cyan-600 text-white rounded-lg px-4 py-3 hover:from-blue-700 hover:to-cyan-700 text-sm font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+          >
             Book Online
           </button>
         </div>
@@ -212,13 +253,19 @@ export default function Header() {
         {/* Mobile Buttons and Menu Toggle */}
         <div className="flex lg:hidden items-center gap-2">
           {/* Mobile Action Buttons */}
-          <a href="tel:9736715500" className="border border-primary text-primary rounded-lg px-4 py-3 hover:bg-blue-50 text-xs font-medium transition">
+          <a
+            href="tel:9736715500"
+            className="border border-primary text-primary rounded-lg px-4 py-3 hover:bg-blue-50 text-xs font-medium transition"
+          >
             973-671-5500
           </a>
-          <button onClick={()=>setIsBookingOpen(true)} className="bg-gradient-to-r from-blue-600 to-cyan-600 text-white rounded-lg px-4 py-3 hover:from-blue-700 hover:to-cyan-700 text-xs font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
+          <button
+            onClick={() => setIsBookingOpen(true)}
+            className="bg-gradient-to-r from-blue-600 to-cyan-600 text-white rounded-lg px-4 py-3 hover:from-blue-700 hover:to-cyan-700 text-xs font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+          >
             Book Online
           </button>
-          
+
           {/* Hamburger Menu Button */}
           <button
             onClick={toggleMobileMenu}
@@ -274,8 +321,18 @@ export default function Header() {
               className="p-2 rounded-lg hover:bg-gray-100 transition"
               aria-label="Close menu"
             >
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
               </svg>
             </button>
           </div>
@@ -320,36 +377,56 @@ export default function Header() {
                     stroke="currentColor"
                     viewBox="0 0 24 24"
                   >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M19 9l-7 7-7-7"
+                    />
                   </svg>
                 </button>
-                
+
                 {/* Services Submenu */}
                 {isServicesOpen && (
-  <div className="bg-gray-50 px-4 py-2">
-    
-
-    <div className="grid grid-cols-2 gap-3 mt-2 text-sm">
-      {[
-        "Emergency Dentistry", "Root Canal", "Oral Surgery", "Cosmetic Dentistry",
-        "Fillings", "Dental Implants", "Orthodontics", "Crowns and Bridges",
-        "Dental Emergencies", "Tooth Extraction", "Whitening & Veneers", "Invisalign",
-        "Kids & Children Dentistry", "Permanent Teeth Replacement", "Sports Dentistry", "Wisdom Teeth",
-        "Endodontics", "Same-Day Dentistry", "Painless Treatment", "Perio Protect",
-        "Halitosis"
-      ].map((service, index) => (
-        <Link
-          key={index}
-          href={`/services/${service.toLowerCase().replace(/\s+/g, "-")}`}
-          onClick={closeMobileMenu}
-          className="text-gray-600 hover:text-primary hover:underline transition"
-        >
-          {service}
-        </Link>
-      ))}
-    </div>
-  </div>
-)}
+                  <div className="bg-gray-50 px-4 py-2">
+                    <div className="grid grid-cols-2 gap-3 mt-2 text-sm">
+                      {[
+                        "Emergency Dentistry",
+                        "Root Canal",
+                        "Oral Surgery",
+                        "Cosmetic Dentistry",
+                        "Fillings",
+                        "Dental Implants",
+                        "Orthodontics",
+                        "Crowns and Bridges",
+                        "Dental Emergencies",
+                        "Tooth Extraction",
+                        "Whitening & Veneers",
+                        "Invisalign",
+                        "Kids & Children Dentistry",
+                        "Permanent Teeth Replacement",
+                        "Sports Dentistry",
+                        "Wisdom Teeth",
+                        "Endodontics",
+                        "Same-Day Dentistry",
+                        "Painless Treatment",
+                        "Perio Protect",
+                        "Halitosis",
+                      ].map((service, index) => (
+                        <Link
+                          key={index}
+                          href={`/services/${service
+                            .toLowerCase()
+                            .replace(/\s+/g, "-")}`}
+                          onClick={closeMobileMenu}
+                          className="text-gray-600 hover:text-primary hover:underline transition"
+                        >
+                          {service}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                )}
               </div>
 
               <Link
@@ -387,70 +464,73 @@ export default function Header() {
                     stroke="currentColor"
                     viewBox="0 0 24 24"
                   >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M19 9l-7 7-7-7"
+                    />
                   </svg>
                 </button>
-                
+
                 {/* Services Submenu */}
                 {isServicesAreasOpen && (
-  <div className="bg-gray-50 px-4 py-2">
-    
-
-    <div className="grid grid-cols-2 gap-3 mt-2 text-sm">
-      {[
-  "Harrisburg, PA",
-  "Linglestown, Harrisburg, PA",
-  "Colonial Park, PA",
-  "Penbrook",
-  "Paxtang",
-  "Progress",
-  "Lawnton"
-].map((service, index) => {
-  let slug = "";
-  if (service === "Harrisburg, PA") {
-    slug = "harrisburg";
-  } else if (service === "Linglestown, Harrisburg, PA") {
-    slug = "linglestown";
-  }
-  if(service === "Colonial Park, PA"){
-    slug = 'colonial-park';
-  }
-   if(service === "Penbrook"){
-    slug = 'penbrook';
-  }if(service === "Paxtang"){
-    slug = 'paxtang';
-  }
-  if(service === "Progress"){
-    slug = 'progress';
-  }
-  if(service === "Lawnton"){
-    slug = 'lawnton';
-  }return slug ? (
-        <Link
-          key={index}
-          href={`/service-areas/${slug}`}
-          onClick={closeMobileMenu}
-          className="text-gray-600 hover:text-primary hover:underline transition"
-        >
-          {service}
-        </Link>
-  )
-      : (
-    <span key={index} className="text-gray-500">
-      {service}
-    </span>
-  );
-})}
-    </div>
-  </div>
-  
-)}
+                  <div className="bg-gray-50 px-4 py-2">
+                    <div className="grid grid-cols-2 gap-3 mt-2 text-sm">
+                      {[
+                        "Harrisburg, PA",
+                        "Linglestown, Harrisburg, PA",
+                        "Colonial Park, PA",
+                        "Penbrook",
+                        "Paxtang",
+                        "Progress",
+                        "Lawnton",
+                      ].map((service, index) => {
+                        let slug = "";
+                        if (service === "Harrisburg, PA") {
+                          slug = "harrisburg";
+                        } else if (service === "Linglestown, Harrisburg, PA") {
+                          slug = "linglestown";
+                        }
+                        if (service === "Colonial Park, PA") {
+                          slug = "colonial-park";
+                        }
+                        if (service === "Penbrook") {
+                          slug = "penbrook";
+                        }
+                        if (service === "Paxtang") {
+                          slug = "paxtang";
+                        }
+                        if (service === "Progress") {
+                          slug = "progress";
+                        }
+                        if (service === "Lawnton") {
+                          slug = "lawnton";
+                        }
+                        return slug ? (
+                          <Link
+                            key={index}
+                            href={`/service-areas/${slug}`}
+                            onClick={closeMobileMenu}
+                            className="text-gray-600 hover:text-primary hover:underline transition"
+                          >
+                            {service}
+                          </Link>
+                        ) : (
+                          <span key={index} className="text-gray-500">
+                            {service}
+                          </span>
+                        );
+                      })}
+                    </div>
+                  </div>
+                )}
               </div>
             </div>
           </nav>
         </div>
       </div>
-      <BookingModal open={isBookingOpen} setOpen={setIsBookingOpen}/>
+      <BookingModal open={isBookingOpen} setOpen={setIsBookingOpen} />
     </header>
   );
 }

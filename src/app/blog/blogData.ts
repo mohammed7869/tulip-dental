@@ -257,7 +257,7 @@ In Harrisburg, skilled dental professionals understand emergencies don't follow 
             </div>
         </section>
 
-`
+`,
   },
   {
     slug: "trusted-dentists-in-maplewood",
@@ -424,11 +424,12 @@ Finding a trusted dentist in Harrisburg doesn’t have to be overwhelming. At Ma
                 Opt for professional whitening services. They’re safer, faster, and more effective than over-the-counter products.
             </div>
         </section>
-`
+`,
   },
   {
     slug: "5-signs-you-might-need-a-root-canal",
-    title: "5 Signs You Might Need a Root Canal in Harrisburg | Why Trust Maple Dental",
+    title:
+      "5 Signs You Might Need a Root Canal in Harrisburg | Why Trust Maple Dental",
     image: "/Images/banners/5 Signs You Might Need a Root Canal.jpg",
     datetime: "May 12, 2025",
     shortDescription:
@@ -635,6 +636,6 @@ Don’t wait until it’s too late. Whether you're in <strong>17110, 17109, 1711
                 Costs can vary, but Maple Dental offers flexible payment plans and accepts most insurances to make it affordable for everyone.
             </div>
         </section>
-` 
+`,
   },
-]; 
+];

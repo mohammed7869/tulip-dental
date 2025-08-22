@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
@@ -19,41 +19,43 @@ const serviceAreas: ServiceArea[] = [
   {
     name: "Harrisburg, PA",
     icon: "/Images/icons/map.png",
-    link: "/service-areas/harrisburg"
+    link: "/service-areas/harrisburg",
   },
   {
     name: "Linglestown, PA",
     icon: "/Images/icons/map.png",
-    link: "/service-areas/linglestown"
+    link: "/service-areas/linglestown",
   },
   {
     name: "Colonial Park, PA",
     icon: "/Images/icons/map.png",
-    link: "/service-areas/colonial-park"
+    link: "/service-areas/colonial-park",
   },
   {
     name: "Penbrook, PA",
     icon: "/Images/icons/map.png",
-    link: "/service-areas/penbrook"
+    link: "/service-areas/penbrook",
   },
   {
     name: "Paxtang, PA",
     icon: "/Images/icons/map.png",
-    link: "/service-areas/paxtang"
+    link: "/service-areas/paxtang",
   },
   {
     name: "Progress, PA",
     icon: "/Images/icons/map.png",
-    link: "/service-areas/progress"
+    link: "/service-areas/progress",
   },
   {
     name: "Lawnton, PA",
     icon: "/Images/icons/map.png",
-    link: "/service-areas/lawnton"
-  }
+    link: "/service-areas/lawnton",
+  },
 ];
 
-export default function ServiceAreasSidebar({ setISSidebarOpen }: ServiceAreasSidebarProps) {
+export default function ServiceAreasSidebar({
+  setISSidebarOpen,
+}: ServiceAreasSidebarProps) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -86,7 +88,9 @@ export default function ServiceAreasSidebar({ setISSidebarOpen }: ServiceAreasSi
             className="bg-[var(--primary)] border border-secondary text-white p-3 rounded-xl shadow-lg hover:opacity-90 transition-opacity duration-200"
             aria-label="Toggle service areas menu"
           >
-            <span>{isScrolled ? <MenuIcon /> : <span>Service Areas</span>}</span>
+            <span>
+              {isScrolled ? <MenuIcon /> : <span>Service Areas</span>}
+            </span>
           </button>
         </div>
       ) : null}
@@ -110,7 +114,7 @@ export default function ServiceAreasSidebar({ setISSidebarOpen }: ServiceAreasSi
           /* Mobile styles (slide-out) */
           fixed top-16 left-0 z-40 h-[calc(100vh-80px)] w-80 max-w-[85vw]
           transition-transform duration-300 ease-in-out
-          ${isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'}
+          ${isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"}
         `}
         style={{ minWidth: 260, maxWidth: 260 }}
       >
@@ -140,7 +144,7 @@ export default function ServiceAreasSidebar({ setISSidebarOpen }: ServiceAreasSi
                   href={serviceArea.link}
                   onClick={closeMobileMenu} // Close mobile menu when service area is selected
                   className="flex items-center gap-2 rounded-xl py-2 px-4 border border-gray-200 shadow-sm bg-white transition-all duration-200 group hover:bg-[var(--primary)] hover:text-white hover:border-[var(--primary)] focus:bg-[var(--primary)] focus:text-white focus:border-[var(--primary)] w-full overflow-hidden"
-                  style={{ boxShadow: '0 2px 8px 0 rgba(0,0,0,0.05)' }}
+                  style={{ boxShadow: "0 2px 8px 0 rgba(0,0,0,0.05)" }}
                 >
                   <img
                     src={serviceArea.icon}
@@ -158,4 +162,4 @@ export default function ServiceAreasSidebar({ setISSidebarOpen }: ServiceAreasSi
       </aside>
     </>
   );
-} 
+}

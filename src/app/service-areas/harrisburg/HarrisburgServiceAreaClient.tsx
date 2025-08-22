@@ -1,10 +1,11 @@
 "use client";
 
-import React, { useState } from 'react';
-import Image from 'next/image';
-import { CheckCircle } from 'lucide-react';
-import BookCallBtn from '@/app/services/book-call-btn';
-import { Bounce, Fade, Zoom } from 'react-awesome-reveal';
+import React, { useState } from "react";
+import Image from "next/image";
+import { CheckCircle } from "lucide-react";
+import BookCallBtn from "@/app/services/book-call-btn";
+import { Bounce, Fade, Zoom } from "react-awesome-reveal";
+import BookCallBtnForServiceAreas from "@/app/services/book-call-btn-for-serviceAreas";
 
 export default function HarrisburgServiceAreaClient() {
   const locations = [
@@ -23,34 +24,33 @@ export default function HarrisburgServiceAreaClient() {
         "Sunday: Closed",
       ],
       mapUrl:
-        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.1234567890123!2d-74.27123456789012!3d40.73123456789012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3a8b123456789%3A0x1234567890abcdef!2sMaplewood%2C%20NJ!5e0!3m2!1sen!2sus!4v1710000000000!5m2!1sen!2sus"
+        // "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.1234567890123!2d-74.27123456789012!3d40.73123456789012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3a8b123456789%3A0x1234567890abcdef!2sMaplewood%2C%20NJ!5e0!3m2!1sen!2sus!4v1710000000000!5m2!1sen!2sus",
+        "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6047.5999171140365!2d-74.256008!3d40.72242!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3acfa56220c03%3A0x4ed24acaf264373a!2s1585%20Springfield%20Ave%2C%20Maplewood%2C%20NJ%2007040%2C%20USA!5e0!3m2!1sen!2sin!4v1755873013308!5m2!1sen!2sin",
     },
   ];
-  
+
   const [selected, setSelected] = useState(locations[0]);
-  
+
   return (
     <div>
       {/* Header Section */}
       <div className="details-page-header-section ">
-        <h1>
-          Cosmetic & Family Dentistry in Maplewood, NJ
-        </h1>
+        <h1>Family & Cosmetic Dentist in Maplewood, NJ 07040 </h1>
       </div>
 
       {/* Main Content Section */}
       <div className="max-w-7xl mx-auto px-4 py-12 flex flex-col gap-16">
         {/* Top Section: Image + Intro */}
-        <div className='details-page-desc-section'>
-
+        <div className="details-page-desc-section">
           {/* Image Section */}
-          <div className='image_section'>
+          <div className="image_section">
             <div className="image_section-cover">
               <Zoom cascade damping={0.3} duration={800}>
                 <div className="main-image">
                   <img
-                    src="/Images/Servciearea5 (1).webp"
-                    alt="Main Banner" className="rounded-xl"
+                    src="/Images/maplewood.jpeg"
+                    alt="Main Banner"
+                    className="rounded-xl"
                   />
                 </div>
               </Zoom>
@@ -58,14 +58,23 @@ export default function HarrisburgServiceAreaClient() {
           </div>
 
           {/* Text Section with Fade-in after delay */}
-          <div className='desc-text-section'>
+          <div className="desc-text-section">
             <Fade cascade direction="up" delay={1000} duration={600}>
-              <h2 className='text-2xl sm:text-3xl lg:text-4xl font-semibold'>Comprehensive Dental Services in Maplewood | Tulip Dental | Family & Cosmetic Dentist</h2>
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold">
+                Complete Dental Care in Maplewood | Tulip Dental | Trusted
+                Dentist Near You
+              </h2>
               <p>
-                At Tulip Dental Maplewood, we're proud to deliver high-quality, family-friendly dental care to residents of Maplewood, NJ (07040). Whether you're new to the area or just searching for a reliable "dentist near me," we're right here in your neighborhood with state-of-the-art services for every smile.
+                At Tulip Dental Maplewood, we’re proud to provide high-quality,
+                family-friendly dental care to residents of Maplewood, NJ 07040,
+                and surrounding communities. Whether you’re new to the area or
+                searching for a dependable “dentist near me,” we’re right in
+                your neighborhood with modern treatments for every smile.
               </p>
               <p>
-                Our compassionate team provides everything from preventive cleanings to advanced cosmetic and restorative treatments. We treat patients of all ages and welcome you to join our dental family.
+                Our compassionate team treats patients of all ages, offering
+                preventive, cosmetic, and restorative dentistry in a
+                comfortable, welcoming setting.
               </p>
             </Fade>
           </div>
@@ -73,65 +82,103 @@ export default function HarrisburgServiceAreaClient() {
 
         {/* Comprehensive Dental Care Section */}
         <div className="flex flex-col gap-4 p-6 md:p-0">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold">Trusted Dental Care for Every Stage of Life</h2>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold">
+            Quality Dental Care for Every Stage of Life
+          </h2>
           <Fade cascade direction="up" delay={1000} duration={600}>
-                          <p>
-                Our centrally located Maplewood office is fully equipped with the latest dental technology and amenities to make your visit comfortable, efficient, and stress-free. We offer a wide range of services, including:
-              </p>
-              <p>
-                Our Maplewood dental office is conveniently located to serve patients in 07040. We provide comprehensive dental services under one roof to make quality care accessible for your entire family.
-              </p>
+            <p>
+              Our centrally located Maplewood office is equipped with advanced
+              dental technology and amenities designed for your comfort. We
+              offer a complete range of dental services under one roof,
+              including:
+            </p>
+
             <ul className="list-disc pl-6 space-y-2 text-sm md:text-lg">
               <li>
-                <span className="font-semibold">Emergency Dentistry</span><br />
-                <span>Same-day care for dental pain, injuries, or urgent needs.</span>
+                <h3 className="text-lg font-semibold">Emergency Dentistry</h3>
+                <p>
+                  {" "}
+                  Same-day care for tooth pain, injuries, or urgent dental
+                  needs.
+                </p>
               </li>
+
               <li>
-                <span className="font-semibold">Preventive Dentistry</span><br />
-                <span>Routine cleanings, exams, and oral health education to maintain long-term wellness.</span>
+                <h3 className="text-lg font-semibold">Preventive Dentistry</h3>
+                <p>
+                  {" "}
+                  Routine cleanings, exams, and guidance for long-term oral
+                  health.
+                </p>
               </li>
+
               <li>
-                <span className="font-semibold">Cosmetic Dentistry</span><br />
-                <span>Invisalign®, teeth whitening, and veneers to enhance your smile.</span>
+                <h3 className="text-lg font-semibold">Cosmetic Dentistry</h3>
+                <p>
+                  {" "}
+                  Professional teeth whitening, veneers, and smile enhancements.
+                </p>
               </li>
+
               <li>
-                <span className="font-semibold">Restorative Dentistry</span><br />
-                <span>Crowns, bridges, and implants to restore strength and function.</span>
+                <h3 className="text-lg font-semibold">Restorative Dentistry</h3>
+                <p>
+                  {" "}
+                  Crowns, bridges, and dental implants for function and
+                  aesthetics.
+                </p>
               </li>
+
               <li>
-                <span className="font-semibold">Pediatric Dentistry</span><br />
-                <span>Gentle, friendly dental care for infants, kids, and teens.</span>
+                <h3 className="text-lg font-semibold">Pediatric Dentistry</h3>
+                <p> Gentle, fun, and stress-free visits for kids and teens.</p>
               </li>
             </ul>
           </Fade>
         </div>
 
         {/* Why Choose Us Section */}
-        <div className='wcu-section'>
-          <div className='wcu-text-section'>
+        <div className="wcu-section">
+          <div className="wcu-text-section">
             <Fade cascade direction="up" delay={1000} duration={600}>
-              <div className='wcu-title'>
-                <h2>Why Maplewood Families Choose Tulip Dental?</h2>
+              <div className="wcu-title">
+                <h2>Why Maplewood Families Choose Tulip Dental</h2>
               </div>
               <div className="wcu-desc">
-                Families throughout Maplewood (07040) trust us for a reason. Our commitment to patient care goes beyond the basics:
+                Families across Maplewood (07040) and nearby South Orange
+                (07079), Vauxhall (07088), Irvington (07111), and Newark (07106,
+                07112) trust us because:
               </div>
-              <div className='wcu-points-section'>
-                <ul className='wcu-points'>
-                  <li><CheckCircle />Patient-centered approach with honest communication</li>
-                  <li><CheckCircle />Advanced tools for accurate and comfortable treatment</li>
-                  <li><CheckCircle />Flexible scheduling, including same-day visits</li>
-                  <li><CheckCircle />Insurance-friendly with payment plans available </li>
-                  <li><CheckCircle />Conveniently located dental office near you</li>
+              <div className="wcu-points-section">
+                <ul className="wcu-points">
+                  <li>
+                    <CheckCircle /> We provide personalized, patient-first care
+                  </li>
+                  <li>
+                    <CheckCircle /> Our technology ensures accurate, comfortable
+                    treatments
+                  </li>
+                  <li>
+                    <CheckCircle /> We offer flexible scheduling, including
+                    same-day visits
+                  </li>
+                  <li>
+                    <CheckCircle /> We’re insurance-friendly and provide payment
+                    plan options
+                  </li>
+                  <li>
+                    <CheckCircle /> Our location is convenient and easy to
+                    access
+                  </li>
                 </ul>
               </div>
             </Fade>
           </div>
-          <div className='wcu-img-section'>
+          <div className="wcu-img-section">
             <Zoom cascade damping={0.3} duration={800}>
               <img
-                src="/Images/harrisburg service area.webp"
-                alt="dental"
+                src="/Images/newark-1.jpeg"
+                alt="Tulip Dental in Maplewood"
                 className="rounded-xl"
               />
             </Zoom>
@@ -145,12 +192,13 @@ export default function HarrisburgServiceAreaClient() {
               Schedule Your Appointment in Maplewood Today
             </h2>
             <p className="features-description">
-              Tulip Dental Maplewood is conveniently located in Maplewood (07040). If you've been searching for a "dentist near me" that combines compassion with clinical excellence—you've found your home.
+              Whether you’re in the heart of Maplewood or nearby neighborhoods,
+              Tulip Dental is just minutes away. If you’ve been looking for a
+              “dentist near me” who blends compassion with expertise, your
+              search ends here.
             </p>
-            <p className="features-description">
-              <strong>Call us today or book online</strong> to experience family dentistry done differently.
-            </p>
-            <BookCallBtn />
+
+            <BookCallBtnForServiceAreas />
           </Fade>
         </div>
 
@@ -161,7 +209,9 @@ export default function HarrisburgServiceAreaClient() {
             <Bounce>
               <h2 className="text-2xl font-bold">{selected.name}</h2>
             </Bounce>
-            <p className="whitespace-pre-line text-center text-white">{selected.address}</p>
+            <p className="whitespace-pre-line text-center text-white">
+              {selected.address}
+            </p>
 
             <h3 className="text-md font-medium mt-4">Hours of Operation:</h3>
             <Fade delay={400}>
@@ -169,8 +219,17 @@ export default function HarrisburgServiceAreaClient() {
                 {selected.hours.map((hour, i) => {
                   const isToday = new Date().getDay() === (i + 1) % 7;
                   return (
-                    <li key={i} className={`text-white ${isToday ? 'bg-white/10 rounded-md border-2 border-secondary' : ''}`}>{hour}</li>
-                  )
+                    <li
+                      key={i}
+                      className={`text-white ${
+                        isToday
+                          ? "bg-white/10 rounded-md border-2 border-secondary"
+                          : ""
+                      }`}
+                    >
+                      {hour}
+                    </li>
+                  );
                 })}
               </ul>
             </Fade>

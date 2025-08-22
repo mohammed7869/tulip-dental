@@ -227,7 +227,7 @@ export default function ServicesSection() {
                       </p>
                       <Link
                         href={service.href}
-                        className="text-primary hover:text-blue-800 inline-flex items-center text-xs"
+                        className="w-full flex flex-col bg-gradient-to-r from-blue-600 to-cyan-600 text-white rounded-lg px-1 md:px-4 py-3 hover:from-blue-700 hover:to-cyan-700 text-sm font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
                       >
                         Learn More
                         <ChevronRight className="w-3 h-3 ml-1" />
