@@ -1,222 +1,303 @@
-"use client"
+"use client";
 
-
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
-import React from 'react';
-import Reveal, { Fade, Zoom } from 'react-awesome-reveal';
-import ServiceSidebar from '@/components/ServiceSidebar';
-import BookCallBtn from '../book-call-btn';
-import { CheckCircle } from 'lucide-react';
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import React from "react";
+import Reveal, { Fade, Zoom } from "react-awesome-reveal";
+import ServiceSidebar from "@/components/ServiceSidebar";
+import BookCallBtn from "../book-call-btn";
+import { CheckCircle } from "lucide-react";
 
 export default function Page() {
-
-
-    const features = [
-  {
-    icon: "/Images/icons/Immediate Pain Relief.png",
-    title: "Dental Implants",
-    description: "Dental implants are the gold standard for replacing missing teeth. They look, feel, and function just like natural teeth-and can last a lifetime with proper care.",
-    points: [
-      "Titanium posts replace missing roots",
-      "Topped with custom crowns or bridges",
-      "Prevent bone loss and maintain facial shape",
-    ]
-  },
+  const features = [
     {
-    icon: "/Images/icons/Smart Treatment Decisions Under Pressure.png",
-    title: "Fixed Bridges",
-    description:
-      "A bridge is a reliable option for filling the gap left by one or more missing teeth. It anchors to nearby healthy teeth and restores your bite and appearance.",
-    points: [
-      "Non-removable and natural-looking",
-      "Ideal for patients not ready for implants",
-      "Quick, functional smile restoration",
-    ],
-  },
-  {
-    icon: "/Images/icons/Serving Harrisburg Nearby Communities.png",
-    title: "Full & Partial Dentures",
-    description:
-      "For patients missing several or all of their teeth, today’s dentures offer comfort, aesthetics, and improved function. We create custom dentures that fit beautifully and feel secure.",
-    points: [
-      "Natural appearance and easy maintenance",
-      "Available in removable and implant-supported designs",
-      "Affordable and accessible solution for many",
-    ],
-  },
-];
-    return (
-        <div className='flex min-h-screen bg-gray-50'>
-            <main className='details-page-container'>
-        <div className='details-page'>
-                    <div className='details-page-header-section'>
-                        <Fade direction='up' duration={1000}>
-                        <h1>Permanent Teeth Replacement in Harrisburg, PA</h1>
-                        </Fade>
-                        <Fade direction='down' duration={1000}>
-                        <h2 className="text-center">
-                            Restore Missing Teeth in Harrisburg | Maple Dental | Family & Cosmetic Dentist 
-                        </h2>
-                        </Fade>
-                        {/* <div className='flex items-center justify-center gap-2'> <Link href={'/'} className='font-medium'>Home </Link><span><ChevronRight/></span> <span className='text-white/80'>Emergency Dentistry</span></div> */}
-                    </div>
-                    <div className='details-page-desc-section'>
+      icon: "/Images/icons/Immediate Pain Relief.png",
+      title: "Dental Implants",
+      description:
+        "Dental implants are the gold standard for replacing missing teeth, providing unmatched stability and durability.",
+      points: [
+        "Titanium posts integrate with your jawbone for a secure foundation",
+        "Custom crowns that look and feel like natural teeth",
+        "Helps preserve bone health and facial structure",
+        "Long-lasting results with proper care",
+      ],
+    },
+    {
+      icon: "/Images/icons/Smart Treatment Decisions Under Pressure.png",
+      title: "Dental Bridges",
+      description:
+        "A bridge replaces one or more missing teeth by anchoring to the surrounding teeth or implants.",
+      points: [
+        "Fixed, non-removable tooth replacement",
+        "Natural-looking design to blend with your smile",
+        "Restores chewing function and appearance",
+        "Durable materials for long-term wear",
+      ],
+    },
+    {
+      icon: "/Images/icons/Serving Harrisburg Nearby Communities.png",
+      title: "Implant-Supported Dentures",
+      description:
+        "For patients missing most or all teeth, implant-supported dentures combine the security of implants with the coverage of dentures.",
+      points: [
+        "Stable fit - no slipping or adhesives needed",
+        "Allows for confident eating and speaking",
+        "Designed for comfort and natural appearance",
+        "Supports jawbone health and facial shape",
+      ],
+    },
+  ];
 
-      {/* Image Section */}
-      <div className='image_section'>
-        <div className="image_section-cover">
-          <Zoom cascade damping={0.3} duration={800}>
-            <div className="main-image">
-              <img
-                src="/Images/Teeth Replacement.jpeg"
-                alt="Main Banner"
-              />
-            </div>
-            {/* <img
+  return (
+    <div className="flex min-h-screen bg-gray-50">
+      <main className="details-page-container">
+        <div className="details-page">
+          <div className="details-page-header-section">
+            <Fade direction="up" duration={1000}>
+              <h1>Permanent Teeth Replacement in Maplewood, NJ </h1>
+            </Fade>
+            <Fade direction="down" duration={1000}>
+              <h2 className="text-center">
+                Restore Your Smile with Dental Implants & Restorations in
+                Maplewood | Tulip Dental | Family & Cosmetic Dentist
+              </h2>
+            </Fade>
+            {/* <div className='flex items-center justify-center gap-2'> <Link href={'/'} className='font-medium'>Home </Link><span><ChevronRight/></span> <span className='text-white/80'>Emergency Dentistry</span></div> */}
+          </div>
+          <div className="details-page-desc-section">
+            {/* Image Section */}
+            <div className="image_section">
+              <div className="image_section-cover">
+                <Zoom cascade damping={0.3} duration={800}>
+                  <div className="main-image">
+                    <img
+                      src="/Images/Teeth Replacement.jpeg"
+                      alt="Main Banner"
+                    />
+                  </div>
+                  {/* <img
               src="/Images/banners/s1.webp"
               className="overlay-image"
               alt="Overlay"
             /> */}
-          </Zoom>
-        </div>
-      </div>
-
-      {/* Text Section with Fade-in after delay */}
-      <div className='desc-text-section'>
-        <Fade cascade direction="up" delay={1000} duration={600}>
-          <div className='desc-text-subtitle'>Permanent Teeth Replacement</div>
-          <h3 className='desc-text-title'>About Permanent Teeth Replacement</h3>
-          <p>
-           Missing teeth can affect your confidence, health, and quality of life. At Maple Dental Harrisburg, we provide long-lasting solutions to replace missing teeth with natural-looking, fully functional results. Whether you’ve lost one tooth or several, we’ll help you reclaim your smile.
-          </p>
-          <p>
-           We proudly serve Harrisburg (17110, 17109, 17111, 17112), Colonial Park (17109), Lawnton (17111), Progress (17109, 17111), Penbrook (17103), Paxtang (17111), and Linglestown (17112). If you’re searching for permanent tooth replacement near me, our Harrisburg team is here to help.
-          </p>
-        </Fade>
-      </div>
-    </div>
-    <div className='wcu-section'>         
-        
-                    <div className='wcu-text-section'>
-                      <Fade cascade direction="up" delay={1000} duration={600}>
-                        <div className='wcu-subtitle'>
-                          Top Reasons
-                        </div>
-                        <div className='wcu-title'>
-                          <h2>Why Choose Maple Dental for Tooth Replacement?</h2>
-                        </div>
-                        <div className='wcu-points-section'>
-                          <ul className='wcu-points'>
-                            <li><CheckCircle />Personalized Treatment Plans for Every Smile</li>
-                            <li><CheckCircle />Modern Options: Implants, Bridges, & Dentures</li>
-                            <li><CheckCircle />Advanced Imaging & Diagnostic Tools</li>
-                            <li><CheckCircle />Affordable Payment Plans Available </li>
-                            <li><CheckCircle />Convenient Harrisburg Location Near You</li>
-                          </ul>
-                        </div>
-                      </Fade>
-                    </div>
-                    <div className='wcu-img-section'>
-                      <Zoom cascade damping={0.3} duration={800}>
-                        <img src="/Images/banners/top-reasons.jpeg" alt="dental" />
-                      </Zoom>
-                    </div>
-        
-                  </div>
-                  <div className="features-section">
-                              <Fade direction="up" duration={1000}>
-                                <h2 className="features-heading">
-                                  Reclaim Your Smile with Long-Lasting Tooth Replacement
-                                </h2>
-                                <p className="features-description">
-                                  At Maple Dental Harrisburg, we believe no one should have to live with missing teeth. Our experienced team offers a variety of permanent replacement options designed to match your unique smile goals and lifestyle.
-                                </p>
-                              </Fade>
-                  
-                              <div className="features-grid">
-                                {features.map((service, idx) => (
-                                  <div className="feature-card" key={idx}>
-                                    <div className="flex flex-col items-start mb-3">
-                                      <img src={service.icon} alt={service.title} className="w-12 h-12 mb-2" />
-                                      <h3>{service.title}</h3>
-                                    </div>
-                                    <p>{service.description}</p>
-                                    <ul className="feature-list">
-                                      {service.points.map((point, i) => (
-                                        <li key={i} className="feature-list-item">
-                                          <CheckCircle /> {point}
-                                        </li>
-                                      ))}
-                                    </ul>
-                                  </div>
-                                ))}
-                              </div>
-                            </div>
-    <div className='faq-section'>
-           <h2 className='faq-heading'>Tooth Replacement Q&A</h2>
-           <div className="faq-acc-container">
-            <Accordion type="single" className="w-full space-y-5">
-        
-        <AccordionItem value="q1" className="faq-acc">
-          <AccordionTrigger className='faq-qn'><h3 className='text-lg'>What is the best option to replace missing teeth?</h3></AccordionTrigger>
-          <AccordionContent className='faq-ans'>
-            <p>Dental implants are often the best long-term solution, but we’ll guide you based on your goals and budget</p>
-            
-          </AccordionContent>
-        </AccordionItem>
-
-        <AccordionItem value="q2" className="faq-acc">
-          <AccordionTrigger className='faq-qn'><h3 className='text-lg'>How long do permanent tooth replacements last?</h3></AccordionTrigger>
-          <AccordionContent className='faq-ans'>
-            <p>With proper care, implants can last a lifetime. Bridges and dentures also last many years with routine checkups.</p>
-            
-          </AccordionContent>
-        </AccordionItem>
-
-        <AccordionItem value="q3" className="faq-acc">
-          <AccordionTrigger className='faq-qn'><h3 className='text-lg'>Are dental implants safe and effective?</h3></AccordionTrigger>
-          <AccordionContent className='faq-ans'>
-            <p>Yes-implants have a high success rate and are considered one of the safest and most effective dental procedures.</p>
-            
-          </AccordionContent>
-        </AccordionItem>
-
-        <AccordionItem value="q4" className="faq-acc">
-          <AccordionTrigger className='faq-qn'><h3 className='text-lg'>Is the procedure painful?</h3></AccordionTrigger>
-          <AccordionContent className='faq-ans'>
-            <p>
-                Our gentle techniques and sedation options ensure a comfortable experience throughout your treatment. 
-            </p>
-          </AccordionContent>
-        </AccordionItem>
-
-        <AccordionItem value="q5" className="faq-acc">
-          <AccordionTrigger className='faq-qn'><h3 className='text-lg'>How much do tooth replacements cost?</h3>  s</AccordionTrigger>
-          <AccordionContent className='faq-ans'>
-            <p>
-                Costs vary depending on the type of restoration. We offer affordable plans and accept most insurance.
-            </p>
-          
-          </AccordionContent>
-        </AccordionItem>
-
-
-      </Accordion>
-      </div>
-    </div>
-     <div className="features-section">
-                <Fade direction="up" duration={1000}>
-                  <h2 className="features-heading">
-                    Ready to Replace Missing Teeth? Let’s Restore Your Smile
-                  </h2>
-                  <p className="features-description">
-                    Don't let missing teeth hold you back. Schedule a consultation with Maple Dental Harrisburg and take the first step toward a confident, permanent smile.
-                  </p>
-                </Fade>
+                </Zoom>
               </div>
-              <BookCallBtn/>
+            </div>
+
+            {/* Text Section with Fade-in after delay */}
+            <div className="desc-text-section">
+              <Fade cascade direction="up" delay={1000} duration={600}>
+                <div className="desc-text-subtitle">
+                  Permanent Teeth Replacement
+                </div>
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold">
+                  About Permanent Teeth Replacement
+                </h2>
+                <p>
+                  Losing a tooth doesn’t mean losing your smile. At Tulip Dental
+                  in Maplewood, NJ, we offer permanent teeth replacement
+                  solutions designed to restore function, aesthetics, and
+                  confidence. Whether you’ve lost one tooth, several, or a full
+                  arch, our treatments - including dental implants, bridges, and
+                  implant-supported dentures - are built to last and look
+                  completely natural.
+                </p>
+                <p>
+                  We proudly serve patients from Maplewood (07040), South Orange
+                  (07079), Vauxhall (07088), Irvington (07111), and nearby
+                  Newark (07106 and 07112). Searching for “permanent teeth
+                  replacement near me”? You’ve just found a trusted local dental
+                  team ready to give you back your smile.
+                </p>
+              </Fade>
+            </div>
+          </div>
+          <div className="wcu-section">
+            <div className="wcu-text-section">
+              <Fade cascade direction="up" delay={1000} duration={600}>
+                <div className="wcu-title">
+                  <h2>
+                    Top Reasons to Choose Tulip Dental for Permanent Teeth
+                    Replacement
+                  </h2>
+                </div>
+                <div className="wcu-points-section">
+                  <ul className="wcu-points">
+                    <li>
+                      <h3 className="text-lg  flex items-center gap-2">
+                        <CheckCircle /> Long-Lasting, Natural-Looking Results
+                      </h3>
+                    </li>
+                    <li>
+                      <h3 className="text-lg flex items-center gap-2">
+                        <CheckCircle /> Advanced Implant Technology
+                      </h3>
+                    </li>
+                    <li>
+                      <h3 className="text-lg flex items-center gap-2">
+                        <CheckCircle /> Personalized Treatment Plans
+                      </h3>
+                    </li>
+                    <li>
+                      <h3 className="text-lg flex items-center gap-2">
+                        <CheckCircle /> Comfortable, Stress-Free Procedures
+                      </h3>
+                    </li>
+                    <li>
+                      <h3 className="text-lg flex items-center gap-2">
+                        <CheckCircle /> Convenient Location in Maplewood, NJ
+                      </h3>
+                    </li>
+                  </ul>
+                </div>
+              </Fade>
+            </div>
+
+            <div className="wcu-img-section">
+              <Zoom cascade damping={0.3} duration={800}>
+                <img src="/Images/banners/top-reasons.jpeg" alt="dental" />
+              </Zoom>
+            </div>
+          </div>
+
+          <div className="features-section">
+            <Fade direction="up" duration={1000}>
+              <h2 className="features-heading">
+                Our Permanent Teeth Replacement Services{" "}
+              </h2>
+              <p className="features-description">
+                At Tulip Dental, we believe replacing missing teeth is about
+                more than just restoring your smile - it’s about improving your
+                overall oral health, speech, and ability to enjoy the foods you
+                love. Every solution is custom-designed to match your natural
+                teeth in color, shape, and fit, ensuring both comfort and
+                beauty.
+                <br />
+                <br />
+                Here’s how we restore smiles at Tulip Dental:
+              </p>
+            </Fade>
+
+            <div className="features-grid">
+              {features.map((service, idx) => (
+                <div className="feature-card" key={idx}>
+                  <div className="flex flex-col items-start mb-3">
+                    <img
+                      src={service.icon}
+                      alt={service.title}
+                      className="w-12 h-12 mb-2"
+                    />
+                    <h3>{service.title}</h3>
+                  </div>
+                  <p>{service.description}</p>
+                  <ul className="feature-list">
+                    {service.points.map((point, i) => (
+                      <li key={i} className="feature-list-item">
+                        <CheckCircle /> {point}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="faq-section">
+            <h2 className="faq-heading">Permanent Teeth Replacement FAQs</h2>
+            <div className="faq-acc-container">
+              <Accordion type="single" className="w-full space-y-5">
+                <AccordionItem value="q1" className="faq-acc">
+                  <AccordionTrigger className="faq-qn">
+                    <h3 className="text-lg">
+                      How long do dental implants last?
+                    </h3>
+                  </AccordionTrigger>
+                  <AccordionContent className="faq-ans">
+                    <p>
+                      With proper care, implants can last 20 years or more,
+                      often for a lifetime.
+                    </p>
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="q2" className="faq-acc">
+                  <AccordionTrigger className="faq-qn">
+                    <h3 className="text-lg">
+                      Are implants better than bridges?
+                    </h3>
+                  </AccordionTrigger>
+                  <AccordionContent className="faq-ans">
+                    <p>
+                      Implants don’t require altering adjacent teeth and help
+                      maintain jawbone health, making them a preferred option
+                      for many patients.
+                    </p>
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="q3" className="faq-acc">
+                  <AccordionTrigger className="faq-qn">
+                    <h3 className="text-lg">Does the procedure hurt?</h3>
+                  </AccordionTrigger>
+                  <AccordionContent className="faq-ans">
+                    <p>
+                      We use advanced techniques and anesthesia for a
+                      comfortable, low-pain experience.
+                    </p>
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="q4" className="faq-acc">
+                  <AccordionTrigger className="faq-qn">
+                    <h3 className="text-lg">
+                      How soon after losing a tooth can I get an implant?
+                    </h3>
+                  </AccordionTrigger>
+                  <AccordionContent className="faq-ans">
+                    <p>
+                      In some cases, an implant can be placed immediately; in
+                      others, healing time is needed before placement.
+                    </p>
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="q5" className="faq-acc">
+                  <AccordionTrigger className="faq-qn">
+                    <h3 className="text-lg">
+                      Are implants covered by insurance?
+                    </h3>
+                  </AccordionTrigger>
+                  <AccordionContent className="faq-ans">
+                    <p>
+                      Coverage varies; we’ll help you navigate insurance and
+                      offer flexible payment options.
+                    </p>
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
+            </div>
+          </div>
+
+          <div className="features-section">
+            <Fade direction="up" duration={1000}>
+              <h2 className="features-heading">
+                Ready to Restore Your Smile Permanently?
+              </h2>
+              <p className="features-description">
+                At Tulip Dental, we make permanent teeth replacement
+                comfortable, reliable, and tailored to your needs. From single
+                implants to full-mouth restoration, our team is here to help you
+                smile with confidence again.
+              </p>
+            </Fade>
+          </div>
+
+          <BookCallBtn />
         </div>
-            </main>
-        </div>
-    );
+      </main>
+    </div>
+  );
 }
