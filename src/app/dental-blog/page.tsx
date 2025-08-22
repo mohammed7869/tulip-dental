@@ -15,80 +15,80 @@ const blogPosts = blogPostsData.map((post, index) => ({
   date: post.datetime,
   description: post.shortDescription,
   image: post.image,
-  slug: post.slug
+  slug: post.slug,
 }));
-  // {
-  //   id: 4,
-  //   title: "Should You Call Your Dentist for a Cracked Tooth?",
-  //   date: "Mar 25, 2025",
-  //   description: "A cracked tooth can be a serious dental emergency. Find out when you should immediately contact your dentist and what treatment options are available for different types of tooth fractures.",
-  //   image: "/Images/banners/senior-woman-having-dental-treatment-dentist-s-office-woman-is-being-treated-teeth.jpg",
-  //   slug: "cracked-tooth-dental-emergency"
-  // },
-  // {
-  //   id: 5,
-  //   title: "Trust a Local Dentist in Newark & East Orange, NJ | Maple Dental",
-  //   date: "Mar 21, 2025",
-  //   description: "Choosing a local dentist you can trust is crucial for your oral health. Discover why Maple Dental is the preferred choice for families in Newark and East Orange, offering comprehensive care close to home.",
-  //   image: "/Images/banners/portrait-smiling-teenage-girl-with-braces-sitting-chair-while-dentist-standing-clinic.jpg",
-  //   slug: "local-dentist-newark-east-orange"
-  // },
-  // {
-  //   id: 6,
-  //   title: "Is My Dental Practice Available When I Need Them the Most?",
-  //   date: "Mar 18, 2025",
-  //   description: "Dental emergencies can happen at any time. Learn about Maple Dental's emergency services and how we ensure you have access to quality dental care when you need it most.",
-  //   image: "/Images/banners/close-up-man-carrying-young-woman-his-back.jpg",
-  //   slug: "dental-practice-availability-emergency"
-  // },
-  // {
-  //   id: 7,
-  //   title: "Emergency Dentist: Same-Day Appointments in Newark & East Orange | Maple Dental",
-  //   date: "Jan 31, 2025",
-  //   description: "Don't wait for dental emergencies to get worse. Maple Dental offers same-day emergency appointments to provide immediate relief and treatment when you're experiencing severe dental pain.",
-  //   image: "/Images/banners/top-reasons.jpeg",
-  //   slug: "emergency-dentist-same-day-appointments"
-  // },
-  // {
-  //   id: 8,
-  //   title: "Get Instant Tooth Pain Relief at Maple Dental in Newark & East Orange, NJ",
-  //   date: "Jan 17, 2025",
-  //   description: "Tooth pain can be debilitating and affect your daily life. Learn about the various causes of tooth pain and how Maple Dental provides effective, immediate relief through advanced treatment options.",
-  //   image: "/Images/banners/dentist-examining-patient-s-teeth.jpg",
-  //   slug: "instant-tooth-pain-relief-nova-dental"
-  // },
-  // {
-  //   id: 9,
-  //   title: "Your Trusted Emergency Dentist in Newark & East Orange, NJ | Maple Dental",
-  //   date: "Jan 06, 2025",
-  //   description: "When dental emergencies strike, you need a trusted provider you can rely on. Discover why Maple Dental is the go-to emergency dentist for families throughout Newark and East Orange.",
-  //   image: "/Images/banners/AdobeStock_537857878.webp",
-  //   slug: "trusted-emergency-dentist-newark-east-orange"
-  // },
-  // {
-  //   id: 10,
-  //   title: "Caring for Your Dental Health During COVID-19",
-  //   date: "Jun 17, 2020",
-  //   description: "Maple Dental is a warm, inviting dentist facility in Newark,NJ. Dr. Bhavneet Singh, DDS, is a trusted dentist who practices adults and kids' dentistry, and is dedicated to providing the best dental care in Newark, NJ.",
-  //   image: "/Images/banners/AdobeStock_537857878.webp",
-  //   slug: "caring-for-your-dental-health-during-covid-19"
-  // }
+// {
+//   id: 4,
+//   title: "Should You Call Your Dentist for a Cracked Tooth?",
+//   date: "Mar 25, 2025",
+//   description: "A cracked tooth can be a serious dental emergency. Find out when you should immediately contact your dentist and what treatment options are available for different types of tooth fractures.",
+//   image: "/Images/banners/senior-woman-having-dental-treatment-dentist-s-office-woman-is-being-treated-teeth.jpg",
+//   slug: "cracked-tooth-dental-emergency"
+// },
+// {
+//   id: 5,
+//   title: "Trust a Local Dentist in Newark & East Orange, NJ | Maple Dental",
+//   date: "Mar 21, 2025",
+//   description: "Choosing a local dentist you can trust is crucial for your oral health. Discover why Maple Dental is the preferred choice for families in Newark and East Orange, offering comprehensive care close to home.",
+//   image: "/Images/banners/portrait-smiling-teenage-girl-with-braces-sitting-chair-while-dentist-standing-clinic.jpg",
+//   slug: "local-dentist-newark-east-orange"
+// },
+// {
+//   id: 6,
+//   title: "Is My Dental Practice Available When I Need Them the Most?",
+//   date: "Mar 18, 2025",
+//   description: "Dental emergencies can happen at any time. Learn about Maple Dental's emergency services and how we ensure you have access to quality dental care when you need it most.",
+//   image: "/Images/banners/close-up-man-carrying-young-woman-his-back.jpg",
+//   slug: "dental-practice-availability-emergency"
+// },
+// {
+//   id: 7,
+//   title: "Emergency Dentist: Same-Day Appointments in Newark & East Orange | Maple Dental",
+//   date: "Jan 31, 2025",
+//   description: "Don't wait for dental emergencies to get worse. Maple Dental offers same-day emergency appointments to provide immediate relief and treatment when you're experiencing severe dental pain.",
+//   image: "/Images/banners/top-reasons.jpg",
+//   slug: "emergency-dentist-same-day-appointments"
+// },
+// {
+//   id: 8,
+//   title: "Get Instant Tooth Pain Relief at Maple Dental in Newark & East Orange, NJ",
+//   date: "Jan 17, 2025",
+//   description: "Tooth pain can be debilitating and affect your daily life. Learn about the various causes of tooth pain and how Maple Dental provides effective, immediate relief through advanced treatment options.",
+//   image: "/Images/banners/dentist-examining-patient-s-teeth.jpg",
+//   slug: "instant-tooth-pain-relief-nova-dental"
+// },
+// {
+//   id: 9,
+//   title: "Your Trusted Emergency Dentist in Newark & East Orange, NJ | Maple Dental",
+//   date: "Jan 06, 2025",
+//   description: "When dental emergencies strike, you need a trusted provider you can rely on. Discover why Maple Dental is the go-to emergency dentist for families throughout Newark and East Orange.",
+//   image: "/Images/banners/AdobeStock_537857878.webp",
+//   slug: "trusted-emergency-dentist-newark-east-orange"
+// },
+// {
+//   id: 10,
+//   title: "Caring for Your Dental Health During COVID-19",
+//   date: "Jun 17, 2020",
+//   description: "Maple Dental is a warm, inviting dentist facility in Newark,NJ. Dr. Bhavneet Singh, DDS, is a trusted dentist who practices adults and kids' dentistry, and is dedicated to providing the best dental care in Newark, NJ.",
+//   image: "/Images/banners/AdobeStock_537857878.webp",
+//   slug: "caring-for-your-dental-health-during-covid-19"
+// }
 
 // Mock API function - replace with your actual API call
 const fetchBlogPosts = async (page: number, itemsPerPage: number) => {
   // Simulate API delay
-  await new Promise(resolve => setTimeout(resolve, 500));
-  
+  await new Promise((resolve) => setTimeout(resolve, 500));
+
   const startIndex = (page - 1) * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;
   const paginatedPosts = blogPosts.slice(startIndex, endIndex);
-  
+
   return {
     posts: paginatedPosts,
     totalItems: blogPosts.length,
     currentPage: page,
     totalPages: Math.ceil(blogPosts.length / itemsPerPage),
-    itemsPerPage
+    itemsPerPage,
   };
 };
 
@@ -109,7 +109,7 @@ export default function DentalBlogPage() {
         setTotalItems(data.totalItems);
         setTotalPages(data.totalPages);
       } catch (error) {
-        console.error('Error fetching blog posts:', error);
+        console.error("Error fetching blog posts:", error);
       } finally {
         setLoading(false);
       }
@@ -149,7 +149,12 @@ export default function DentalBlogPage() {
           <>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {blogPosts.map((post, index) => (
-                <Slide key={post.id} direction="up" delay={index * 100} triggerOnce>
+                <Slide
+                  key={post.id}
+                  direction="up"
+                  delay={index * 100}
+                  triggerOnce
+                >
                   <article className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
                     {/* Blog Post Image */}
                     <div className="relative h-64 overflow-hidden">
@@ -178,22 +183,22 @@ export default function DentalBlogPage() {
 
                       {/* Continue Reading Button */}
                       <Link href={`/dental-blog/${post.slug}`}>
-                        <Button 
-                          variant="outline" 
+                        <Button
+                          variant="outline"
                           className="w-full border-primary text-primary hover:bg-primary hover:text-white transition-colors"
                         >
                           Continue Reading
-                          <svg 
-                            className="w-4 h-4 ml-2" 
-                            fill="none" 
-                            stroke="currentColor" 
+                          <svg
+                            className="w-4 h-4 ml-2"
+                            fill="none"
+                            stroke="currentColor"
                             viewBox="0 0 24 24"
                           >
-                            <path 
-                              strokeLinecap="round" 
-                              strokeLinejoin="round" 
-                              strokeWidth={2} 
-                              d="M9 5l7 7-7 7" 
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M9 5l7 7-7 7"
                             />
                           </svg>
                         </Button>

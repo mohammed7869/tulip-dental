@@ -12,25 +12,29 @@ const blogPosts = [
     id: 1,
     title: "How to Handle Dental Emergencies in Maplewood | Tulip Dental Tips",
     date: "Jul 16, 2025",
-    description: "Picture this: you're enjoying a quiet evening in Maplewood when suddenly, excruciating tooth pain strikes like lightning. Dental emergencies don't wait for convenient times, and knowing how to handle them can mean the difference between saving and losing a tooth",
+    description:
+      "Picture this: you're enjoying a quiet evening in Maplewood when suddenly, excruciating tooth pain strikes like lightning. Dental emergencies don't wait for convenient times, and knowing how to handle them can mean the difference between saving and losing a tooth",
     image: "/Images/banners/dental emergencies Harrisburg.webp",
-    slug: "dental-emergencies-Maplewood"
+    slug: "dental-emergencies-Maplewood",
   },
   {
     id: 2,
     title: "Maplewood Trusted Dentists at Tulip Dental - Oral Health Care Tips",
     date: "May 18, 2025",
-          description: "Oral health is about more than just having a pretty smile—it's a window into your overall health. Yet, finding a trustworthy dentist can feel like searching for a needle in a haystack. If you're in Maplewood, NJ, consider your search over. Tulip Dental has built a reputation as one of the most reliable dental practices in the area. Whether you're looking for a general check-up or need an emergency dentist in Maplewood, Tulip Dental is here to help.",
+    description:
+      "Oral health is about more than just having a pretty smile—it's a window into your overall health. Yet, finding a trustworthy dentist can feel like searching for a needle in a haystack. If you're in Maplewood, NJ, consider your search over. Tulip Dental has built a reputation as one of the most reliable dental practices in the area. Whether you're looking for a general check-up or need an emergency dentist in Maplewood, Tulip Dental is here to help.",
     image: "/Images/banners/Trusted Dentists in Harrisburg.jpg",
-    slug: "trusted-dentists-in-maplewood"
+    slug: "trusted-dentists-in-maplewood",
   },
   {
     id: 3,
-    title: "5 Signs You Might Need a Root Canal in Maplewood | Why Trust Tulip Dental",
+    title:
+      "5 Signs You Might Need a Root Canal in Maplewood | Why Trust Tulip Dental",
     date: "May 12, 2025",
-          description: "Discover the 5 critical signs that suggest you need a root canal treatment. Trust Tulip Dental in Maplewood for expert endodontic care and pain relief.",
+    description:
+      "Discover the 5 critical signs that suggest you need a root canal treatment. Trust Tulip Dental in Maplewood for expert endodontic care and pain relief.",
     image: "/Images/banners/5 Signs You Might Need a Root Canal.jpg",
-    slug: "5-signs-you-might-need-a-root-canal"
+    slug: "5-signs-you-might-need-a-root-canal",
   },
   // {
   //   id: 4,
@@ -61,7 +65,7 @@ const blogPosts = [
   //   title: "Emergency Dentist: Same-Day Appointments in Newark & East Orange | Maple Dental",
   //   date: "Jan 31, 2025",
   //   description: "Don't wait for dental emergencies to get worse. Maple Dental offers same-day emergency appointments to provide immediate relief and treatment when you're experiencing severe dental pain.",
-  //   image: "/Images/banners/top-reasons.jpeg",
+  //   image: "/Images/banners/top-reasons.jpg",
   //   slug: "emergency-dentist-same-day-appointments"
   // },
   // {
@@ -93,18 +97,18 @@ const blogPosts = [
 // Mock API function - replace with your actual API call
 const fetchBlogPosts = async (page: number, itemsPerPage: number) => {
   // Simulate API delay
-  await new Promise(resolve => setTimeout(resolve, 500));
-  
+  await new Promise((resolve) => setTimeout(resolve, 500));
+
   const startIndex = (page - 1) * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;
   const paginatedPosts = blogPosts.slice(startIndex, endIndex);
-  
+
   return {
     posts: paginatedPosts,
     totalItems: blogPosts.length,
     currentPage: page,
     totalPages: Math.ceil(blogPosts.length / itemsPerPage),
-    itemsPerPage
+    itemsPerPage,
   };
 };
 
@@ -125,7 +129,7 @@ export default function BlogGridPage() {
         setTotalItems(data.totalItems);
         setTotalPages(data.totalPages);
       } catch (error) {
-        console.error('Error fetching blog posts:', error);
+        console.error("Error fetching blog posts:", error);
       } finally {
         setLoading(false);
       }
@@ -165,7 +169,12 @@ export default function BlogGridPage() {
           <>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {blogPosts.map((post, index) => (
-                <Slide key={post.id} direction="up" delay={index * 100} triggerOnce>
+                <Slide
+                  key={post.id}
+                  direction="up"
+                  delay={index * 100}
+                  triggerOnce
+                >
                   <article className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
                     {/* Blog Post Image */}
                     <div className="relative h-64 overflow-hidden">
@@ -194,22 +203,22 @@ export default function BlogGridPage() {
 
                       {/* Continue Reading Button */}
                       <Link href={`/blog/${post.slug}`}>
-                        <Button 
-                          variant="outline" 
+                        <Button
+                          variant="outline"
                           className="w-full border-primary text-primary hover:bg-primary hover:text-white transition-colors"
                         >
                           Continue Reading
-                          <svg 
-                            className="w-4 h-4 ml-2" 
-                            fill="none" 
-                            stroke="currentColor" 
+                          <svg
+                            className="w-4 h-4 ml-2"
+                            fill="none"
+                            stroke="currentColor"
                             viewBox="0 0 24 24"
                           >
-                            <path 
-                              strokeLinecap="round" 
-                              strokeLinejoin="round" 
-                              strokeWidth={2} 
-                              d="M9 5l7 7-7 7" 
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M9 5l7 7-7 7"
                             />
                           </svg>
                         </Button>
@@ -241,4 +250,4 @@ export default function BlogGridPage() {
       </div>
     </div>
   );
-} 
+}

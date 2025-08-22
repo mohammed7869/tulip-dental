@@ -1,16 +1,23 @@
 import type { Metadata } from "next";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
-import React from 'react';
-import Reveal, { Fade, Zoom } from 'react-awesome-reveal';
-import ServiceSidebar from '@/components/ServiceSidebar';
-import BookCallBtn from '../book-call-btn';
-import { CheckCircle } from 'lucide-react';
-import { generateServiceMetadata } from '@/lib/metadata';
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import React from "react";
+import Reveal, { Fade, Zoom } from "react-awesome-reveal";
+import ServiceSidebar from "@/components/ServiceSidebar";
+import BookCallBtn from "../book-call-btn";
+import { CheckCircle } from "lucide-react";
+import { generateServiceMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = generateServiceMetadata("cosmetic-dentistry", "/Images/Cosmetic Dentistry.jpg");
+export const metadata: Metadata = generateServiceMetadata(
+  "cosmetic-dentistry",
+  "/Images/Cosmetic Dentistry.jpg"
+);
 
 export default function CosmeticDentistryPage() {
-
   const features = [
     {
       icon: "/Images/icons/tooth-whitening.png",
@@ -54,23 +61,24 @@ export default function CosmeticDentistryPage() {
   ];
 
   return (
-    <div className='flex min-h-screen bg-gray-50'>
-      <main className='details-page-container'>
-        <div className='details-page'>
-          <div className='details-page-header-section'>
-            <Fade direction='up' duration={1000}>
+    <div className="flex min-h-screen bg-gray-50">
+      <main className="details-page-container">
+        <div className="details-page">
+          <div className="details-page-header-section">
+            <Fade direction="up" duration={1000}>
               <h1>Cosmetic Dentistry in Maplewood, NJ</h1>
             </Fade>
-            <Fade direction='down' duration={1000}>
+            <Fade direction="down" duration={1000}>
               <h2 className="text-center">
-                Transform Your Smile with Cosmetic Dentistry in Maplewood | Tulip Dental | Family & Cosmetic Dentist              </h2>
+                Transform Your Smile with Cosmetic Dentistry in Maplewood |
+                Tulip Dental | Family & Cosmetic Dentist{" "}
+              </h2>
             </Fade>
             {/* <div className='flex items-center justify-center gap-2'> <Link href={'/'} className='font-medium'>Home </Link><span><ChevronRight/></span> <span className='text-white/80'>Emergency Dentistry</span></div> */}
           </div>
-          <div className='details-page-desc-section'>
-
+          <div className="details-page-desc-section">
             {/* Image Section */}
-            <div className='image_section'>
+            <div className="image_section">
               <div className="image_section-cover">
                 <Zoom cascade damping={0.3} duration={800}>
                   <div className="main-image">
@@ -89,29 +97,39 @@ export default function CosmeticDentistryPage() {
             </div>
 
             {/* Text Section with Fade-in after delay */}
-            <div className='desc-text-section'>
+            <div className="desc-text-section">
               <Fade cascade direction="up" delay={1000} duration={600}>
-                <div className='desc-text-subtitle'>Cosmetic Dentistry</div>
-                <h2 className='text-2xl sm:text-3xl md:text-4xl font-semibold'>About Cosmetic Dentistry</h2>
+                <div className="desc-text-subtitle">Cosmetic Dentistry</div>
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold">
+                  About Cosmetic Dentistry
+                </h2>
                 <p>
-                  Your smile is one of the first things people notice-why not make it unforgettable? At Tulip Dental in Maplewood, NJ, we offer modern, high-quality cosmetic dental treatments to help you feel more confident every time you smile. Whether you’re looking to whiten your teeth, fix chips and gaps, or completely transform your look with veneers or a full smile makeover, our skilled team is here to help.                </p>
+                  Your smile is one of the first things people notice-why not
+                  make it unforgettable? At Tulip Dental in Maplewood, NJ, we
+                  offer modern, high-quality cosmetic dental treatments to help
+                  you feel more confident every time you smile. Whether you’re
+                  looking to whiten your teeth, fix chips and gaps, or
+                  completely transform your look with veneers or a full smile
+                  makeover, our skilled team is here to help.{" "}
+                </p>
                 <p>
-                  We proudly serve patients from Maplewood (07040), South Orange (07079), Vauxhall (07088), Irvington (07111), and nearby Newark (07106 and 07112). Searching for a “cosmetic dentist near me”? You’ve just found one who truly cares.                </p>
+                  We proudly serve patients from Maplewood (07040), South Orange
+                  (07079), Vauxhall (07088), Irvington (07111), and nearby
+                  Newark (07106 and 07112). Searching for a “cosmetic dentist
+                  near me”? You’ve just found one who truly cares.{" "}
+                </p>
               </Fade>
             </div>
           </div>
-          <div className='wcu-section'>
-
-            <div className='wcu-text-section'>
+          <div className="wcu-section">
+            <div className="wcu-text-section">
               <Fade cascade direction="up" delay={1000} duration={600}>
-                <div className='wcu-subtitle'>
-                  Top Reasons
-                </div>
-                <div className='wcu-title'>
+                <div className="wcu-subtitle">Top Reasons</div>
+                <div className="wcu-title">
                   <h2>Why Choose Tulip Dental for Cosmetic Dentistry?</h2>
                 </div>
-                <div className='wcu-points-section'>
-                  <ul className='wcu-points'>
+                <div className="wcu-points-section">
+                  <ul className="wcu-points">
                     <li>
                       <h3 className="text-sm flex items-center gap-2">
                         <CheckCircle /> Personalized Smile Makeovers
@@ -139,15 +157,17 @@ export default function CosmeticDentistryPage() {
                     </li>
                   </ul>
                 </div>
-
               </Fade>
             </div>
-            <div className='wcu-img-section'>
+            <div className="wcu-img-section">
               <Zoom cascade damping={0.3} duration={800}>
-                <img src="/Images/banners/top-reasons.jpeg" alt="dental" />
+                <img
+                  className="bdr-doctor-img"
+                  src="/Images/banners/top-reasons.jpg"
+                  alt="dental"
+                />
               </Zoom>
             </div>
-
           </div>
           <div className="features-section">
             <Fade direction="up" duration={1000}>
@@ -155,7 +175,10 @@ export default function CosmeticDentistryPage() {
                 Cosmetic Dentistry Services That Make You Smile
               </h2>
               <p className="features-description">
-                Cosmetic dentistry isn’t just about looks-it’s about how you feel. We take a conservative yet artistic approach to every procedure, ensuring natural results that boost your self-esteem and oral health.
+                Cosmetic dentistry isn’t just about looks-it’s about how you
+                feel. We take a conservative yet artistic approach to every
+                procedure, ensuring natural results that boost your self-esteem
+                and oral health.
                 <br />
                 <br />
                 Here’s what we offer at Tulip Dental:
@@ -166,7 +189,11 @@ export default function CosmeticDentistryPage() {
               {features.map((service, idx) => (
                 <div className="feature-card" key={idx}>
                   <div className="flex flex-col items-start mb-3">
-                    <img src={service.icon} alt={service.title} className="w-12 h-12 mb-2" />
+                    <img
+                      src={service.icon}
+                      alt={service.title}
+                      className="w-12 h-12 mb-2"
+                    />
                     <h3>{service.title}</h3>
                   </div>
                   <p>{service.description}</p>
@@ -181,61 +208,81 @@ export default function CosmeticDentistryPage() {
               ))}
             </div>
           </div>
-          <div className='faq-section'>
-            <h2 className='faq-heading'>Cosmetic Dentistry FAQs</h2>
+          <div className="faq-section">
+            <h2 className="faq-heading">Cosmetic Dentistry FAQs</h2>
             <div className="faq-acc-container">
               <Accordion type="single" className="w-full space-y-5">
-
                 <AccordionItem value="q1" className="faq-acc">
-                  <AccordionTrigger className='faq-qn'><h3 className='text-lg'>What is cosmetic dentistry?</h3></AccordionTrigger>
-                  <AccordionContent className='faq-ans'>
+                  <AccordionTrigger className="faq-qn">
+                    <h3 className="text-lg">What is cosmetic dentistry?</h3>
+                  </AccordionTrigger>
+                  <AccordionContent className="faq-ans">
                     <p>
-                      Cosmetic dentistry focuses on improving the appearance of your teeth, gums, and overall smile.
-                      It includes treatments like whitening, veneers, bonding, and more.
+                      Cosmetic dentistry focuses on improving the appearance of
+                      your teeth, gums, and overall smile. It includes
+                      treatments like whitening, veneers, bonding, and more.
                     </p>
                   </AccordionContent>
                 </AccordionItem>
 
                 <AccordionItem value="q2" className="faq-acc">
-                  <AccordionTrigger className='faq-qn'><h3 className='text-lg'>How do I know which cosmetic treatment is right for me?</h3></AccordionTrigger>
-                  <AccordionContent className='faq-ans'>
+                  <AccordionTrigger className="faq-qn">
+                    <h3 className="text-lg">
+                      How do I know which cosmetic treatment is right for me?
+                    </h3>
+                  </AccordionTrigger>
+                  <AccordionContent className="faq-ans">
                     <p>
-                      We’ll begin with a personalized consultation to assess your goals and discuss which treatments
-                      best fit your needs, lifestyle, and budget.
+                      We’ll begin with a personalized consultation to assess
+                      your goals and discuss which treatments best fit your
+                      needs, lifestyle, and budget.
                     </p>
                   </AccordionContent>
                 </AccordionItem>
 
                 <AccordionItem value="q3" className="faq-acc">
-                  <AccordionTrigger className='faq-qn'><h3 className='text-lg'>Is cosmetic dentistry painful?</h3></AccordionTrigger>
-                  <AccordionContent className='faq-ans'>
+                  <AccordionTrigger className="faq-qn">
+                    <h3 className="text-lg">Is cosmetic dentistry painful?</h3>
+                  </AccordionTrigger>
+                  <AccordionContent className="faq-ans">
                     <p>
-                      Not at all. Most cosmetic procedures are minimally invasive and require little to no recovery time.
-                      We ensure your comfort every step of the way.
+                      Not at all. Most cosmetic procedures are minimally
+                      invasive and require little to no recovery time. We ensure
+                      your comfort every step of the way.
                     </p>
                   </AccordionContent>
                 </AccordionItem>
 
                 <AccordionItem value="q4" className="faq-acc">
-                  <AccordionTrigger className='faq-qn'><h3 className='text-lg'>How long do cosmetic results last?</h3></AccordionTrigger>
-                  <AccordionContent className='faq-ans'>
+                  <AccordionTrigger className="faq-qn">
+                    <h3 className="text-lg">
+                      How long do cosmetic results last?
+                    </h3>
+                  </AccordionTrigger>
+                  <AccordionContent className="faq-ans">
                     <p>
-                      It depends on the treatment and your oral care routine. Veneers can last 10–15 years or more,
-                      while whitening may need occasional touch-ups. We’ll guide you on how to maintain your results.
+                      It depends on the treatment and your oral care routine.
+                      Veneers can last 10–15 years or more, while whitening may
+                      need occasional touch-ups. We’ll guide you on how to
+                      maintain your results.
                     </p>
                   </AccordionContent>
                 </AccordionItem>
 
                 <AccordionItem value="q5" className="faq-acc">
-                  <AccordionTrigger className='faq-qn'><h3 className='text-lg'>Can cosmetic dentistry fix crooked teeth?</h3></AccordionTrigger>
-                  <AccordionContent className='faq-ans'>
+                  <AccordionTrigger className="faq-qn">
+                    <h3 className="text-lg">
+                      Can cosmetic dentistry fix crooked teeth?
+                    </h3>
+                  </AccordionTrigger>
+                  <AccordionContent className="faq-ans">
                     <p>
-                      Yes! Mild alignment issues can often be corrected with veneers or bonding.
-                      For more advanced cases, we may recommend Invisalign or orthodontic options.
+                      Yes! Mild alignment issues can often be corrected with
+                      veneers or bonding. For more advanced cases, we may
+                      recommend Invisalign or orthodontic options.
                     </p>
                   </AccordionContent>
                 </AccordionItem>
-
               </Accordion>
             </div>
           </div>
@@ -246,8 +293,9 @@ export default function CosmeticDentistryPage() {
                 Ready to Love Your Smile Again?
               </h2>
               <p className="features-description">
-                If you’re tired of hiding your smile, Tulip Dental is here to help. From subtle enhancements
-                to full smile makeovers, we offer compassionate, expert care in a comfortable setting.
+                If you’re tired of hiding your smile, Tulip Dental is here to
+                help. From subtle enhancements to full smile makeovers, we offer
+                compassionate, expert care in a comfortable setting.
               </p>
             </Fade>
           </div>

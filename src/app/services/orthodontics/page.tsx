@@ -150,7 +150,11 @@ export default function OrthodonticsPage() {
 
             <div className="wcu-img-section">
               <Zoom cascade damping={0.3} duration={800}>
-                <img src="/Images/banners/top-reasons.jpeg" alt="dental" />
+                <img
+                  className="bdr-doctor-img"
+                  src="/Images/banners/top-reasons.jpg"
+                  alt="dental"
+                />
               </Zoom>
             </div>
           </div>

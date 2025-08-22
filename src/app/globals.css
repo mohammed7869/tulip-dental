@@ -425,6 +425,7 @@
       justify-content: center;
       display: flex;
       flex: 1;
+      border-radius: 1rem !important;
 
       img {
         width: auto;
@@ -458,6 +459,7 @@
       .wcu-img-section {
         img {
           display: none;
+          border-radius: 1rem;
         }
       }
     }
@@ -661,6 +663,10 @@
     .faq-section .faq-ans {
       font-size: 0.875rem;
     }
+  }
+
+  .bdr-doctor-img {
+    border-radius: 1rem !important;
   }
 
   .why-us-section {
