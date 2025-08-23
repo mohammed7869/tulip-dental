@@ -71,12 +71,12 @@ export default function OffersPage() {
                 <h3 className="text-base font-semibold">
                   Safe, Professional Whitening{" "}
                 </h3>
-                <div>
+                <p>
                   Our dental-grade whitening system is designed to deliver fast,
                   safe, and long-lasting results. We use enamel-safe formulas to
                   minimize sensitivity while maximizing brightness, giving you a
                   noticeably whiter smile in complete comfort.
-                </div>
+                </p>
               </div>
             </li>
             <li className="flex items-start gap-3">
@@ -87,12 +87,12 @@ export default function OffersPage() {
                 <h3 className="text-base font-semibold">
                   Quick, Noticeable Results{" "}
                 </h3>
-                <div>
+                <p>
                   In just about an hour, you can achieve a smile that’s several
                   shades brighter. It’s the perfect choice before a wedding, job
                   interview, special event, or simply to treat yourself to a
                   confidence boost.
-                </div>
+                </p>
               </div>
             </li>
             <li className="flex items-start gap-3">
@@ -103,11 +103,11 @@ export default function OffersPage() {
                 <h3 className="text-base font-semibold">
                   Customized Treatment & Guidance{" "}
                 </h3>
-                <div>
+                <p>
                   Your whitening session is tailored to your smile goals. We’ll
                   also provide personalized aftercare tips to help you maintain
                   your new radiant look for as long as possible.
-                </div>
+                </p>
               </div>
             </li>
           </ul>
