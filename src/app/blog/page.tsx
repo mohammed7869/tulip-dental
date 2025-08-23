@@ -153,8 +153,14 @@ export default function BlogGridPage() {
       <div className="details-page-header-section">
         <div className="max-w-7xl mx-auto text-center">
           <Fade direction="down" triggerOnce>
-            <h1>Dental Tips, News & Updates from Tulip Dental</h1>
-            <h2>Explore Expert Advice on Oral Health & Family Dentistry</h2>
+            <h1>
+              Oral Health Tips, News & Updates from Tulip Dental in Maplewood,
+              NJ
+            </h1>
+            <h2>
+              {" "}
+              Expert Advice on Family, Cosmetic & Preventive Dentistry Near You
+            </h2>
           </Fade>
         </div>
       </div>

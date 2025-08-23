@@ -5,45 +5,45 @@ import clsx from "clsx";
 
 const reviews = [
   {
-    name: "Amanda R.",
+    name: "Samantha K.",
     date: "Jul 10, 2025",
     rating: 5,
-    text: "I've always been nervous about going to the dentist, but Maple Dental changed that. Dr. Simran and the staff were so welcoming and patient with me. The office is clean, modern, and they really care about your comfort. I highly recommend them!",
+    text: "I was always nervous about going to the dentist, but Tulip Dental in Maplewood, NJ completely changed that. Dr. Banerjee and the friendly staff made me feel comfortable from the moment I arrived. The office is clean, modern, and equipped with the latest dental technology. ",
     image: "/Images/836.jpg",
   },
   {
-    name: "Mike T.",
+    name: "Anthony R.",
     date: "Apr 30, 2025",
     rating: 5,
-    text: "Professional, efficient, and friendly! I had a routine cleaning and was in and out in under an hour. The hygienist explained everything clearly and made sure I was comfortable throughout the visit.",
+    text: "Professional, efficient, and gentle! I visited Tulip Dental for a teeth cleaning and left with my smile feeling fresh and polished. The hygienist explained every step, and Dr. Banerjee checked in to make sure I was comfortable. If you’re looking for a family dentist in Maplewood, this is the place.",
     image: "/Images/837.jpg",
   },
   {
-    name: "Jessica L.",
+    name: "Melissa D.",
     date: "Mar 04, 2025",
     rating: 4,
-    text: "Maple Dental is a gem in Harrisburg. My kids actually look forward to their checkups now! The pediatric staff is wonderful, and they do a great job making it a positive experience for little ones.",
+    text: "Tulip Dental is the best dental office in Maplewood! My kids actually look forward to their checkups. The pediatric dentistry team is patient, caring, and makes visits fun. We’ve found our forever family dentist.",
     image: "/Images/836.jpg",
   },
   {
-    name: "Ryan C.",
+    name: "David H.",
     date: "Feb 14, 2025",
     rating: 5,
-    text: "I had a dental emergency and they got me in the same day. Dr. Simran took the time to explain what was going on and gave me options without pressure. Great service and compassionate care!",
+    text: "I had a severe toothache and needed emergency dental care in Maplewood. Tulip Dental got me the same day. Dr. Banerjee explained my treatment options clearly, and the procedure was painless. I walked out pain-free and grateful.",
     image: "/Images/837.jpg",
   },
   {
-    name: "Stephanie D.",
+    name: "Rachel P.",
     date: "Jan 19, 2025",
     rating: 5,
-    text: "The team at Maple Dental is top-notch. From the front desk to the dental chair, everyone was friendly and professional. My teeth have never felt cleaner!",
+    text: "From the front desk to the dental chair, Tulip Dental provides top-notch service. Everyone is welcoming and professional. My cleaning was thorough, and my teeth have never looked better. Highly recommend for anyone in Maplewood or nearby South Orange.",
     image: "/Images/836.jpg",
   },
   {
-    name: "Daniel W.",
+    name: "Jonathan W.",
     date: "Dec 22, 2024",
     rating: 5,
-    text: "I recently had a crown done here and the experience was painless—literally and figuratively. Everything was explained thoroughly and the results look amazing. Wouldn't go anywhere else.",
+    text: "I recently got porcelain veneers at Tulip Dental and couldn’t be happier. The process was smooth, the results are natural-looking, and I get compliments on my smile daily. If you want cosmetic dentistry done right in Maplewood, NJ - this is where you go.",
     image: "/Images/837.jpg",
   },
 ];
@@ -75,11 +75,13 @@ export default function PatientReviewsPage() {
       <div className="details-page-header-section">
         <h1>What Patients Are Saying About Tulip Dental</h1>
         <h2>
-                      Real Reviews from Families Across Maplewood
+          Real Reviews from Families Across Maplewood & Nearby Communities
         </h2>
       </div>
       <div className="max-w-7xl mt-10 mx-auto px-2 sm:px-4 md:px-8">
-        <h2 className="text-center text-lg sm:text-xl font-semibold mb-8">Patient Reviews</h2>
+        <h2 className="text-center text-lg sm:text-xl font-semibold mb-8">
+          Patient Reviews
+        </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
           {reviews.map((review, idx) => (
             <div
@@ -95,7 +97,8 @@ export default function PatientReviewsPage() {
                   {review.text}
                 </p>
                 <div className="mt-auto text-xs sm:text-sm text-gray-500 text-center w-full">
-                  <span className="font-semibold">{review.name}</span> | {review.date}
+                  <span className="font-semibold">{review.name}</span> |{" "}
+                  {review.date}
                 </div>
               </div>
             </div>

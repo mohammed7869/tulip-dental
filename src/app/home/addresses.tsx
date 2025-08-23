@@ -98,7 +98,7 @@ export default function LocationTabs() {
       </div> */}
       <div className="flex flex-col md:flex-row items-center justify-center gap-4">
         {/* Info Block */}
-        <div className="flex-1 text-center relative bg-primary rounded-lg p-8 text-white shadow-lg overflow-hidden space-y-4">
+        <div className="flex-1 text-center relative rounded-lg p-8 text-white shadow-lg overflow-hidden space-y-4">
           <Bounce>
             <h2 className="text-2xl font-bold">{selected.name}</h2>
           </Bounce>
