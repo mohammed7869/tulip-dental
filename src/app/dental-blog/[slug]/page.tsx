@@ -15,9 +15,11 @@ export default function DentalBlogDetailsPage() {
     return (
       <div className="min-h-screen bg-white flex items-center justify-center">
         <div className="text-center">
-          <h1 className="text-2xl font-bold text-gray-900 mb-4">Blog Post Not Found</h1>
+          <h1 className="text-2xl font-bold text-gray-900 mb-4">
+            Blog Post Not Found
+          </h1>
           <Link href="/dental-blog">
-            <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-white">
+            <Button className="w-full border-primary text-primary hover:bg-primary hover:text-white transition-colors">
               ← Back to Dental Blog
             </Button>
           </Link>
@@ -40,7 +42,7 @@ export default function DentalBlogDetailsPage() {
 
       {/* Main Content Section */}
       <div className="max-w-4xl mx-auto px-4 py-4 md:py-16">
-        <Fade >
+        <Fade>
           {/* Featured Image */}
           <div className="mb-8">
             <img
@@ -61,13 +63,19 @@ export default function DentalBlogDetailsPage() {
           </h1>
 
           {/* Details Description (HTML) */}
-          <div className="prose prose-lg max-w-none" dangerouslySetInnerHTML={{ __html: post.detailsDescription }} />
+          <div
+            className="prose prose-lg max-w-none"
+            dangerouslySetInnerHTML={{ __html: post.detailsDescription }}
+          />
 
           {/* Back to Blog Button */}
           <div className="mt-12 pt-8 border-t border-gray-200 flex justify-center">
             <Link href="/dental-blog">
-              <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-white">
-                ← Back to Dental Blog
+              <Button
+                // variant="outline"
+                className="w-full bg-gradient-to-r from-blue-600 to-cyan-600 text-white px-3 py-2 rounded-md text-sm hover:from-blue-700 hover:to-cyan-700 font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 cursor-pointers"
+              >
+                <span className="mr-2">←</span> Back to Dental Blog
               </Button>
             </Link>
           </div>

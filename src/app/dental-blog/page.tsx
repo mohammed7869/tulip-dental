@@ -184,8 +184,8 @@ export default function DentalBlogPage() {
                       {/* Continue Reading Button */}
                       <Link href={`/dental-blog/${post.slug}`}>
                         <Button
-                          variant="outline"
-                          className="w-full border-primary text-primary hover:bg-primary hover:text-white transition-colors"
+                          // variant="outline"
+                          className="w-full bg-gradient-to-r from-blue-600 to-cyan-600 text-white px-3 py-2 rounded-md text-sm hover:from-blue-700 hover:to-cyan-700 font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 cursor-pointer"
                         >
                           Continue Reading
                           <svg
