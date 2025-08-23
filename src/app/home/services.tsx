@@ -55,7 +55,7 @@ export default function ServicesSection() {
       id: 4,
       title: "Root Canal",
       description: "Save infected teeth",
-      image: "/Images/Root Canal.jpg",
+      image: "/Images/root-canal.jpg",
       icon: "/Images/icons/root-canal (1).png",
       href: "/services/root-canal",
     },

@@ -33,7 +33,7 @@ const blogPosts = [
     date: "May 12, 2025",
     description:
       "Discover the 5 critical signs that suggest you need a root canal treatment. Trust Tulip Dental in Maplewood for expert endodontic care and pain relief.",
-    image: "/Images/banners/5 Signs You Might Need a Root Canal.jpg",
+    image: "/Images/banners/5 Signs You Might Need a root-canal.jpg",
     slug: "5-signs-you-might-need-a-root-canal",
   },
   // {

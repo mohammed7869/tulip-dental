@@ -12,7 +12,7 @@ const services = [
   },
   {
     title: "Root Canal",
-    image: "/Images/Root Canal.jpg",
+    image: "/Images/root-canal.jpg",
     link: "/services/root-canal",
   },
   {

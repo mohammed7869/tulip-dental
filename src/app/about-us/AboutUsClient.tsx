@@ -146,7 +146,7 @@ export default function AboutUsClient() {
         <section className="flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-8 py-8 sm:py-12 lg:py-16 px-4 sm:px-8 lg:px-16 max-w-7xl mx-auto">
           <div className="flex-1 flex justify-center lg:justify-start mb-6 lg:mb-0 order-2 lg:order-1 w-full">
             <img
-              src="/Images/banners/Banner_1.jpg"
+              src="/Images/banners/why-patients-choose (1).jpeg"
               alt="Dental procedure"
               className="rounded-xl shadow-lg w-full max-w-sm sm:max-w-md lg:max-w-lg object-cover"
               loading="lazy"
