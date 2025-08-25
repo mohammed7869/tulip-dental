@@ -124,9 +124,11 @@ export default function CosmeticDentistryPage() {
           <div className="wcu-section">
             <div className="wcu-text-section">
               <Fade cascade direction="up" delay={1000} duration={600}>
-                <div className="wcu-subtitle">Top Reasons</div>
+                {/* <div className="wcu-subtitle">Top Reasons</div> */}
                 <div className="wcu-title">
-                  <h2>Why Choose Tulip Dental for Cosmetic Dentistry?</h2>
+                  <h2>
+                    Top Reasons To Choose Tulip Dental for Cosmetic Dentistry
+                  </h2>
                 </div>
                 <div className="wcu-points-section">
                   <ul className="wcu-points">

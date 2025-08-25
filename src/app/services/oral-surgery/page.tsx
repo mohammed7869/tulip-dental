@@ -117,7 +117,6 @@ export default function OralSurgeryPage() {
           <div className="wcu-section">
             <div className="wcu-text-section">
               <Fade cascade direction="up" delay={1000} duration={600}>
-                <div className="wcu-subtitle">Top Reasons</div>
                 <div className="wcu-title">
                   <h2>Top Reasons To Choose Tulip Dental for Oral Surgery?</h2>
                 </div>
