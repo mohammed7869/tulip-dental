@@ -45,7 +45,7 @@ export default function ServiceAreasPage() {
               <Zoom cascade damping={0.3} duration={800}>
                 <div className="main-image">
                   <img
-                    src="/Images/Servicearea2 (1).webp"
+                    src="/Images/vauxhall.jpeg"
                     alt="Main Banner"
                     className="rounded-xl"
                   />
@@ -171,7 +171,7 @@ export default function ServiceAreasPage() {
           <div className="wcu-img-section">
             <Zoom cascade damping={0.3} duration={800}>
               <img
-                src="/Images/newark-1.jpeg"
+                src="/Images/vauxhall-1.jpeg"
                 alt="Tulip Dental in Maplewood"
                 className="rounded-xl"
               />

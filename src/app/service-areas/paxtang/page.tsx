@@ -64,7 +64,7 @@ export default function ServiceAreasPage() {
               <Zoom cascade damping={0.3} duration={800}>
                 <div className="main-image">
                   <img
-                    src="/Images/Servicearea1 (1).webp"
+                    src="/Images/newark.jpeg"
                     alt="Main Banner"
                     className="rounded-xl"
                   />

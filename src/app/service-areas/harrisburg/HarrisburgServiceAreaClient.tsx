@@ -177,7 +177,7 @@ export default function HarrisburgServiceAreaClient() {
           <div className="wcu-img-section">
             <Zoom cascade damping={0.3} duration={800}>
               <img
-                src="/Images/newark-1.jpeg"
+                src="/Images/maplewood-1.jpeg"
                 alt="Tulip Dental in Maplewood"
                 className="rounded-xl"
               />
