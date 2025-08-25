@@ -98,14 +98,14 @@ export default function LocationTabs() {
       </div> */}
       <div className="flex flex-col md:flex-row items-center justify-center gap-4">
         {/* Info Block */}
-        <div className="flex-1 text-center relative rounded-lg p-8 text-white shadow-lg overflow-hidden space-y-4">
+        <div className="flex-1 text-center relative bg-primary rounded-lg p-8 text-white shadow-lg overflow-hidden space-y-4">
+          {" "}
           <Bounce>
             <h2 className="text-2xl font-bold">{selected.name}</h2>
           </Bounce>
           <p className="whitespace-pre-line text-white text-xs md:text-base text-center">
             {selected.address}
           </p>
-
           <h3 className="text-md font-medium mt-4">Hours of Operation:</h3>
           <Fade delay={400}>
             <ul className="text-sm text-gray-700">
@@ -126,7 +126,6 @@ export default function LocationTabs() {
               })}
             </ul>
           </Fade>
-
           <div className="mt-6 flex justify-center gap-4 flex-wrap">
             <a
               onClick={() => setIsBookingOpen(true)}
