@@ -122,38 +122,42 @@ export default function EmergencyDentistryPage() {
           <div className="wcu-section">
             <div className="wcu-text-section">
               <Fade cascade direction="up" delay={1000} duration={600}>
-                <div className="wcu-subtitle">Top Reasons</div>
                 <div className="wcu-title">
-                  <h2>Why Choose Maple Dental for Emergency Dental Care?</h2>
+                  <h2>
+                    Top Reasons to Choose Tulip Dental for Emergency Dental Care
+                  </h2>
                 </div>
                 <div className="wcu-points-section">
                   <ul className="wcu-points">
                     <li>
-                      <h3 className="text-lg flex items-center gap-2">
-                        <CheckCircle /> Skilled Dentists with a Gentle Approach
+                      <h3 className="service-point-title">
+                        <CheckCircle className="service-point-icon" />
+                        Skilled Dentists with a Gentle Approach
+                      </h3>
+                    </li>
+
+                    <li>
+                      <h3 className="service-point-title">
+                        <CheckCircle className="service-point-icon" /> Modern
+                        Technology for Fast, Accurate Care
                       </h3>
                     </li>
                     <li>
-                      <h3 className="text-lg flex items-center gap-2">
-                        <CheckCircle /> Modern Technology for Fast, Accurate
-                        Care
+                      <h3 className="service-point-title">
+                        <CheckCircle className="service-point-icon" /> Same-Day
+                        Appointments & Walk-In Availability
                       </h3>
                     </li>
                     <li>
-                      <h3 className="text-lg flex items-center gap-2">
-                        <CheckCircle /> Same-Day Appointments & Walk-In
-                        Availability
+                      <h3 className="service-point-title">
+                        <CheckCircle className="service-point-icon" />{" "}
+                        Convenient Maplewood Location
                       </h3>
                     </li>
                     <li>
-                      <h3 className="text-lg flex items-center gap-2">
-                        <CheckCircle /> Convenient Maplewood Location
-                      </h3>
-                    </li>
-                    <li>
-                      <h3 className="text-lg flex items-center gap-2">
-                        <CheckCircle /> Flexible Payment Options & Insurance
-                        Friendly
+                      <h3 className="service-point-title">
+                        <CheckCircle className="service-point-icon" /> Flexible
+                        Payment Options & Insurance Friendly
                       </h3>
                     </li>
                   </ul>

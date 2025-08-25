@@ -1272,3 +1272,12 @@
     background-position: -200% center;
   }
 }
+
+/* Service page reusable classes */
+.service-point-title {
+  @apply text-sm sm:text-sm md:text-base lg:text-lg flex items-start gap-2 font-normal;
+}
+
+.service-point-icon {
+  @apply shrink-0 mt-1 md:mt-1.5;
+}
