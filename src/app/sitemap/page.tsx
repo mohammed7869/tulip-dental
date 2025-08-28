@@ -50,19 +50,19 @@ export default function SitemapPage() {
       },
       {
         name: "South Orange, NJ",
-        link: "/service-areas/linglestown-pa-dentist-near-you",
+        link: "/service-areas/south-orange-nj-dentist-near-you",
       },
       {
         name: "Irvington, NJ",
-        link: "/service-areas/colonial-park-pa-dentist-near-you",
+        link: "/service-areas/irvington-nj-dentist-near-you",
       },
       {
         name: "Vauxhall, NJ",
-        link: "/service-areas/penbrook-pa-dentist-near-you",
+        link: "/service-areas/vauxhall-nj-dentist-near-you",
       },
       {
         name: "Newark, NJ",
-        link: "/service-areas/paxtang-pa-dentist-near-you",
+        link: "/service-areas/newark-nj-dentist-near-you",
       },
     ],
     "Legal & Information": [

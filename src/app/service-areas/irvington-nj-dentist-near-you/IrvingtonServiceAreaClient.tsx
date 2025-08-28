@@ -47,7 +47,7 @@ export default function IrvingtonServiceAreaClient() {
               <Zoom cascade damping={0.3} duration={800}>
                 <div className="main-image">
                   <img
-                    src="/Images/irvington.jpeg"
+                    src="/Images/Irvington.jpg"
                     alt="Main Banner"
                     className="rounded-xl"
                   />

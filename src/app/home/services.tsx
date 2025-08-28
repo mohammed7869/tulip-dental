@@ -32,7 +32,7 @@ export default function ServicesSection() {
       title: "Emergency Dentistry",
       description: "Urgent oral care services",
       image: "/Images/Emergency Dentistry.jpeg",
-      icon: "/Images/icons/Dental checkup.png",
+      icon: "/Images/icons/emergency denstiry.png",
       href: "/services/emergency-dentistry",
     },
     {
