@@ -12,17 +12,17 @@ import { ArrowRight } from "lucide-react";
 
 const services = [
   {
-    icon: "/Images/icons/implant.png",
+    icon: "/Images/icons/tooth-implant.png",
     price: "1199",
     title: "Dental Implant",
   },
   {
-    icon: "/Images/icons/tooth-whitening.png",
+    icon: "/Images/icons/teeth-whitening.png",
     price: "299",
     title: "Teeth Whitening",
   },
   {
-    icon: "/Images/icons/braces.png",
+    icon: "/Images/icons/braces1.png",
     price: "250",
     title: "Braces",
   },
@@ -30,17 +30,17 @@ const services = [
 
 const features = [
   {
-    icon: "/Images/icons/emergency denstiry.png",
+    icon: "/Images/icons/female-dentist.png",
     title: "Experienced & Friendly Team",
     desc: "Our dentists bring years of clinical expertise and treat every patient with kindness and respect.",
   },
   {
-    icon: "/Images/icons/orthodontics.png",
+    icon: "/Images/icons/perfect-teeth.png",
     title: "Same-Day Emergency Dental Care",
     desc: "We provide prompt, compassionate care for dental emergencies so you’re never left in pain.",
   },
   {
-    icon: "/Images/icons/dental-floss.png",
+    icon: "/Images/icons/dental-chair.png",
     title: "Comprehensive Services in One Location",
     desc: "From cosmetic dentistry to restorative treatments and pediatric care - we offer it all under one roof.",
   },
@@ -178,11 +178,7 @@ export default function AboutUsClient() {
                   <img
                     src={feature.icon}
                     alt={feature.title}
-                    className="w-8 h-8 sm:w-12 sm:h-12 mt-1 flex-shrink-0 animate-shine"
-                    style={{
-                      filter:
-                        "invert(61%) sepia(87%) saturate(316%) hue-rotate(181deg) brightness(95%) contrast(92%)",
-                    }}
+                    className="w-8 h-8 sm:w-12 sm:h-12 mt-1 "
                     loading="lazy"
                   />
 

@@ -21,7 +21,7 @@ export const metadata: Metadata = generateServiceMetadata(
 export default function DentalImplantsPage() {
   const features = [
     {
-      icon: "/Images/icons/implant.png",
+      icon: "/Images/icons/tooth-implant.png",
       title: "Step 1: Comprehensive Evaluation & Planning",
       description:
         "We begin with a detailed evaluation using advanced diagnostics to assess your bone health and develop a fully personalized implant treatment plan.",

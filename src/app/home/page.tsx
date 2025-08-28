@@ -77,17 +77,17 @@ const banners = [
 
 const services = [
   {
-    icon: "/Images/icons/implant.png",
+    icon: "/Images/icons/tooth-implant.png",
     price: "1199",
     title: "Dental Implant",
   },
   {
-    icon: "/Images/icons/tooth-whitening.png",
+    icon: "/Images/icons/teeth-whitening.png",
     price: "299",
     title: "Teeth Whitening",
   },
   {
-    icon: "/Images/icons/braces.png",
+    icon: "/Images/icons/braces1.png",
     price: "250/month",
     title: "Braces",
   },
@@ -154,7 +154,8 @@ export default function HomePage() {
       {/* Modern Hero Banner */}
       <section
         ref={bannerRef}
-        className="relative w-full min-h-[820px] py-8 md:py-12 overflow-hidden bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900"
+        // className="relative w-full min-h-[820px] py-8 md:py-12 overflow-hidden bg-primary"
+        className="relative w-full min-h-[820px] py-8 md:py-12 overflow-hidden bg-gradient-to-br from-primary via-secondary/50  to-tertiary"
         onTouchStart={onTouchStart}
         onTouchMove={onTouchMove}
         onTouchEnd={onTouchEnd}
@@ -191,7 +192,7 @@ export default function HomePage() {
                 <div className="text-white z-20 space-y-4 md:space-y-6 lg:space-y-8 order-2 lg:order-1 pt-4 md:pt-8 pb-16 md:pb-20">
                   <Fade cascade direction="up" delay={300} duration={800}>
                     {/* Badge */}
-                    <div className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-500 to-red-500 text-white px-3 py-2 md:px-4 md:py-3 rounded-full text-xs md:text-sm font-medium shadow-lg">
+                    <div className="inline-flex items-center gap-2 bg-secondary text-white px-3 py-2 md:px-4 md:py-3 rounded-full text-xs md:text-sm font-medium shadow-lg">
                       <Star className="w-3 h-3 md:w-4 md:h-4" />
                       {banner.badge}
                     </div>
@@ -202,7 +203,7 @@ export default function HomePage() {
                     </h1>
 
                     {/* Subtitle */}
-                    <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-300 leading-relaxed max-w-lg mb-4 md:mb-6 text-left">
+                    <p className="text-sm sm:text-base md:text-lg lg:text-xl text-white leading-relaxed max-w-lg mb-4 md:mb-6 text-left">
                       {banner.subtitle}
                     </p>
 
@@ -210,14 +211,14 @@ export default function HomePage() {
                     <div className="bg-white/10 backdrop-blur-md rounded-xl md:rounded-2xl p-3 md:p-6 border border-white/20 shadow-2xl">
                       <div className="flex items-center justify-between">
                         <div>
-                          <p className="text-blue-300 text-xs md:text-sm font-medium">
+                          <p className="text-primary text-xs md:text-sm font-medium">
                             {banner.highlight}
                           </p>
                           <div className="flex items-baseline gap-2">
-                            <span className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold text-white">
+                            <span className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold text-secondary">
                               {banner.price}
                             </span>
-                            <span className="text-gray-400 text-xs md:text-sm">
+                            <span className="text-primary text-xs md:text-sm">
                               {banner.description}
                             </span>
                           </div>
@@ -246,15 +247,9 @@ export default function HomePage() {
                     {/* Trust Indicators */}
                     <div className="flex flex-row items-center gap-3 md:gap-6 pt-2 md:pt-4 mb-8 md:mb-12">
                       <div className="flex items-center gap-2">
-                        <Shield className=" w-4 h-4 md:w-5 md:h-5 text-green-400" />
-                        <span className="text-xs md:text-sm text-gray-300">
-                          Licensed & Insured
-                        </span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <Heart className=" w-4 h-4 md:w-5 md:h-5 text-red-400" />
-                        <span className="text-xs md:text-sm text-gray-300">
-                          Family Owned
+                        <Shield className=" w-4 h-4 md:w-5 md:h-5 text-secondary" />
+                        <span className="text-xs md:text-sm text-primary">
+                          Most Insurances Accepted
                         </span>
                       </div>
                     </div>
@@ -276,7 +271,7 @@ export default function HomePage() {
                         {/* Floating Stats Card */}
                         <div className="absolute -bottom-2 -left-2 md:-bottom-6 md:-left-6 bg-white rounded-xl md:rounded-2xl p-2 md:p-4 shadow-xl">
                           <div className="text-center">
-                            <div className="text-lg md:text-2xl font-bold text-blue-600">
+                            <div className="text-lg md:text-2xl font-bold text-primary">
                               500+
                             </div>
                             <div className="text-xs md:text-sm text-gray-600">

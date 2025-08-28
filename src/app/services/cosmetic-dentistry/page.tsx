@@ -20,7 +20,7 @@ export const metadata: Metadata = generateServiceMetadata(
 export default function CosmeticDentistryPage() {
   const features = [
     {
-      icon: "/Images/icons/tooth-whitening.png",
+      icon: "/Images/icons/teeth-whitening.png",
       title: "Our Most Popular Cosmetic Services",
       description:
         "Our cosmetic offerings are designed to fit a range of goals, timelines, and budgets.",

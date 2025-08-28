@@ -1,27 +1,27 @@
-import Image from 'next/image'
+import Image from "next/image";
 
 const partners = [
   {
-    name: 'PERELEX',
-    icon: '/Images/dental-care.png',
+    name: "PERELEX",
+    icon: "/Images/dental-care.png",
   },
   {
-    name: 'DENTONIX',
-    icon: '/Images/teeth-whitening.png',
+    name: "DENTONIX",
+    icon: "/Images/teeth-whitening.png",
   },
   {
-    name: 'SENOFEX',
-    icon: '/Images/implant.png',
+    name: "SENOFEX",
+    icon: "/Images/tooth-implant.png",
   },
   {
-    name: 'MEDILEX',
-    icon: '/Images/braces.png.png',
+    name: "MEDILEX",
+    icon: "/Images/braces1.png.png",
   },
   {
-    name: 'ZELOMEX',
-    icon: '/Images/tooth-insurance.png.png',
-  }
-]
+    name: "ZELOMEX",
+    icon: "/Images/tooth-insurance.png.png",
+  },
+];
 
 export default function PartnerLogos() {
   return (
@@ -29,7 +29,7 @@ export default function PartnerLogos() {
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex flex-wrap justify-center items-center gap-12">
           {partners.map((partner, index) => (
-            <div 
+            <div
               key={index}
               className="flex flex-col items-center text-center group hover:scale-105 transition-transform duration-300"
             >
@@ -50,5 +50,5 @@ export default function PartnerLogos() {
         </div>
       </div>
     </section>
-  )
-} 
+  );
+}

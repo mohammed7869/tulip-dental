@@ -29,7 +29,7 @@ export default function Page() {
       ],
     },
     {
-      icon: "/Images/icons/Wisdom Tooth Removal in Harrisburg.png",
+      icon: "/Images/icons/tooth-extraction.png",
       title: "Safe & Comfortable Extraction Procedures",
       description:
         "Whether you need a simple extraction or complex surgical removal, we prioritize your safety and comfort above all else.",

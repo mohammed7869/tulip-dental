@@ -40,7 +40,7 @@ export default function ServicesSection() {
       title: "Teeth Whitening",
       description: "Brighten your smile",
       image: "/Images/Whitening Veneers.png",
-      icon: "/Images/icons/tooth-whitening.png",
+      icon: "/Images/icons/teeth-whitening.png",
       href: "/services/whitening-&-veneers",
     },
     {
@@ -48,7 +48,7 @@ export default function ServicesSection() {
       title: "Orthodontics",
       description: "Orthodontic correction",
       image: "/Images/Orthodontics.jpg",
-      icon: "/Images/icons/braces.png",
+      icon: "/Images/icons/braces1.png",
       href: "/services/orthodontics",
     },
     {
@@ -64,7 +64,7 @@ export default function ServicesSection() {
       title: "Dental Implants",
       description: "Permanent tooth replacement",
       image: "/Images/Dental Implants.jpg",
-      icon: "/Images/icons/implant.png",
+      icon: "/Images/icons/tooth-implant.png",
       href: "/services/dental-implants",
     },
     {
@@ -88,7 +88,7 @@ export default function ServicesSection() {
       title: "Crowns and Bridges",
       description: "Restore damaged teeth",
       image: "/Images/Dental Crown Bridge.jpg",
-      icon: "/Images/icons/dental-crown (1).png",
+      icon: "/Images/icons/dental-crown.png",
       href: "/services/crowns-and-bridges",
     },
     {
