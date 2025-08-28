@@ -176,7 +176,7 @@ export default function IrvingtonServiceAreaClient() {
           <div className="wcu-img-section">
             <Zoom cascade damping={0.3} duration={800}>
               <img
-                src="/Images/irvington-1.jpeg"
+                src="/Images/Irvington-1.jpeg"
                 alt="Tulip Dental in Irvington"
                 className="rounded-xl"
               />
