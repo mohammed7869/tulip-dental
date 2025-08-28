@@ -5,119 +5,119 @@ const nextConfig: NextConfig = {
     return [
       {
         source: "/about-us",
-        destination: "/about-maple-dental-harrisburg-pa",
+        destination: "/about-tulip-dental-maplewood-nj",
         permanent: true,
       },
       // Service redirects
       {
         source: "/services/emergency-dentistry",
-        destination: "/services/emergency-dentistry-harrisburg-pa",
+        destination: "/services/emergency-dentistry-maplewood-nj",
         permanent: true,
       },
       {
         source: "/services/root-canal",
-        destination: "/services/root-canal-treatment-harrisburg-pa",
+        destination: "/services/root-canal-treatment-maplewood-nj",
         permanent: true,
       },
       {
         source: "/services/oral-surgery",
-        destination: "/services/oral-surgery-harrisburg-pa",
+        destination: "/services/oral-surgery-maplewood-nj",
         permanent: true,
       },
       {
         source: "/services/cosmetic-dentistry",
-        destination: "/services/cosmetic-dentistry-harrisburg-pa",
+        destination: "/services/cosmetic-dentistry-maplewood-nj",
         permanent: true,
       },
       {
         source: "/services/dental-fillings",
-        destination: "/services/dental-fillings-harrisburg-pa",
+        destination: "/services/dental-fillings-maplewood-nj",
         permanent: true,
       },
       {
         source: "/services/dental-implants",
-        destination: "/services/dental-implants-harrisburg-pa",
+        destination: "/services/dental-implants-maplewood-nj",
         permanent: true,
       },
       {
         source: "/services/orthodontics",
-        destination: "/services/orthodontics-harrisburg-pa",
+        destination: "/services/orthodontics-maplewood-nj",
         permanent: true,
       },
       {
         source: "/services/crowns-and-bridges",
-        destination: "/services/crowns-and-bridges-harrisburg-pa",
+        destination: "/services/crowns-and-bridges-maplewood-nj",
         permanent: true,
       },
       {
         source: "/services/dental-emergencies",
-        destination: "/services/dental-emergencies-harrisburg-pa",
+        destination: "/services/dental-emergencies-maplewood-nj",
         permanent: true,
       },
       {
         source: "/services/tooth-extraction",
-        destination: "/services/tooth-extraction-harrisburg-pa",
+        destination: "/services/tooth-extraction-maplewood-nj",
         permanent: true,
       },
       {
         source: "/services/whitening-&-veneers",
-        destination: "/services/teeth-whitening-and-veneers-harrisburg-pa",
+        destination: "/services/teeth-whitening-and-veneers-maplewood-nj",
         permanent: true,
       },
       {
         source: "/services/invisalign",
-        destination: "/services/invisalign-clear-aligners-harrisburg-pa",
+        destination: "/services/invisalign-clear-aligners-maplewood-nj",
         permanent: true,
       },
       {
         source: "/services/kids-&-children-dentistry",
-        destination: "/services/kids-and-children-dentistry-harrisburg-pa",
+        destination: "/services/kids-and-children-dentistry-maplewood-nj",
         permanent: true,
       },
       {
         source: "/services/permanent-teeth-replacement",
-        destination: "/services/permanent-teeth-replacement-harrisburg-pa",
+        destination: "/services/permanent-teeth-replacement-maplewood-nj",
         permanent: true,
       },
       {
         source: "/services/wisdom-teeth",
-        destination: "/services/wisdom-teeth-harrisburg-pa",
+        destination: "/services/wisdom-teeth-maplewood-nj",
         permanent: true,
       },
       {
         source: "/services/endodontics",
-        destination: "/services/endodontics-harrisburg-pa",
+        destination: "/services/endodontics-maplewood-nj",
         permanent: true,
       },
       {
         source: "/services/same-day-dentistry",
-        destination: "/services/same-day-dentistry-harrisburg-pa",
+        destination: "/services/same-day-dentistry-maplewood-nj",
         permanent: true,
       },
       {
         source: "/services/painless-treatment",
-        destination: "/services/painless-treatment-harrisburg-pa",
+        destination: "/services/painless-treatment-maplewood-nj",
         permanent: true,
       },
       {
         source: "/services/perio-protect",
-        destination: "/services/perio-protect-harrisburg-pa",
+        destination: "/services/perio-protect-maplewood-nj",
         permanent: true,
       },
       {
         source: "/services/halitosis",
-        destination: "/services/halitosis-harrisburg-pa",
+        destination: "/services/halitosis-maplewood-nj",
         permanent: true,
       },
       {
         source: "/services/sports-dentistry",
-        destination: "/services/sports-dentistry-harrisburg-pa",
+        destination: "/services/sports-dentistry-maplewood-nj",
         permanent: true,
       },
       // Service area redirects
       {
-        source: "/service-areas/harrisburg",
-        destination: "/service-areas/harrisburg-pa-dentist-near-you",
+        source: "/service-areas/maplewood",
+        destination: "/service-areas/maplewood-nj-dentist-near-you",
         permanent: true,
       },
       {
@@ -153,17 +153,17 @@ const nextConfig: NextConfig = {
       // Other page redirects
       {
         source: "/offers",
-        destination: "/teeth-whitening-offer-harrisburg-pa",
+        destination: "/teeth-whitening-offer-maplewood-nj",
         permanent: true,
       },
       {
         source: "/providers/simranjeet-dhaliwal",
-        destination: "/providers/simranjeet-dhaliwal-harrisburg-pa-dentist",
+        destination: "/providers/simranjeet-dhaliwal-maplewood-nj-dentist",
         permanent: true,
       },
       {
         source: "/reviews",
-        destination: "/patient-reviews-harrisburg-pa",
+        destination: "/patient-reviews-maplewood-nj",
         permanent: true,
       },
       {
@@ -173,7 +173,7 @@ const nextConfig: NextConfig = {
       },
       {
         source: "/contact-us",
-        destination: "/contact-maple-dental-harrisburg-pa",
+        destination: "/contact-tulip-dental-maplewood-nj",
         permanent: true,
       },
     ];

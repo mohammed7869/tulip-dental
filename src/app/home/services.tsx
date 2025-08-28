@@ -24,7 +24,7 @@ export default function ServicesSection() {
       title: "Cosmetic Dentistry",
       description: "Cosmetic dentistry services",
       image: "/Images/Cosmetic Dentistry.jpg",
-      icon: "/Images/icons/Dental checkup.png",
+      icon: "/Images/icons/Cosmetic dentistry.png",
       href: "/services/cosmetic-dentistry",
     },
     {
@@ -56,7 +56,7 @@ export default function ServicesSection() {
       title: "Root Canal",
       description: "Save infected teeth",
       image: "/Images/root-canal.jpg",
-      icon: "/Images/icons/root-canal (1).png",
+      icon: "/Images/icons/root-canal.png",
       href: "/services/root-canal",
     },
     {

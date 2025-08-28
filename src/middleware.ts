@@ -7,7 +7,7 @@ export function middleware(request: NextRequest) {
   // Redirect old about-us route to new SEO-optimized route
   if (pathname === "/about-us") {
     return NextResponse.redirect(
-      new URL("/about-maple-dental-harrisburg-pa", request.url),
+      new URL("/about-tulip-dental-maplewood-nj", request.url),
       301
     );
   }
@@ -15,41 +15,35 @@ export function middleware(request: NextRequest) {
   // Redirect old service routes to new SEO-optimized routes
   const serviceRedirects: { [key: string]: string } = {
     "/services/emergency-dentistry":
-      "/services/emergency-dentistry-harrisburg-pa",
-    "/services/root-canal": "/services/root-canal-treatment-harrisburg-pa",
-    "/services/oral-surgery": "/services/oral-surgery-harrisburg-pa",
-    "/services/cosmetic-dentistry":
-      "/services/cosmetic-dentistry-harrisburg-pa",
-    "/services/dental-fillings": "/services/dental-fillings-harrisburg-pa",
-    "/services/dental-implants": "/services/dental-implants-harrisburg-pa",
-    "/services/orthodontics": "/services/orthodontics-harrisburg-pa",
-    "/services/crowns-and-bridges":
-      "/services/crowns-and-bridges-harrisburg-pa",
-    "/services/dental-emergencies":
-      "/services/dental-emergencies-harrisburg-pa",
-    "/services/tooth-extraction": "/services/tooth-extraction-harrisburg-pa",
+      "/services/emergency-dentistry-maplewood-nj",
+    "/services/root-canal": "/services/root-canal-treatment-maplewood-nj",
+    "/services/oral-surgery": "/services/oral-surgery-maplewood-nj",
+    "/services/cosmetic-dentistry": "/services/cosmetic-dentistry-maplewood-nj",
+    "/services/dental-fillings": "/services/dental-fillings-maplewood-nj",
+    "/services/dental-implants": "/services/dental-implants-maplewood-nj",
+    "/services/orthodontics": "/services/orthodontics-maplewood-nj",
+    "/services/crowns-and-bridges": "/services/crowns-and-bridges-maplewood-nj",
+    "/services/dental-emergencies": "/services/dental-emergencies-maplewood-nj",
+    "/services/tooth-extraction": "/services/tooth-extraction-maplewood-nj",
     "/services/whitening-&-veneers":
-      "/services/teeth-whitening-and-veneers-harrisburg-pa",
-    "/services/invisalign": "/services/invisalign-clear-aligners-harrisburg-pa",
+      "/services/teeth-whitening-and-veneers-maplewood-nj",
+    "/services/invisalign": "/services/invisalign-clear-aligners-maplewood-nj",
     "/services/kids-&-children-dentistry":
-      "/services/kids-and-children-dentistry-harrisburg-pa",
+      "/services/kids-and-children-dentistry-maplewood-nj",
     "/services/permanent-teeth-replacement":
-      "/services/permanent-teeth-replacement-harrisburg-pa",
-    "/services/wisdom-teeth": "/services/wisdom-teeth-harrisburg-pa",
-    "/services/endodontics": "/services/endodontics-harrisburg-pa",
-    "/services/same-day-dentistry":
-      "/services/same-day-dentistry-harrisburg-pa",
-    "/services/painless-treatment":
-      "/services/painless-treatment-harrisburg-pa",
-    "/services/perio-protect": "/services/perio-protect-harrisburg-pa",
-    "/services/halitosis": "/services/halitosis-harrisburg-pa",
-    "/services/sports-dentistry": "/services/sports-dentistry-harrisburg-pa",
+      "/services/permanent-teeth-replacement-maplewood-nj",
+    "/services/wisdom-teeth": "/services/wisdom-teeth-maplewood-nj",
+    "/services/endodontics": "/services/endodontics-maplewood-nj",
+    "/services/same-day-dentistry": "/services/same-day-dentistry-maplewood-nj",
+    "/services/painless-treatment": "/services/painless-treatment-maplewood-nj",
+    "/services/perio-protect": "/services/perio-protect-maplewood-nj",
+    "/services/halitosis": "/services/halitosis-maplewood-nj",
+    "/services/sports-dentistry": "/services/sports-dentistry-maplewood-nj",
   };
 
   // Redirect old service area routes to new SEO-optimized routes
   const serviceAreaRedirects: { [key: string]: string } = {
-    "/service-areas/harrisburg":
-      "/service-areas/harrisburg-pa-dentist-near-you",
+    "/service-areas/maplewood": "/service-areas/maplewood-nj-dentist-near-you",
     "/service-areas/linglestown":
       "/service-areas/linglestown-pa-dentist-near-you",
     "/service-areas/colonial-park":
@@ -62,12 +56,12 @@ export function middleware(request: NextRequest) {
 
   // Redirect other pages to new SEO-optimized routes
   const pageRedirects: { [key: string]: string } = {
-    "/offers": "/teeth-whitening-offer-harrisburg-pa",
+    "/offers": "/teeth-whitening-offer-maplewood-nj",
     "/providers/simranjeet-dhaliwal":
-      "/providers/simranjeet-dhaliwal-harrisburg-pa-dentist",
-    "/reviews": "/patient-reviews-harrisburg-pa",
+      "/providers/simranjeet-dhaliwal-maplewood-nj-dentist",
+    "/reviews": "/patient-reviews-maplewood-nj",
     "/blog": "/dental-blog",
-    "/contact-us": "/contact-maple-dental-harrisburg-pa",
+    "/contact-us": "/contact-tulip-dental-maplewood-nj",
   };
 
   // Check if current path needs to be redirected

@@ -436,7 +436,7 @@ export default function HomePage() {
           {/* Left Side - Image */}
           <Slide direction="right" className="w-full md:w-1/2 h-64 md:h-120">
             <img
-              src="/Images/About-Maple-Dental.jpeg"
+              src="/Images/About-Tulip-Dental.jpeg"
               alt="dental-banner"
               className="rounded-md md:rounded-xl mt-8 object-cover shadow-md"
             />

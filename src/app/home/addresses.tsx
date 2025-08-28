@@ -24,7 +24,7 @@ const locations = [
   //     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3047.4354875674995!2d-74.1906044!3d40.7594038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c253e013fd8125%3A0x7497a1117e95a6d5!2s539%20Bloomfield%20Ave%2C%20Newark%2C%20NJ%2007107%2C%20USA!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin",
   // },
   {
-    id: "harrisburg",
+    id: "maplewood",
     name: "Maplewood, NJ",
     address: "1585 Springfield Avenue, Store #1, Maplewood, NJ 07040",
     phone: "973-671-5500",

@@ -9,7 +9,7 @@ import { generatePageMetadata } from "@/lib/metadata";
 // import NewsletterSection from './components/NewsletterSection'
 
 export const metadata: Metadata = generatePageMetadata(
-  "contact-maple-dental-harrisburg-pa",
+  "contact-tulip-dental-maplewood-nj",
   "/Images/Maple-logo.jpeg"
 );
 

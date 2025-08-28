@@ -119,7 +119,7 @@ export default function Footer() {
             <ul className="space-y-2 text-xs sm:text-sm">
               <li>
                 <Link
-                  href="/about-maple-dental-harrisburg-pa"
+                  href="/about-tulip-dental-maplewood-nj"
                   className="hover:underline"
                 >
                   About us
@@ -143,7 +143,7 @@ export default function Footer() {
               {/* <li><Link href="/accessibility" className="hover:underline">Accessibility</Link></li> */}
               <li>
                 <Link
-                  href="/contact-maple-dental-harrisburg-pa"
+                  href="/contact-tulip-dental-maplewood-nj"
                   className="hover:underline"
                 >
                   Contact Us

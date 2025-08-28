@@ -46,7 +46,7 @@ export default function SitemapPage() {
     "Service Areas": [
       {
         name: "Maplewood, NJ",
-        link: "service-areas/harrisburg-pa-dentist-near-you",
+        link: "service-areas/maplewood-nj-dentist-near-you",
       },
       {
         name: "South Orange, NJ",

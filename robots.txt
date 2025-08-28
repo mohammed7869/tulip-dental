@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 Disallow: /cgi-bin/
-Sitemap: https://mapledentalpa.com/sitemap
+Sitemap: https://tulipdentalnj.com/sitemap

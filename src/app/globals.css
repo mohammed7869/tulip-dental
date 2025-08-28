@@ -54,7 +54,8 @@
   --popover-foreground: oklch(0.145 0 0);
   --primary: #0175e4;
   --primary-foreground: #ffff;
-  --secondary: #f37b5d;
+  /* --secondary: #f37b5d; */
+  --secondary: #e72802;
   --secondary-foreground: 210 100% 50%;
   --tertiary: #66aef2;
   --tertiary-foreground: #ffff;
@@ -186,18 +187,27 @@
 
   .details-page-header-section {
     width: 100%;
+    background-color: var(--primary);
     color: #fff;
     padding-left: 2rem;
     padding-right: 2rem;
     padding-top: 3.75rem;
     padding-bottom: 3.75rem;
     text-align: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-      url("/Images/banner-top.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
+    background-image: repeating-linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.05) 0px,
+        rgba(255, 255, 255, 0.05) 1px,
+        transparent 1px,
+        transparent 20px
+      ),
+      repeating-linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0.05) 0px,
+        rgba(255, 255, 255, 0.05) 1px,
+        transparent 1px,
+        transparent 20px
+      );
   }
 
   .details-page-header-section h1 {

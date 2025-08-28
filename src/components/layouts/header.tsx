@@ -91,7 +91,7 @@ export default function Header() {
             Home
           </Link>
           <Link
-            href="/about-maple-dental-harrisburg-pa"
+            href="/about-tulip-dental-maplewood-nj"
             className="hover:text-primary transition"
           >
             About
@@ -348,7 +348,7 @@ export default function Header() {
                 Home
               </Link>
               <Link
-                href="/about-maple-dental-harrisburg-pa"
+                href="/about-tulip-dental-maplewood-nj"
                 className="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-primary transition border-b"
                 onClick={closeMobileMenu}
               >
@@ -430,7 +430,7 @@ export default function Header() {
               </div>
 
               <Link
-                href="/patient-reviews-harrisburg-pa"
+                href="/patient-reviews-maplewood-nj"
                 className="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-primary transition border-b"
                 onClick={closeMobileMenu}
               >
@@ -444,7 +444,7 @@ export default function Header() {
                 Blogs
               </Link>
               <Link
-                href="/contact-maple-dental-harrisburg-pa"
+                href="/contact-tulip-dental-maplewood-nj"
                 className="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-primary transition border-b"
                 onClick={closeMobileMenu}
               >
