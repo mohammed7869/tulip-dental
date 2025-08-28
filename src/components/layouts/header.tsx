@@ -201,18 +201,18 @@ export default function Header() {
                 ].map((service, index) => {
                   let slug = "";
                   if (service === "Maplewood, NJ") {
-                    slug = "harrisburg";
+                    slug = "maplewood-nj-dentist-near-you";
                   } else if (service === "South Orange, NJ") {
-                    slug = "linglestown";
+                    slug = "south-orange-nj-dentist-near-you";
                   }
                   if (service === "Irvington, NJ") {
-                    slug = "colonial-park";
+                    slug = "irvington-nj-dentist-near-you";
                   }
                   if (service === "Vauxhall, NJ") {
-                    slug = "penbrook";
+                    slug = "vauxhall-nj-dentist-near-you";
                   }
                   if (service === "Newark, NJ") {
-                    slug = "paxtang";
+                    slug = "newark-nj-dentist-near-you";
                   }
 
                   return slug ? (
@@ -478,34 +478,26 @@ export default function Header() {
                   <div className="bg-gray-50 px-4 py-2">
                     <div className="grid grid-cols-2 gap-3 mt-2 text-sm">
                       {[
-                        "Harrisburg, PA",
-                        "Linglestown, Harrisburg, PA",
-                        "Colonial Park, PA",
-                        "Penbrook",
-                        "Paxtang",
-                        "Progress",
-                        "Lawnton",
+                        "Maplewood, NJ",
+                        "South Orange, NJ",
+                        "Irvington, NJ",
+                        "Vauxhall, NJ",
+                        "Newark, NJ",
                       ].map((service, index) => {
                         let slug = "";
-                        if (service === "Harrisburg, PA") {
-                          slug = "harrisburg";
-                        } else if (service === "Linglestown, Harrisburg, PA") {
-                          slug = "linglestown";
+                        if (service === "Maplewood, NJ") {
+                          slug = "maplewood-nj-dentist-near-you";
+                        } else if (service === "South Orange, NJ") {
+                          slug = "south-orange-nj-dentist-near-you";
                         }
-                        if (service === "Colonial Park, PA") {
-                          slug = "colonial-park";
+                        if (service === "Irvington, NJ") {
+                          slug = "irvington-nj-dentist-near-you";
                         }
-                        if (service === "Penbrook") {
-                          slug = "penbrook";
+                        if (service === "Vauxhall, NJ") {
+                          slug = "vauxhall-nj-dentist-near-you";
                         }
-                        if (service === "Paxtang") {
-                          slug = "paxtang";
-                        }
-                        if (service === "Progress") {
-                          slug = "progress";
-                        }
-                        if (service === "Lawnton") {
-                          slug = "lawnton";
+                        if (service === "Newark, NJ") {
+                          slug = "newark-nj-dentist-near-you";
                         }
                         return slug ? (
                           <Link

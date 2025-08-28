@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import HarrisburgServiceAreaClient from "../harrisburg/HarrisburgServiceAreaClient";
+import SouthOrangeServiceAreaClient from "./SouthOrangeServiceAreaClient";
 import { generateServiceAreaMetadata } from "@/lib/metadata";
 
 export const metadata: Metadata = generateServiceAreaMetadata(
-  "maplewood-nj-dentist-near-you",
-  "/Images/maplewood service area.webp"
+  "south-orange-nj-dentist-near-you",
+  "/Images/south-orange service area.webp"
 );
 
-export default function MaplewoodNjDentistNearYou() {
-  return <HarrisburgServiceAreaClient />;
+export default function SouthOrangeNjDentistNearYou() {
+  return <SouthOrangeServiceAreaClient />;
 }

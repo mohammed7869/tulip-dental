@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import HarrisburgServiceAreaClient from "../harrisburg/HarrisburgServiceAreaClient";
+import HarrisburgServiceAreaClient from "../maplewood/HarrisburgServiceAreaClient";
 import { generateServiceAreaMetadata } from "@/lib/metadata";
 
 export const metadata: Metadata = generateServiceAreaMetadata(
