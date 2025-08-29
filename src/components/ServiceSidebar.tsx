@@ -1,5 +1,4 @@
-"use client"
-
+"use client";
 
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
@@ -16,8 +15,9 @@ interface ServiceSidebarProps {
   setISSidebarOpen: (open: boolean) => void;
 }
 
-
-export default function ServiceSidebar({ setISSidebarOpen  }: ServiceSidebarProps) {
+export default function ServiceSidebar({
+  setISSidebarOpen,
+}: ServiceSidebarProps) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -31,27 +31,31 @@ export default function ServiceSidebar({ setISSidebarOpen  }: ServiceSidebarProp
     setISSidebarOpen(!isMobileMenuOpen);
   };
 
-    useEffect(() => {
-      const onScroll = () => {
-        setIsScrolled(window.scrollY > 20);
-      };
-  
-      window.addEventListener("scroll", onScroll);
-      return () => window.removeEventListener("scroll", onScroll);
-    }, []);
+  useEffect(() => {
+    const onScroll = () => {
+      setIsScrolled(window.scrollY > 20);
+    };
+
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   return (
     <>
       {/* Mobile Menu Toggle Button - Only visible on mobile */}
-      {!isScrolled&&!isMobileMenuOpen?<div className="fixed bottom-2 md:bottom-8 left-4 z-50">
-        <button
-          onClick={toggleMobileMenu}
-          className="w-full flex flex-col bg-gradient-to-r from-blue-600 to-cyan-600 text-white rounded-lg px-2 py-3 hover:from-blue-700 hover:to-cyan-700 text-xs sm:text-sm font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
-          aria-label="Toggle services menu"
-        >
-           <span>{isScrolled?<MenuIcon/>:<span>More Services</span>}</span>
-        </button>
-      </div>:null}
+      {!isScrolled && !isMobileMenuOpen ? (
+        <div className="fixed bottom-2 md:bottom-8 left-4 z-50">
+          <button
+            onClick={toggleMobileMenu}
+            className="w-full flex flex-col bg-primary text-white rounded-lg px-2 py-3 hover:from-blue-700 hover:to-cyan-700 text-xs sm:text-sm font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+            aria-label="Toggle services menu"
+          >
+            <span>
+              {isScrolled ? <MenuIcon /> : <span>More Services</span>}
+            </span>
+          </button>
+        </div>
+      ) : null}
 
       {/* Mobile Backdrop - Only visible when mobile menu is open */}
       {isMobileMenuOpen && (
@@ -84,7 +88,7 @@ export default function ServiceSidebar({ setISSidebarOpen  }: ServiceSidebarProp
           /* Mobile styles (slide-out) */
           fixed top-16 left-0 z-40 h-[calc(100vh-80px)] w-80 max-w-[85vw]
           transition-transform duration-300 ease-in-out
-          ${isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'}
+          ${isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"}
         `}
         style={{ minWidth: 260, maxWidth: 320 }}
       >
@@ -114,7 +118,7 @@ export default function ServiceSidebar({ setISSidebarOpen  }: ServiceSidebarProp
                   href={service.link}
                   onClick={closeMobileMenu} // Close mobile menu when service is selected
                   className="flex items-center gap-2 rounded-xl py-2 px-4 border border-gray-200 shadow-sm bg-white transition-all duration-200 group hover:bg-[var(--primary)] hover:text-white hover:border-[var(--primary)] focus:bg-[var(--primary)] focus:text-white focus:border-[var(--primary)] w-full overflow-hidden"
-                  style={{ boxShadow: '0 2px 8px 0 rgba(0,0,0,0.05)' }}
+                  style={{ boxShadow: "0 2px 8px 0 rgba(0,0,0,0.05)" }}
                 >
                   <img
                     src={service.icon}

@@ -103,7 +103,7 @@ export default function SitemapPage() {
                   <Link
                     key={page.link}
                     href={page.link}
-                    className="bg-gradient-to-r from-blue-600 to-cyan-600 text-white px-3 py-2 rounded-md text-sm hover:from-blue-700 hover:to-cyan-700 font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 cursor-pointer"
+                    className="bg-[#0087CE] text-white px-3 py-2 rounded-md text-sm hover:from-blue-700 hover:to-cyan-700 font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 cursor-pointer"
                   >
                     <span className="text-xs sm:text-sm text-white font-medium leading-tight">
                       {page.name}

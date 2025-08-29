@@ -3,7 +3,6 @@ import React from "react";
 import { Fade, Slide, Zoom } from "react-awesome-reveal";
 import { Button } from "@/components/ui/button";
 
-
 const privacySections = [
   {
     title: "PRIVACY STATEMENT",
@@ -36,13 +35,13 @@ const privacySections = [
 ];
 
 const sectionIcons = [
-  "/Images/Maple.png",
-  "/Images/Maple.png",
-  "/Images/Maple.png",
-  "/Images/Maple.png",
-  "/Images/Maple.png",
-  "/Images/Maple.png",
-  "/Images/Maple.png",
+  "/Images/tulip.png",
+  "/Images/tulip.png",
+  "/Images/tulip.png",
+  "/Images/tulip.png",
+  "/Images/tulip.png",
+  "/Images/tulip.png",
+  "/Images/tulip.png",
 ];
 
 export default function PrivacyPolicy() {
@@ -52,9 +51,7 @@ export default function PrivacyPolicy() {
       <Fade triggerOnce>
         <section className="details-page-header-section">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 >
-              Privacy Policy
-            </h1>
+            <h1>Privacy Policy</h1>
           </div>
         </section>
       </Fade>
@@ -64,10 +61,11 @@ export default function PrivacyPolicy() {
         <section className="py-4 sm:py-6 md:py-8">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <p className="text-xs sm:text-sm ">
-              <strong>Last Updated:</strong> {new Date().toLocaleDateString('en-US', {
-                year: 'numeric',
-                month: 'long',
-                day: 'numeric',
+              <strong>Last Updated:</strong>{" "}
+              {new Date().toLocaleDateString("en-US", {
+                year: "numeric",
+                month: "long",
+                day: "numeric",
               })}
             </p>
           </div>
@@ -93,9 +91,7 @@ export default function PrivacyPolicy() {
                       <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-primary mb-2 sm:mb-4">
                         {section.title}
                       </h3>
-                      <p className="whitespace-pre-line">
-                        {section.content}
-                      </p>
+                      <p className="whitespace-pre-line">{section.content}</p>
                     </div>
                   </div>
                 </div>
@@ -114,10 +110,16 @@ export default function PrivacyPolicy() {
                 Legal Disclaimer
               </h3>
               <p className="text-sm sm:text-base  leading-relaxed mb-4 sm:mb-6">
-                This privacy policy is subject to change without notice. We reserve the right to modify this policy at any time. Continued use of our services after changes constitutes acceptance of the new policy. For the most current version, please check this page regularly.
+                This privacy policy is subject to change without notice. We
+                reserve the right to modify this policy at any time. Continued
+                use of our services after changes constitutes acceptance of the
+                new policy. For the most current version, please check this page
+                regularly.
               </p>
               <p className="text-xs sm:text-sm ">
-                <strong>Note:</strong> This document is for informational purposes only and does not constitute legal advice. Please consult with a legal professional for specific legal guidance.
+                <strong>Note:</strong> This document is for informational
+                purposes only and does not constitute legal advice. Please
+                consult with a legal professional for specific legal guidance.
               </p>
             </div>
           </div>
@@ -125,7 +127,6 @@ export default function PrivacyPolicy() {
       </Fade>
 
       {/* Floating Scroll to Top Button */}
-      
     </div>
   );
-} 
+}

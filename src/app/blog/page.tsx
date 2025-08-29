@@ -10,7 +10,8 @@ import { Fade, Slide } from "react-awesome-reveal";
 const blogPosts = [
   {
     id: 1,
-    title: "How to Handle Dental Emergencies in Maplewood | Tulip Dental Tips",
+    title:
+      "Emergency Dentistry in Maplewood NJ | Expert Dentists from Tulip Dental",
     date: "Jul 16, 2025",
     description:
       "Picture this: you're enjoying a quiet evening in Maplewood when suddenly, excruciating tooth pain strikes like lightning. Dental emergencies don't wait for convenient times, and knowing how to handle them can mean the difference between saving and losing a tooth",

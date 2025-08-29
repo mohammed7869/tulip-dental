@@ -109,7 +109,7 @@ export default function ContactForm() {
         {/* Header */}
         <div className="relative z-10 mb-8">
           <div className="flex items-center gap-3 mb-2">
-            <div className="w-10 h-10 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-lg flex items-center justify-center">
+            <div className="w-10 h-10 bg-[#0087CE] rounded-lg flex items-center justify-center">
               <MessageSquare className="w-5 h-5 text-white" />
             </div>
             <h3 className="text-2xl font-bold text-gray-800">Get In Touch</h3>
@@ -249,7 +249,7 @@ export default function ContactForm() {
             <button
               type="submit"
               disabled={isSubmitting}
-              className="group relative w-full md:w-auto px-8 py-4 bg-gradient-to-r from-blue-600 to-cyan-600 text-white font-semibold rounded-xl hover:from-cyan-600 hover:to-blue-700 focus:ring-4 focus:ring-cyan-500/25 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 disabled:opacity-70 disabled:cursor-not-allowed disabled:transform-none"
+              className="group relative w-full md:w-auto px-8 py-4 bg-primary text-white font-semibold rounded-xl hover:from-blue-700 hover:to-cyan-700 focus:ring-4 focus:ring-cyan-500/25 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 disabled:opacity-70 disabled:cursor-not-allowed disabled:transform-none"
             >
               <span className="flex items-center justify-center gap-3">
                 {isSubmitting ? (

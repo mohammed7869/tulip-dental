@@ -24,7 +24,7 @@ export default function Accessibility() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            www.tulipdentalmaplewood.com
+            www.tulipdentalnj.com
           </a>
         </p>
         <section className="mb-6">
@@ -62,9 +62,9 @@ export default function Accessibility() {
             dictation tools, and keyboard-only navigation.
           </p>
           <p className="font-bold">
-            AudioEye certifies that www.tulipdentalmaplewood.com has engaged
-            AudioEye to help www.tulipdentalmaplewood.com conform with WCAG 2.2
-            Level, AA Success Criteria.
+            AudioEye certifies that www.tulipdentalnj.com has engaged AudioEye
+            to help www.tulipdentalnj.com conform with WCAG 2.2 Level, AA
+            Success Criteria.
           </p>
           <p>
             AudioEye uses the following web browsers and web-based assistive
@@ -89,15 +89,14 @@ export default function Accessibility() {
           </h2>
           <p>
             Please see more information about WCAG compliance. Improving the
-            user experience for everyone www.tulipdentalmaplewood.com has
-            leveraged the Web Content Accessibility Guidelines (WCAG) 2.2 as
-            reference to help ensure the web content made available from this
-            website is more accessible for individuals with disabilities and
-            user-friendly for everyone. These globally recognized best practices
-            (as recommended by the World Wide Web Consortium) consist of three
-            levels of accessibility measurement (A, AA, and AAA). AudioEye
-            references Level AA of these guidelines in helping provide
-            accessibility.
+            user experience for everyone www.tulipdentalnj.com has leveraged the
+            Web Content Accessibility Guidelines (WCAG) 2.2 as reference to help
+            ensure the web content made available from this website is more
+            accessible for individuals with disabilities and user-friendly for
+            everyone. These globally recognized best practices (as recommended
+            by the World Wide Web Consortium) consist of three levels of
+            accessibility measurement (A, AA, and AAA). AudioEye references
+            Level AA of these guidelines in helping provide accessibility.
           </p>
         </section>
 
@@ -113,7 +112,7 @@ export default function Accessibility() {
           <p className="mb-2">
             AudioEye is available to assist website visitors with any issues
             accessing content and the various services and functions made
-            available across www.tulipdentalmaplewood.com. Website visitors are
+            available across www.tulipdentalnj.com. Website visitors are
             encouraged to engage with the Help Desk to report and troubleshoot
             web accessibility related issues.
           </p>

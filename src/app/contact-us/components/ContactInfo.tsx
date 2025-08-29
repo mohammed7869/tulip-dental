@@ -11,7 +11,7 @@ export default function ContactInfo() {
     "Sunday: Closed",
   ];
   return (
-    <div className="relative bg-primary rounded-lg p-8 text-white shadow-lg overflow-hidden">
+    <div className="relative bg-[#0087CE] rounded-lg p-8 text-white shadow-lg overflow-hidden">
       {/* Background Image */}
       {/* <div className="absolute inset-0 opacity-10">
         <img
@@ -22,7 +22,7 @@ export default function ContactInfo() {
       </div> */}
 
       {/* Green square decoration */}
-      <div className="absolute top-4 left-4 w-4 h-4 bg-gradient-to-r from-blue-600 to-cyan-600"></div>
+      <div className="absolute top-4 left-4 w-4 h-4 bg-primary"></div>
 
       {/* Up arrow decoration */}
       <div className="absolute top-4 right-4 text-emerald-500">

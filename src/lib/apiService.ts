@@ -60,7 +60,15 @@ export interface AppointmentBooking {
   provider: string | Location; // Can be string or Location object
   source: string;
   reason: string;
-  status: 'Requested' | 'Booked' | 'Cancelled' | 'No-Show' | 'Rescheduled' | 'Invalid' | 'Archived' | 'Booked in EMR';
+  status:
+    | "Requested"
+    | "Booked"
+    | "Cancelled"
+    | "No-Show"
+    | "Rescheduled"
+    | "Invalid"
+    | "Archived"
+    | "Booked in EMR";
   isNewClient: boolean;
   insuranceInfo?: {
     provider: string;
@@ -78,8 +86,12 @@ export interface AppointmentBooking {
     dateOfBirth?: string;
     gender?: string;
   };
-  reminderStatus?: 'Patient Confirmed' | 'Patient Not Confirmed' | 'Reminder Sent' | 'Reminder Not Sent';
-  appointmentOrigin?: 'PatientPop' | 'Intelpation' | 'Yelp' | 'Online';
+  reminderStatus?:
+    | "Patient Confirmed"
+    | "Patient Not Confirmed"
+    | "Reminder Sent"
+    | "Reminder Not Sent";
+  appointmentOrigin?: "PatientPop" | "Intelpation" | "Yelp" | "Online";
   createdAt: Date;
   updatedAt: Date;
   notes?: string;
@@ -122,16 +134,19 @@ export interface TimeSlotWithAvailability {
 }
 
 class ApiService {
-  private readonly baseUrl = 'https://api.baawancrm.com/api/1';
-  private readonly tenantId = '4'; // X-Tenant-ID header value
+  private readonly baseUrl = "https://api.baawancrm.com/api/1";
+  private readonly tenantId = "6"; // X-Tenant-ID header value
 
-  private async makeRequest<T>(endpoint: string, options: RequestInit = {}): Promise<T> {
+  private async makeRequest<T>(
+    endpoint: string,
+    options: RequestInit = {}
+  ): Promise<T> {
     const url = `${this.baseUrl}${endpoint}`;
 
     // Create headers object more explicitly
     const headers = new Headers();
-    headers.set('Content-Type', 'application/json');
-    headers.set('X-Tenant-ID', this.tenantId);
+    headers.set("Content-Type", "application/json");
+    headers.set("X-Tenant-ID", this.tenantId);
 
     // Add any additional headers from options
     if (options.headers) {
@@ -143,25 +158,34 @@ class ApiService {
 
     const config: RequestInit = {
       ...options,
-      mode: 'cors', // Explicitly set CORS mode
-      credentials: 'omit', // Don't send credentials for cross-origin requests
+      mode: "cors", // Explicitly set CORS mode
+      credentials: "omit", // Don't send credentials for cross-origin requests
       headers: headers,
     };
 
     // Debug logging
-    console.log('Making API request to:', url);
-    console.log('Request headers:', Object.fromEntries(headers.entries()));
-    console.log('Request config:', config);
+    console.log("Making API request to:", url);
+    console.log("Request headers:", Object.fromEntries(headers.entries()));
+    console.log("Request config:", config);
 
     try {
       const response = await fetch(url, config);
 
       if (!response.ok) {
-        console.error('API Response not OK:', response.status, response.statusText);
-        console.error('Response headers:', Object.fromEntries(response.headers.entries()));
+        console.error(
+          "API Response not OK:",
+          response.status,
+          response.statusText
+        );
+        console.error(
+          "Response headers:",
+          Object.fromEntries(response.headers.entries())
+        );
         const responseText = await response.text();
-        console.error('Response body:', responseText);
-        throw new Error(`HTTP error! status: ${response.status} - ${responseText}`);
+        console.error("Response body:", responseText);
+        throw new Error(
+          `HTTP error! status: ${response.status} - ${responseText}`
+        );
       }
 
       return await response.json();
@@ -174,125 +198,151 @@ class ApiService {
   // Get all insurance providers
   async getInsuranceList(): Promise<Insurance[]> {
     try {
-      console.log('Fetching insurance list from API...');
-      const data = await this.makeRequest<Insurance[]>('/insurance/list');
-      console.log('Insurance list fetched successfully:', data);
+      console.log("Fetching insurance list from API...");
+      const data = await this.makeRequest<Insurance[]>("/insurance/list");
+      console.log("Insurance list fetched successfully:", data);
       return data;
     } catch (error) {
-      console.error('Error fetching insurance list:', error);
-      throw new Error('Failed to fetch insurance providers. Please try again later.');
+      console.error("Error fetching insurance list:", error);
+      throw new Error(
+        "Failed to fetch insurance providers. Please try again later."
+      );
     }
   }
 
   // Get all locations
   async getLocations(): Promise<Location[]> {
-    return this.makeRequest<Location[]>('/appointment-location/list');
+    return this.makeRequest<Location[]>("/appointment-location/list");
   }
 
   // Get daily time slots
   async getDailyTimeSlots(): Promise<TimeSlot[]> {
-    return this.makeRequest<TimeSlot[]>('/appointment-daily-slot/list');
+    return this.makeRequest<TimeSlot[]>("/appointment-daily-slot/list");
   }
 
   // Get booked slots for a date range and location
-  async getBookedSlots(fromDate: string, toDate: string, locationId: number): Promise<BookedSlot[]> {
+  async getBookedSlots(
+    fromDate: string,
+    toDate: string,
+    locationId: number
+  ): Promise<BookedSlot[]> {
     try {
       const requestBody = {
         fromDate: fromDate,
         toDate: toDate,
-        locationId: locationId
+        locationId: locationId,
       };
 
-      console.log('Fetching booked slots with params:', requestBody);
+      console.log("Fetching booked slots with params:", requestBody);
 
-      const data = await this.makeRequest<BookedSlot[]>('/appointment/booked/slots', {
-        method: 'POST',
-        body: JSON.stringify(requestBody)
-      });
+      const data = await this.makeRequest<BookedSlot[]>(
+        "/appointment/booked/slots",
+        {
+          method: "POST",
+          body: JSON.stringify(requestBody),
+        }
+      );
 
-      console.log('Booked slots fetched successfully:', data);
+      console.log("Booked slots fetched successfully:", data);
       return data;
     } catch (error) {
-      console.error('Error fetching booked slots:', error);
+      console.error("Error fetching booked slots:", error);
       return []; // Return empty array on error to avoid breaking the UI
     }
   }
 
   // Create a new appointment booking
-  async createBooking(bookingData: Omit<AppointmentBooking, 'id' | 'createdAt' | 'updatedAt'>): Promise<AppointmentBooking> {
+  async createBooking(
+    bookingData: Omit<AppointmentBooking, "id" | "createdAt" | "updatedAt">
+  ): Promise<AppointmentBooking> {
     try {
-      console.log('Creating appointment with data:', bookingData);
+      console.log("Creating appointment with data:", bookingData);
 
       // First create appointment with external API
-      const appointmentResponse = await this.createExternalAppointment(bookingData);
-      console.log('External API response:', appointmentResponse);
+      const appointmentResponse = await this.createExternalAppointment(
+        bookingData
+      );
+      console.log("External API response:", appointmentResponse);
 
       const appointmentData = {
         ...bookingData,
         createdAt: new Date(),
         updatedAt: new Date(),
-        status: 'Requested' as const,
-        source: 'Online' as const,
-        appointmentOrigin: 'Online' as const
+        status: "Requested" as const,
+        source: "Online" as const,
+        appointmentOrigin: "Online" as const,
       };
 
-      console.log('Appointment data processed:', appointmentData);
+      console.log("Appointment data processed:", appointmentData);
 
       // Return the booking with a simulated ID
       return {
         ...appointmentData,
-        id: `booking_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`
+        id: `booking_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`,
       };
     } catch (error) {
-      console.error('Error creating appointment:', error);
-      throw new Error('Failed to create appointment booking');
+      console.error("Error creating appointment:", error);
+      throw new Error("Failed to create appointment booking");
     }
   }
 
   // Create appointment in external API
-  async createExternalAppointment(bookingData: Omit<AppointmentBooking, 'id' | 'createdAt' | 'updatedAt'>) {
+  async createExternalAppointment(
+    bookingData: Omit<AppointmentBooking, "id" | "createdAt" | "updatedAt">
+  ) {
     try {
       // Map our form data to external API format
       const appointmentData = this.mapToExternalFormat(bookingData);
 
-      console.log('Sending to external API:', JSON.stringify(appointmentData, null, 2));
-      console.log('Insurance ID being sent:', appointmentData.insuranceId);
-      console.log('Has insurance being sent:', appointmentData.hasInsurance);
+      console.log(
+        "Sending to external API:",
+        JSON.stringify(appointmentData, null, 2)
+      );
+      console.log("Insurance ID being sent:", appointmentData.insuranceId);
+      console.log("Has insurance being sent:", appointmentData.hasInsurance);
 
-      const result = await this.makeRequest('/appointment/book', {
-        method: 'POST',
-        body: JSON.stringify(appointmentData)
+      const result = await this.makeRequest("/appointment/book", {
+        method: "POST",
+        body: JSON.stringify(appointmentData),
       });
 
-      console.log('External API success:', result);
+      console.log("External API success:", result);
       return result;
     } catch (error) {
-      console.error('Error calling external API:', error);
+      console.error("Error calling external API:", error);
       // Don't throw error here - let the appointment continue even if external API fails
       return null;
     }
   }
 
   // Map our booking data to external API format
-  private mapToExternalFormat(bookingData: Omit<AppointmentBooking, 'id' | 'createdAt' | 'updatedAt'>) {
+  private mapToExternalFormat(
+    bookingData: Omit<AppointmentBooking, "id" | "createdAt" | "updatedAt">
+  ) {
     // Parse name into first and last name
-    const nameParts = bookingData.patientName.split(' ');
-    const firstName = nameParts[0] || '';
-    const lastName = nameParts.slice(1).join(' ') || '';
+    const nameParts = bookingData.patientName.split(" ");
+    const firstName = nameParts[0] || "";
+    const lastName = nameParts.slice(1).join(" ") || "";
 
     // Parse appointment date and time
     const appointmentDate = new Date(bookingData.appointmentDate);
-    const timeString = bookingData.appointmentTime.replace(/\s*(AM|PM)/i, ''); // Remove AM/PM
-    const [hours, minutes] = timeString.split(':');
+    const timeString = bookingData.appointmentTime.replace(/\s*(AM|PM)/i, ""); // Remove AM/PM
+    const [hours, minutes] = timeString.split(":");
 
     // Create full appointment datetime
     const appointmentDateTime = new Date(appointmentDate);
     let hour = parseInt(hours);
 
     // Handle AM/PM conversion
-    if (bookingData.appointmentTime.toLowerCase().includes('pm') && hour !== 12) {
+    if (
+      bookingData.appointmentTime.toLowerCase().includes("pm") &&
+      hour !== 12
+    ) {
       hour += 12;
-    } else if (bookingData.appointmentTime.toLowerCase().includes('am') && hour === 12) {
+    } else if (
+      bookingData.appointmentTime.toLowerCase().includes("am") &&
+      hour === 12
+    ) {
       hour = 0;
     }
 
@@ -303,21 +353,31 @@ class ApiService {
     endDateTime.setMinutes(endDateTime.getMinutes() + 30);
 
     // Format times as "HH:MM:SS"
-    const startTime = `${hour.toString().padStart(2, '0')}:${minutes.padStart(2, '0')}:00`;
-    const endTime = `${endDateTime.getHours().toString().padStart(2, '0')}:${endDateTime.getMinutes().toString().padStart(2, '0')}:00`;
+    const startTime = `${hour.toString().padStart(2, "0")}:${minutes.padStart(
+      2,
+      "0"
+    )}:00`;
+    const endTime = `${endDateTime
+      .getHours()
+      .toString()
+      .padStart(2, "0")}:${endDateTime
+      .getMinutes()
+      .toString()
+      .padStart(2, "0")}:00`;
 
     // Map insurance information
     const hasInsurance = !!bookingData.insuranceInfo;
-    const insuranceId = hasInsurance && bookingData.insuranceInfo?.providerId
-      ? parseInt(bookingData.insuranceInfo.providerId)
-      : null; // Use actual selected insurance ID or null if no insurance
-    
+    const insuranceId =
+      hasInsurance && bookingData.insuranceInfo?.providerId
+        ? parseInt(bookingData.insuranceInfo.providerId)
+        : null; // Use actual selected insurance ID or null if no insurance
+
     // Debug logging for insurance data
-    console.log('Insurance mapping debug:', {
+    console.log("Insurance mapping debug:", {
       hasInsurance,
       insuranceInfo: bookingData.insuranceInfo,
       providerId: bookingData.insuranceInfo?.providerId,
-      insuranceId
+      insuranceId,
     });
 
     // Handle date of birth (optional)
@@ -328,11 +388,11 @@ class ApiService {
 
     // Get location details from the provider object
     const locationData = bookingData.provider as any; // Cast to any to access location properties
-    const city = locationData?.city || '';
-    const state = locationData?.state || '';
-    const address = locationData?.address || '';
-    const zipCode = locationData?.zipcode || locationData?.zipCode || '';
-    const locationName = locationData?.name || '';
+    const city = locationData?.city || "";
+    const state = locationData?.state || "";
+    const address = locationData?.address || "";
+    const zipCode = locationData?.zipcode || locationData?.zipCode || "";
+    const locationName = locationData?.name || "";
 
     const externalData = {
       reasonForVisit: bookingData.reason || "General consultation",
@@ -357,64 +417,69 @@ class ApiService {
       state: state,
       address: address,
       zipCode: zipCode,
-      locationName: locationName
+      locationName: locationName,
     };
-    
+
     // Debug logging for final external data
-    console.log('Final external API data:', externalData);
-    
+    console.log("Final external API data:", externalData);
+
     return externalData;
   }
 
   // Convert form data to appointment booking
-  convertFormDataToBooking(formData: BookingFormData): Omit<AppointmentBooking, 'id' | 'createdAt' | 'updatedAt'> {
+  convertFormDataToBooking(
+    formData: BookingFormData
+  ): Omit<AppointmentBooking, "id" | "createdAt" | "updatedAt"> {
     // Validate required fields
     if (!formData.patientName) {
-      throw new Error('Patient name is required');
+      throw new Error("Patient name is required");
     }
     if (!formData.email) {
-      throw new Error('Email is required');
+      throw new Error("Email is required");
     }
     if (!formData.phone) {
-      throw new Error('Phone is required');
+      throw new Error("Phone is required");
     }
     if (!formData.selectedDate) {
-      throw new Error('Appointment date is required');
+      throw new Error("Appointment date is required");
     }
     if (!formData.selectedTime) {
-      throw new Error('Appointment time is required');
+      throw new Error("Appointment time is required");
     }
     if (!formData.selectedLocation) {
-      throw new Error('Location is required');
+      throw new Error("Location is required");
     }
 
-    const bookingData: Omit<AppointmentBooking, 'id' | 'createdAt' | 'updatedAt'> = {
+    const bookingData: Omit<
+      AppointmentBooking,
+      "id" | "createdAt" | "updatedAt"
+    > = {
       patientName: formData.patientName,
       email: formData.email,
       phone: formData.phone,
       appointmentDate: new Date(formData.selectedDate),
       appointmentTime: formData.selectedTime,
-      duration: '30 minutes', // Default duration
+      duration: "30 minutes", // Default duration
       location: formData.selectedLocation,
       locationId: formData.selectedLocationId, // Include the actual location ID
-      provider: formData.provider || 'Not Available', // Use the provider object from form data
-      source: 'Online',
-      reason: formData.reason || 'No reason specified',
-      status: 'Requested' as const,
+      provider: formData.provider || "Not Available", // Use the provider object from form data
+      source: "Online",
+      reason: formData.reason || "No reason specified",
+      status: "Requested" as const,
       isNewClient: formData.isNewClient || false,
       insuranceInfo: formData.insuranceInfo,
       contactInfo: {
-        address: formData.contactInfo?.address || '',
-        city: formData.contactInfo?.city || '',
-        state: formData.contactInfo?.state || '',
-        zipCode: formData.contactInfo?.zipCode || '',
-        emergencyContact: formData.contactInfo?.emergencyContact || '',
-        emergencyPhone: formData.contactInfo?.emergencyPhone || '',
+        address: formData.contactInfo?.address || "",
+        city: formData.contactInfo?.city || "",
+        state: formData.contactInfo?.state || "",
+        zipCode: formData.contactInfo?.zipCode || "",
+        emergencyContact: formData.contactInfo?.emergencyContact || "",
+        emergencyPhone: formData.contactInfo?.emergencyPhone || "",
         dateOfBirth: formData.dateOfBirth,
-        gender: formData.gender
+        gender: formData.gender,
       },
-      appointmentOrigin: 'Online' as const,
-      reminderStatus: 'Reminder Not Sent' as const
+      appointmentOrigin: "Online" as const,
+      reminderStatus: "Reminder Not Sent" as const,
     };
 
     return bookingData;
@@ -423,91 +488,109 @@ class ApiService {
   // Get appointment by ID (placeholder for future implementation)
   async getAppointment(id: string): Promise<AppointmentBooking | null> {
     // This would be implemented when the backend provides this endpoint
-    console.log('Getting appointment with ID:', id);
+    console.log("Getting appointment with ID:", id);
     return null;
   }
 
   // Get appointments by email (placeholder for future implementation)
   async getAppointmentsByEmail(email: string): Promise<AppointmentBooking[]> {
     // This would be implemented when the backend provides this endpoint
-    console.log('Getting appointments for email:', email);
+    console.log("Getting appointments for email:", email);
     return [];
   }
 
   // Get appointments by phone (placeholder for future implementation)
   async getAppointmentsByPhone(phone: string): Promise<AppointmentBooking[]> {
     // This would be implemented when the backend provides this endpoint
-    console.log('Getting appointments for phone:', phone);
+    console.log("Getting appointments for phone:", phone);
     return [];
   }
 
   // Check if time slot is available (placeholder for future implementation)
-  async isTimeSlotAvailable(date: Date, time: string, location: string): Promise<boolean> {
+  async isTimeSlotAvailable(
+    date: Date,
+    time: string,
+    location: string
+  ): Promise<boolean> {
     // This would be implemented when the backend provides this endpoint
-    console.log('Checking availability for:', { date, time, location });
+    console.log("Checking availability for:", { date, time, location });
     return true; // Assume available for now
   }
 
   // Update appointment status (placeholder for future implementation)
-  async updateAppointmentStatus(id: string, status: AppointmentBooking['status']): Promise<void> {
+  async updateAppointmentStatus(
+    id: string,
+    status: AppointmentBooking["status"]
+  ): Promise<void> {
     // This would be implemented when the backend provides this endpoint
-    console.log('Updating appointment status:', { id, status });
+    console.log("Updating appointment status:", { id, status });
   }
 
   // Cancel appointment (placeholder for future implementation)
   async cancelAppointment(id: string): Promise<void> {
     // This would be implemented when the backend provides this endpoint
-    console.log('Cancelling appointment:', id);
+    console.log("Cancelling appointment:", id);
   }
 
   // =================== CONTACT FORM METHODS ===================
 
   // Submit contact form
-  async submitContactForm(contactData: ContactFormData): Promise<ContactSubmissionResponse> {
+  async submitContactForm(
+    contactData: ContactFormData
+  ): Promise<ContactSubmissionResponse> {
     try {
-      console.log('Submitting contact form with data:', contactData);
+      console.log("Submitting contact form with data:", contactData);
 
       // Validate required fields
       if (!contactData.name?.trim()) {
-        throw new Error('Name is required');
+        throw new Error("Name is required");
       }
       if (!contactData.email?.trim()) {
-        throw new Error('Email is required');
+        throw new Error("Email is required");
       }
       if (!contactData.subject?.trim()) {
-        throw new Error('Subject is required');
+        throw new Error("Subject is required");
       }
 
       // Basic email validation
       const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
       if (!emailRegex.test(contactData.email)) {
-        throw new Error('Please enter a valid email address');
+        throw new Error("Please enter a valid email address");
       }
 
       const requestData = {
         name: contactData.name.trim(),
         email: contactData.email.trim(),
         subject: contactData.subject.trim(),
-        message: contactData.message?.trim() || '',
-        phoneNumber: contactData.phoneNumber?.trim() || ''
+        message: contactData.message?.trim() || "",
+        phoneNumber: contactData.phoneNumber?.trim() || "",
       };
 
-      const result = await this.makeRequest<ContactSubmissionResponse>('/cms/front/contact-us', {
-        method: 'POST',
-        body: JSON.stringify(requestData)
-      });
+      const result = await this.makeRequest<ContactSubmissionResponse>(
+        "/cms/front/contact-us",
+        {
+          method: "POST",
+          body: JSON.stringify(requestData),
+        }
+      );
 
-      console.log('Contact form submitted successfully:', result);
-      return result.success ? result : {
-        success: true,
-        message: 'Message sent successfully! We\'ll get back to you soon.',
-        id: result.id
-      };
+      console.log("Contact form submitted successfully:", result);
+      return result.success
+        ? result
+        : {
+            success: true,
+            message: "Message sent successfully! We'll get back to you soon.",
+            id: result.id,
+          };
     } catch (error) {
-      console.error('Error submitting contact form:', error);
-      throw new Error(error instanceof Error ? error.message : 'Failed to send message. Please try again.');
+      console.error("Error submitting contact form:", error);
+      throw new Error(
+        error instanceof Error
+          ? error.message
+          : "Failed to send message. Please try again."
+      );
     }
   }
 }
 
-export const apiService = new ApiService(); 
+export const apiService = new ApiService();

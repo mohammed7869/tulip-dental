@@ -189,7 +189,7 @@ const LocationTimeSlots: React.FC<LocationTimeSlotsProps> = ({
                               slot.isBooked
                                 ? "bg-gray-100 text-gray-400 border-gray-200 cursor-not-allowed"
                                 : isSelected
-                                ? "bg-gradient-to-r from-blue-600 to-cyan-600 text-white border-blue-600"
+                                ? "bg-[#0087CE] text-white border-primary"
                                 : "bg-white text-blue-600 border-blue-200 hover:bg-blue-50"
                             }`}
                             title={
@@ -788,9 +788,7 @@ const StepAppointment = ({
             <div
               onClick={() => handleNewClientChange(!isNewClient)}
               className={`w-5 h-5 rounded border-2 cursor-pointer flex items-center justify-center ${
-                isNewClient
-                  ? "bg-gradient-to-r from-blue-600 to-cyan-600 border-blue-600"
-                  : "border-gray-300"
+                isNewClient ? "bg-[#0087CE] border-primary" : "border-gray-300"
               }`}
             >
               {isNewClient && <Check className="w-3 h-3 text-white" />}
@@ -965,7 +963,7 @@ const StepAppointment = ({
                   disabled={isDisabled}
                   className={`flex flex-col items-center px-2 sm:px-4 py-2 sm:py-3 rounded-lg text-xs sm:text-sm min-w-[60px] sm:min-w-[80px] transition-all flex-shrink-0 ${
                     isSelected
-                      ? "bg-gradient-to-r from-blue-600 to-cyan-600 text-white shadow-md"
+                      ? "bg-[#0087CE] text-white shadow-md"
                       : !isDisabled
                       ? "bg-gray-50 hover:bg-gray-100 text-gray-700 border border-gray-200"
                       : "bg-gray-50 text-gray-400 cursor-not-allowed"
@@ -1031,7 +1029,7 @@ const StepAppointment = ({
           <Button
             onClick={handleNext}
             disabled={!selectedTime || !selectedLocation}
-            className="bg-gradient-to-r from-blue-600 to-cyan-600 text-white px-3 py-2 rounded-md text-sm hover:from-blue-700 hover:to-cyan-700 font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
+            className="bg-[#0087CE] text-white px-3 py-2 rounded-md text-sm hover:from-blue-700 hover:to-cyan-700 font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
           >
             Next
           </Button>

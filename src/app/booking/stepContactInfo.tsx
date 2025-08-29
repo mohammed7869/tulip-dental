@@ -274,7 +274,7 @@ const StepContactInfo = ({
                 onClick={() => handlePoliciesChange(!isPoliciesAgreed)}
                 className={`w-5 h-5 rounded border-2 cursor-pointer flex items-center justify-center ${
                   isPoliciesAgreed
-                    ? "bg-gradient-to-r from-blue-600 to-cyan-600 border-blue-600"
+                    ? "bg-[#0087CE] border-blue-600"
                     : "border-gray-300"
                 }`}
               >
@@ -301,7 +301,7 @@ const StepContactInfo = ({
                 onClick={() => handleMessagesChange(!isMessagesAgreed)}
                 className={`w-5 h-5 rounded border-2 cursor-pointer flex items-center justify-center ${
                   isMessagesAgreed
-                    ? "bg-gradient-to-r from-blue-600 to-cyan-600 border-blue-600"
+                    ? "bg-[#0087CE] border-blue-600"
                     : "border-gray-300"
                 }`}
               >
@@ -337,7 +337,7 @@ const StepContactInfo = ({
               !isPoliciesAgreed ||
               !isMessagesAgreed
             }
-            className="bg-gradient-to-r from-blue-600 to-cyan-600 text-white px-3 py-2 rounded-md text-sm hover:from-blue-700 hover:to-cyan-700 font-semibold transition-all duration-300 shadow-lg hover:scale-105 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
+            className="bg-[#0087CE] text-white px-3 py-2 rounded-md text-sm hover:from-blue-700 hover:to-cyan-700 font-semibold transition-all duration-300 shadow-lg hover:scale-105 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
           >
             Next
           </Button>
