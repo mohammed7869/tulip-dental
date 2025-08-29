@@ -93,7 +93,7 @@ const RequestSubmitted = ({ formData }: any) => {
       <div className="mb-6 text-center">
         <button
           onClick={handleAddToCalendar}
-          className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-cyan-600 text-white px-3 py-2 rounded-md text-sm hover:from-blue-700 hover:to-cyan-700 font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 cursor-pointer"
+          className="inline-flex items-center gap-2 bg-primary hover:bg-secondary/80 text-white px-3 py-2 rounded-md text-sm font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 cursor-pointer"
         >
           <Calendar className="w-5 h-5" />
           Add to Google Calendar

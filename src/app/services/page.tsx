@@ -150,7 +150,7 @@ export default function ServicesPage() {
                 </h2>
                 <Link
                   href={service.link}
-                  className=" flex flex-col bg-primary text-white rounded-lg px-1 md:px-4 py-3 hover:from-blue-700 hover:to-cyan-700 text-sm font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+                  className=" flex flex-col bg-primary hover:bg-secondary/80 text-white rounded-lg px-1 md:px-4 py-3 text-sm font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
                 >
                   Learn More
                 </Link>

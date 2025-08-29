@@ -127,7 +127,7 @@ export default function FloatingTextForm() {
       >
         <DialogTrigger asChild>
           <button
-            className={`w-14 h-14 bg-[#0087CE] text-white rounded-full flex items-center justify-center shadow-lg transition-all duration-300 ${
+            className={`w-14 h-14 bg-primary text-white rounded-full flex items-center justify-center shadow-lg transition-all duration-300 ${
               isBouncing ? "animate-bounce" : ""
             }`}
             aria-label="Text us"

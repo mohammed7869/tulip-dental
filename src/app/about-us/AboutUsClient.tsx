@@ -259,7 +259,7 @@ export default function AboutUsClient() {
             </a>
             <button
               onClick={() => setIsBookingOpen(true)}
-              className="w-full flex flex-col bg-primary text-white rounded-lg px-2 py-3 hover:from-blue-700 hover:to-cyan-700 text-xs sm:text-sm font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+              className="w-full flex flex-col bg-primary hover:bg-secondary/80 text-white rounded-lg px-2 py-3 hover:from-blue-700 hover:to-cyan-700 text-xs sm:text-sm font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
             >
               Book Now
               <span className="text-sm sm:text-base ">

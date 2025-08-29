@@ -5,13 +5,13 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#0087ce] text-white py-8 px-2 sm:px-4 md:px-8">
+    <footer className="bg-[#3E3E3E] text-white py-8 px-2 sm:px-4 md:px-8">
       <div className="mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10">
         {/* Left: Logo & About */}
         <div className="space-y-4 col-span-1">
           <div className="flex items-center gap-2 mb-2">
             <Image
-              src="/Images/tulip-large-Blue-white-website-header (1).png"
+              src="/Images/tulip-large-Blue-white-website-header (2).png"
               alt="Tulip Dental Logo"
               width={160}
               height={100}
@@ -170,10 +170,16 @@ export default function Footer() {
             Contact Us
           </h4>
           <div className="text-xs sm:text-sm text-gray-200">
-            <p className="mb-2 text-sm text-[#FFFFFF] flex gap-2 items-start">
+            <a
+              href="https://share.google/usg8mb2Vfv9Bh3v7F"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mb-2 text-sm text-[#FFFFFF] flex gap-2 items-start underline"
+            >
               <MapPin size={16} className="mt-0.5" />
               1585 Springfield Avenue, Store #1, Maplewood, NJ 07040
-            </p>
+            </a>
+
             <p className="mb-2 text-sm text-[#FFFFFF] flex gap-2 items-center">
               <Phone size={16} />{" "}
               <a href="tel:9736715500" className="underline">

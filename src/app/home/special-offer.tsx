@@ -59,7 +59,7 @@ const SpecialOffersSection = () => {
   ];
 
   return (
-    <section className="relative bg-tertiary py-20 overflow-hidden">
+    <section className="relative bg-primary/80 py-20 overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-0 left-0 w-96 h-96 bg-white rounded-full blur-3xl transform -translate-x-1/2 -translate-y-1/2"></div>
@@ -145,7 +145,7 @@ const SpecialOffersSection = () => {
                 {/* CTA Button */}
                 <div className="text-center mt-2">
                   <button
-                    className="group bg-primary text-white px-4 py-2.5 md:px-6 md:py-3 lg:px-8 lg:py-4 rounded-lg md:rounded-xl font-semibold text-sm md:text-base lg:text-lg hover:from-blue-700 hover:to-cyan-700 transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 flex items-center justify-center gap-2 w-full"
+                    className="group bg-primary hover:bg-secondary/80 text-white px-4 py-2.5 md:px-6 md:py-3 lg:px-8 lg:py-4 rounded-lg md:rounded-xl font-semibold text-sm md:text-base lg:text-lg  transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 flex items-center justify-center gap-2 w-full"
                     onClick={() => setIsBookingOpen(true)}
                   >
                     Book Now
@@ -194,7 +194,7 @@ const SpecialOffersSection = () => {
               </a>
               <button
                 onClick={() => setIsBookingOpen(true)}
-                className="inline-flex items-center justify-center gap-3 bg-primary text-white font-semibold py-4 px-8 rounded-xl hover:from-blue-700 hover:to-cyan-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 w-full sm:w-auto min-w-[200px] h-[56px]"
+                className="inline-flex items-center justify-center gap-3 bg-primary hover:bg-secondary/80 text-white font-semibold py-4 px-8 rounded-xl hover:from-blue-700 hover:to-cyan-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 w-full sm:w-auto min-w-[200px] h-[56px]"
               >
                 <Users className="w-5 h-5" />
                 Book Online

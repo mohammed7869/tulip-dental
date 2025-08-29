@@ -244,7 +244,7 @@ export default function Header() {
           </a>
           <button
             onClick={() => setIsBookingOpen(true)}
-            className="bg-primary text-white rounded-lg px-4 py-3 hover:from-blue-700 hover:to-cyan-700 text-sm font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+            className="bg-primary hover:bg-secondary/80 text-white rounded-lg px-4 py-3 text-sm font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
           >
             Book Online
           </button>

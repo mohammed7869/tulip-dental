@@ -59,16 +59,7 @@ export default function PrivacyPolicy() {
       {/* Last Updated Section */}
       <Slide direction="up" triggerOnce>
         <section className="py-4 sm:py-6 md:py-8">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <p className="text-xs sm:text-sm ">
-              <strong>Last Updated:</strong>{" "}
-              {new Date().toLocaleDateString("en-US", {
-                year: "numeric",
-                month: "long",
-                day: "numeric",
-              })}
-            </p>
-          </div>
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center"></div>
         </section>
       </Slide>
 
