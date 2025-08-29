@@ -12,7 +12,7 @@ const BookCallBtnForServiceAreas: React.FC = () => {
       <section className="py-6 px-4 md:px-16 max-w-7xl mx-auto">
         <div className="flex gap-6">
           <a
-            href="tel:7177452700"
+            href="tel:9736715500"
             className="w-full flex flex-col bg-gradient-to-r from-blue-600 to-cyan-600 text-white text-center rounded-lg px-2 md:px-4 py-3 hover:from-blue-700 hover:to-cyan-700 text-sm font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
           >
             <span className="text-[12px] md:text-base">
@@ -22,7 +22,7 @@ const BookCallBtnForServiceAreas: React.FC = () => {
           </a>
           <button
             onClick={() => setIsBookingOpen(true)}
-            className="w-full flex flex-col bg-gradient-to-r from-blue-600 to-cyan-600 text-white rounded-lg px-1 md:px-4 py-3 hover:from-blue-700 hover:to-cyan-700 text-sm font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+            className="w-full flex flex-col bg-primary text-white rounded-lg px-1 md:px-4 py-3 hover:from-blue-700 hover:to-cyan-700 text-sm font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
           >
             Book Online
             <span className="text-[10px] md:text-base">

@@ -175,7 +175,7 @@ export default function DynamicMetadata() {
         name: "Tulip Dental Maplewood",
         description: metadata.description,
         url: `https://tulipdentalnj.com${pathname}`,
-        telephone: "+1-717-745-2700",
+        telephone: "+1-9736715500",
         address: {
           "@type": "PostalAddress",
           streetAddress: "1585 Springfield Avenue, Store #1",

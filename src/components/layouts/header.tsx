@@ -244,7 +244,7 @@ export default function Header() {
           </a>
           <button
             onClick={() => setIsBookingOpen(true)}
-            className="bg-gradient-to-r from-blue-600 to-cyan-600 text-white rounded-lg px-4 py-3 hover:from-blue-700 hover:to-cyan-700 text-sm font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+            className="bg-primary text-white rounded-lg px-4 py-3 hover:from-blue-700 hover:to-cyan-700 text-sm font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
           >
             Book Online
           </button>
@@ -261,7 +261,7 @@ export default function Header() {
           </a>
           <button
             onClick={() => setIsBookingOpen(true)}
-            className="bg-gradient-to-r from-blue-600 to-cyan-600 text-white rounded-lg px-4 py-3 hover:from-blue-700 hover:to-cyan-700 text-xs font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+            className="bg-primary text-white rounded-lg px-4 py-3 hover:from-blue-700 hover:to-cyan-700 text-xs font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
           >
             Book Online
           </button>

@@ -198,7 +198,7 @@ export default function DentalImplantsPage() {
                         key={i}
                         className="feature-list-item flex items-start gap-2"
                       >
-                        <CheckCircle className="text-[#66aef2] shrink-0 mt-[2px]" />
+                        <CheckCircle className="text-primary shrink-0 mt-[2px]" />
                         <span className="leading-snug">{point}</span>
                       </li>
                     ))}

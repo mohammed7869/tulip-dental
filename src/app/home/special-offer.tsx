@@ -145,7 +145,7 @@ const SpecialOffersSection = () => {
                 {/* CTA Button */}
                 <div className="text-center mt-2">
                   <button
-                    className="group bg-gradient-to-r from-blue-600 to-cyan-600 text-white px-4 py-2.5 md:px-6 md:py-3 lg:px-8 lg:py-4 rounded-lg md:rounded-xl font-semibold text-sm md:text-base lg:text-lg hover:from-blue-700 hover:to-cyan-700 transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 flex items-center justify-center gap-2 w-full"
+                    className="group bg-primary text-white px-4 py-2.5 md:px-6 md:py-3 lg:px-8 lg:py-4 rounded-lg md:rounded-xl font-semibold text-sm md:text-base lg:text-lg hover:from-blue-700 hover:to-cyan-700 transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 flex items-center justify-center gap-2 w-full"
                     onClick={() => setIsBookingOpen(true)}
                   >
                     Book Now
@@ -172,7 +172,7 @@ const SpecialOffersSection = () => {
               {languages.map((language, index) => (
                 <span
                   key={index}
-                  className="bg-primary text-white hover:bg-secondary transition-all duration-300 px-4 py-2 font-medium rounded-full text-sm border border-white/30  transition-colors duration-200"
+                  className="bg-primary text-white hover:bg-secondary/80 transition-all duration-300 px-4 py-2 font-medium rounded-full text-sm border border-white/30  transition-colors duration-200"
                 >
                   {language}
                 </span>
@@ -186,7 +186,7 @@ const SpecialOffersSection = () => {
             {/* Call to Action */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <a
-                href="tel:717-745-2700"
+                href="tel:973-671-5500"
                 className="inline-flex items-center justify-center gap-3 bg-white text-primary font-semibold py-4 px-8 rounded-xl hover:bg-blue-50 transition-colors duration-200 shadow-lg hover:shadow-xl w-full sm:w-auto min-w-[200px] h-[56px]"
               >
                 <Phone className="w-5 h-5" />
@@ -194,7 +194,7 @@ const SpecialOffersSection = () => {
               </a>
               <button
                 onClick={() => setIsBookingOpen(true)}
-                className="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-blue-600 to-cyan-600 text-white font-semibold py-4 px-8 rounded-xl hover:from-blue-700 hover:to-cyan-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 w-full sm:w-auto min-w-[200px] h-[56px]"
+                className="inline-flex items-center justify-center gap-3 bg-primary text-white font-semibold py-4 px-8 rounded-xl hover:from-blue-700 hover:to-cyan-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 w-full sm:w-auto min-w-[200px] h-[56px]"
               >
                 <Users className="w-5 h-5" />
                 Book Online

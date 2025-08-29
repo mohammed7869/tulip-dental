@@ -41,7 +41,7 @@ export default function OffersPage() {
 
         <button
           onClick={() => setIsBookingOpen(true)}
-          className="bg-gradient-to-r from-blue-600 to-cyan-600 text-white px-6 py-2 rounded font-semibold shadow-lg hover:shadow-xl hover:from-blue-700 hover:to-cyan-700 transition-all duration-300 transform hover:scale-105"
+          className="bg-primary text-white px-6 py-2 rounded font-semibold shadow-lg hover:shadow-xl hover:from-blue-700 hover:to-cyan-700 transition-all duration-300 transform hover:scale-105"
         >
           Claim Your Special Offer Now
         </button>
@@ -128,23 +128,23 @@ export default function OffersPage() {
           </p>
           <ul className="space-y-2 text-base">
             <li className="flex items-start gap-2">
-              <CheckCircle size={18} className="mt-1 text-cyan-400" />
+              <CheckCircle size={18} className="mt-1" />
               Skilled cosmetic dentists with years of experience
             </li>
             <li className="flex items-start gap-2">
-              <CheckCircle size={18} className="mt-1 text-cyan-400" />
+              <CheckCircle size={18} className="mt-1" />
               Honest, upfront pricing with zero hidden fees
             </li>
             <li className="flex items-start gap-2">
-              <CheckCircle size={18} className="mt-1 text-cyan-400" />
+              <CheckCircle size={18} className="mt-1" />
               Relaxing, modern office environment
             </li>
             <li className="flex items-start gap-2">
-              <CheckCircle size={18} className="mt-1 text-cyan-400" />
+              <CheckCircle size={18} className="mt-1" />
               Convenient appointment times, including same-day options
             </li>
             <li className="flex items-start gap-2">
-              <CheckCircle size={18} className="mt-1 text-cyan-400" />
+              <CheckCircle size={18} className="mt-1" />
               Trusted by families across Maplewood, South Orange, Irvington,
               Vauxhall & Newark
             </li>
@@ -205,7 +205,7 @@ export default function OffersPage() {
         <div className="flex justify-center mt-8">
           <button
             onClick={() => setIsBookingOpen(true)}
-            className="bg-gradient-to-r from-blue-600 to-cyan-600 text-white px-6 py-2 rounded font-semibold shadow-lg hover:shadow-xl hover:from-blue-700 hover:to-cyan-700 transition-all duration-300 transform hover:scale-105"
+            className="bg-primary text-white px-6 py-2 rounded font-semibold shadow-lg hover:shadow-xl hover:from-blue-700 hover:to-cyan-700 transition-all duration-300 transform hover:scale-105"
           >
             Claim Your Free Exam Today!
           </button>

@@ -133,7 +133,7 @@ export default function CosmeticDentistryPage() {
                 <div className="wcu-points-section">
                   <ul className="wcu-points">
                     <li>
-                      <h3 className="text-sm flex items-center gap-2">
+                      <h3 className="text-lg flex items-center gap-2">
                         <CheckCircle /> Personalized Smile Makeovers
                       </h3>
                     </li>
@@ -205,7 +205,7 @@ export default function CosmeticDentistryPage() {
                         key={i}
                         className="feature-list-item flex items-start gap-2"
                       >
-                        <CheckCircle className="text-[#66aef2] shrink-0 mt-[2px]" />
+                        <CheckCircle className="text-primary shrink-0 mt-[2px]" />
                         <span className="leading-snug">{point}</span>
                       </li>
                     ))}

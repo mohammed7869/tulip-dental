@@ -424,7 +424,7 @@ const StepInsuranceInfo = ({
           <Button
             onClick={handleSubmit}
             disabled={submitting}
-            className="bg-gradient-to-r from-blue-600 to-cyan-600 text-white px-3 py-2 rounded-md text-sm hover:from-blue-700 hover:to-cyan-700 font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
+            className="bg-primary text-white px-3 py-2 rounded-md text-sm hover:from-blue-700 hover:to-cyan-700 font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
           >
             {submitting ? (
               <>

@@ -155,7 +155,7 @@ export default function HomePage() {
       <section
         ref={bannerRef}
         // className="relative w-full min-h-[820px] py-8 md:py-12 overflow-hidden bg-primary"
-        className="relative w-full min-h-[820px] py-8 md:py-12 overflow-hidden bg-gradient-to-br from-primary via-secondary/50  to-tertiary"
+        className="relative w-full min-h-[820px] py-8 md:py-12 overflow-hidden bg-[#0087CE]"
         onTouchStart={onTouchStart}
         onTouchMove={onTouchMove}
         onTouchEnd={onTouchEnd}
@@ -211,14 +211,14 @@ export default function HomePage() {
                     <div className="bg-white/10 backdrop-blur-md rounded-xl md:rounded-2xl p-3 md:p-6 border border-white/20 shadow-2xl">
                       <div className="flex items-center justify-between">
                         <div>
-                          <p className="text-primary text-xs md:text-sm font-medium">
+                          <p className="text-white text-xs md:text-sm font-medium">
                             {banner.highlight}
                           </p>
                           <div className="flex items-baseline gap-2">
-                            <span className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold text-secondary">
+                            <span className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold text-white shine-text">
                               {banner.price}
                             </span>
-                            <span className="text-primary text-xs md:text-sm">
+                            <span className="text-white text-xs md:text-sm">
                               {banner.description}
                             </span>
                           </div>
@@ -232,7 +232,7 @@ export default function HomePage() {
                     {/* CTA Buttons */}
                     <div className="flex flex-col sm:flex-row gap-3 md:gap-4">
                       <button
-                        className="group bg-gradient-to-r from-blue-600 to-cyan-600 text-white px-4 py-2.5 md:px-6 md:py-3 lg:px-8 lg:py-4 rounded-lg md:rounded-xl font-semibold text-sm md:text-base lg:text-lg hover:from-blue-700 hover:to-cyan-700 transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 flex items-center justify-center gap-2"
+                        className="group bg-white text-cyan-600 py-2.5 md:px-6 md:py-3 lg:px-8 lg:py-4 rounded-lg md:rounded-xl font-semibold text-sm md:text-base lg:text-lg hover:from-blue-700 hover:to-cyan-700 transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 flex items-center justify-center gap-2"
                         onClick={() => setIsBookingOpen(true)}
                       >
                         Book Your Appointment
@@ -248,7 +248,7 @@ export default function HomePage() {
                     <div className="flex flex-row items-center gap-3 md:gap-6 pt-2 md:pt-4 mb-8 md:mb-12">
                       <div className="flex items-center gap-2">
                         <Shield className=" w-4 h-4 md:w-5 md:h-5 text-secondary" />
-                        <span className="text-xs md:text-sm text-primary">
+                        <span className="text-xs md:text-sm text-white">
                           Most Insurances Accepted
                         </span>
                       </div>
@@ -619,7 +619,7 @@ export default function HomePage() {
 
             <Fade delay={800}>
               <a href="tel:973-671-5500">
-                <Button className="bg-gradient-to-r from-blue-600 to-cyan-600 text-white px-3 py-2 rounded-md text-sm hover:from-blue-700 hover:to-cyan-700 font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 cursor-pointer">
+                <Button className="bg-primary text-white px-3 py-2 rounded-md text-sm hover:bg-primary font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 cursor-pointer">
                   CALL TODAY!
                 </Button>
               </a>
@@ -640,25 +640,25 @@ function HomepageSections() {
     {
       label: "About Us",
       icon: <InfoIcon />,
-      bg: "bg-primary",
+      bg: "bg-[#0087CE]",
       href: "/about-us",
     },
     {
       label: "Our Providers",
       icon: <User />,
-      bg: "bg-primary/70",
+      bg: "bg-[#0087CE]/70",
       href: "/providers",
     },
     {
       label: "Our Services",
       icon: <Stethoscope />,
-      bg: "bg-secondary",
+      bg: "bg-[#ff5722]",
       href: "/services",
     },
     {
       label: "Contact Us",
       icon: <MessageCircle />,
-      bg: "bg-secondary/70",
+      bg: "bg-[#ff5722]/70",
       href: "/contact-us",
     },
   ];

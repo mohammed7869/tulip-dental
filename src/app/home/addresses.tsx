@@ -98,7 +98,7 @@ export default function LocationTabs() {
       </div> */}
       <div className="flex flex-col md:flex-row items-center justify-center gap-4">
         {/* Info Block */}
-        <div className="flex-1 text-center relative bg-primary rounded-lg p-8 text-white shadow-lg overflow-hidden space-y-4">
+        <div className="flex-1 text-center relative bg-[#0087ce] rounded-lg p-8 text-white shadow-lg overflow-hidden space-y-4">
           {" "}
           <Bounce>
             <h2 className="text-2xl font-bold">{selected.name}</h2>
@@ -129,7 +129,7 @@ export default function LocationTabs() {
           <div className="mt-6 flex justify-center gap-4 flex-wrap">
             <a
               onClick={() => setIsBookingOpen(true)}
-              className="bg-gradient-to-r from-blue-600 to-cyan-600 text-white px-3 py-2 rounded-md text-sm hover:from-blue-700 hover:to-cyan-700 font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 cursor-pointer"
+              className="border border-white bg-[#0087ce] text-white px-3 py-2 rounded-md text-sm hover:from-blue-700 hover:to-cyan-700 font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 cursor-pointer"
             >
               Book Online
             </a>
