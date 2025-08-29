@@ -155,7 +155,7 @@ export default function HomePage() {
       <section
         ref={bannerRef}
         // className="relative w-full min-h-[820px] py-8 md:py-12 overflow-hidden bg-primary"
-        className="relative w-full min-h-[820px] py-8 md:py-12 overflow-hidden bg-[#0087CE]"
+        className="relative w-full min-h-[820px] py-8 md:py-12 overflow-hidden bg-gradient-to-r from-[#0087CE] via-[#3491E9] to-[#FFDFD4]"
         onTouchStart={onTouchStart}
         onTouchMove={onTouchMove}
         onTouchEnd={onTouchEnd}
@@ -232,7 +232,7 @@ export default function HomePage() {
                     {/* CTA Buttons */}
                     <div className="flex flex-col sm:flex-row gap-3 md:gap-4">
                       <button
-                        className="group bg-white text-cyan-600 py-2.5 md:px-6 md:py-3 lg:px-8 lg:py-4 rounded-lg md:rounded-xl font-semibold text-sm md:text-base lg:text-lg hover:from-blue-700 hover:to-cyan-700 transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 flex items-center justify-center gap-2"
+                        className="group bg-white text-primary py-2.5 md:px-6 md:py-3 lg:px-8 lg:py-4 rounded-lg md:rounded-xl font-semibold text-sm md:text-base lg:text-lg hover:from-blue-700 hover:to-cyan-700 transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 flex items-center justify-center gap-2"
                         onClick={() => setIsBookingOpen(true)}
                       >
                         Book Your Appointment
@@ -619,7 +619,7 @@ export default function HomePage() {
 
             <Fade delay={800}>
               <a href="tel:973-671-5500">
-                <Button className="bg-primary text-white px-3 py-2 rounded-md text-sm hover:bg-primary font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 cursor-pointer">
+                <Button className="bg-primary hover:bg-secondary/80 text-white px-3 py-2 rounded-md text-sm  font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 cursor-pointer">
                   CALL TODAY!
                 </Button>
               </a>
