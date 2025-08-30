@@ -64,16 +64,17 @@ export default function IrvingtonServiceAreaClient() {
                 Dentist Near You
               </h2>
               <p>
-                At Tulip Dental Irvington, we're proud to provide high-quality,
-                family-friendly dental care to residents of Irvington, NJ 07111,
-                and surrounding communities. Whether you're new to the area or
-                searching for a dependable "dentist near me," we're right in
-                your neighborhood with modern treatments for every smile.
+                At Tulip Dental, we’re proud to bring exceptional, personalized
+                dental care to residents of Irvington, NJ 07111, and nearby
+                communities. Whether you’re new to the area or looking for a
+                dependable “dentist near me,” we offer state-of-the-art
+                treatments designed for patients of all ages, from children to
+                seniors.
               </p>
               <p>
-                Our compassionate team treats patients of all ages, offering
-                preventive, cosmetic, and restorative dentistry in a
-                comfortable, welcoming setting.
+                Our friendly, highly skilled team provides everything from
+                routine checkups to advanced smile makeovers-all in a
+                comfortable and modern dental setting.
               </p>
             </Fade>
           </div>
@@ -82,39 +83,36 @@ export default function IrvingtonServiceAreaClient() {
         {/* Comprehensive Dental Care Section */}
         <div className="flex flex-col gap-4 p-6 md:p-0">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold">
-            Quality Dental Care for Every Stage of Life
+            Complete Dental Care for Every Smile
           </h2>
           <Fade cascade direction="up" delay={1000} duration={600}>
             <p>
-              Our centrally located Irvington office is equipped with advanced
-              dental technology and amenities designed for your comfort. We
-              offer a complete range of dental services under one roof,
-              including:
+              Our conveniently located office near Irvington is equipped with
+              the latest technology and amenities to make your visit
+              comfortable, efficient, and stress-free. We provide a full range
+              of dental services under one roof, including:
             </p>
 
-            <ul className="list-disc pl-6 space-y-2 text-sm md:text-lg">
+            <ul className="list-disc pl-6 space-y-4 text-sm md:text-lg">
               <li>
                 <h3 className="text-lg font-semibold">Emergency Dentistry</h3>
                 <p>
-                  {" "}
-                  Same-day care for tooth pain, injuries, or urgent dental
-                  needs.
+                  Same-day treatment for urgent pain, dental injuries, or
+                  emergencies.
                 </p>
               </li>
 
               <li>
                 <h3 className="text-lg font-semibold">Preventive Dentistry</h3>
                 <p>
-                  {" "}
-                  Routine cleanings, exams, and guidance for long-term oral
-                  health.
+                  Comprehensive exams, cleanings, and long-term oral health
+                  planning.
                 </p>
               </li>
 
               <li>
                 <h3 className="text-lg font-semibold">Cosmetic Dentistry</h3>
                 <p>
-                  {" "}
                   Professional teeth whitening, veneers, and smile enhancements.
                 </p>
               </li>
@@ -122,21 +120,22 @@ export default function IrvingtonServiceAreaClient() {
               <li>
                 <h3 className="text-lg font-semibold">Restorative Dentistry</h3>
                 <p>
-                  {" "}
-                  Crowns, bridges, and dental implants for function and
+                  Crowns, bridges, and dental implants to restore function and
                   aesthetics.
                 </p>
               </li>
 
               <li>
                 <h3 className="text-lg font-semibold">Pediatric Dentistry</h3>
-                <p> Gentle, fun, and stress-free visits for kids and teens.</p>
+                <p>
+                  Gentle, compassionate dental care for infants, children, and
+                  teens.
+                </p>
               </li>
             </ul>
           </Fade>
         </div>
 
-        {/* Why Choose Us Section */}
         <div className="wcu-section">
           <div className="wcu-text-section">
             <Fade cascade direction="up" delay={1000} duration={600}>
@@ -144,30 +143,38 @@ export default function IrvingtonServiceAreaClient() {
                 <h2>Why Irvington Families Choose Tulip Dental</h2>
               </div>
               <div className="wcu-desc">
-                Families across Irvington (07111) and nearby Maplewood (07040),
+                Families in Irvington (07111) and nearby Maplewood (07040),
                 South Orange (07079), Vauxhall (07088), and Newark (07106,
-                07112) trust us because:
+                07112) choose us because:
               </div>
               <div className="wcu-points-section">
-                <ul className="wcu-points">
-                  <li>
-                    <CheckCircle /> We provide personalized, patient-first care
+                <ul className="wcu-points space-y-3">
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="service-point-icon mt-1 shrink-0" />
+                    <span>We focus on personalized care for every patient</span>
                   </li>
-                  <li>
-                    <CheckCircle /> Our technology ensures accurate, comfortable
-                    treatments
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="service-point-icon mt-1 shrink-0" />
+                    <span>
+                      Advanced technology ensures precision and comfort
+                    </span>
                   </li>
-                  <li>
-                    <CheckCircle /> We offer flexible scheduling, including
-                    same-day visits
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="service-point-icon mt-1 shrink-0" />
+                    <span>Same-day emergency appointments available</span>
                   </li>
-                  <li>
-                    <CheckCircle /> We're insurance-friendly and provide payment
-                    plan options
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="service-point-icon mt-1 shrink-0" />
+                    <span>
+                      Insurance-friendly with flexible payment options
+                    </span>
                   </li>
-                  <li>
-                    <CheckCircle /> Our location is convenient and easy to
-                    access
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="service-point-icon mt-1 shrink-0" />
+                    <span>
+                      Convenient location close to Irvington and surrounding
+                      areas
+                    </span>
                   </li>
                 </ul>
               </div>
@@ -176,7 +183,7 @@ export default function IrvingtonServiceAreaClient() {
           <div className="wcu-img-section">
             <Zoom cascade damping={0.3} duration={800}>
               <img
-                src="/Images/Irvington-1.jpeg"
+                src="/Images/maplewood-1.jpeg"
                 alt="Tulip Dental in Irvington"
                 className="rounded-xl"
               />
@@ -191,10 +198,10 @@ export default function IrvingtonServiceAreaClient() {
               Schedule Your Appointment in Irvington Today
             </h2>
             <p className="features-description">
-              Whether you're in the heart of Irvington or nearby neighborhoods,
-              Tulip Dental is just minutes away. If you've been looking for a
-              "dentist near me" who blends compassion with expertise, your
-              search ends here.
+              Whether you’re in the heart of Irvington or nearby neighborhoods,
+              Tulip Dental is your trusted local dentist. If you’ve been
+              searching for a “dentist near me” who combines compassion with
+              clinical excellence, you’ve found your home.
             </p>
 
             <BookCallBtnForServiceAreas />

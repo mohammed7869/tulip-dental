@@ -172,7 +172,7 @@ const SpecialOffersSection = () => {
               {languages.map((language, index) => (
                 <span
                   key={index}
-                  className="bg-primary text-white hover:bg-secondary/80 transition-all duration-300 px-4 py-2 font-medium rounded-full text-sm border border-white/30  transition-colors duration-200"
+                  className="bg-secondary/90 text-white hover:bg-primary/80 transition-all duration-300 px-4 py-2 font-medium rounded-full text-sm border border-white/30  transition-colors duration-200"
                 >
                   {language}
                 </span>

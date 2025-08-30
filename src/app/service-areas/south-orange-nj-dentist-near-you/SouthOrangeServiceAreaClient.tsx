@@ -148,26 +148,31 @@ export default function SouthOrangeServiceAreaClient() {
                 trust us because:
               </div>
               <div className="wcu-points-section">
-                <ul className="wcu-points">
-                  <li>
-                    <CheckCircle /> We provide customized, patient-first care
-                    for every smile
+                <ul className="wcu-points space-y-3">
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="service-point-icon mt-1 shrink-0" />
+                    <span>
+                      We provide customized, patient-first care for every smile
+                    </span>
                   </li>
-                  <li>
-                    <CheckCircle /> Our advanced tools ensure comfort and
-                    precision
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="service-point-icon mt-1 shrink-0" />
+                    <span>Our advanced tools ensure comfort and precision</span>
                   </li>
-                  <li>
-                    <CheckCircle /> Flexible scheduling, including same-day
-                    visits
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="service-point-icon mt-1 shrink-0" />
+                    <span>Flexible scheduling, including same-day visits</span>
                   </li>
-                  <li>
-                    <CheckCircle /> Insurance-friendly with payment plans
-                    available
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="service-point-icon mt-1 shrink-0" />
+                    <span>Insurance-friendly with payment plans available</span>
                   </li>
-                  <li>
-                    <CheckCircle /> Convenient location easily accessible from
-                    South Orange and surrounding areas
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="service-point-icon mt-1 shrink-0" />
+                    <span>
+                      Convenient location easily accessible from South Orange
+                      and surrounding areas
+                    </span>
                   </li>
                 </ul>
               </div>

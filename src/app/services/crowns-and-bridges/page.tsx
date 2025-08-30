@@ -132,30 +132,33 @@ export default function CrownsPage() {
                 <div className="wcu-points-section">
                   <ul className="wcu-points">
                     <li>
-                      <h3 className="text-lg flex items-center gap-2">
-                        <CheckCircle /> Custom, Natural-Looking Restorations
+                      <h3 className="service-point-title">
+                        <CheckCircle className="service-point-icon" /> Custom,
+                        Natural-Looking Restorations
                       </h3>
                     </li>
                     <li>
-                      <h3 className="text-lg flex items-center gap-2">
-                        <CheckCircle /> Durable, High-Quality Materials
+                      <h3 className="service-point-title">
+                        <CheckCircle className="service-point-icon" /> Durable,
+                        High-Quality Materials
                       </h3>
                     </li>
                     <li>
-                      <h3 className="text-lg flex items-center gap-2">
-                        <CheckCircle /> Precision Digital Impressions & Trusted
-                        Lab Partners
+                      <h3 className="service-point-title">
+                        <CheckCircle className="service-point-icon" /> Precision
+                        Digital Impressions & Trusted Lab Partners
                       </h3>
                     </li>
                     <li>
-                      <h3 className="text-lg flex items-center gap-2">
-                        <CheckCircle /> Same-Day Crown Options When Eligible
+                      <h3 className="service-point-title">
+                        <CheckCircle className="service-point-icon" /> Same-Day
+                        Crown Options When Eligible
                       </h3>
                     </li>
                     <li>
-                      <h3 className="text-lg flex items-center gap-2">
-                        <CheckCircle /> Insurance Accepted & Flexible Payment
-                        Plans
+                      <h3 className="service-point-title">
+                        <CheckCircle className="service-point-icon" /> Insurance
+                        Accepted & Flexible Payment Plans
                       </h3>
                     </li>
                   </ul>

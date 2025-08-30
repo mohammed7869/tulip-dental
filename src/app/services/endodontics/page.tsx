@@ -27,7 +27,7 @@ export default function Page() {
       ],
     },
     {
-      icon: "/Images/icons/Endodontic-Retreatment.png",
+      icon: "/Images/icons/braces1.png",
       title: "Endodontic Retreatment",
       description:
         "If a tooth that has already had a root canal becomes reinfected or painful, we can perform endodontic retreatment to restore health and function.",
@@ -39,7 +39,7 @@ export default function Page() {
       ],
     },
     {
-      icon: "/Images/icons/Emergency-Endodontic.png",
+      icon: "/Images/icons/emergency denstiry.png",
       title: "Emergency Endodontic Care",
       description:
         "Tooth pain can’t wait - that’s why we offer prompt, same-day appointments for urgent endodontic needs.",
@@ -125,28 +125,33 @@ export default function Page() {
                 <div className="wcu-points-section">
                   <ul className="wcu-points">
                     <li>
-                      <h3 className="text-lg flex items-center gap-2">
-                        <CheckCircle /> Gentle, Pain-Free Treatment
+                      <h3 className="service-point-title">
+                        <CheckCircle className="service-point-icon" /> Gentle,
+                        Pain-Free Treatment
                       </h3>
                     </li>
                     <li>
-                      <h3 className="text-lg flex items-center gap-2">
-                        <CheckCircle /> Advanced Digital Imaging for Precision
+                      <h3 className="service-point-title">
+                        <CheckCircle className="service-point-icon" /> Advanced
+                        Digital Imaging for Precision
                       </h3>
                     </li>
                     <li>
-                      <h3 className="text-lg flex items-center gap-2">
-                        <CheckCircle /> Same-Day Emergency Appointments
+                      <h3 className="service-point-title">
+                        <CheckCircle className="service-point-icon" /> Same-Day
+                        Emergency Appointments
                       </h3>
                     </li>
                     <li>
-                      <h3 className="text-lg flex items-center gap-2">
-                        <CheckCircle /> Focus on Saving Your Natural Teeth
+                      <h3 className="service-point-title">
+                        <CheckCircle className="service-point-icon" /> Focus on
+                        Saving Your Natural Teeth
                       </h3>
                     </li>
                     <li>
-                      <h3 className="text-lg flex items-center gap-2">
-                        <CheckCircle /> Convenient Location in Maplewood, NJ
+                      <h3 className="service-point-title">
+                        <CheckCircle className="service-point-icon" />{" "}
+                        Convenient Location in Maplewood, NJ
                       </h3>
                     </li>
                   </ul>

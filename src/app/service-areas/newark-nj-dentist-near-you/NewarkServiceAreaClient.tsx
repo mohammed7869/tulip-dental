@@ -34,7 +34,7 @@ export default function NewarkServiceAreaClient() {
     <div>
       {/* Header Section */}
       <div className="details-page-header-section ">
-        <h1>Family & Cosmetic Dentist in Newark, NJ 07102 </h1>
+        <h1>Family & Cosmetic Dentist in Newark, NJ 07106 & 07112</h1>
       </div>
 
       {/* Main Content Section */}
@@ -60,20 +60,20 @@ export default function NewarkServiceAreaClient() {
           <div className="desc-text-section">
             <Fade cascade direction="up" delay={1000} duration={600}>
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold">
-                Complete Dental Care in Newark | Tulip Dental | Trusted Dentist
-                Near You
+                Complete Dental Services in Newark | Tulip Dental | Trusted
+                Dentist Near You
               </h2>
               <p>
-                At Tulip Dental Newark, we're proud to provide high-quality,
-                family-friendly dental care to residents of Newark, NJ 07102,
-                and surrounding communities. Whether you're new to the area or
-                searching for a dependable "dentist near me," we're right in
-                your neighborhood with modern treatments for every smile.
+                Tulip Dental is proud to serve patients from Newark’s 07106 and
+                07112 with personalized, high-quality dental care. Whether
+                you’re new to the area or searching for a “dentist near me,” our
+                experienced team offers comprehensive services for every age and
+                every smile - all in a modern, welcoming setting.
               </p>
               <p>
-                Our compassionate team treats patients of all ages, offering
-                preventive, cosmetic, and restorative dentistry in a
-                comfortable, welcoming setting.
+                From preventive checkups to advanced smile restorations, we’re
+                here to keep your family’s oral health on track while helping
+                you feel confident in your smile.
               </p>
             </Fade>
           </div>
@@ -82,55 +82,54 @@ export default function NewarkServiceAreaClient() {
         {/* Comprehensive Dental Care Section */}
         <div className="flex flex-col gap-4 p-6 md:p-0">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold">
-            Quality Dental Care for Every Stage of Life
+            Comprehensive Dental Care for All Ages
           </h2>
           <Fade cascade direction="up" delay={1000} duration={600}>
             <p>
-              Our centrally located Newark office is equipped with advanced
-              dental technology and amenities designed for your comfort. We
-              offer a complete range of dental services under one roof,
-              including:
+              Our office near Newark is equipped with the latest dental
+              technology to ensure every visit is efficient, comfortable, and
+              effective. We offer a full range of treatments, including:
             </p>
 
             <ul className="list-disc pl-6 space-y-2 text-sm md:text-lg">
               <li>
                 <h3 className="text-lg font-semibold">Emergency Dentistry</h3>
                 <p>
-                  {" "}
-                  Same-day care for tooth pain, injuries, or urgent dental
-                  needs.
+                  Same-day urgent care for toothaches, broken teeth, or dental
+                  trauma.
                 </p>
               </li>
 
               <li>
                 <h3 className="text-lg font-semibold">Preventive Dentistry</h3>
                 <p>
-                  {" "}
-                  Routine cleanings, exams, and guidance for long-term oral
-                  health.
+                  Routine cleanings, exams, and early detection of dental
+                  issues.
                 </p>
               </li>
 
               <li>
                 <h3 className="text-lg font-semibold">Cosmetic Dentistry</h3>
                 <p>
-                  {" "}
-                  Professional teeth whitening, veneers, and smile enhancements.
+                  Teeth whitening, porcelain veneers, and Invisalign® for a
+                  flawless smile.
                 </p>
               </li>
 
               <li>
                 <h3 className="text-lg font-semibold">Restorative Dentistry</h3>
                 <p>
-                  {" "}
-                  Crowns, bridges, and dental implants for function and
-                  aesthetics.
+                  Dental implants, crowns, bridges, and dentures to restore
+                  function & aesthetics.
                 </p>
               </li>
 
               <li>
                 <h3 className="text-lg font-semibold">Pediatric Dentistry</h3>
-                <p> Gentle, fun, and stress-free visits for kids and teens.</p>
+                <p>
+                  Gentle care for children and teens in a fun, stress-free
+                  environment.
+                </p>
               </li>
             </ul>
           </Fade>
@@ -144,30 +143,36 @@ export default function NewarkServiceAreaClient() {
                 <h2>Why Newark Families Choose Tulip Dental</h2>
               </div>
               <div className="wcu-desc">
-                Families across Newark (07102) and nearby Maplewood (07040),
-                South Orange (07079), Irvington (07111), and Vauxhall (07088)
-                trust us because:
+                Patients from Newark (07106 &amp; 07112) and nearby Maplewood
+                (07040), South Orange (07079), Irvington (07111), and Vauxhall
+                (07088) choose Tulip Dental for:
               </div>
               <div className="wcu-points-section">
-                <ul className="wcu-points">
-                  <li>
-                    <CheckCircle /> We provide personalized, patient-first care
+                <ul className="wcu-points space-y-3">
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="service-point-icon mt-1 shrink-0" />
+                    <span>Patient-focused, compassionate approach</span>
                   </li>
-                  <li>
-                    <CheckCircle /> Our technology ensures accurate, comfortable
-                    treatments
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="service-point-icon mt-1 shrink-0" />
+                    <span>
+                      State-of-the-art equipment for better comfort &amp;
+                      accuracy
+                    </span>
                   </li>
-                  <li>
-                    <CheckCircle /> We offer flexible scheduling, including
-                    same-day visits
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="service-point-icon mt-1 shrink-0" />
+                    <span>Same-day appointments for emergencies</span>
                   </li>
-                  <li>
-                    <CheckCircle /> We're insurance-friendly and provide payment
-                    plan options
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="service-point-icon mt-1 shrink-0" />
+                    <span>Flexible scheduling and financing options</span>
                   </li>
-                  <li>
-                    <CheckCircle /> Our location is convenient and easy to
-                    access
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="service-point-icon mt-1 shrink-0" />
+                    <span>
+                      Convenient location close to Newark neighborhoods
+                    </span>
                   </li>
                 </ul>
               </div>
@@ -176,7 +181,7 @@ export default function NewarkServiceAreaClient() {
           <div className="wcu-img-section">
             <Zoom cascade damping={0.3} duration={800}>
               <img
-                src="/Images/newark-1.jpeg"
+                src="/Images/maplewood-1.jpeg"
                 alt="Tulip Dental in Newark"
                 className="rounded-xl"
               />
@@ -191,10 +196,9 @@ export default function NewarkServiceAreaClient() {
               Schedule Your Appointment in Newark Today
             </h2>
             <p className="features-description">
-              Whether you're in the heart of Newark or nearby neighborhoods,
-              Tulip Dental is just minutes away. If you've been looking for a
-              "dentist near me" who blends compassion with expertise, your
-              search ends here.
+              If you live in Newark’s 07106 or 07112 area, Tulip Dental is just
+              minutes away and ready to care for your smile. For a “dentist near
+              me” who combines expertise with a gentle touch, look no further.
             </p>
 
             <BookCallBtnForServiceAreas />

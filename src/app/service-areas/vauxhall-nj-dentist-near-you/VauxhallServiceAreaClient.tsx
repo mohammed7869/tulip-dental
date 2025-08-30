@@ -60,20 +60,20 @@ export default function VauxhallServiceAreaClient() {
           <div className="desc-text-section">
             <Fade cascade direction="up" delay={1000} duration={600}>
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold">
-                Complete Dental Care in Vauxhall | Tulip Dental | Trusted
-                Dentist Near You
+                Comprehensive Dental Services in Vauxhall | Tulip Dental |
+                Trusted Dentist Near You
               </h2>
               <p>
-                At Tulip Dental Vauxhall, we're proud to provide high-quality,
-                family-friendly dental care to residents of Vauxhall, NJ 07088,
-                and surrounding communities. Whether you're new to the area or
-                searching for a dependable "dentist near me," we're right in
-                your neighborhood with modern treatments for every smile.
+                At Tulip Dental, we proudly serve the residents of Vauxhall, NJ
+                07088, with compassionate, high-quality dental care. Whether
+                you’re searching for a reliable “dentist near me” or are new to
+                the area, our skilled team provides complete care for patients
+                of all ages in a modern, welcoming environment.
               </p>
               <p>
-                Our compassionate team treats patients of all ages, offering
-                preventive, cosmetic, and restorative dentistry in a
-                comfortable, welcoming setting.
+                From preventive cleanings to advanced cosmetic treatments, our
+                goal is to help you achieve a healthy, beautiful smile that
+                lasts a lifetime.
               </p>
             </Fade>
           </div>
@@ -82,55 +82,53 @@ export default function VauxhallServiceAreaClient() {
         {/* Comprehensive Dental Care Section */}
         <div className="flex flex-col gap-4 p-6 md:p-0">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold">
-            Quality Dental Care for Every Stage of Life
+            Complete Dental Care for Every Stage of Life
           </h2>
           <Fade cascade direction="up" delay={1000} duration={600}>
             <p>
-              Our centrally located Vauxhall office is equipped with advanced
-              dental technology and amenities designed for your comfort. We
-              offer a complete range of dental services under one roof,
-              including:
+              Our conveniently located office near Vauxhall offers the latest
+              dental technology and amenities for your comfort. We provide a
+              full spectrum of dental services, including:
             </p>
 
             <ul className="list-disc pl-6 space-y-2 text-sm md:text-lg">
               <li>
                 <h3 className="text-lg font-semibold">Emergency Dentistry</h3>
                 <p>
-                  {" "}
-                  Same-day care for tooth pain, injuries, or urgent dental
-                  needs.
+                  Same-day appointments for urgent pain, dental injuries, or
+                  emergencies.
                 </p>
               </li>
 
               <li>
                 <h3 className="text-lg font-semibold">Preventive Dentistry</h3>
                 <p>
-                  {" "}
-                  Routine cleanings, exams, and guidance for long-term oral
-                  health.
+                  Routine exams, professional cleanings, and proactive oral
+                  health guidance.
                 </p>
               </li>
 
               <li>
                 <h3 className="text-lg font-semibold">Cosmetic Dentistry</h3>
                 <p>
-                  {" "}
-                  Professional teeth whitening, veneers, and smile enhancements.
+                  Professional whitening, veneers, and smile makeover
+                  treatments.
                 </p>
               </li>
 
               <li>
                 <h3 className="text-lg font-semibold">Restorative Dentistry</h3>
                 <p>
-                  {" "}
-                  Crowns, bridges, and dental implants for function and
-                  aesthetics.
+                  Crowns, bridges, dentures, and dental implants to restore
+                  function and appearance.
                 </p>
               </li>
 
               <li>
                 <h3 className="text-lg font-semibold">Pediatric Dentistry</h3>
-                <p> Gentle, fun, and stress-free visits for kids and teens.</p>
+                <p>
+                  Gentle, kid-friendly care for infants, children, and teens.
+                </p>
               </li>
             </ul>
           </Fade>
@@ -144,30 +142,34 @@ export default function VauxhallServiceAreaClient() {
                 <h2>Why Vauxhall Families Choose Tulip Dental</h2>
               </div>
               <div className="wcu-desc">
-                Families across Vauxhall (07088) and nearby Maplewood (07040),
+                Patients from Vauxhall (07088) and nearby Maplewood (07040),
                 South Orange (07079), Irvington (07111), and Newark (07106,
-                07112) trust us because:
+                07112) trust Tulip Dental because:
               </div>
               <div className="wcu-points-section">
-                <ul className="wcu-points">
-                  <li>
-                    <CheckCircle /> We provide personalized, patient-first care
+                <ul className="wcu-points space-y-3">
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="service-point-icon mt-1 shrink-0" />
+                    <span>Personalized, patient-first dental care</span>
                   </li>
-                  <li>
-                    <CheckCircle /> Our technology ensures accurate, comfortable
-                    treatments
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="service-point-icon mt-1 shrink-0" />
+                    <span>Advanced technology for precision and comfort</span>
                   </li>
-                  <li>
-                    <CheckCircle /> We offer flexible scheduling, including
-                    same-day visits
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="service-point-icon mt-1 shrink-0" />
+                    <span>Same-day emergency visits available</span>
                   </li>
-                  <li>
-                    <CheckCircle /> We're insurance-friendly and provide payment
-                    plan options
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="service-point-icon mt-1 shrink-0" />
+                    <span>Insurance-friendly with payment plans offered</span>
                   </li>
-                  <li>
-                    <CheckCircle /> Our location is convenient and easy to
-                    access
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="service-point-icon mt-1 shrink-0" />
+                    <span>
+                      Convenient location serving the entire Union &amp; Essex
+                      County area
+                    </span>
                   </li>
                 </ul>
               </div>
@@ -176,7 +178,7 @@ export default function VauxhallServiceAreaClient() {
           <div className="wcu-img-section">
             <Zoom cascade damping={0.3} duration={800}>
               <img
-                src="/Images/vauxhall-1.jpeg"
+                src="/Images/maplewood-1.jpeg"
                 alt="Tulip Dental in Vauxhall"
                 className="rounded-xl"
               />
@@ -188,13 +190,13 @@ export default function VauxhallServiceAreaClient() {
         <div className="features-section">
           <Fade direction="up" duration={1000}>
             <h2 className="features-heading">
-              Schedule Your Appointment in Vauxhall Today
+              Schedule Your Appointment in Vauxhall Today{" "}
             </h2>
             <p className="features-description">
-              Whether you're in the heart of Vauxhall or nearby neighborhoods,
-              Tulip Dental is just minutes away. If you've been looking for a
-              "dentist near me" who blends compassion with expertise, your
-              search ends here.
+              Whether you’re right in Vauxhall or just minutes away in a
+              neighboring town, Tulip Dental is here to provide exceptional care
+              for your smile. If you’ve been looking for a “dentist near me” who
+              combines expertise with compassion, your search ends here.
             </p>
 
             <BookCallBtnForServiceAreas />

@@ -125,28 +125,33 @@ export default function RootCanalClient() {
                 <div className="wcu-points-section">
                   <ul className="wcu-points">
                     <li>
-                      <h3 className="text-lg flex items-center gap-2">
-                        <CheckCircle /> Experienced Team Focused on Comfort
+                      <h3 className="service-point-title">
+                        <CheckCircle className="service-point-icon" />{" "}
+                        Experienced Team Focused on Comfort
                       </h3>
                     </li>
                     <li>
-                      <h3 className="text-lg flex items-center gap-2">
-                        <CheckCircle /> Advanced Technology for Better Results
+                      <h3 className="service-point-title">
+                        <CheckCircle className="service-point-icon" /> Advanced
+                        Technology for Better Results
                       </h3>
                     </li>
                     <li>
-                      <h3 className="text-lg flex items-center gap-2">
-                        <CheckCircle /> Same-Day Appointments Available
+                      <h3 className="service-point-title">
+                        <CheckCircle className="service-point-icon" /> Same-Day
+                        Appointments Available
                       </h3>
                     </li>
                     <li>
-                      <h3 className="text-lg flex items-center gap-2">
-                        <CheckCircle /> Convenient Location in Maplewood, NJ
+                      <h3 className="service-point-title">
+                        <CheckCircle className="service-point-icon" />{" "}
+                        Convenient Location in Maplewood, NJ
                       </h3>
                     </li>
                     <li>
-                      <h3 className="text-lg flex items-center gap-2">
-                        <CheckCircle /> Flexible Financing & Insurance Accepted
+                      <h3 className="service-point-title">
+                        <CheckCircle className="service-point-icon" /> Flexible
+                        Financing & Insurance Accepted
                       </h3>
                     </li>
                   </ul>

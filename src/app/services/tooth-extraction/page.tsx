@@ -123,29 +123,33 @@ export default function ToothExtractionPage() {
                 <div className="wcu-points-section">
                   <ul className="wcu-points">
                     <li>
-                      <h3 className="text-lg flex items-center gap-2">
-                        <CheckCircle /> Gentle Techniques &amp; Pain Management
+                      <h3 className="service-point-title">
+                        <CheckCircle className="service-point-icon" /> Gentle
+                        Techniques &amp; Pain Management
                       </h3>
                     </li>
                     <li>
-                      <h3 className="text-lg flex items-center gap-2">
-                        <CheckCircle /> Advanced Digital Imaging for Accuracy
+                      <h3 className="service-point-title">
+                        <CheckCircle className="service-point-icon" /> Advanced
+                        Digital Imaging for Accuracy
                       </h3>
                     </li>
                     <li>
-                      <h3 className="text-lg flex items-center gap-2">
-                        <CheckCircle /> Same-Day Emergency Extractions Available
+                      <h3 className="service-point-title">
+                        <CheckCircle className="service-point-icon" /> Same-Day
+                        Emergency Extractions Available
                       </h3>
                     </li>
                     <li>
-                      <h3 className="text-lg flex items-center gap-2">
-                        <CheckCircle /> Sedation Options for Nervous Patients
+                      <h3 className="service-point-title">
+                        <CheckCircle className="service-point-icon" /> Sedation
+                        Options for Nervous Patients
                       </h3>
                     </li>
                     <li>
-                      <h3 className="text-lg flex items-center gap-2">
-                        <CheckCircle /> Flexible Payment &amp;
-                        Insurance-Friendly Care
+                      <h3 className="service-point-title">
+                        <CheckCircle className="service-point-icon" /> Flexible
+                        Payment &amp; Insurance-Friendly Care
                       </h3>
                     </li>
                   </ul>

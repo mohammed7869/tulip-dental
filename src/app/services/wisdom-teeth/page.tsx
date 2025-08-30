@@ -124,31 +124,33 @@ export default function Page() {
                 <div className="wcu-points-section">
                   <ul className="wcu-points">
                     <li>
-                      <h3 className="text-lg flex items-center gap-2">
-                        <CheckCircle /> Advanced Imaging Technology for Precise
-                        Planning
+                      <h3 className="service-point-title">
+                        <CheckCircle className="service-point-icon" /> Advanced
+                        Imaging Technology for Precise Planning
                       </h3>
                     </li>
                     <li>
-                      <h3 className="text-lg flex items-center gap-2">
-                        <CheckCircle /> Multiple Sedation Options for Maximum
-                        Comfort
+                      <h3 className="service-point-title">
+                        <CheckCircle className="service-point-icon" /> Multiple
+                        Sedation Options for Maximum Comfort
                       </h3>
                     </li>
                     <li>
-                      <h3 className="text-lg flex items-center gap-2">
-                        <CheckCircle /> Experienced Oral Surgeons with Proven
-                        Results
+                      <h3 className="service-point-title">
+                        <CheckCircle className="service-point-icon" />{" "}
+                        Experienced Oral Surgeons with Proven Results
                       </h3>
                     </li>
                     <li>
-                      <h3 className="text-lg flex items-center gap-2">
-                        <CheckCircle /> Comprehensive Post-Op Care and Support
+                      <h3 className="service-point-title">
+                        <CheckCircle className="service-point-icon" />{" "}
+                        Comprehensive Post-Op Care and Support
                       </h3>
                     </li>
                     <li>
-                      <h3 className="text-lg flex items-center gap-2">
-                        <CheckCircle /> Convenient Location in Maplewood, NJ
+                      <h3 className="service-point-title">
+                        <CheckCircle className="service-point-icon" />{" "}
+                        Convenient Location in Maplewood, NJ
                       </h3>
                     </li>
                   </ul>

@@ -120,29 +120,33 @@ export default function InvisilinePage() {
                 <div className="wcu-points-section">
                   <ul className="wcu-points">
                     <li>
-                      <h3 className="text-lg flex items-center gap-2">
-                        <CheckCircle /> Discreet Orthodontic Treatment
+                      <h3 className="service-point-title">
+                        <CheckCircle className="service-point-icon" /> Discreet
+                        Orthodontic Treatment
                       </h3>
                     </li>
                     <li>
-                      <h3 className="text-lg flex items-center gap-2">
-                        <CheckCircle /> Customized Aligners for Your Unique
-                        Smile
+                      <h3 className="service-point-title">
+                        <CheckCircle className="service-point-icon" />{" "}
+                        Customized Aligners for Your Unique Smile
                       </h3>
                     </li>
                     <li>
-                      <h3 className="text-lg flex items-center gap-2">
-                        <CheckCircle /> Comfortable, Metal-Free Design
+                      <h3 className="service-point-title">
+                        <CheckCircle className="service-point-icon" />{" "}
+                        Comfortable, Metal-Free Design
                       </h3>
                     </li>
                     <li>
-                      <h3 className="text-lg flex items-center gap-2">
-                        <CheckCircle /> Flexible Financing & Payment Options
+                      <h3 className="service-point-title">
+                        <CheckCircle className="service-point-icon" /> Flexible
+                        Financing & Payment Options
                       </h3>
                     </li>
                     <li>
-                      <h3 className="text-lg flex items-center gap-2">
-                        <CheckCircle /> Convenient Location in Maplewood, NJ
+                      <h3 className="service-point-title">
+                        <CheckCircle className="service-point-icon" />{" "}
+                        Convenient Location in Maplewood, NJ
                       </h3>
                     </li>
                   </ul>

@@ -15,7 +15,7 @@ import { CheckCircle } from "lucide-react";
 export default function OrthodonticsPage() {
   const features = [
     {
-      icon: "/Images/icons/Orthodontic Options to Fit Your Lifestyle.png",
+      icon: "/Images/icons/braces1.png",
       title: "Step 1: Consultation & Smile Assessment",
       description:
         "We start with a complete evaluation to determine which orthodontic option is best for your needs and goals.",
@@ -117,30 +117,33 @@ export default function OrthodonticsPage() {
                 <div className="wcu-points-section">
                   <ul className="wcu-points">
                     <li>
-                      <h3 className="text-lg flex items-center gap-2">
-                        <CheckCircle /> Braces & Aligners for All Ages
+                      <h3 className="service-point-title">
+                        <CheckCircle className="service-point-icon" /> Braces &
+                        Aligners for All Ages
                       </h3>
                     </li>
                     <li>
-                      <h3 className="text-lg flex items-center gap-2">
-                        <CheckCircle /> Invisalign® Certified Provider
+                      <h3 className="service-point-title">
+                        <CheckCircle className="service-point-icon" />{" "}
+                        Invisalign® Certified Provider
                       </h3>
                     </li>
                     <li>
-                      <h3 className="text-lg flex items-center gap-2">
-                        <CheckCircle /> Personalized Treatment Plans
+                      <h3 className="service-point-title">
+                        <CheckCircle className="service-point-icon" />{" "}
+                        Personalized Treatment Plans
                       </h3>
                     </li>
                     <li>
-                      <h3 className="text-lg flex items-center gap-2">
-                        <CheckCircle /> Early Orthodontic Screenings for
-                        Children
+                      <h3 className="service-point-title">
+                        <CheckCircle className="service-point-icon" /> Early
+                        Orthodontic Screenings for Children
                       </h3>
                     </li>
                     <li>
-                      <h3 className="text-lg flex items-center gap-2">
-                        <CheckCircle /> Flexible Financing & Insurance
-                        Assistance
+                      <h3 className="service-point-title">
+                        <CheckCircle className="service-point-icon" /> Flexible
+                        Financing & Insurance Assistance
                       </h3>
                     </li>
                   </ul>

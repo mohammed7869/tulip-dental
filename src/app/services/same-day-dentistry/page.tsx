@@ -127,27 +127,32 @@ export default function SameDayPage() {
                 <div className="wcu-points-section">
                   <ul className="wcu-points">
                     <li>
-                      <h3 className="text-lg">
-                        Prompt Care Without Long Wait Times
+                      <h3 className="service-point-title">
+                        <CheckCircle className="service-point-icon" /> Prompt
+                        Care Without Long Wait Times
                       </h3>
                     </li>
                     <li>
-                      <h3 className="text-lg">
-                        Emergency Appointments Available Daily
+                      <h3 className="service-point-title">
+                        <CheckCircle className="service-point-icon" /> Emergency
+                        Appointments Available Daily
                       </h3>
                     </li>
                     <li>
-                      <h3 className="text-lg">
-                        Advanced Technology for Faster Results
+                      <h3 className="service-point-title">
+                        <CheckCircle className="service-point-icon" /> Advanced
+                        Technology for Faster Results
                       </h3>
                     </li>
                     <li>
-                      <h3 className="text-lg">
-                        Wide Range of Immediate Treatment Options
+                      <h3 className="service-point-title">
+                        <CheckCircle className="service-point-icon" /> Wide
+                        Range of Immediate Treatment Options
                       </h3>
                     </li>
                     <li>
-                      <h3 className="text-lg">
+                      <h3 className="service-point-title">
+                        <CheckCircle className="service-point-icon" />{" "}
                         Convenient Location in Maplewood, NJ
                       </h3>
                     </li>

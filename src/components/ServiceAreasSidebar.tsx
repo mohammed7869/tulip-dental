@@ -85,7 +85,7 @@ export default function ServiceAreasSidebar({
         <div className="fixed bottom-2 md:bottom-8 left-4 z-50">
           <button
             onClick={toggleMobileMenu}
-            className="w-full flex flex-col bg-gradient-to-r from-blue-600 to-cyan-600 text-white rounded-lg px-2 py-3 hover:from-blue-700 hover:to-cyan-700 text-xs sm:text-sm font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+            className="w-full flex flex-col bg-secondary hover:bg-primary text-white rounded-lg px-2 py-3  text-xs sm:text-sm font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
             aria-label="Toggle service areas menu"
           >
             <span>

@@ -1,4 +1,4 @@
-import Script from 'next/script'
+import Script from "next/script";
 
 export default function GoogleTagManager() {
   return (
@@ -13,20 +13,20 @@ export default function GoogleTagManager() {
             new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
             j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','GTM-WGL96NF6');
+            })(window,document,'script','dataLayer','GTM-MBMR4PWC');
           `,
         }}
       />
-      
+
       {/* Google Tag Manager - Body Noscript */}
       <noscript>
         <iframe
-          src="https://www.googletagmanager.com/ns.html?id=GTM-WGL96NF6"
+          src="https://www.googletagmanager.com/ns.html?id=GTM-MBMR4PWC"
           height="0"
           width="0"
-          style={{ display: 'none', visibility: 'hidden' }}
+          style={{ display: "none", visibility: "hidden" }}
         />
       </noscript>
     </>
-  )
-} 
+  );
+}

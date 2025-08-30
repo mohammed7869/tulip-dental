@@ -62,7 +62,7 @@ export default function SportsDentistryPage() {
         <div className="details-page">
           <div className="details-page-header-section">
             <Fade direction="up" duration={1000}>
-              <h1>Sports Dentistry & Athletic Mouthguards in Maplewood, NJ</h1>
+              <h1>Sports Dentistry in Maplewood, NJ</h1>
             </Fade>
             <Fade direction="down" duration={1000}>
               <h2 className="text-center">
@@ -130,26 +130,27 @@ export default function SportsDentistryPage() {
                 <div className="wcu-points-section">
                   <ul className="wcu-points">
                     <li>
-                      <h3 className="text-lg flex items-center gap-2">
-                        <CheckCircle /> Custom-Fitted Protection for Maximum
-                        Comfort
+                      <h3 className="service-point-title">
+                        <CheckCircle className="service-point-icon" />{" "}
+                        Custom-Fitted Protection for Maximum Comfort
                       </h3>
                     </li>
                     <li>
-                      <h3 className="text-lg flex items-center gap-2">
-                        <CheckCircle /> Expert Treatment of Sports-Related
-                        Dental Injuries
+                      <h3 className="service-point-title">
+                        <CheckCircle className="service-point-icon" /> Expert
+                        Treatment of Sports-Related Dental Injuries
                       </h3>
                     </li>
                     <li>
-                      <h3 className="text-lg flex items-center gap-2">
-                        <CheckCircle /> Advanced Materials for Superior
-                        Durability
+                      <h3 className="service-point-title">
+                        <CheckCircle className="service-point-icon" /> Advanced
+                        Materials for Superior Durability
                       </h3>
                     </li>
                     <li>
-                      <h3 className="text-lg flex items-center gap-2">
-                        <CheckCircle /> Flexible Scheduling for Busy Athletes
+                      <h3 className="service-point-title">
+                        <CheckCircle className="service-point-icon" /> Flexible
+                        Scheduling for Busy Athletes
                       </h3>
                     </li>
                   </ul>
@@ -165,45 +166,6 @@ export default function SportsDentistryPage() {
                   alt="dental"
                 />
               </Zoom>
-            </div>
-          </div>
-
-          <div className="features-section">
-            <Fade direction="up" duration={1000}>
-              <h2 className="features-heading">The Sports Dentistry Process</h2>
-              <p className="features-description">
-                Sports dentistry focuses on preventing and treating
-                sports-related dental injuries. From custom-fitted mouthguards
-                to prompt care for trauma, we ensure athletes maintain optimal
-                oral health and performance.
-              </p>
-            </Fade>
-
-            <div className="features-grid">
-              {features.map((service, idx) => (
-                <div className="feature-card" key={idx}>
-                  <div className="flex flex-col items-start mb-3">
-                    <img
-                      src={service.icon}
-                      alt={service.title}
-                      className="w-12 h-12 mb-2"
-                    />
-                    <h3>{service.title}</h3>
-                  </div>
-                  <p>{service.description}</p>
-                  <ul className="feature-list">
-                    {service.points.map((point, i) => (
-                      <li
-                        key={i}
-                        className="feature-list-item flex items-start gap-2"
-                      >
-                        <CheckCircle className="text-primary shrink-0 mt-[2px]" />
-                        <span className="leading-snug">{point}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
             </div>
           </div>
 

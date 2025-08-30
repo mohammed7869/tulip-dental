@@ -26,9 +26,12 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Tulip Dental Maplewood | Dentist in Maplewood, NJ | Cosmetic & Family Dentist",
-  description: "Top-rated cosmetic & family dentist in Maplewood, NJ. Serving patients from Maplewood and nearby areas. Call 973-671-5500 or visit us at 1585 Springfield Avenue, Store #1, Maplewood, NJ 07040.",
-  keywords: "dentist maplewood nj, cosmetic dentist maplewood, family dentist maplewood, dental implants maplewood, root canal maplewood, emergency dentist maplewood",
+  title:
+    "Tulip Dental Maplewood | Dentist in Maplewood, NJ | Cosmetic & Family Dentist",
+  description:
+    "Top-rated cosmetic & family dentist in Maplewood, NJ. Serving patients from Maplewood and nearby areas. Call 973-671-5500 or visit us at 1585 Springfield Avenue, Store #1, Maplewood, NJ 07040.",
+  keywords:
+    "dentist maplewood nj, cosmetic dentist maplewood, family dentist maplewood, dental implants maplewood, root canal maplewood, emergency dentist maplewood",
   authors: [{ name: "Tulip Dental Maplewood" }],
   creator: "Tulip Dental Maplewood",
   publisher: "Tulip Dental Maplewood",
@@ -38,8 +41,10 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://tulipdentalmaplewood.com",
     siteName: "Tulip Dental Maplewood",
-    title: "Tulip Dental Maplewood | Dentist in Maplewood, NJ | Cosmetic & Family Dentist",
-    description: "Top-rated cosmetic & family dentist in Maplewood, NJ. Serving patients from Maplewood and nearby areas. Call 973-671-5500 or visit us at 1585 Springfield Avenue, Store #1, Maplewood, NJ 07040.",
+    title:
+      "Tulip Dental Maplewood | Dentist in Maplewood, NJ | Cosmetic & Family Dentist",
+    description:
+      "Top-rated cosmetic & family dentist in Maplewood, NJ. Serving patients from Maplewood and nearby areas. Call 973-671-5500 or visit us at 1585 Springfield Avenue, Store #1, Maplewood, NJ 07040.",
     images: [
       {
         url: "/Images/tulip-large-Blue-white-website-header.png",
@@ -51,12 +56,14 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Tulip Dental Maplewood | Dentist in Maplewood, NJ | Cosmetic & Family Dentist",
-    description: "Top-rated cosmetic & family dentist in Maplewood, NJ. Serving patients from Maplewood and nearby areas. Call 973-671-5500 or visit us at 1585 Springfield Avenue, Store #1, Maplewood, NJ 07040.",
+    title:
+      "Tulip Dental Maplewood | Dentist in Maplewood, NJ | Cosmetic & Family Dentist",
+    description:
+      "Top-rated cosmetic & family dentist in Maplewood, NJ. Serving patients from Maplewood and nearby areas. Call 973-671-5500 or visit us at 1585 Springfield Avenue, Store #1, Maplewood, NJ 07040.",
     images: ["/Images/tulip-large-Blue-white-website-header.png"],
   },
   viewport: {
-    width: 'device-width',
+    width: "device-width",
     initialScale: 1,
     maximumScale: 1,
     userScalable: false,
@@ -74,17 +81,23 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+        <GoogleTagManager />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+        />
         <meta name="theme-color" content="#ffffff" />
         <meta name="msapplication-TileColor" content="#ffffff" />
         <link rel="canonical" href="https://tulipdentalmaplewood.com" />
         <link rel="icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" href="/Images/tulip-large-Blue-white-website-header.png" />
+        <link
+          rel="apple-touch-icon"
+          href="/Images/tulip-large-Blue-white-website-header.png"
+        />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${poppins.className} antialiased pt-18 md:pt-20`}
       >
-        <GoogleTagManager />
         <DynamicMetadata />
         <Header />
         <LoaderProvider>{children}</LoaderProvider>

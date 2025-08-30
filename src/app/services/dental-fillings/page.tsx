@@ -122,28 +122,33 @@ export default function DentalFillingPage() {
                 <div className="wcu-points-section">
                   <ul className="wcu-points">
                     <li>
-                      <h3 className="text-lg flex items-center gap-2">
-                        <CheckCircle /> Natural-Looking Results
+                      <h3 className="service-point-title">
+                        <CheckCircle className="service-point-icon" />{" "}
+                        Natural-Looking Results
                       </h3>
                     </li>
                     <li>
-                      <h3 className="text-lg flex items-center gap-2">
-                        <CheckCircle /> Safe, Mercury-Free Materials
+                      <h3 className="service-point-title">
+                        <CheckCircle className="service-point-icon" /> Safe,
+                        Mercury-Free Materials
                       </h3>
                     </li>
                     <li>
-                      <h3 className="text-lg flex items-center gap-2">
-                        <CheckCircle /> Gentle, Painless Cavity Repair
+                      <h3 className="service-point-title">
+                        <CheckCircle className="service-point-icon" /> Gentle,
+                        Painless Cavity Repair
                       </h3>
                     </li>
                     <li>
-                      <h3 className="text-lg flex items-center gap-2">
-                        <CheckCircle /> Quick Treatment, Long-Lasting Results
+                      <h3 className="service-point-title">
+                        <CheckCircle className="service-point-icon" /> Quick
+                        Treatment, Long-Lasting Results
                       </h3>
                     </li>
                     <li>
-                      <h3 className="text-lg flex items-center gap-2">
-                        <CheckCircle /> Convenient & Friendly Local Care
+                      <h3 className="service-point-title">
+                        <CheckCircle className="service-point-icon" />{" "}
+                        Convenient & Friendly Local Care
                       </h3>
                     </li>
                   </ul>

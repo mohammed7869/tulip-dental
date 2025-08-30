@@ -150,25 +150,32 @@ export default function HarrisburgServiceAreaClient() {
                 07112) trust us because:
               </div>
               <div className="wcu-points-section">
-                <ul className="wcu-points">
-                  <li>
-                    <CheckCircle /> We provide personalized, patient-first care
+                <ul className="wcu-points space-y-3">
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="service-point-icon mt-1 shrink-0" />
+                    <span>We provide personalized, patient-first care</span>
                   </li>
-                  <li>
-                    <CheckCircle /> Our technology ensures accurate, comfortable
-                    treatments
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="service-point-icon mt-1 shrink-0" />
+                    <span>
+                      Our technology ensures accurate, comfortable treatments
+                    </span>
                   </li>
-                  <li>
-                    <CheckCircle /> We offer flexible scheduling, including
-                    same-day visits
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="service-point-icon mt-1 shrink-0" />
+                    <span>
+                      We offer flexible scheduling, including same-day visits
+                    </span>
                   </li>
-                  <li>
-                    <CheckCircle /> We’re insurance-friendly and provide payment
-                    plan options
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="service-point-icon mt-1 shrink-0" />
+                    <span>
+                      We’re insurance-friendly and provide payment plan options
+                    </span>
                   </li>
-                  <li>
-                    <CheckCircle /> Our location is convenient and easy to
-                    access
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="service-point-icon mt-1 shrink-0" />
+                    <span>Our location is convenient and easy to access</span>
                   </li>
                 </ul>
               </div>

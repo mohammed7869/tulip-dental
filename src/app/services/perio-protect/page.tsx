@@ -125,31 +125,33 @@ export default function PerioProtectPage() {
                 <div className="wcu-points-section">
                   <ul className="wcu-points">
                     <li>
-                      <h3 className="text-lg flex items-center gap-2">
-                        <CheckCircle /> Non-Surgical, Comfortable Gum Treatment
+                      <h3 className="service-point-title">
+                        <CheckCircle className="service-point-icon" />{" "}
+                        Non-Surgical, Comfortable Gum Treatment
                       </h3>
                     </li>
                     <li>
-                      <h3 className="text-lg flex items-center gap-2">
-                        <CheckCircle /> Custom-Fit Trays for Maximum
-                        Effectiveness
+                      <h3 className="service-point-title">
+                        <CheckCircle className="service-point-icon" />{" "}
+                        Custom-Fit Trays for Maximum Effectiveness
                       </h3>
                     </li>
                     <li>
-                      <h3 className="text-lg flex items-center gap-2">
-                        <CheckCircle /> Treats Gum Disease at Home Between
-                        Visits
+                      <h3 className="service-point-title">
+                        <CheckCircle className="service-point-icon" /> Treats
+                        Gum Disease at Home Between Visits
                       </h3>
                     </li>
                     <li>
-                      <h3 className="text-lg flex items-center gap-2">
-                        <CheckCircle /> Freshens Breath and Improves Overall
-                        Oral Health
+                      <h3 className="service-point-title">
+                        <CheckCircle className="service-point-icon" /> Freshens
+                        Breath and Improves Overall Oral Health
                       </h3>
                     </li>
                     <li>
-                      <h3 className="text-lg flex items-center gap-2">
-                        <CheckCircle /> Convenient Location in Maplewood, NJ
+                      <h3 className="service-point-title">
+                        <CheckCircle className="service-point-icon" />{" "}
+                        Convenient Location in Maplewood, NJ
                       </h3>
                     </li>
                   </ul>

@@ -116,28 +116,33 @@ export default function DentalEmergencyPage() {
                 <div className="wcu-points-section">
                   <ul className="wcu-points">
                     <li>
-                      <h3 className="text-lg flex items-center gap-2">
-                        <CheckCircle /> Fast, Same-Day Appointments
+                      <h3 className="service-point-title">
+                        <CheckCircle className="service-point-icon" /> Fast,
+                        Same-Day Appointments
                       </h3>
                     </li>
                     <li>
-                      <h3 className="text-lg flex items-center gap-2">
-                        <CheckCircle /> Comprehensive Emergency Services
+                      <h3 className="service-point-title">
+                        <CheckCircle className="service-point-icon" />{" "}
+                        Comprehensive Emergency Services
                       </h3>
                     </li>
                     <li>
-                      <h3 className="text-lg flex items-center gap-2">
-                        <CheckCircle /> Gentle, Pain-Relieving Treatments
+                      <h3 className="service-point-title">
+                        <CheckCircle className="service-point-icon" /> Gentle,
+                        Pain-Relieving Treatments
                       </h3>
                     </li>
                     <li>
-                      <h3 className="text-lg flex items-center gap-2">
-                        <CheckCircle /> Experienced & Compassionate Team
+                      <h3 className="service-point-title">
+                        <CheckCircle className="service-point-icon" />{" "}
+                        Experienced & Compassionate Team
                       </h3>
                     </li>
                     <li>
-                      <h3 className="text-lg flex items-center gap-2">
-                        <CheckCircle /> Flexible Payment & Insurance Options
+                      <h3 className="service-point-title">
+                        <CheckCircle className="service-point-icon" /> Flexible
+                        Payment & Insurance Options
                       </h3>
                     </li>
                   </ul>

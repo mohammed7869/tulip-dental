@@ -126,30 +126,33 @@ export default function DentalImplantsPage() {
                 <div className="wcu-points-section">
                   <ul className="wcu-points">
                     <li>
-                      <h3 className="text-lg flex items-center gap-2">
-                        <CheckCircle /> Highly Experienced in Implant Dentistry
+                      <h3 className="service-point-title">
+                        <CheckCircle className="service-point-icon" /> Highly
+                        Experienced in Implant Dentistry
                       </h3>
                     </li>
                     <li>
-                      <h3 className="text-lg flex items-center gap-2">
-                        <CheckCircle /> Advanced Technology & 3D Imaging
+                      <h3 className="service-point-title">
+                        <CheckCircle className="service-point-icon" /> Advanced
+                        Technology & 3D Imaging
                       </h3>
                     </li>
                     <li>
-                      <h3 className="text-lg flex items-center gap-2">
-                        <CheckCircle /> Customized Treatment Plans
+                      <h3 className="service-point-title">
+                        <CheckCircle className="service-point-icon" />{" "}
+                        Customized Treatment Plans
                       </h3>
                     </li>
                     <li>
-                      <h3 className="text-lg flex items-center gap-2">
-                        <CheckCircle /> Comfortable Environment & Sedation
-                        Options
+                      <h3 className="service-point-title">
+                        <CheckCircle className="service-point-icon" />{" "}
+                        Comfortable Environment & Sedation Options
                       </h3>
                     </li>
                     <li>
-                      <h3 className="text-lg flex items-center gap-2">
-                        <CheckCircle /> Flexible Payment Plans & Insurance
-                        Accepted
+                      <h3 className="service-point-title">
+                        <CheckCircle className="service-point-icon" /> Flexible
+                        Payment Plans & Insurance Accepted
                       </h3>
                     </li>
                   </ul>

@@ -129,27 +129,32 @@ export default function Page() {
                   <ul className="wcu-points">
                     <li>
                       <h3 className="text-lg  flex items-center gap-2">
-                        <CheckCircle /> Long-Lasting, Natural-Looking Results
+                        <CheckCircle className="service-point-icon" />{" "}
+                        Long-Lasting, Natural-Looking Results
                       </h3>
                     </li>
                     <li>
-                      <h3 className="text-lg flex items-center gap-2">
-                        <CheckCircle /> Advanced Implant Technology
+                      <h3 className="service-point-title">
+                        <CheckCircle className="service-point-icon" /> Advanced
+                        Implant Technology
                       </h3>
                     </li>
                     <li>
-                      <h3 className="text-lg flex items-center gap-2">
-                        <CheckCircle /> Personalized Treatment Plans
+                      <h3 className="service-point-title">
+                        <CheckCircle className="service-point-icon" />{" "}
+                        Personalized Treatment Plans
                       </h3>
                     </li>
                     <li>
-                      <h3 className="text-lg flex items-center gap-2">
-                        <CheckCircle /> Comfortable, Stress-Free Procedures
+                      <h3 className="service-point-title">
+                        <CheckCircle className="service-point-icon" />{" "}
+                        Comfortable, Stress-Free Procedures
                       </h3>
                     </li>
                     <li>
-                      <h3 className="text-lg flex items-center gap-2">
-                        <CheckCircle /> Convenient Location in Maplewood, NJ
+                      <h3 className="service-point-title">
+                        <CheckCircle className="service-point-icon" />{" "}
+                        Convenient Location in Maplewood, NJ
                       </h3>
                     </li>
                   </ul>

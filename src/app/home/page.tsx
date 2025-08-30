@@ -52,7 +52,7 @@ const banners = [
     image2: "/Images/Banner-2.jpg",
   },
   {
-    image: "/Images/Banner-3.jpeg",
+    image: "/Images/dentist-examining-female-patient-teeth.jpg",
     title: "New Patient Special - Only $79",
     subtitle:
       "Get a full dental exam, professional cleaning, and digital X-rays - perfect for first-time visitors.",
@@ -60,7 +60,7 @@ const banners = [
     price: "$79",
     description: "For new patients without insurance",
     badge: "Special Offer",
-    image2: "/Images/Banner-3.jpeg",
+    image2: "/Images/dentist-examining-female-patient-teeth.jpg",
   },
   {
     image: "/Images/Banner-4.jpg",
@@ -238,10 +238,6 @@ export default function HomePage() {
                         Book Your Appointment
                         <ArrowRight className="w-4 h-4 md:w-5 md:h-5 group-hover:translate-x-1 transition-transform" />
                       </button>
-                      {/* <button className="group bg-white/10 backdrop-blur-md text-white px-6 py-3 md:px-8 md:py-4 rounded-lg md:rounded-xl font-semibold text-base md:text-lg hover:bg-white/20 transition-all duration-300 border border-white/20 flex items-center justify-center gap-2">
-                                                <Play className="w-4 h-4 md:w-5 md:h-5" />
-                                                Watch Video
-                                            </button> */}
                     </div>
 
                     {/* Trust Indicators */}
@@ -445,9 +441,9 @@ export default function HomePage() {
           {/* Right Side - Text */}
           <div className="w-full md:w-1/2 text-center md:text-left space-y-6">
             <Fade delay={200}>
-              <h2 className="text-3xl md:text-5xl font-semibold text-primary leading-tight">
-                About Tulip Dental
-              </h2>
+              <h1 className="text-3xl md:text-5xl font-semibold text-primary leading-tight">
+                Dentist in Maplewood, NJ
+              </h1>
             </Fade>
 
             <Fade delay={500}>

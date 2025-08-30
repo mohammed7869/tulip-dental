@@ -126,28 +126,33 @@ export default function PainlessTreatmentPage() {
                 <div className="wcu-points-section">
                   <ul className="wcu-points">
                     <li>
-                      <h3 className="text-lg flex items-center gap-2">
-                        <CheckCircle /> Gentle, Compassionate Approach
+                      <h3 className="service-point-title">
+                        <CheckCircle className="service-point-icon" /> Gentle,
+                        Compassionate Approach
                       </h3>
                     </li>
                     <li>
-                      <h3 className="text-lg flex items-center gap-2">
-                        <CheckCircle /> Advanced Technology for Maximum Comfort
+                      <h3 className="service-point-title">
+                        <CheckCircle className="service-point-icon" /> Advanced
+                        Technology for Maximum Comfort
                       </h3>
                     </li>
                     <li>
-                      <h3 className="text-lg flex items-center gap-2">
-                        <CheckCircle /> Local Anesthesia & Sedation Options
+                      <h3 className="service-point-title">
+                        <CheckCircle className="service-point-icon" /> Local
+                        Anesthesia & Sedation Options
                       </h3>
                     </li>
                     <li>
-                      <h3 className="text-lg flex items-center gap-2">
-                        <CheckCircle /> Ideal for Patients with Dental Anxiety
+                      <h3 className="service-point-title">
+                        <CheckCircle className="service-point-icon" /> Ideal for
+                        Patients with Dental Anxiety
                       </h3>
                     </li>
                     <li>
-                      <h3 className="text-lg flex items-center gap-2">
-                        <CheckCircle /> Convenient Location in Maplewood, NJ
+                      <h3 className="service-point-title">
+                        <CheckCircle className="service-point-icon" />{" "}
+                        Convenient Location in Maplewood, NJ
                       </h3>
                     </li>
                   </ul>
