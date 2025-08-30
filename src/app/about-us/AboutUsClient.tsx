@@ -252,14 +252,14 @@ export default function AboutUsClient() {
           <div className="flex text-center flex-col sm:flex-row gap-8 sm:gap-4">
             <a
               href="tel:9736715500"
-              className="w-full flex flex-col bg-gradient-to-r from-blue-600 to-cyan-600 text-white rounded-lg px-2 py-3 hover:from-blue-700 hover:to-cyan-700 text-xs sm:text-sm font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+              className="w-full flex flex-col bg-secondary hover:bg-primary text-white rounded-lg px-2 py-3 hover:from-blue-700 hover:to-cyan-700 text-xs sm:text-sm font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
             >
               <span className="text-sm sm:text-base">Call us for Booking</span>
               973-671-5500
             </a>
             <button
               onClick={() => setIsBookingOpen(true)}
-              className="w-full flex flex-col bg-primary hover:bg-secondary/80 text-white rounded-lg px-2 py-3 hover:from-blue-700 hover:to-cyan-700 text-xs sm:text-sm font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+              className="w-full flex flex-col bg-secondary hover:bg-primary text-white rounded-lg px-2 py-3 hover:from-blue-700 hover:to-cyan-700 text-xs sm:text-sm font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
             >
               Book Now
               <span className="text-sm sm:text-base ">

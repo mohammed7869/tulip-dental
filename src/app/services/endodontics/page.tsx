@@ -15,7 +15,7 @@ import { CheckCircle } from "lucide-react";
 export default function Page() {
   const features = [
     {
-      icon: "/Images/icons/Root-Canal.png",
+      icon: "/Images/icons/root-canal.png",
       title: "Root Canal Therapy",
       description:
         "Root canal treatment removes infected or damaged pulp inside the tooth, cleans and disinfects the area, and seals it to prevent reinfection. Our modern techniques make the process as comfortable and efficient as possible.",
