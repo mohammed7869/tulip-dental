@@ -4,606 +4,333 @@ import { Metadata } from "next";
 export const metadataConfig = {
   default: {
     title:
-      "Tulip Dental | Dentist in Maplewood NJ | Maplewood Cosmetic Dentist | Family Dentist",
+      "Tulip Dental | Dentist in Maplewood NJ | Maplewood Cosmetic Dentist | Family Dentist in South Orange",
     description:
-      "Top-rated cosmetic & family dentist in Maplewood, NJ. Serving patients from Maplewood and nearby areas. Call 973-671-5500 or visit us at 1585 Springfield Avenue, Store #1, Maplewood, NJ 07040.",
+      "Tulip Dental Maplewood - Trusted family & cosmetic dentist in Maplewood, NJ. Same-day emergency care and gentle dentistry for all ages. Serving Maplewood (07040), South Orange (07079), Irvington (07111), Vauxhall (07088), and nearby Newark (07106, 07112). Call 973-671-5500 or Book Online.",
     keywords:
       "dentist maplewood nj, cosmetic dentist maplewood, family dentist maplewood, dental implants maplewood, root canal maplewood, emergency dentist maplewood",
   },
   services: {
-    "cosmetic-dentistry": {
-      title:
-        "Cosmetic Dentist in Maplewood, NJ | Tulip Dental | Cosmetic & Family Dentistry",
-      description:
-        "Looking for a cosmetic dentist near you in Maplewood, NJ? Tulip Dental offers teeth whitening, veneers, bonding, and smile makeovers for patients in Maplewood and surrounding areas. Call 973-671-5500.",
-      keywords:
-        "cosmetic dentist maplewood nj, teeth whitening maplewood, veneers maplewood, smile makeover maplewood, cosmetic dentistry maplewood",
-    },
-    "dental-implants": {
-      title:
-        "Dental Implants in Maplewood, NJ | Tulip Dental | Cosmetic & Family Dentistry",
-      description:
-        "Restore your smile with durable dental implants at Tulip Dental in Maplewood, NJ. We proudly serve patients from Maplewood and nearby areas. Call 973-671-5500 today.",
-      keywords:
-        "dental implants maplewood nj, tooth replacement maplewood, implant dentist maplewood, dental implant surgery maplewood, permanent teeth maplewood",
-    },
-    "root-canal": {
-      title:
-        "Root Canal Treatment in Maplewood, NJ | Maple Dental | Family & Cosmetic Dentistry",
-      description:
-        "Need a root canal near you in Maplewood, NJ? Maple Dental offers gentle, effective root canal therapy for patients in Maplewood, and surrounding areas. Call 973-671-5500.",
-      keywords:
-        "root canal maplewood pa, endodontics maplewood, root canal treatment Maplewood, NJinless root canal maplewood, endodontist maplewood",
-    },
-    "emergency-dentistry": {
-      title:
-        "Emergency Dentist in Maplewood, NJ | Maple Dental | Cosmetic & Family Dentistry",
-      description:
-        "Need an emergency dentist near you in Maplewood, NJ? Maple Dental offers same-day urgent dental care for patients in Maplewood, and nearby. Call 973-671-5500.",
-      keywords:
-        "emergency dentist maplewood pa, urgent dental care maplewood, dental emergency maplewood, toothache maplewood, broken tooth maplewood, 24/7 dentist maplewood",
-    },
-    orthodontics: {
-      title:
-        "Orthodontics in Maplewood, NJ | Maple Dental | Cosmetic & Family Dentistry",
-      description:
-        "Maple Dental in Maplewood, NJ offers expert orthodontic care, including braces and Invisalign®, for children, teens, and adults. Proudly serving Maplewood, and nearby areas. Call 973-671-5500.",
-      keywords:
-        "orthodontics maplewood pa, braces maplewood, invisalign maplewood, orthodontist maplewood, teeth straightening maplewood",
-    },
-    invisalign: {
-      title:
-        "Invisalign in Maplewood, NJ | Maple Dental | Cosmetic & Family Dentistry",
-      description:
-        "Straighten your teeth discreetly with Invisalign at Maple Dental in Maplewood, NJ. Trusted provider for clear aligners near you in Maplewood, and nearby communities.",
-      keywords:
-        "invisalign maplewood pa, clear aligners maplewood, invisible braces maplewood, teeth straightening maplewood, invisalign provider maplewood",
-    },
-    "whitening-&-veneers": {
-      title:
-        "Teeth Whitening & Veneers in Maplewood, NJ | Maple Dental | Cosmetic & Family Dentistry",
-      description:
-        "Brighten your smile with veneers and professional teeth whitening in Maplewood, NJ. Maple Dental offers cosmetic dentistry near you in Maplewood, and nearby areas.",
-      keywords:
-        "teeth whitening maplewood pa, veneers maplewood, professional whitening maplewood, dental veneers maplewood, smile makeover maplewood",
-    },
-    "crowns-and-bridges": {
-      title:
-        "Dental Crowns & Bridges in Maplewood, NJ | Maple Dental | Cosmetic & Family Dentistry",
-      description:
-        "Get durable, natural-looking dental crowns and bridges near you in Maplewood, NJ. Maple Dental restores damaged teeth for patients in Maplewood, and surrounding areas.",
-      keywords:
-        "dental crowns maplewood pa, dental bridges maplewood, crown and bridge maplewood, restorative dentistry maplewood, tooth restoration maplewood",
-    },
-    "wisdom-teeth": {
-      title:
-        "Wisdom Teeth Removal in Maplewood, NJ | Maple Dental | Cosmetic & Family Dentistry",
-      description:
-        "Gentle wisdom teeth removal near you in Maplewood, NJ. Maple Dental offers safe extractions for teens and adults in Lawnton, Penbrook, Colonial Park, and surrounding areas.",
-      keywords:
-        "wisdom teeth removal maplewood pa, wisdom tooth extraction maplewood, oral surgery maplewood, tooth extraction maplewood, dental surgery maplewood",
-    },
-    "kids-&-children-dentistry": {
-      title:
-        "Pediatric Dentist in Maplewood, NJ | Maple Dental | Cosmetic & Family Dentistry",
-      description:
-        "Looking for a gentle pediatric dentist near you in Maplewood, NJ? Maple Dental provides trusted kids' dental care for families in Maplewood, south-orange, and nearby.",
-      keywords:
-        "kids dentist maplewood pa, children dentistry maplewood, pediatric dentist maplewood, family dentist maplewood, kids dental care maplewood",
-    },
-    "dental-emergencies": {
-      title:
-        "Dental Emergency in Maplewood, NJ | Maple Dental | Cosmetic & Family Dentistry",
-      description:
-        "Maple Dental provides fast and reliable emergency dental care near you in Maplewood, NJ. We offer same-day appointments for patients in Lawnton, Maplewood, and surrounding areas.",
-      keywords:
-        "dental emergencies maplewood pa, emergency dental care maplewood, urgent dentist maplewood, toothache maplewood, broken tooth maplewood",
-    },
-    "dental-fillings": {
-      title:
-        "Durable & Natural-Looking Dental Fillings in Maplewood, NJ | Maple Dental | Cosmetic & Family Dentistry",
-      description:
-        "Restore your smile with high-quality dental fillings at Maple Dental in Maplewood, NJ. We offer natural-looking composite restorations for patients in Maplewood, and nearby communities. Call 973-671-5500.",
-      keywords:
-        "dental fillings maplewood pa, tooth fillings maplewood, cavity fillings maplewood, composite fillings maplewood, dental restoration maplewood",
-    },
-    endodontics: {
-      title:
-        "Endodontics Treatment in Maplewood, NJ | Maple Dental | Cosmetic & Family Dentistry",
-      description:
-        "Expert endodontic care near you in Maplewood, NJ. Maple Dental offers gentle root canal treatments and pain relief for patients in Maplewood, and nearby areas.",
-      keywords:
-        "endodontics maplewood pa, root canal specialist maplewood, endodontist maplewood, root canal therapy maplewood, endodontic treatment maplewood",
-    },
-    halitosis: {
-      title:
-        "Halitosis Treatment in Maplewood, NJ | Maple Dental | Family & Cosmetic Dentistry",
-      description:
-        "Struggling with bad breath? Get expert halitosis treatment in Maplewood, NJ at Maple Dental. We help patients in Maplewood, and nearby areas breathe fresher.",
-      keywords:
-        "halitosis treatment maplewood pa, bad breath treatment maplewood, chronic bad breath maplewood, halitosis cure maplewood, fresh breath maplewood",
-    },
-    "oral-surgery": {
-      title:
-        "Oral Surgery in Maplewood, NJ | Maple Dental | Cosmetic & Family Dentistry",
-      description:
-        "Looking for trusted oral surgery near you in Maplewood, NJ? Maple Dental offers gentle tooth extractions, wisdom teeth removal, and more in Maplewood, and surrounding areas. Call 973-671-5500.",
-      keywords:
-        "oral surgery maplewood pa, dental surgery maplewood, oral surgeon maplewood, wisdom teeth removal maplewood, dental implants maplewood",
-    },
-    "painless-treatment": {
-      title:
-        "Painless Dentistry in Maplewood, NJ | Maple Dental | Family & Cosmetic Dentistry",
-      description:
-        "Experience gentle, pain-free dental care in Maplewood, NJ at Maple Dental. We use advanced technology and comfort techniques for stress-free visits near Maplewood, and beyond.",
-      keywords:
-        "painless dental treatment maplewood pa, comfortable dentistry maplewood, anxiety-free dental care maplewood, gentle dentist maplewood, sedation dentistry maplewood",
-    },
-    "perio-protect": {
-      title:
-        "Perio Protect in Maplewood, NJ | Maple Dental | Family & Cosmetic Dentistry",
-      description:
-        "Treat gum disease comfortably with Perio Protect in Maplewood, NJ at Maple Dental. A non-invasive solution for bleeding gums and gum infections near Maplewood, and beyond.",
-      keywords:
-        "perio protect maplewood pa, gum disease treatment maplewood, periodontal treatment maplewood, gum health maplewood, perio protect therapy maplewood",
-    },
-    "permanent-teeth-replacement": {
-      title:
-        "Permanent Teeth Replacement in Maplewood, NJ | Maple Dental | Cosmetic & Family Dentistry",
-      description:
-        "Need permanent teeth replacement near you in Maplewood, NJ? Maple Dental offers dental implants, bridges, and dentures to restore your smile in Maplewood, Progress, and nearby.",
-      keywords:
-        "permanent teeth replacement maplewood pa, dental implants maplewood, tooth replacement maplewood, missing teeth maplewood, dental restoration maplewood",
-    },
-    "same-day-dentistry": {
-      title:
-        "Same-Day Dentistry in Maplewood, NJ | Maple Dental | Cosmetic & Family Dentistry",
-      description:
-        "Quick and reliable same-day dental care in Maplewood, NJ. Maple Dental offers crowns, fillings, and emergency treatments for patients in Maplewood, and nearby.",
-      keywords:
-        "same day dentistry maplewood pa, quick dental care maplewood, same day crowns maplewood, immediate dental treatment maplewood, fast dental care maplewood",
-    },
-    "sports-dentistry": {
-      title:
-        "Sports Dentistry in Maplewood, NJ | Maple Dental | Cosmetic & Family Dentistry",
-      description:
-        "Protect your smile with sports dentistry services near you in Maplewood, NJ. Maple Dental offers custom athletic mouthguards and emergency dental care for patients in Maplewood, and nearby.",
-      keywords:
-        "sports dentistry maplewood pa, athletic dental care maplewood, mouthguards maplewood, sports mouth protection maplewood, athlete dental care maplewood",
-    },
-    "tooth-extraction": {
-      title:
-        "Tooth Extraction in Maplewood, NJ | Maple Dental | Cosmetic & Family Dentistry",
-      description:
-        "Maple Dental in Maplewood, NJ offers gentle and efficient tooth extraction services near you. Serving Maplewood, and nearby areas with same-day care.",
-      keywords:
-        "tooth extraction maplewood pa, gentle tooth removal maplewood, dental extraction Maplewood, NJinless extraction maplewood, tooth removal maplewood",
-    },
     // New SEO-optimized service routes
     "emergency-dentistry-maplewood-nj": {
       title:
-        "Emergency Dentist in Maplewood, NJ | Maple Dental | 24/7 Urgent Dental Care",
+        "Emergency Dentist in Maplewood, NJ | Tulip Dental | Family & Cosmetic Dentist Near You in Maplewood",
       description:
-        "Need an emergency dentist near you in Maplewood, NJ? Maple Dental offers same-day urgent dental care for patients in Maplewood, and nearby. Call 973-671-5500.",
+        "Tulip Dental in Maplewood, NJ offers fast, gentle emergency dental care for all ages. Same-day appointments, pain relief, and tooth-saving treatments. Serving Maplewood, South Orange, Irvington, Vauxhall, and nearby Newark.",
       keywords:
-        "emergency dentist maplewood pa, urgent dental care maplewood, dental emergency maplewood, toothache maplewood, broken tooth maplewood, 24/7 dentist maplewood",
+        "emergency dentist maplewood nj, urgent dental care maplewood, dental emergency maplewood, toothache maplewood, broken tooth maplewood, 24/7 dentist maplewood",
     },
     "root-canal-treatment-maplewood-nj": {
       title:
-        "Root Canal Treatment in Maplewood, NJ | Maple Dental | Painless Endodontics",
+        "Root Canal Specialist in Maplewood, NJ | Tulip Dental | Gentle Endodontic Care in Maplewood",
       description:
-        "Need a root canal near you in Maplewood, NJ? Maple Dental offers gentle, effective root canal therapy for patients in Maplewood, and surrounding areas. Call 973-671-5500.",
+        "Need a root canal near Maplewood, NJ (07040)? Tulip Dental offers pain-free, advanced root canal treatment to save your natural tooth. Serving Maplewood, South Orange, Irvington, Vauxhall & nearby Newark.",
       keywords:
-        "root canal maplewood pa, endodontics maplewood, root canal treatment Maplewood, NJinless root canal maplewood, endodontist maplewood",
+        "root canal maplewood nj, endodontics maplewood, root canal treatment Maplewood, NJinless root canal maplewood, endodontist maplewood",
     },
     "oral-surgery-maplewood-nj": {
       title:
-        "Oral Surgery in Maplewood, NJ | Maple Dental | Expert Dental Surgery",
+        "Oral Surgery in Maplewood, NJ | Tulip Dental | Trusted Dental Surgeon Near You in Maplewood",
       description:
-        "Looking for trusted oral surgery near you in Maplewood, NJ? Maple Dental offers gentle tooth extractions, wisdom teeth removal, and more in Maplewood, and surrounding areas. Call 973-671-5500.",
+        "Looking for a dental surgeon near Maplewood, NJ (07040)? Tulip Dental offers expert oral surgery, including extractions, wisdom tooth removal & more. Serving Maplewood, South Orange, Vauxhall, Irvington & Newark.",
       keywords:
-        "oral surgery maplewood pa, dental surgery maplewood, oral surgeon maplewood, wisdom teeth removal maplewood, dental implants maplewood",
+        "oral surgery maplewood nj, dental surgery maplewood, oral surgeon maplewood, wisdom teeth removal maplewood, dental implants maplewood",
     },
     "cosmetic-dentistry-maplewood-nj": {
       title:
-        "Cosmetic Dentist in Maplewood, NJ | Maple Dental | Smile Makeovers & Veneers",
+        "Cosmetic Dentist in Maplewood, NJ | Tulip Dental | Smile Makeovers Near You in Maplewood",
       description:
-        "Looking for a cosmetic dentist near you in Maplewood, NJ? Maple Dental offers teeth whitening, veneers, bonding, and smile makeovers for patients in Maplewood, and surrounding areas. Call 973-671-5500.",
+        "Looking for a cosmetic dentist near Maplewood, NJ (07040)? Tulip Dental offers veneers, teeth whitening, bonding & full smile makeovers. Serving South Orange, Irvington, Vauxhall, and Newark.",
       keywords:
-        "cosmetic dentist maplewood pa, teeth whitening maplewood, veneers maplewood, smile makeover maplewood, cosmetic dentistry colonial park, cosmetic dentistry penbrook",
+        "cosmetic dentist maplewood nj, teeth whitening maplewood, veneers maplewood, smile makeover maplewood, cosmetic dentistry colonial park, cosmetic dentistry vauxhall",
     },
     "dental-fillings-maplewood-nj": {
       title:
-        "Dental Fillings in Maplewood, NJ | Maple Dental | Natural-Looking Restorations",
+        "Dental Fillings in Maplewood, NJ | Tulip Dental | Tooth-Colored Fillings Near You in Maplewood",
       description:
-        "Restore your smile with high-quality dental fillings at Maple Dental in Maplewood, NJ. We offer natural-looking composite restorations for patients in Maplewood, and nearby communities. Call 973-671-5500.",
+        "Restore your smile with safe, natural-looking dental fillings at Tulip Dental in Maplewood, NJ. We use mercury-free materials to treat cavities and preserve healthy teeth. Serving South Orange, Vauxhall, Irvington, and Newark.",
       keywords:
-        "dental fillings maplewood pa, tooth fillings maplewood, cavity fillings maplewood, composite fillings maplewood, dental restoration maplewood",
+        "dental fillings maplewood nj, tooth fillings maplewood, cavity fillings maplewood, composite fillings maplewood, dental restoration maplewood",
     },
     "dental-implants-maplewood-nj": {
       title:
-        "Dental Implants in Maplewood, NJ | Maple Dental | Permanent Tooth Replacement",
+        "Dental Implants in Maplewood, NJ | Tulip Dental | Permanent Tooth Replacement Near You in Maplewood",
       description:
-        "Restore your smile with durable dental implants at Maple Dental in Maplewood, NJ. We proudly serve patients from Maplewood, and nearby areas. Call 973-671-5500 today.",
+        "Regain your confident smile with dental implants from Tulip Dental in Maplewood, NJ. We provide durable, natural-looking tooth replacements for missing teeth. Proudly serving South Orange, Vauxhall, Irvington, Newark & nearby areas.",
       keywords:
-        "dental implants maplewood pa, tooth replacement maplewood, implant dentist maplewood, dental implant surgery maplewood, permanent teeth maplewood",
+        "dental implants maplewood nj, tooth replacement maplewood, implant dentist maplewood, dental implant surgery maplewood, permanent teeth maplewood",
     },
     "orthodontics-maplewood-nj": {
       title:
-        "Orthodontics in Maplewood, NJ | Maple Dental | Braces & Invisalign",
+        "Orthodontics in Maplewood, NJ | Tulip Dental | Braces & Invisalign Near You in Maplewood",
       description:
-        "Maple Dental in Maplewood, NJ offers expert orthodontic care, including braces and Invisalign®, for children, teens, and adults. Proudly serving Maplewood, and nearby areas. Call 973-671-5500.",
+        "Achieve a straighter smile with orthodontic treatments at Tulip Dental in Maplewood, NJ. We offer clear aligners and braces for kids, teens, and adults. Serving South Orange, Vauxhall, Irvington, Newark & surrounding communities.",
       keywords:
-        "orthodontics maplewood pa, braces maplewood, invisalign maplewood, orthodontist maplewood, teeth straightening maplewood",
+        "orthodontics maplewood nj, braces maplewood, invisalign maplewood, orthodontist maplewood, teeth straightening maplewood",
     },
     "crowns-and-bridges-maplewood-nj": {
       title:
-        "Dental Crowns & Bridges in Maplewood, NJ | Maple Dental | Restorative Dentistry",
+        "Crowns & Bridges in Maplewood, NJ | Tulip Dental | Restore Missing Teeth Near You in Maplewood",
       description:
-        "Get durable, natural-looking dental crowns and bridges near you in Maplewood, NJ. Maple Dental restores damaged teeth for patients in Maplewood, and surrounding areas.",
+        "Restore function and confidence with custom crowns and bridges at Tulip Dental in Maplewood, NJ. Durable, natural-looking restorations using advanced techniques. Serving Maplewood, South Orange, Vauxhall, Irvington & nearby Newark.",
       keywords:
-        "dental crowns maplewood pa, dental bridges maplewood, crown and bridge maplewood, restorative dentistry maplewood, tooth restoration maplewood",
+        "dental crowns maplewood nj, dental bridges maplewood, crown and bridge maplewood, restorative dentistry maplewood, tooth restoration maplewood",
     },
     "dental-emergencies-maplewood-nj": {
-      title: "Dental Emergencies in Maplewood, NJ | Maple Dental | Urgent Care",
+      title:
+        "Dental Emergencies in Maplewood, NJ | Tulip Dental | Urgent Dental Care Near You in Maplewood",
       description:
-        "Maple Dental provides fast and reliable emergency dental care near you in Maplewood, NJ. We offer same-day appointments for patients in Lawnton, Maplewood, and surrounding areas.",
+        "Need urgent dental care in Maplewood, NJ? Tulip Dental offers same-day emergency appointments for toothaches, broken teeth, knocked-out teeth, and more. Serving South Orange, Vauxhall, Irvington, Newark & surrounding areas.",
       keywords:
-        "dental emergencies maplewood pa, emergency dental care maplewood, urgent dentist maplewood, toothache maplewood, broken tooth maplewood",
+        "dental emergencies maplewood nj, emergency dental care maplewood, urgent dentist maplewood, toothache maplewood, broken tooth maplewood",
     },
     "tooth-extraction-maplewood-nj": {
       title:
-        "Tooth Extraction in Maplewood, NJ | Maple Dental | Gentle Removal",
+        "Tooth Extractions in Maplewood, NJ | Tulip Dental | Gentle & Painless Removal Near You in Maplewood",
       description:
-        "Maple Dental in Maplewood, NJ offers gentle and efficient tooth extraction services near you. Serving Maplewood, and nearby areas with same-day care.",
+        "Tulip Dental in Maplewood, NJ offers gentle, precise tooth extractions for damaged, decayed, or overcrowded teeth. Same-day appointments available. Serving Maplewood, South Orange, Irvington, Vauxhall, and nearby Newark.",
       keywords:
-        "tooth extraction maplewood pa, gentle tooth removal maplewood, dental extraction Maplewood, NJinless extraction maplewood, tooth removal maplewood",
+        "tooth extraction maplewood nj, gentle tooth removal maplewood, dental extraction Maplewood, NJinless extraction maplewood, tooth removal maplewood",
     },
     "teeth-whitening-and-veneers-maplewood-nj": {
       title:
-        "Teeth Whitening & Veneers in Maplewood, NJ | Maple Dental | Bright Smiles",
+        "Teeth Whitening & Veneers in Maplewood, NJ | Tulip Dental | Smile Enhancement Experts in Maplewood",
       description:
-        "Brighten your smile with veneers and professional teeth whitening in Maplewood, NJ. Maple Dental offers cosmetic dentistry near you in Maplewood, and nearby areas.",
+        "Refresh your smile with professional in-office and custom take-home whitening at Tulip Dental in Maplewood, NJ. Safe, effective treatments for stubborn stains and sensitive teeth - serving Maplewood, South Orange, Vauxhall, Irvington, and Newark.",
       keywords:
-        "teeth whitening maplewood pa, veneers maplewood, professional whitening maplewood, dental veneers maplewood, smile makeover maplewood",
+        "teeth whitening maplewood nj, veneers maplewood, professional whitening maplewood, dental veneers maplewood, smile makeover maplewood",
     },
     "invisalign-clear-aligners-maplewood-nj": {
       title:
-        "Invisalign Clear Aligners in Maplewood, NJ | Maple Dental | Invisible Braces",
+        "Invisalign in Maplewood, NJ | Tulip Dental | Clear Braces & Orthodontics Near You in Maplewood",
       description:
-        "Straighten your teeth discreetly with Invisalign at Maple Dental in Maplewood, NJ. Trusted provider for clear aligners near you in Maplewood, and nearby communities.",
+        "Straighten your smile discreetly with Invisalign at Tulip Dental in Maplewood, NJ. Comfortable, removable, and nearly invisible clear aligners - serving Maplewood, South Orange, Vauxhall, Irvington, and Newark.",
       keywords:
-        "invisalign maplewood pa, clear aligners maplewood, invisible braces maplewood, teeth straightening maplewood, invisalign provider maplewood",
+        "invisalign maplewood nj, clear aligners maplewood, invisible braces maplewood, teeth straightening maplewood, invisalign provider maplewood",
     },
     "kids-and-children-dentistry-maplewood-nj": {
       title:
-        "Kids & Children Dentistry in Maplewood, NJ | Maple Dental | Pediatric Care",
+        "Kids & Children’s Dentistry in Maplewood, NJ | Tulip Dental | Gentle Pediatric Dental Care Near You in Maplewood",
       description:
-        "Looking for a gentle pediatric dentist near you in Maplewood, NJ? Maple Dental provides trusted kids' dental care for families in Maplewood, south-orange, and nearby.",
+        "Keep your child’s smile healthy and bright with gentle, friendly kids’ dentistry at Tulip Dental in Maplewood, NJ. Preventive checkups, cleanings, and specialized pediatric dental care - serving Maplewood, South Orange, Vauxhall, Irvington, and Newark.",
       keywords:
-        "kids dentist maplewood pa, children dentistry maplewood, pediatric dentist maplewood, family dentist maplewood, kids dental care maplewood",
+        "kids dentist maplewood nj, children dentistry maplewood, pediatric dentist maplewood, family dentist maplewood, kids dental care maplewood",
     },
     "permanent-teeth-replacement-maplewood-nj": {
       title:
-        "Permanent Teeth Replacement in Maplewood, NJ | Maple Dental | Complete Restoration",
+        "Permanent Teeth Replacement in Maplewood, NJ | Tulip Dental | Expert Dental Implant & Restoration Services in Maplewood",
       description:
-        "Need permanent teeth replacement near you in Maplewood, NJ? Maple Dental offers dental implants, bridges, and dentures to restore your smile in Maplewood, Progress, and nearby.",
+        "Restore your smile and confidence with permanent teeth replacement at Tulip Dental in Maplewood, NJ. Dental implants, bridges, and custom restorations - serving Maplewood, South Orange, Vauxhall, Irvington, and Newark.",
       keywords:
-        "permanent teeth replacement maplewood pa, dental implants maplewood, tooth replacement maplewood, missing teeth maplewood, dental restoration maplewood",
+        "permanent teeth replacement maplewood nj, dental implants maplewood, tooth replacement maplewood, missing teeth maplewood, dental restoration maplewood",
     },
     "wisdom-teeth-maplewood-nj": {
       title:
-        "Wisdom Teeth Removal in Maplewood, NJ | Maple Dental | Safe Extractions",
+        "Wisdom Teeth Removal & Extraction in Maplewood, NJ | Tulip Dental | Expert Oral Surgery Services in Maplewood",
       description:
-        "Gentle wisdom teeth removal near you in Maplewood, NJ. Maple Dental offers safe extractions for teens and adults in Lawnton, Penbrook, Colonial Park, and surrounding areas.",
+        "Safe, comfortable wisdom teeth removal at Tulip Dental in Maplewood, NJ. Expert oral surgeons providing gentle extractions and comprehensive care - serving Maplewood, South Orange, Vauxhall, Irvington, and Newark.",
       keywords:
-        "wisdom teeth removal maplewood pa, wisdom tooth extraction maplewood, oral surgery maplewood, tooth extraction maplewood, dental surgery maplewood",
+        "wisdom teeth removal maplewood nj, wisdom tooth extraction maplewood, oral surgery maplewood, tooth extraction maplewood, dental surgery maplewood",
     },
     "endodontics-maplewood-nj": {
       title:
-        "Endodontics in Maplewood, NJ | Maple Dental | Root Canal Specialists",
+        "Root Canal Treatment & Endodontic Care in Maplewood, NJ | Tulip Dental | Gentle Pain Relief & Tooth-Saving Experts Near You in Maplewood",
       description:
-        "Expert endodontic care near you in Maplewood, NJ. Maple Dental offers gentle root canal treatments and pain relief for patients in Maplewood, and nearby areas.",
+        "Save your natural teeth with gentle, precise root canal treatment at Tulip Dental in Maplewood, NJ. Relieve tooth pain and infection while preserving your smile - serving Maplewood, South Orange, Vauxhall, Irvington, and Newark.",
       keywords:
-        "endodontics maplewood pa, root canal specialist maplewood, endodontist maplewood, root canal therapy maplewood, endodontic treatment maplewood",
+        "endodontics maplewood nj, root canal specialist maplewood, endodontist maplewood, root canal therapy maplewood, endodontic treatment maplewood",
     },
     "same-day-dentistry-maplewood-nj": {
-      title: "Same-Day Dentistry in Maplewood, NJ | Maple Dental | Quick Care",
+      title:
+        "Same Day Dentistry in Maplewood, NJ | Tulip Dental | Fast, Quality Dental Care in Maplewood",
       description:
-        "Quick and reliable same-day dental care in Maplewood, NJ. Maple Dental offers crowns, fillings, and emergency treatments for patients in Maplewood, and nearby.",
+        "Get dental care when you need it with same-day appointments at Tulip Dental in Maplewood, NJ. From emergency repairs to same-day crowns, we offer fast, reliable treatments - serving Maplewood, South Orange, Vauxhall, Irvington, and Newark.",
       keywords:
-        "same day dentistry maplewood pa, quick dental care maplewood, same day crowns maplewood, immediate dental treatment maplewood, fast dental care maplewood",
+        "same day dentistry maplewood nj, quick dental care maplewood, same day crowns maplewood, immediate dental treatment maplewood, fast dental care maplewood",
     },
     "painless-treatment-maplewood-nj": {
       title:
-        "Painless Dental Treatment in Maplewood, NJ | Maple Dental | Comfortable Care",
+        "Painless Dentistry in Maplewood, NJ | Tulip Dental | Gentle, Comfortable Dental Care Near You in Maplewood",
       description:
-        "Experience gentle, pain-free dental care in Maplewood, NJ at Maple Dental. We use advanced technology and comfort techniques for stress-free visits near Maplewood, and beyond.",
+        "Experience stress-free, painless dental treatments at Tulip Dental in Maplewood, NJ. Gentle techniques, advanced technology, and compassionate care for the most comfortable dental visits - serving Maplewood, South Orange, Vauxhall, Irvington, and Newark.",
       keywords:
-        "painless dental treatment maplewood pa, comfortable dentistry maplewood, anxiety-free dental care maplewood, gentle dentist maplewood, sedation dentistry maplewood",
+        "painless dental treatment maplewood nj, comfortable dentistry maplewood, anxiety-free dental care maplewood, gentle dentist maplewood, sedation dentistry maplewood",
     },
     "perio-protect-maplewood-nj": {
       title:
-        "Perio Protect in Maplewood, NJ | Maple Dental | Gum Disease Treatment",
+        "Perio Protect in Maplewood, NJ | Tulip Dental | Non-Surgical Gum Disease Treatment Near You in Maplewood",
       description:
-        "Treat gum disease comfortably with Perio Protect in Maplewood, NJ at Maple Dental. A non-invasive solution for bleeding gums and gum infections near Maplewood, and beyond.",
+        "Treat gum disease gently and effectively with Perio Protect at Tulip Dental in Maplewood, NJ. Custom-fit trays deliver medication deep below the gumline - serving Maplewood, South Orange, Vauxhall, Irvington, and Newark.",
       keywords:
-        "perio protect maplewood pa, gum disease treatment maplewood, periodontal treatment maplewood, gum health maplewood, perio protect therapy maplewood",
+        "perio protect maplewood nj, gum disease treatment maplewood, periodontal treatment maplewood, gum health maplewood, perio protect therapy maplewood",
     },
     "halitosis-maplewood-nj": {
       title:
-        "Halitosis Treatment in Maplewood, NJ | Maple Dental | Fresh Breath",
+        "Halitosis Treatment in Maplewood, NJ | Tulip Dental | Bad Breath Solutions Near You in Maplewood",
       description:
-        "Struggling with bad breath? Get expert halitosis treatment in Maplewood, NJ at Maple Dental. We help patients in Maplewood, and nearby areas breathe fresher.",
+        "Say goodbye to bad breath with professional halitosis treatment at Tulip Dental in Maplewood, NJ. We find the cause and provide lasting solutions - serving Maplewood, South Orange, Vauxhall, Irvington, and Newark.",
       keywords:
-        "halitosis treatment maplewood pa, bad breath treatment maplewood, chronic bad breath maplewood, halitosis cure maplewood, fresh breath maplewood",
+        "halitosis treatment maplewood nj, bad breath treatment maplewood, chronic bad breath maplewood, halitosis cure maplewood, fresh breath maplewood",
     },
     "sports-dentistry-maplewood-nj": {
       title:
-        "Sports Dentistry in Maplewood, NJ | Maple Dental | Athletic Protection",
+        "Sports Dentistry & Athletic Mouthguards in Maplewood, NJ | Tulip Dental | Protect Your Smile During Sports in Maplewood",
       description:
-        "Protect your smile with sports dentistry services near you in Maplewood, NJ. Maple Dental offers custom athletic mouthguards and emergency dental care for patients in Maplewood, and nearby.",
+        "Protect your smile with custom sports mouthguards and expert sports dentistry at Tulip Dental in Maplewood, NJ. Professional dental care for athletes - serving Maplewood, South Orange, Vauxhall, Irvington, and Newark.",
       keywords:
-        "sports dentistry maplewood pa, athletic dental care maplewood, mouthguards maplewood, sports mouth protection maplewood, athlete dental care maplewood",
+        "sports dentistry maplewood nj, athletic dental care maplewood, mouthguards maplewood, sports mouth protection maplewood, athlete dental care maplewood",
     },
   },
   serviceAreas: {
-    maplewood: {
-      title:
-        "Dentist in Maplewood, NJ | Maple Dental | Cosmetic & Family Dentistry",
-      description:
-        "Looking for a trusted family dentist near you in Maplewood, NJ? Maple Dental provides comprehensive care to patients in 17110, 07040, 07040, and 07040. Book your appointment today!",
-      keywords:
-        "dentist maplewood pa, family dentist maplewood, cosmetic dentist maplewood, dental office maplewood, maplewood dental care",
-    },
-    "colonial-park": {
-      title:
-        "Colonial Park Dentist | Family & Cosmetic Dentistry in 07040 | Maple Dental ",
-      description:
-        "Looking for a trusted dentist near Colonial Park, PA (07040)? Maple Dental offers family, cosmetic, and emergency dental care with advanced technology and personalized service. Your friendly neighborhood dentist near you.",
-      keywords:
-        "dentist colonial park pa, dental care colonial park, maplewood dentist colonial park, family dentist colonial park, cosmetic dentist colonial park",
-    },
-    southorange: {
-      title:
-        "Dentist in south-orange, Maplewood, NJ | Maple Dental | Family & Cosmetic Dentistry",
-      description:
-        "Searching for a trusted family dentist in south-orange, maplewood (07040)? Maple Dental offers comprehensive cosmetic and general dental care near you. Book your appointment today!",
-      keywords:
-        "dentist south-orange pa, dental care south-orange, maplewood dentist south-orange, family dentist south-orange, cosmetic dentist south-orange",
-    },
-    paxtang: {
-      title:
-        "Dentist in Paxtang, Maplewood, NJ | Maple Dental | Family & Cosmetic Dentistry",
-      description:
-        "Looking for a reliable family dentist in Paxtang, maplewood (07040)? Maple Dental offers comprehensive dental care near you. Book your appointment today!",
-      keywords:
-        "dentist paxtang pa, dental care paxtang, maplewood dentist paxtang, family dentist paxtang, cosmetic dentist paxtang",
-    },
-    penbrook: {
-      title:
-        "Dentist in Penbrook, Maplewood, NJ | Maple Dental | Family & Cosmetic Dentistry",
-      description:
-        "Need a trusted family dentist in Penbrook, maplewood (07040)? Maple Dental offers comprehensive dental care for patients in 07040. Schedule your appointment today!",
-      keywords:
-        "dentist penbrook pa, dental care penbrook, maplewood dentist penbrook, family dentist penbrook, cosmetic dentist penbrook",
-    },
-    lawnton: {
-      title:
-        "Dentist in Lawnton, Maplewood, NJ | Maple Dental | Family & Cosmetic Dentistry",
-      description:
-        "Looking for a trusted dentist near Lawnton in Maplewood, NJ (07040)? Maple Dental offers expert family and cosmetic dental care close to home. Schedule your appointment today!",
-      keywords:
-        "dentist lawnton pa, dental care lawnton, maplewood dentist lawnton, family dentist lawnton, cosmetic dentist lawnton",
-    },
-    progress: {
-      title:
-        "Dentist in Progress, Maplewood, NJ | Maple Dental | Family & Cosmetic Dentistry",
-      description:
-        "Looking for a top-rated family dentist near Progress in Maplewood, NJ (07040, 07040)? Maple Dental offers comprehensive cosmetic and general dental care. Book your appointment today!",
-      keywords:
-        "dentist progress pa, dental care progress, maplewood dentist progress, family dentist progress, cosmetic dentist progress",
-    },
     // New SEO-optimized service area routes
     "maplewood-nj-dentist-near-you": {
       title:
-        "Dentist Near You in Maplewood, NJ | Maple Dental | Family & Cosmetic Dentistry",
+        "Family & Cosmetic Dentist in Maplewood, NJ | Tulip Dental | Dentist Near You",
       description:
-        "Looking for a trusted family dentist near you in Maplewood, NJ? Maple Dental provides comprehensive care to patients in 17110, 07040, 07040, and 07040. Book your appointment today!",
+        "Tulip Dental in Maplewood, NJ 07040 offers comprehensive family, cosmetic, and restorative dentistry for all ages. Serving Maplewood and nearby South Orange, Vauxhall, Irvington, and Newark.",
       keywords:
-        "dentist near me maplewood pa, family dentist maplewood, cosmetic dentist maplewood, dental office maplewood, maplewood dental care",
-    },
-    "colonial-park-pa-dentist-near-you": {
-      title:
-        "Dentist Near You in Colonial Park, PA | Family & Cosmetic Dentistry | Maple Dental",
-      description:
-        "Looking for a trusted dentist near you in Colonial Park, PA (07040)? Maple Dental offers family, cosmetic, and emergency dental care with advanced technology and personalized service. Your friendly neighborhood dentist near you.",
-      keywords:
-        "dentist near me colonial park pa, dental care colonial park, maplewood dentist colonial park, family dentist colonial park, cosmetic dentist colonial park",
+        "dentist near me maplewood nj, family dentist maplewood, cosmetic dentist maplewood, dental office maplewood, maplewood dental care",
     },
     "south-orange-nj-dentist-near-you": {
       title:
-        "Dentist Near You in south-orange, Maplewood, NJ | Maple Dental | Family & Cosmetic Dentistry",
+        "Family & Cosmetic Dentist in South Orange, NJ | Tulip Dental | Dentist Near You",
       description:
-        "Searching for a trusted family dentist near you in south-orange, maplewood (07040)? Maple Dental offers comprehensive cosmetic and general dental care near you. Book your appointment today!",
+        "Tulip Dental proudly serves South Orange, NJ 07079 with complete family, cosmetic, and restorative dentistry. Convenient to South Orange, Maplewood, Vauxhall, Irvington, and Newark.",
       keywords:
-        "dentist near me south-orange pa, dental care south-orange, maplewood dentist south-orange, family dentist south-orange, cosmetic dentist south-orange",
+        "dentist near me south-orange nj, dental care south-orange, maplewood dentist south-orange, family dentist south-orange, cosmetic dentist south-orange",
     },
-    "paxtang-pa-dentist-near-you": {
+    "irvington-nj-dentist-near-you": {
       title:
-        "Dentist Near You in Paxtang, Maplewood, NJ | Maple Dental | Family & Cosmetic Dentistry",
+        "Family & Cosmetic Dentist in Irvington, NJ | Tulip Dental | Dentist Near You",
       description:
-        "Looking for a reliable family dentist near you in Paxtang, maplewood (07040)? Maple Dental offers comprehensive dental care near you. Book your appointment today!",
+        "Tulip Dental offers complete family, cosmetic, and restorative dentistry for Irvington, NJ 07111. Serving Irvington, Maplewood, South Orange, Vauxhall, and Newark with compassionate, high-quality care.",
       keywords:
-        "dentist near me paxtang pa, dental care paxtang, maplewood dentist paxtang, family dentist paxtang, cosmetic dentist paxtang",
+        "dentist near me irvington nj, dental care irvington, maplewood dentist irvington, family dentist irvington, cosmetic dentist irvington",
     },
-    "penbrook-pa-dentist-near-you": {
+    "vauxhall-nj-dentist-near-you": {
       title:
-        "Dentist Near You in Penbrook, Maplewood, NJ | Maple Dental | Family & Cosmetic Dentistry",
+        "Family & Cosmetic Dentist in Vauxhall, NJ | Tulip Dental | Dentist Near You",
       description:
-        "Need a trusted family dentist near you in Penbrook, maplewood (07040)? Maple Dental offers comprehensive dental care for patients in 07040. Schedule your appointment today!",
+        "Tulip Dental provides complete family, cosmetic, and restorative dental care for Vauxhall, NJ 07088. Serving Vauxhall, Maplewood, South Orange, Irvington, and Newark with personalized, high-quality dentistry.",
       keywords:
-        "dentist near me penbrook pa, dental care penbrook, maplewood dentist penbrook, family dentist penbrook, cosmetic dentist penbrook",
+        "dentist near me vauxhall nj, dental care vauxhall, maplewood dentist vauxhall, family dentist vauxhall, cosmetic dentist vauxhall",
     },
-    "lawnton-pa-dentist-near-you": {
+    "newark-nj-dentist-near-you": {
       title:
-        "Dentist Near You in Lawnton, Maplewood, NJ | Maple Dental | Family & Cosmetic Dentistry",
+        "Family & Cosmetic Dentist in Newark, NJ | Tulip Dental | Dentist Near You",
       description:
-        "Looking for a trusted dentist near you in Lawnton, Maplewood, NJ (07040)? Maple Dental offers expert family and cosmetic dental care close to home. Schedule your appointment today!",
+        "Tulip Dental provides complete family, cosmetic, and restorative dentistry for Newark, NJ 07106 & 07112. Serving Newark, Maplewood, South Orange, Irvington, and Vauxhall with expert, compassionate care.",
       keywords:
-        "dentist near me lawnton pa, dental care lawnton, maplewood dentist lawnton, family dentist lawnton, cosmetic dentist lawnton",
-    },
-    "progress-pa-dentist-near-you": {
-      title:
-        "Dentist Near You in Progress, Maplewood, NJ | Maple Dental | Family & Cosmetic Dentistry",
-      description:
-        "Looking for a top-rated family dentist near you in Progress, Maplewood, NJ (07040, 07040)? Maple Dental offers comprehensive cosmetic and general dental care. Book your appointment today!",
-      keywords:
-        "dentist near me progress pa, dental care progress, maplewood dentist progress, family dentist progress, cosmetic dentist progress",
+        "dentist near me newark nj, dental care newark, maplewood dentist newark, family dentist newark, cosmetic dentist newark",
     },
   },
   pages: {
-    "about-us": {
-      title:
-        "About Maple Dental maplewood | Family & Cosmetic Dentist Near You",
-      description:
-        "Learn about Maple Dental maplewood - a trusted dental practice offering family and cosmetic dentistry in Maplewood, NJ. Serving south-orange, Maplewood, Progress & nearby.",
-      keywords:
-        "about maple dental maplewood, family dentist maplewood pa, cosmetic dentist maplewood, dental practice maplewood, maplewood dental team",
-    },
     "about-tulip-dental-maplewood-nj": {
       title:
-        "About Tulip Dental Maplewood | Family & Cosmetic Dentist Near You",
+        "About Tulip Dental Maplewood | Family & Cosmetic Dentist in Maplewood, NJ",
       description:
-        "Learn about Tulip Dental Maplewood - a trusted dental practice offering family and cosmetic dentistry in Maplewood, NJ. Serving south-orange, Maplewood, Progress & nearby.",
+        "Learn about Tulip Dental Maplewood - trusted family & cosmetic dentist serving Maplewood (07040), South Orange (07079), Irvington (07111), Vauxhall (07088), and nearby Newark (07106, 07112). Modern care for all ages. Call 973-671-5500 or Book Online.",
       keywords:
         "about tulip dental maplewood, family dentist maplewood nj, cosmetic dentist maplewood, dental practice maplewood, maplewood dental team",
     },
-    "contact-us": {
-      title: "Contact Maple Dental | Dentist in Maplewood, NJ",
-      description:
-        "Have questions or need to book an appointment? Contact Maple Dental in Maplewood, NJ. We're here to help you smile with confidence.",
-      keywords:
-        "contact maple dental maplewood, dentist appointment maplewood pa, dental consultation maplewood, maple dental phone number, maplewood dental office",
-    },
     "contact-tulip-dental-maplewood-nj": {
-      title: "Contact Tulip Dental | Dentist in Maplewood, NJ",
+      title:
+        "Contact Tulip Dental in Maplewood, NJ | Family & Cosmetic Dentist Near You",
       description:
-        "Have questions or need to book an appointment? Contact Tulip Dental in Maplewood, NJ. We're here to help you smile with confidence.",
+        "Get in touch with Tulip Dental in Maplewood, NJ for appointments, questions, or emergency dental care. Serving Maplewood (07040), South Orange (07079), Vauxhall (07088), Irvington (07111), and Newark (07106, 07112).",
       keywords:
         "contact tulip dental maplewood, dentist appointment maplewood nj, dental consultation maplewood, tulip dental phone number, maplewood dental office",
     },
-    reviews: {
-      title: "Patient Reviews | Maple Dental Maplewood, NJ",
-      description:
-        "Read real patient reviews and testimonials about Maple Dental in Maplewood, NJ. See why families trust us for compassionate, high-quality dental care.",
-      keywords:
-        "maple dental reviews Maplewood, NJtient testimonials maplewood, dentist reviews maplewood pa, dental practice reviews maplewood, maplewood dentist ratings",
-    },
     "patient-reviews-maplewood-nj": {
-      title: "Patient Reviews | Tulip Dental Maplewood, NJ",
+      title:
+        "Patient Reviews in Maplewood, NJ | Tulip Dental | Trusted Dentist Near You in Maplewood",
       description:
-        "Read real patient reviews and testimonials about Tulip Dental in Maplewood, NJ. See why families trust us for compassionate, high-quality dental care.",
+        "Discover why patients choose Tulip Dental in Maplewood, NJ for family, cosmetic, and emergency dental care. Read real reviews from patients across Maplewood, South Orange, Vauxhall, Irvington, and Newark.",
       keywords:
         "tulip dental reviews maplewood nj, patient testimonials maplewood, dentist reviews maplewood nj, dental practice reviews maplewood, maplewood dentist ratings",
     },
     providers: {
-      title: "Meet Our Dental Providers | Maple Dental Maplewood, NJ",
+      title: "Meet Our Dental Providers | Tulip Dental Maplewood, NJ",
       description:
-        "Get to know the experienced dental providers at Maple Dental in Maplewood, NJ. Our team is committed to your family's oral health.",
+        "Get to know the skilled dental providers at Tulip Dental Maplewood. Compassionate, experienced care for patients in Maplewood, South Orange, Irvington, Vauxhall, and nearby Newark.",
       keywords:
-        "dental team maplewood pa, dentists maplewood, maple dental team maplewood, maplewood dental staff, family dentists maplewood",
+        "dental team maplewood nj, dentists maplewood nj, tulip dental team maplewood nj, maplewood dental staff, family dentists maplewood nj",
     },
     services: {
-      title:
-        "Dental Services in Maplewood, NJ | Maple Dental | Family & Cosmetic Dentistry",
+      title: "Comprehensive Dental Services in Maplewood, NJ | Tulip Dental",
       description:
-        "Explore comprehensive dental services at Maple Dental in Maplewood, NJ. From cleanings and exams to Invisalign® and Implants, we care for every smile at every stage.",
+        "Tulip Dental Maplewood offers complete family, cosmetic, and restorative dentistry. Serving Maplewood (07040), South Orange (07079), Irvington (07111), Vauxhall (07088), and nearby Newark (07106, 07112).",
       keywords:
-        "dental services maplewood pa, family dentist maplewood, cosmetic dentist maplewood, dental care maplewood, maplewood dental services",
-    },
-    offers: {
-      title:
-        "$299 Teeth Whitening Special in Maplewood, NJ | Maple Dental | Cosmetic & Family Dentistry",
-      description:
-        "Brighten your smile with Maple Dental's $299 professional teeth whitening offer in Maplewood, NJ. Serving Maplewood, and nearby. No hidden fees—just real results.",
-      keywords:
-        "dental offers maplewood pa, dental specials maplewood, new patient specials maplewood, dental discounts maplewood, maplewood dental promotions",
+        "dental services maplewood nj, family dentist maplewood nj, cosmetic dentist maplewood nj, dental care maplewood nj, maplewood dental services",
     },
     "teeth-whitening-offer-maplewood-nj": {
       title:
-        "$299 Teeth Whitening Special in Maplewood, NJ | Tulip Dental | Professional Whitening",
+        "$299 Professional Teeth Whitening in Maplewood, NJ | Tulip Dental | Dentist Near You",
       description:
-        "Get professional teeth whitening for just $299 in Maplewood, NJ at Tulip Dental. Limited-time offer for new and existing patients. No hidden fees, visible results in one visit.",
+        "Brighten your smile with Tulip Dental’s $299 Teeth Whitening Special in Maplewood, NJ. Safe, fast, and effective results for patients in Maplewood, South Orange, Irvington, Vauxhall, and Newark.",
       keywords:
         "teeth whitening special maplewood nj, $299 teeth whitening maplewood, professional whitening maplewood, teeth whitening offer maplewood, maplewood dental specials",
     },
     "simranjeet-dhaliwal-maplewood-nj-dentist": {
       title:
-        "Dr. Simranjeet Dhaliwal | Dentist in Maplewood, NJ | Tulip Dental",
+        "Dr. Urvashi Banerjee, DMD | Family & Cosmetic Dentist in Maplewood, NJ",
       description:
-        "Meet Dr. Simranjeet Dhaliwal, your trusted dentist in Maplewood, NJ at Tulip Dental. Experienced family and cosmetic dentist serving Maplewood, and nearby areas.",
+        "Meet Dr. Urvashi Banerjee, DMD - experienced family & cosmetic dentist at Tulip Dental Maplewood. Proudly serving patients in Maplewood, South Orange, Irvington, Vauxhall, and nearby Newark.",
       keywords:
-        "dr simranjeet dhaliwal maplewood nj, dentist maplewood nj, tulip dental maplewood, family dentist maplewood, cosmetic dentist maplewood",
+        "Meet Dr. Urvashi Banerjee, DMD - experienced family & cosmetic dentist at Tulip Dental Maplewood.",
     },
 
     "privacy-policy": {
-      title: "Privacy Policy | Maple Dental maplewood",
+      title: "Privacy Policy | Tulip Dental maplewood",
       description:
-        "Privacy policy for Maple Dental maplewood. Learn how we protect your personal information and maintain patient confidentiality.",
+        "Privacy policy for Tulip Dental maplewood. Learn how we protect your personal information and maintain patient confidentiality.",
       keywords:
-        "privacy policy maple dental Maplewood, NJtient privacy maplewood, dental privacy policy maplewood, maplewood dental confidentiality",
+        "privacy policy tulip dental Maplewood, NJtient privacy maplewood, dental privacy policy maplewood, maplewood dental confidentiality",
     },
     "terms-and-conditions": {
-      title: "Terms and Conditions | Maple Dental maplewood",
+      title: "Terms and Conditions | Tulip Dental maplewood",
       description:
-        "Terms and conditions for Maple Dental maplewood. Read our service terms and patient agreement information.",
+        "Terms and conditions for Tulip Dental maplewood. Read our service terms and patient agreement information.",
       keywords:
-        "terms and conditions maple dental maplewood, dental service terms Maplewood, NJtient agreement maplewood, maplewood dental terms",
+        "terms and conditions tulip dental maplewood, dental service terms Maplewood, NJtient agreement maplewood, maplewood dental terms",
     },
     accessibility: {
-      title: "Accessibility Statement | Maple Dental maplewood",
+      title: "Accessibility Statement | Tulip Dental maplewood",
       description:
-        "Accessibility statement for Maple Dental maplewood. Learn about our commitment to providing accessible dental care for all patients.",
+        "Accessibility statement for Tulip Dental maplewood. Learn about our commitment to providing accessible dental care for all patients.",
       keywords:
-        "accessibility maple dental maplewood, accessible dental care maplewood, disability friendly dentist maplewood, maplewood dental accessibility",
+        "accessibility tulip dental maplewood, accessible dental care maplewood, disability friendly dentist maplewood, maplewood dental accessibility",
     },
   },
-  blog: {
-    title: "Dental Blog | Maple Dental maplewood | Dental Health Tips",
-    description:
-      "Read our dental blog for tips on oral health, dental procedures, and maintaining a healthy smile. Maple Dental maplewood shares expert dental advice and insights.",
-    keywords:
-      "dental blog maplewood, dental health tips maplewood, oral health advice maplewood, dental education maplewood, maplewood dental blog",
-  },
   "dental-blog": {
-    title: "Dental Blog | Tips & Updates from Maple Dental Maplewood, NJ",
+    title:
+      "Dental Tips & Oral Health Blog | Tulip Dental Maplewood, NJ | Family & Cosmetic Dentistry Near You",
     description:
-      "Stay informed with dental tips, oral health advice, and practice news from the Maple Dental blog. Written by our maplewood dental care team.",
+      "Read expert dental tips, oral health guides, and the latest news from Tulip Dental in Maplewood, NJ. Serving Maplewood (07040), South Orange (07079), Vauxhall (07088), Irvington (07111), and Newark (07106, 07112).",
     keywords:
       "dental blog maplewood, dental health tips maplewood, oral health advice maplewood, dental education maplewood, maplewood dental blog",
   },
   "dental-emergencies-maplewood": {
     title: "Dental Emergency Care in Maplewood, NJ: What You Need to Know",
     description:
-      "Facing a dental emergency in Maplewood, NJ? Maple Dental offers expert emergency care and guidance. Learn immediate steps and when to seek professional help.",
+      "Facing a dental emergency in Maplewood, NJ? Tulip Dental offers expert emergency care and guidance. Learn immediate steps and when to seek professional help.",
     keywords:
-      "dental emergencies maplewood, emergency dentist maplewood pa, dental emergency care maplewood, urgent dental maplewood",
+      "dental emergencies maplewood, emergency dentist maplewood nj, dental emergency care maplewood, urgent dental maplewood",
   },
   "trusted-dentists-in-maplewood": {
-    title: "Top Dentist in maplewood PA | Maple Dental | Oral Health Experts",
+    title: "Top Dentist in maplewood PA | Tulip Dental | Oral Health Experts",
     description:
-      "Get professional oral health tips from maplewood's trusted dental experts at Maple Dental. Quality dental care and preventive guidance for your family.",
+      "Get professional oral health tips from maplewood's trusted dental experts at Tulip Dental. Quality dental care and preventive guidance for your family.",
     keywords:
-      "Trusted Dentists in Maplewood, NJ, top dentist maplewood pa, best dentist maplewood, maplewood dental experts",
+      "Trusted Dentists in Maplewood, NJ, top dentist maplewood nj, best dentist maplewood, maplewood dental experts",
   },
   "5-signs-you-might-need-a-root-canal": {
     title:
-      "5 Signs You Need a Root Canal in maplewood - Maple Dental Expert Care",
+      "5 Signs You Need a Root Canal in maplewood - Tulip Dental Expert Care",
     description:
-      "Discover the 5 critical signs that suggest you need a root canal treatment. Trust Maple Dental in maplewood for expert endodontic care and pain relief.",
+      "Discover the 5 critical signs that suggest you need a root canal treatment. Trust Tulip Dental in maplewood for expert endodontic care and pain relief.",
     keywords:
-      "Root Canal maplewood, root canal signs maplewood pa, endodontic care maplewood, root canal treatment maplewood",
+      "Root Canal maplewood, root canal signs maplewood nj, endodontic care maplewood, root canal treatment maplewood",
   },
 };
 

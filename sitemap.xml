@@ -1,148 +1,207 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
 <url>
-  <loc>https://tulipdentalnj.com/</loc>
-  <lastmod>2025-08-10T05:07:18+00:00</lastmod>
+  <loc>https://www.tulipdentalnj.com/</loc>
+  <lastmod>2025-08-30T06:54:14+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-      <loc>https://tulipdentalnj.com/about-tulip-dental-maplewood-nj</loc>
-  <lastmod>2025-08-10T05:07:18+00:00</lastmod>
+  <loc>https://www.tulipdentalnj.com/about-tulip-dental-maplewood-nj</loc>
+  <lastmod>2025-08-30T06:54:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://tulipdentalnj.com/services</loc>
-  <lastmod>2025-08-10T05:07:18+00:00</lastmod>
-  <priority>0.90</priority>
-</url>
-<url>
-  <loc>https://tulipdentalnj.com/services/emergency-dentistry-maplewood-nj</loc>
-  <lastmod>2025-08-10T05:07:18+00:00</lastmod>
+  <loc>https://www.tulipdentalnj.com/providers</loc>
+  <lastmod>2025-08-30T06:54:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://tulipdentalnj.com/services/root-canal-treatment-maplewood-nj</loc>
-  <lastmod>2025-08-10T05:07:18+00:00</lastmod>
+  <loc>https://www.tulipdentalnj.com/services</loc>
+  <lastmod>2025-08-30T06:54:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://tulipdentalnj.com/services/oral-surgery-maplewood-nj</loc>
-  <lastmod>2025-08-10T05:07:18+00:00</lastmod>
+  <loc>https://www.tulipdentalnj.com/services/emergency-dentistry-maplewood-nj</loc>
+  <lastmod>2025-08-30T06:54:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://tulipdentalnj.com/services/cosmetic-dentistry-maplewood-nj</loc>
-  <lastmod>2025-08-10T05:07:18+00:00</lastmod>
+  <loc>https://www.tulipdentalnj.com/services/root-canal-treatment-maplewood-nj</loc>
+  <lastmod>2025-08-30T06:54:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://tulipdentalnj.com/services/dental-fillings-maplewood-nj</loc>
-  <lastmod>2025-08-10T05:07:18+00:00</lastmod>
+  <loc>https://www.tulipdentalnj.com/services/oral-surgery-maplewood-nj</loc>
+  <lastmod>2025-08-30T06:54:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://tulipdentalnj.com/services/dental-implants-maplewood-nj</loc>
-  <lastmod>2025-08-10T05:07:18+00:00</lastmod>
+  <loc>https://www.tulipdentalnj.com/services/cosmetic-dentistry-maplewood-nj</loc>
+  <lastmod>2025-08-30T06:54:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://tulipdentalnj.com/services/orthodontics-maplewood-nj</loc>
-  <lastmod>2025-08-10T05:07:18+00:00</lastmod>
+  <loc>https://www.tulipdentalnj.com/services/dental-fillings-maplewood-nj</loc>
+  <lastmod>2025-08-30T06:54:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://tulipdentalnj.com/services/crowns-and-bridges-maplewood-nj</loc>
-  <lastmod>2025-08-10T05:07:18+00:00</lastmod>
+  <loc>https://www.tulipdentalnj.com/services/dental-implants-maplewood-nj</loc>
+  <lastmod>2025-08-30T06:54:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://tulipdentalnj.com/services/dental-emergencies-maplewood-nj</loc>
-  <lastmod>2025-08-10T05:07:18+00:00</lastmod>
+  <loc>https://www.tulipdentalnj.com/services/orthodontics-maplewood-nj</loc>
+  <lastmod>2025-08-30T06:54:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://tulipdentalnj.com/services/tooth-extraction-maplewood-nj</loc>
-  <lastmod>2025-08-10T05:07:18+00:00</lastmod>
+  <loc>https://www.tulipdentalnj.com/services/crowns-and-bridges-maplewood-nj</loc>
+  <lastmod>2025-08-30T06:54:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://tulipdentalnj.com/services/teeth-whitening-and-veneers-maplewood-nj</loc>
-  <lastmod>2025-08-10T05:07:18+00:00</lastmod>
+  <loc>https://www.tulipdentalnj.com/services/dental-emergencies-maplewood-nj</loc>
+  <lastmod>2025-08-30T06:54:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://tulipdentalnj.com/services/invisalign-clear-aligners-maplewood-nj</loc>
-  <lastmod>2025-08-10T05:07:18+00:00</lastmod>
+  <loc>https://www.tulipdentalnj.com/services/tooth-extraction-maplewood-nj</loc>
+  <lastmod>2025-08-30T06:54:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://tulipdentalnj.com/services/kids-and-children-dentistry-maplewood-nj</loc>
-  <lastmod>2025-08-10T05:07:18+00:00</lastmod>
+  <loc>https://www.tulipdentalnj.com/services/teeth-whitening-and-veneers-maplewood-nj</loc>
+  <lastmod>2025-08-30T06:54:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://tulipdentalnj.com/services/permanent-teeth-replacement-maplewood-nj</loc>
-  <lastmod>2025-08-10T05:07:18+00:00</lastmod>
+  <loc>https://www.tulipdentalnj.com/services/invisalign-clear-aligners-maplewood-nj</loc>
+  <lastmod>2025-08-30T06:54:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://tulipdentalnj.com/services/wisdom-teeth-maplewood-nj</loc>
-  <lastmod>2025-08-10T05:07:18+00:00</lastmod>
+  <loc>https://www.tulipdentalnj.com/services/kids-and-children-dentistry-maplewood-nj</loc>
+  <lastmod>2025-08-30T06:54:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://tulipdentalnj.com/services/endodontics-maplewood-nj</loc>
-  <lastmod>2025-08-10T05:07:18+00:00</lastmod>
+  <loc>https://www.tulipdentalnj.com/services/permanent-teeth-replacement-maplewood-nj</loc>
+  <lastmod>2025-08-30T06:54:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://tulipdentalnj.com/services/same-day-dentistry-maplewood-nj</loc>
-  <lastmod>2025-08-10T05:07:18+00:00</lastmod>
+  <loc>https://www.tulipdentalnj.com/services/sports-dentistry-maplewood-nj</loc>
+  <lastmod>2025-08-30T06:54:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://tulipdentalnj.com/services/painless-treatment-maplewood-nj</loc>
-  <lastmod>2025-08-10T05:07:18+00:00</lastmod>
+  <loc>https://www.tulipdentalnj.com/services/wisdom-teeth-maplewood-nj</loc>
+  <lastmod>2025-08-30T06:54:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://tulipdentalnj.com/services/perio-protect-maplewood-nj</loc>
-  <lastmod>2025-08-10T05:07:18+00:00</lastmod>
+  <loc>https://www.tulipdentalnj.com/services/endodontics-maplewood-nj</loc>
+  <lastmod>2025-08-30T06:54:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://tulipdentalnj.com/services/halitosis-maplewood-nj</loc>
-  <lastmod>2025-08-10T05:07:18+00:00</lastmod>
+  <loc>https://www.tulipdentalnj.com/services/same-day-dentistry-maplewood-nj</loc>
+  <lastmod>2025-08-30T06:54:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://tulipdentalnj.com/services/sports-dentistry-maplewood-nj</loc>
-  <lastmod>2025-08-10T05:07:18+00:00</lastmod>
+  <loc>https://www.tulipdentalnj.com/services/painless-treatment-maplewood-nj</loc>
+  <lastmod>2025-08-30T06:54:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://tulipdentalnj.com/contact-us</loc>
-  <lastmod>2025-08-10T05:07:18+00:00</lastmod>
-  <priority>0.70</priority>
+  <loc>https://www.tulipdentalnj.com/services/perio-protect-maplewood-nj</loc>
+  <lastmod>2025-08-30T06:54:14+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://tulipdentalnj.com/service-areas</loc>
-  <lastmod>2025-08-10T05:07:18+00:00</lastmod>
-  <priority>0.70</priority>
+  <loc>https://www.tulipdentalnj.com/services/halitosis-maplewood-nj</loc>
+  <lastmod>2025-08-30T06:54:14+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://tulipdentalnj.com/blog/dental-emergencies-harrisburg</loc>
-  <lastmod>2025-08-10T05:07:18+00:00</lastmod>
-  <priority>0.60</priority>
+  <loc>https://www.tulipdentalnj.com/patient-reviews-maplewood-nj</loc>
+  <lastmod>2025-08-30T06:54:14+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://tulipdentalnj.com/blog/trusted-dentists-in-harrisburg</loc>
-  <lastmod>2025-08-10T05:07:18+00:00</lastmod>
-  <priority>0.60</priority>
+  <loc>https://www.tulipdentalnj.com/dental-blog</loc>
+  <lastmod>2025-08-30T06:54:14+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://tulipdentalnj.com/blog/5-signs-you-might-need-a-root-canal</loc>
-  <lastmod>2025-08-10T05:07:18+00:00</lastmod>
-  <priority>0.60</priority>
+  <loc>https://www.tulipdentalnj.com/contact-tulip-dental-maplewood-nj</loc>
+  <lastmod>2025-08-30T06:54:14+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
+<url>
+  <loc>https://www.tulipdentalnj.com/service-areas/maplewood-nj-dentist-near-you</loc>
+  <lastmod>2025-08-30T06:54:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.tulipdentalnj.com/service-areas/south-orange-nj-dentist-near-you</loc>
+  <lastmod>2025-08-30T06:54:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.tulipdentalnj.com/service-areas/irvington-nj-dentist-near-you</loc>
+  <lastmod>2025-08-30T06:54:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.tulipdentalnj.com/service-areas/vauxhall-nj-dentist-near-you</loc>
+  <lastmod>2025-08-30T06:54:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.tulipdentalnj.com/service-areas/newark-nj-dentist-near-you</loc>
+  <lastmod>2025-08-30T06:54:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.tulipdentalnj.com/terms-and-conditions</loc>
+  <lastmod>2025-08-30T06:54:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.tulipdentalnj.com/privacy-policy</loc>
+  <lastmod>2025-08-30T06:54:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.tulipdentalnj.com/sitemap</loc>
+  <lastmod>2025-08-30T06:54:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.tulipdentalnj.com/accessibility</loc>
+  <lastmod>2025-08-30T06:54:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.tulipdentalnj.com/providers/simranjeet-dhaliwal-maplewood-nj-dentist</loc>
+  <lastmod>2025-08-30T06:54:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.tulipdentalnj.com/teeth-whitening-offer-maplewood-nj</loc>
+  <lastmod>2025-08-30T06:54:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
 </urlset>
