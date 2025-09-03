@@ -1,5 +1,12 @@
 import { Button } from "@/components/ui/button";
-import { Check, ChevronLeft, ChevronRight, Clock } from "lucide-react";
+import {
+  Check,
+  ChevronLeft,
+  ChevronRight,
+  Clock,
+  Loader,
+  LoaderPinwheel,
+} from "lucide-react";
 import { useState, useEffect, useCallback } from "react";
 import {
   apiService,
@@ -969,10 +976,15 @@ const StepAppointment = ({
                       : "bg-gray-50 text-gray-400 cursor-not-allowed"
                   }`}
                 >
+                  {loading ? (
+                    <div className="flex justify-center items-center">
+                      <div className="animate-spin rounded-full h-4 w-4 border-t-2 border-secondary"></div>
+                    </div>
+                  ) : null}
                   <span className="text-xs font-medium">{dateObj.day}</span>
                   <span className="font-semibold">{dateObj.date}</span>
 
-                  {!hasSlots && dateObj.available && (
+                  {!hasSlots && dateObj.available && !loading && (
                     <span className="text-xs text-red-500 font-medium">
                       Closed
                     </span>
