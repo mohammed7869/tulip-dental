@@ -249,7 +249,7 @@ export default function ContactForm() {
             <button
               type="submit"
               disabled={isSubmitting}
-              className="group relative w-full md:w-auto px-8 py-4 bg-secondary hover:bg-primary text-white font-semibold rounded-xl hover:from-blue-700 hover:to-cyan-700 focus:ring-4 focus:ring-cyan-500/25 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 disabled:opacity-70 disabled:cursor-not-allowed disabled:transform-none"
+              className="group relative w-full md:w-auto px-8 py-4 bg-secondary/90 hover:bg-primary text-white font-semibold rounded-xl hover:from-blue-700 hover:to-cyan-700 focus:ring-4 focus:ring-cyan-500/25 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 disabled:opacity-70 disabled:cursor-not-allowed disabled:transform-none"
             >
               <span className="flex items-center justify-center gap-3">
                 {isSubmitting ? (

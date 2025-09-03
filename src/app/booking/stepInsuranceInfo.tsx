@@ -14,6 +14,7 @@ const StepInsuranceInfo = ({
     hasInsurance: formData.hasInsurance || "yes",
     insuranceProvider: formData.insuranceProvider || "",
     insuranceId: formData.insuranceId || null, // Add insurance ID
+    customInsuranceName: formData.customInsuranceName || "", // Add custom insurance name
     memberId: formData.memberId || "",
     groupNumber: formData.groupNumber || "",
     ...formData,
@@ -35,6 +36,7 @@ const StepInsuranceInfo = ({
       hasInsurance: formData.hasInsurance || "yes",
       insuranceProvider: formData.insuranceProvider || "",
       insuranceId: formData.insuranceId || null,
+      customInsuranceName: formData.customInsuranceName || "",
       memberId: formData.memberId || "",
       groupNumber: formData.groupNumber || "",
       ...formData,
@@ -69,6 +71,7 @@ const StepInsuranceInfo = ({
         ...updatedInsuranceData,
         insuranceId: null,
         insuranceProvider: "",
+        customInsuranceName: "",
         memberId: "",
         groupNumber: "",
       };
@@ -96,6 +99,11 @@ const StepInsuranceInfo = ({
       ...insuranceData,
       insuranceProvider: selectedInsurance?.name || "",
       insuranceId: value || null,
+      // Clear custom insurance name if not "Other"
+      customInsuranceName:
+        selectedInsurance?.name === "Other"
+          ? insuranceData.customInsuranceName
+          : "",
     };
     setInsuranceData(updatedInsuranceData);
 
@@ -118,11 +126,13 @@ const StepInsuranceInfo = ({
       if (!insuranceData.insuranceId) {
         errors.insuranceId = true;
       }
-      if (!insuranceData.memberId.trim()) {
-        errors.memberId = true;
-      }
-      if (!insuranceData.groupNumber.trim()) {
-        errors.groupNumber = true;
+
+      // If "Other" is selected, validate custom insurance name
+      if (
+        insuranceData.insuranceProvider === "Other" &&
+        !insuranceData.customInsuranceName.trim()
+      ) {
+        errors.customInsuranceName = true;
       }
     }
 
@@ -147,7 +157,10 @@ const StepInsuranceInfo = ({
       const insuranceInfo =
         insuranceData.hasInsurance === "yes"
           ? {
-              provider: insuranceData.insuranceProvider,
+              provider:
+                insuranceData.insuranceProvider === "Other"
+                  ? insuranceData.customInsuranceName
+                  : insuranceData.insuranceProvider,
               providerId: insuranceData.insuranceId, // Add the insurance ID
               memberId: insuranceData.memberId,
               groupNumber: insuranceData.groupNumber,
@@ -367,46 +380,56 @@ const StepInsuranceInfo = ({
                 )}
               </div>
 
+              {/* Custom Insurance Name Input - Show when "Other" is selected */}
+              {insuranceData.insuranceProvider === "Other" && (
+                <div>
+                  <label className="block text-sm text-gray-600 mb-1">
+                    Insurance Provider Name{" "}
+                    <span className="text-gray-500">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    value={insuranceData.customInsuranceName}
+                    onChange={(e) =>
+                      handleChange("customInsuranceName", e.target.value)
+                    }
+                    placeholder="Enter your insurance provider name"
+                    className={`w-full px-3 py-2 border rounded text-sm focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 ${
+                      validationErrors.customInsuranceName
+                        ? "border-red-500 ring-1 ring-red-500"
+                        : "border-gray-300"
+                    }`}
+                  />
+                  {validationErrors.customInsuranceName && (
+                    <p className="text-red-500 text-xs mt-1">
+                      Please enter your insurance provider name
+                    </p>
+                  )}
+                </div>
+              )}
+
               <div>
                 <label className="block text-sm text-gray-600 mb-1">
-                  Member ID <span className="text-gray-500">*</span>
+                  Member ID
                 </label>
                 <input
                   type="text"
                   value={insuranceData.memberId}
                   onChange={(e) => handleChange("memberId", e.target.value)}
-                  className={`w-full px-3 py-2 border rounded text-sm focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 ${
-                    validationErrors.memberId
-                      ? "border-red-500 ring-1 ring-red-500"
-                      : "border-gray-300"
-                  }`}
+                  className="w-full px-3 py-2 border border-gray-300 rounded text-sm focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
                 />
-                {validationErrors.memberId && (
-                  <p className="text-red-500 text-xs mt-1">
-                    Please enter your member ID
-                  </p>
-                )}
               </div>
 
               <div>
-                <label className="block text-sm text-gray-600 mb-1">
-                  Group Number <span className="text-gray-500">*</span>
+                <label className="block text-sm text-gray-500 mb-1">
+                  Group Number
                 </label>
                 <input
                   type="text"
                   value={insuranceData.groupNumber}
                   onChange={(e) => handleChange("groupNumber", e.target.value)}
-                  className={`w-full px-3 py-2 border rounded text-sm focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 ${
-                    validationErrors.groupNumber
-                      ? "border-red-500 ring-1 ring-red-500"
-                      : "border-gray-300"
-                  }`}
+                  className="w-full px-3 py-2 border border-gray-300 rounded text-sm focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
                 />
-                {validationErrors.groupNumber && (
-                  <p className="text-red-500 text-xs mt-1">
-                    Please enter your group number
-                  </p>
-                )}
               </div>
             </>
           )}
