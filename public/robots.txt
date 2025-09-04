@@ -1,58 +1,7 @@
 User-agent: *
-Allow: /
-
-# Allow specific pages
-Allow: /about-tulip-dental-maplewood-nj/
-Allow: /services/
-Allow: /service-areas/
-
-# Allow all new SEO-optimized service routes
-Allow: /services/emergency-dentistry-maplewood-nj/
-Allow: /services/root-canal-treatment-maplewood-nj/
-Allow: /services/oral-surgery-maplewood-nj/
-Allow: /services/cosmetic-dentistry-maplewood-nj/
-Allow: /services/dental-fillings-maplewood-nj/
-Allow: /services/dental-implants-maplewood-nj/
-Allow: /services/orthodontics-maplewood-nj/
-Allow: /services/crowns-and-bridges-maplewood-nj/
-Allow: /services/dental-emergencies-maplewood-nj/
-Allow: /services/tooth-extraction-maplewood-nj/
-Allow: /services/teeth-whitening-and-veneers-maplewood-nj/
-Allow: /services/invisalign-clear-aligners-maplewood-nj/
-Allow: /services/kids-and-children-dentistry-maplewood-nj/
-Allow: /services/permanent-teeth-replacement-maplewood-nj/
-Allow: /services/wisdom-teeth-maplewood-nj/
-Allow: /services/endodontics-maplewood-nj/
-Allow: /services/same-day-dentistry-maplewood-nj/
-Allow: /services/painless-treatment-maplewood-nj/
-Allow: /services/perio-protect-maplewood-nj/
-Allow: /services/halitosis-maplewood-nj/
-Allow: /services/sports-dentistry-maplewood-nj/
-
-# Allow all new SEO-optimized service area routes
-Allow: /service-areas/maplewood-nj-dentist-near-you/
-Allow: /service-areas/linglestown-pa-dentist-near-you/
-Allow: /service-areas/colonial-park-pa-dentist-near-you/
-Allow: /service-areas/penbrook-pa-dentist-near-you/
-Allow: /service-areas/paxtang-pa-dentist-near-you/
-Allow: /service-areas/progress-pa-dentist-near-you/
-Allow: /service-areas/lawnton-pa-dentist-near-you/
-
-Allow: /contact-us/
-Allow: /contact-tulip-dental-maplewood-nj/
-Allow: /reviews/
-Allow: /patient-reviews-maplewood-nj/
-Allow: /providers/
-Allow: /offers/
-Allow: /teeth-whitening-offer-maplewood-nj/
-Allow: /providers/simranjeet-dhaliwal-maplewood-nj-dentist/
-Allow: /blog/
-Allow: /dental-blog/
-
-# Disallow admin and private areas
+Disallow: 
+Disallow: /cgi-bin/
 Disallow: /admin/
 Disallow: /private/
 Disallow: /api/
-
-# Crawl delay (optional)
-Crawl-delay: 1
+Sitemap: https://www.tulipdentalnj.com/sitemap.xml
