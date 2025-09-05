@@ -212,7 +212,7 @@ export default function RootCanalClient() {
               ))}
             </div>
           </div>
-          <p>
+          <p className="p-4">
             Looking for a trusted “root canal specialist near you”? Tulip Dental
             is your go-to destination for expert care and real results.
           </p>
