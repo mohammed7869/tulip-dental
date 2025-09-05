@@ -395,7 +395,7 @@ export default function Header() {
                         "Root Canal",
                         "Oral Surgery",
                         "Cosmetic Dentistry",
-                        "Fillings",
+                        "Dental Fillings",
                         "Dental Implants",
                         "Orthodontics",
                         "Crowns and Bridges",
